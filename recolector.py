@@ -2,12 +2,13 @@ import requests
 from bs4 import BeautifulSoup
 from google import genai
 import os
+import time # <-- NUEVO: Nos permite hacer pausas automáticas
 
 # --- 1. CONFIGURACIÓN DE LA IA ---
 API_KEY = os.environ.get("LLAVESECRETABRAI")
 client = genai.Client(api_key=API_KEY)
 
-# --- 2. EL RECOLECTOR (Ahora busca noticias generales) ---
+# --- 2. EL RECOLECTOR ---
 url = "https://www.ambito.com/"
 encabezados = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
 respuesta = requests.get(url, headers=encabezados)
@@ -30,7 +31,7 @@ if respuesta.status_code == 200:
         if len(texto_limpio) > 15 and texto_limpio not in titulos_vistos:
             noticias_extraidas.append({"titulo": texto_limpio, "link": link})
             titulos_vistos.add(texto_limpio)
-            if len(noticias_extraidas) == 3: # Buscamos las 3 noticias principales
+            if len(noticias_extraidas) == 3:
                 break
                 
     texto_para_ia = ""
@@ -49,9 +50,31 @@ if respuesta.status_code == 200:
     CATEGORIA|TÍTULO REFORMULADO|RESUMEN CORTO|LINK
     """
     
-    try:
-        respuesta_ia = client.models.generate_content(model='gemini-2.5-flash', contents=prompt)
-        
+    # --- SISTEMA DE REINTENTOS ANTI-TRÁFICO ---
+    max_intentos = 3
+    exito = False
+    
+    for intento in range(max_intentos):
+        try:
+            print(f"Intento {intento + 1} de conectar con la IA...")
+            respuesta_ia = client.models.generate_content(model='gemini-2.5-flash', contents=prompt)
+            exito = True
+            break # Si funciona, salimos del bucle de reintentos
+            
+        except Exception as e:
+            print(f"Fallo en el intento {intento + 1}: {e}")
+            if intento < max_intentos - 1:
+                print("Servidor saturado. Esperando 15 segundos para reintentar...")
+                time.sleep(15)
+            else:
+                print("Se agotaron los intentos. Intentando con modelo de respaldo (gemini-1.5-flash)...")
+                try:
+                    respuesta_ia = client.models.generate_content(model='gemini-1.5-flash', contents=prompt)
+                    exito = True
+                except Exception as error_respaldo:
+                    print("Ambos modelos están saturados. Intenta más tarde.", error_respaldo)
+
+    if exito:
         # --- 4. ENSAMBLADOR WEB CON DISEÑO DINÁMICO ---
         lineas = respuesta_ia.text.strip().split('\n')
         tarjetas_html = ""
@@ -65,7 +88,6 @@ if respuesta.status_code == 200:
                     resumen = partes[2].strip()
                     link = partes[3].strip()
                     
-                    # Lógica de colores según la categoría de la IA
                     if categoria == "DEPORTES":
                         borde = "border-emerald-500"
                         pill = "bg-emerald-900/40 text-emerald-400"
@@ -96,7 +118,6 @@ if respuesta.status_code == 200:
                     </article>
                     """
         
-        # Plantilla con Navbar, Píldoras y Texto Degradado
         html_completo = f"""<!DOCTYPE html>
 <html lang="es">
 <head>
@@ -144,9 +165,6 @@ if respuesta.status_code == 200:
             archivo.write(html_completo)
             
         print("¡Éxito! Web actualizada con el nuevo diseño avanzado.")
-        
-    except Exception as e:
-        print("Error con la IA:", e)
 
 else:
-    print(f"Error al conectar. Código: {respuesta.status_code}")
+    print(f"Error al conectar con la web de noticias. Código: {respuesta.status_code}")
