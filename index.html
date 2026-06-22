@@ -3,68 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mercado IA</title>
+    <title>Noticias IA</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body { background-color: #0f172a; }
-        .card-bg { background-color: #1e293b; }
-    </style>
+    <style>body { background-color: #0b0f19; font-family: 'Inter', sans-serif; }</style>
 </head>
-<body class="text-slate-300 font-sans antialiased min-h-screen pb-12">
-    <nav class="flex justify-between items-center p-6 border-b border-slate-800">
-        <div class="text-xl font-bold text-white flex items-center gap-2">Mercado IA 🤖</div>
+<body class="text-gray-300 antialiased min-h-screen pb-12">
+    
+    <nav class="flex justify-between items-center px-8 py-5 border-b border-gray-800 bg-[#0b0f19]">
+        <div class="text-2xl font-black text-white flex items-center gap-2">Noticias IA 🤖</div>
+        <div class="hidden md:flex gap-6 text-sm font-semibold text-gray-400">
+            <a href="#" class="hover:text-white transition">Noticias</a>
+            <a href="#" class="hover:text-white transition">Contacto</a>
+        </div>
     </nav>
-    <header class="text-center mt-12 mb-10 px-4">
-        <h1 class="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400 mb-4">El mercado al instante</h1>
-        <p class="text-slate-400 max-w-2xl mx-auto">Noticias del mercado de capitales argentino, leídas, analizadas y resumidas por IA en tiempo real.</p>
+    
+    <header class="text-center mt-16 mb-12 px-4">
+        <h1 class="text-4xl md:text-5xl font-black text-white mb-6 tracking-tight">
+            La información al <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500">instante</span>
+        </h1>
+        <p class="text-gray-400 max-w-2xl mx-auto text-lg">Las noticias más relevantes de Argentina leídas, analizadas, categorizadas y resumidas por Inteligencia Artificial en tiempo real.</p>
     </header>
+
+    <div class="max-w-4xl mx-auto px-4 flex flex-wrap justify-center gap-3 mb-12">
+        <button class="bg-gradient-to-r from-yellow-400 to-orange-500 text-black px-5 py-2.5 rounded-full font-bold text-sm shadow-lg shadow-orange-500/20">
+            Todas
+        </button>
+        <button class="bg-[#1f2937] text-gray-300 px-5 py-2.5 rounded-full font-semibold text-sm hover:bg-gray-700 transition">Política</button>
+        <button class="bg-[#1f2937] text-gray-300 px-5 py-2.5 rounded-full font-semibold text-sm hover:bg-gray-700 transition">Economía</button>
+        <button class="bg-[#1f2937] text-gray-300 px-5 py-2.5 rounded-full font-semibold text-sm hover:bg-gray-700 transition">Deportes</button>
+        <button class="bg-[#1f2937] text-gray-300 px-5 py-2.5 rounded-full font-semibold text-sm hover:bg-gray-700 transition">Sociedad</button>
+    </div>
+
     <main class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         
-                    <article class="card-bg rounded-2xl p-6 border border-slate-700 flex flex-col hover:border-slate-500 transition">
-                        <div class="flex justify-between items-center mb-4 text-xs font-semibold">
+                    <article class="bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg">
+                        <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
                             <div class="flex gap-2">
-                                <span class="bg-slate-700 text-slate-300 px-2 py-1 rounded">ÁMBITO</span>
-                                <span class="bg-blue-900/50 text-blue-400 px-2 py-1 rounded">DÓLAR OFICIAL</span>
+                                <span class="bg-gray-800 text-gray-300 px-2.5 py-1 rounded-md">ÁMBITO</span>
+                                <span class="bg-emerald-900/40 text-emerald-400 px-2.5 py-1 rounded-md">DEPORTES</span>
                             </div>
-                            <span class="text-slate-500">Hoy</span>
+                            <span class="text-gray-500">Hace instantes</span>
                         </div>
-                        <h2 class="text-xl font-bold text-white mb-3 leading-tight">Cotización del dólar oficial el 22 de junio</h2>
-                        <p class="text-slate-400 text-sm mb-6 flex-grow">El dólar oficial abrió estable, manteniendo la tendencia de la semana anterior. Bancos informan su valor de compra y venta para el público.</p>
-                        <a href="https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-lunes-22-junio-n6291285" target="_blank" class="text-blue-400 text-sm font-medium hover:text-blue-300 flex justify-end items-center gap-1 mt-auto border-t border-slate-700 pt-4">
+                        <h2 class="text-xl font-bold text-white mb-3 leading-tight">Selección Argentina: Scaloni ajusta el equipo con una incógnita para el amistoso ante Austria</h2>
+                        <p class="text-gray-400 text-sm mb-6 flex-grow">El entrenador Lionel Scaloni define la formación titular de la Selección Argentina para el encuentro en Dallas contra Austria, manteniendo una duda en un puesto clave.</p>
+                        <a href="https://www.ambito.com/deportes/seleccion-argentina-mundial-2026-en-vivo-kansas-lionel-scaloni-messi-austria-noticias-minuto-a-minuto-en-vivo-22-junio" target="_blank" class="text-white text-sm font-semibold hover:underline flex justify-start items-center gap-1 mt-auto">
                             Leer nota original &rarr;
                         </a>
                     </article>
                     
-                    <article class="card-bg rounded-2xl p-6 border border-slate-700 flex flex-col hover:border-slate-500 transition">
-                        <div class="flex justify-between items-center mb-4 text-xs font-semibold">
+                    <article class="bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-blue-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg">
+                        <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
                             <div class="flex gap-2">
-                                <span class="bg-slate-700 text-slate-300 px-2 py-1 rounded">ÁMBITO</span>
-                                <span class="bg-blue-900/50 text-blue-400 px-2 py-1 rounded">DÓLAR BLUE</span>
+                                <span class="bg-gray-800 text-gray-300 px-2.5 py-1 rounded-md">ÁMBITO</span>
+                                <span class="bg-blue-900/40 text-blue-400 px-2.5 py-1 rounded-md">ECONOMÍA</span>
                             </div>
-                            <span class="text-slate-500">Hoy</span>
+                            <span class="text-gray-500">Hace instantes</span>
                         </div>
-                        <h2 class="text-xl font-bold text-white mb-3 leading-tight">Valor del dólar blue el 22 de junio</h2>
-                        <p class="text-slate-400 text-sm mb-6 flex-grow">El dólar blue mostró una leve alza en el inicio de la semana. Se mantiene la brecha con el tipo de cambio oficial.</p>
-                        <a href="https://www.ambito.com/finanzas/dolar-blue-hoy-cuanto-opera-este-lunes-22-junio-n6291286" target="_blank" class="text-blue-400 text-sm font-medium hover:text-blue-300 flex justify-end items-center gap-1 mt-auto border-t border-slate-700 pt-4">
+                        <h2 class="text-xl font-bold text-white mb-3 leading-tight">Bonos argentinos en dólares repuntan en Wall Street y el riesgo país alcanza su nivel más bajo en ocho años</h2>
+                        <p class="text-gray-400 text-sm mb-6 flex-grow">Los títulos de deuda de Argentina en dólares retoman la tendencia alcista en el mercado de Wall Street, llevando al riesgo país a marcar un nuevo mínimo histórico en ocho años.</p>
+                        <a href="https://www.ambito.com/finanzas/los-bonos-dolares-retoman-las-subas-wall-street-y-el-riesgo-pais-marca-un-nuevo-minimo-ocho-anos-n6291418" target="_blank" class="text-white text-sm font-semibold hover:underline flex justify-start items-center gap-1 mt-auto">
                             Leer nota original &rarr;
                         </a>
                     </article>
                     
-                    <article class="card-bg rounded-2xl p-6 border border-slate-700 flex flex-col hover:border-slate-500 transition">
-                        <div class="flex justify-between items-center mb-4 text-xs font-semibold">
+                    <article class="bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg">
+                        <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
                             <div class="flex gap-2">
-                                <span class="bg-slate-700 text-slate-300 px-2 py-1 rounded">ÁMBITO</span>
-                                <span class="bg-blue-900/50 text-blue-400 px-2 py-1 rounded">MERCADOS</span>
+                                <span class="bg-gray-800 text-gray-300 px-2.5 py-1 rounded-md">ÁMBITO</span>
+                                <span class="bg-emerald-900/40 text-emerald-400 px-2.5 py-1 rounded-md">DEPORTES</span>
                             </div>
-                            <span class="text-slate-500">Hoy</span>
+                            <span class="text-gray-500">Hace instantes</span>
                         </div>
-                        <h2 class="text-xl font-bold text-white mb-3 leading-tight">Análisis de activos argentinos ante el repunte del dólar</h2>
-                        <p class="text-slate-400 text-sm mb-6 flex-grow">Los inversores evalúan el impacto del dólar en bonos y acciones locales. Se observa incertidumbre en la plaza financiera.</p>
-                        <a href="https://www.ambito.com/finanzas/dolar-hoy-y-dolar-blue-hoy-minuto-minuto-cuanto-opera-este-lunes-22-junio-n6291304" target="_blank" class="text-blue-400 text-sm font-medium hover:text-blue-300 flex justify-end items-center gap-1 mt-auto border-t border-slate-700 pt-4">
+                        <h2 class="text-xl font-bold text-white mb-3 leading-tight">Argentina vs Austria: Un análisis que expone el favoritismo deportivo y la brecha socioeconómica</h2>
+                        <p class="text-gray-400 text-sm mb-6 flex-grow">El próximo enfrentamiento entre Argentina y Austria se analiza desde el favoritismo de los campeones del mundo, revelando también las profundas diferencias socioeconómicas entre ambas naciones.</p>
+                        <a href="https://www.ambito.com/deportes/argentina-vs-austria-datos-del-favoritismo-los-campeones-la-brecha-socioeconomica-que-refleja-dos-mundos-n6291027" target="_blank" class="text-white text-sm font-semibold hover:underline flex justify-start items-center gap-1 mt-auto">
                             Leer nota original &rarr;
                         </a>
                     </article>
                     
     </main>
+
 </body>
 </html>
