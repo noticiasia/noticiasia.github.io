@@ -32,47 +32,34 @@ for fuente in fuentes:
             sopa = BeautifulSoup(respuesta.text, 'html.parser')
             contador = 0
             
-            # --- TÁCTICA ESPECIAL EXCLUSIVA PARA OLÉ ---
-            if fuente["nombre"] == "OLÉ":
-                enlaces = sopa.find_all('a')
-                for enlace in enlaces:
-                    texto_limpio = enlace.text.strip()
-                    # Si el enlace tiene mucho texto, es casi seguro un titular
-                    if len(texto_limpio) > 35:
-                        link = enlace.get('href')
-                        if link and "javascript" not in link and "mailto" not in link:
-                            if not link.startswith('http'):
-                                link = fuente["base"] + link
-                            noticias_extraidas.append({"fuente": fuente["nombre"], "titulo": texto_limpio, "link": link})
-                            contador += 1
-                            if contador >= 4:
-                                break
+            # Buscamos etiquetas de artículos para ser precisos y evitar el pie de página
+            articulos = sopa.find_all(['article', 'h1', 'h2', 'h3', 'h4']) 
             
-            # --- TÁCTICA NORMAL PARA EL RESTO DE LOS DIARIOS ---
-            else:
-                articulos = sopa.find_all(['h1', 'h2', 'h3', 'h4', 'h5']) 
-                for articulo in articulos:
-                    texto_limpio = articulo.text.strip()
+            for articulo in articulos:
+                texto_limpio = articulo.text.strip()
+                
+                if len(texto_limpio) < 20:
+                    continue
+                
+                enlace_tag = articulo.find('a')
+                if not enlace_tag:
+                    padres = articulo.find_parents('a')
+                    if padres:
+                        enlace_tag = padres[0]
+                
+                if enlace_tag and 'href' in enlace_tag.attrs:
+                    link = enlace_tag['href']
+                    if not link.startswith('http'):
+                        link = fuente["base"] + link
                     
-                    if len(texto_limpio) < 25:
+                    # Filtros de exclusión directos para evitar basura
+                    if "javascript" in link or "mailto" in link or "defensa-del-consumidor" in link.lower():
                         continue
-                    
-                    enlace_tag = articulo.find('a')
-                    if not enlace_tag:
-                        padres = articulo.find_parents('a')
-                        if padres:
-                            enlace_tag = padres[0]
-                    
-                    if enlace_tag and 'href' in enlace_tag.attrs:
-                        link = enlace_tag['href']
-                        if not link.startswith('http'):
-                            link = fuente["base"] + link
                         
-                        if "javascript" not in link and "mailto" not in link:
-                            noticias_extraidas.append({"fuente": fuente["nombre"], "titulo": texto_limpio, "link": link})
-                            contador += 1
-                            if contador >= 4: 
-                                break
+                    noticias_extraidas.append({"fuente": fuente["nombre"], "titulo": texto_limpio, "link": link})
+                    contador += 1
+                    if contador >= 4: 
+                        break
     except Exception as e:
         pass
 
@@ -124,17 +111,17 @@ texto_para_ia = ""
 for i, noticia in enumerate(noticias_finales):
     texto_para_ia += f"Noticia {i+1} [{noticia['fuente']}]:\n- Título: {noticia['titulo']}\n- Link: {noticia['link']}\n\n"
 
-# --- 3. EL CEREBRO (Sin categoría Tecnología) ---
+# --- 3. EL CEREBRO DE LA IA (Reglas estrictas añadidas) ---
 prompt = f"""
 Eres un editor experto de noticias. Aquí tienes {len(noticias_finales)} noticias de hoy:
 {texto_para_ia}
 
-Devuelve la información en este formato por cada noticia, separando con el símbolo |.
-Clasifica obligatoriamente cada noticia en: DEPORTES, SOCIEDAD, POLÍTICA, ECONOMÍA o MERCADOS. 
-(Usa MERCADOS exclusivamente para bolsa, trading, bonos, acciones, CEDEARs, dólar y Wall Street).
-Escribe un RESUMEN EXTENDIDO de entre 40 y 60 palabras, brindando detalles profundos.
+REGLAS ESTRICTAS:
+1. Clasifica obligatoriamente cada noticia en: DEPORTES, SOCIEDAD, POLÍTICA, ECONOMÍA o MERCADOS. (MERCADOS es solo para bolsa, dólar, trading).
+2. Si la noticia es de "OLÉ" y su contenido NO es deportivo (por ejemplo, reclamos, defensa del consumidor, legales), DESCÁRTALA por completo y no la incluyas en la lista final.
+3. Escribe un RESUMEN EXTENDIDO de entre 40 y 60 palabras, brindando detalles profundos.
 
-Formato:
+Devuelve la información en este formato por cada noticia, separando con el símbolo |:
 DIARIO|CATEGORIA|TÍTULO|RESUMEN EXTENDIDO|LINK
 """
 
@@ -173,7 +160,23 @@ if exito:
                 resumen = partes[3].strip()
                 link = partes[4].strip()
                 
-                # Tecnología eliminado de los colores
+                # LA GUILLOTINA DE TIEMPO: Destruye noticias viejas
+                timestamp_iso = tiempos_reales.get(link, datetime.now(timezone.utc).isoformat())
+                try:
+                    dt_noticia = datetime.fromisoformat(timestamp_iso.replace('Z', '+00:00'))
+                    if dt_noticia.tzinfo is None:
+                        dt_noticia = dt_noticia.replace(tzinfo=timezone.utc)
+                    
+                    # Calcula cuántas horas pasaron
+                    diferencia_horas = (datetime.now(timezone.utc) - dt_noticia).total_seconds() / 3600
+                    
+                    # SI LA NOTICIA TIENE MÁS DE 24 HORAS, SE SALTEA Y NO SE PUBLICA
+                    if diferencia_horas > 24:
+                        continue 
+                except:
+                    pass
+                
+                # Asignación de colores (Tecnología ya no existe)
                 if categoria == "MERCADOS":
                     borde, pill = "border-emerald-500", "bg-emerald-900/40 text-emerald-400"
                 elif categoria == "ECONOMÍA":
@@ -184,8 +187,6 @@ if exito:
                     borde, pill = "border-indigo-500", "bg-indigo-900/40 text-indigo-400"
                 else: 
                     borde, pill = "border-teal-500", "bg-teal-900/40 text-teal-400"
-                
-                timestamp_iso = tiempos_reales.get(link, datetime.now(timezone.utc).isoformat())
                 
                 tarjetas_html += f"""
                 <article data-categoria="{categoria}" class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 {borde} hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50">
@@ -208,7 +209,7 @@ if exito:
                 </article>
                 """
     
-    # --- PURGA DE FANTASMAS ---
+    # --- PURGA DE FANTASMAS EN EL HISTORIAL ---
     historial_viejo_limpio = ""
     if os.path.exists("historial.txt"):
         with open("historial.txt", "r", encoding="utf-8") as f:
@@ -225,7 +226,7 @@ if exito:
             
     historial_completo_str = tarjetas_html + "\n" + historial_viejo_limpio
     
-    # --- ORDENAMIENTO CRONOLÓGICO SEGURO ---
+    # --- ORDENAMIENTO CRONOLÓGICO ---
     sopa_historial = BeautifulSoup(historial_completo_str, 'html.parser')
     todos_los_articulos = sopa_historial.find_all('article')
     
@@ -251,7 +252,7 @@ if exito:
     with open("historial.txt", "w", encoding="utf-8") as f:
         f.write(historial_recortado)
         
-    # --- PLANTILLA HTML (Sin Tecnología) ---
+    # --- PLANTILLA HTML DEFINITIVA (Sin botón de Tecnología) ---
     html_completo = f"""<!DOCTYPE html>
 <html lang="es">
 <head>
