@@ -183,46 +183,42 @@ if exito:
                 </article>
                 """
     
-    # --- LA MAGIA DEL HISTORIAL ORDENADO Y LIMPIO ---
+    # --- ORDENAMIENTO CRONOLÓGICO SEGURO ---
     historial_viejo = ""
     if os.path.exists("historial.txt"):
         with open("historial.txt", "r", encoding="utf-8") as f:
             historial_viejo = f.read()
             
-    # Unimos todo
     historial_completo_str = tarjetas_html + "\n" + historial_viejo
-    
-    # Usamos BeautifulSoup para analizar y ordenar cronológicamente
     sopa_historial = BeautifulSoup(historial_completo_str, 'html.parser')
     todos_los_articulos = sopa_historial.find_all('article')
     
-    def obtener_fecha(articulo):
+    def obtener_fecha_segura(articulo):
         etiqueta_tiempo = articulo.find('span', class_='tiempo-noticia')
         if etiqueta_tiempo and etiqueta_tiempo.has_attr('data-timestamp'):
             fecha_str = etiqueta_tiempo['data-timestamp']
             try:
-                # Reemplazamos la Z de formato UTC para que Python lo lea perfecto
-                return datetime.fromisoformat(fecha_str.replace('Z', '+00:00'))
+                # 1. Limpiamos la Z
+                dt = datetime.fromisoformat(fecha_str.replace('Z', '+00:00'))
+                # 2. Si la fecha es naive (no tiene timezone), la forzamos a UTC para poder comparar
+                if dt.tzinfo is None:
+                    dt = dt.replace(tzinfo=timezone.utc)
+                return dt
             except:
                 pass
-        # Si algo falla, asume que es viejísima para mandarla al fondo
         return datetime.min.replace(tzinfo=timezone.utc)
 
-    # El gran ordenamiento: de mayor (reciente) a menor (antigua)
-    articulos_ordenados = sorted(todos_los_articulos, key=obtener_fecha, reverse=True)
+    # Ordenamos de más reciente a más antigua
+    articulos_ordenados = sorted(todos_los_articulos, key=obtener_fecha_segura, reverse=True)
     
-    # Aplicamos la guillotina: dejamos las 36 más recientes
     max_noticias = 36
     articulos_finales = articulos_ordenados[:max_noticias]
-    
-    # Reconvertimos las tarjetas a texto HTML
     historial_recortado = "\n".join([str(art) for art in articulos_finales])
     
-    # Guardamos
     with open("historial.txt", "w", encoding="utf-8") as f:
         f.write(historial_recortado)
         
-    # --- PLANTILLA HTML ---
+    # --- PLANTILLA HTML (Con Buscador y Formulario Amarillo) ---
     html_completo = f"""<!DOCTYPE html>
 <html lang="es">
 <head>
@@ -249,6 +245,13 @@ if exito:
         <p class="text-gray-400 max-w-2xl mx-auto text-lg">Noticias y Mercados en tiempo real, analizadas a fondo por Inteligencia Artificial.</p>
     </header>
 
+    <div class="max-w-2xl mx-auto px-4 mb-8">
+        <div class="relative">
+            <input type="text" id="buscador" placeholder="Buscar por palabra clave, acción o dólar..." class="w-full bg-[#111827] border border-[#1f2937] rounded-full px-6 py-4 text-white focus:outline-none focus:border-cyan-500 transition shadow-lg pl-14 placeholder-gray-500">
+            <svg class="w-6 h-6 text-gray-500 absolute left-5 top-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+        </div>
+    </div>
+
     <div class="max-w-4xl mx-auto px-4 flex flex-wrap justify-center gap-3 mb-12">
         <button data-filter="TODAS" class="btn-filtro bg-gradient-to-r from-cyan-400 to-blue-500 text-black px-5 py-2.5 rounded-full font-bold text-sm transition shadow-lg shadow-cyan-500/20">Todas</button>
         <button data-filter="MERCADOS" class="btn-filtro bg-[#1f2937] text-gray-300 px-5 py-2.5 rounded-full font-semibold text-sm hover:bg-gray-700 transition border border-gray-700 hover:border-cyan-500/50">Mercados</button>
@@ -259,40 +262,41 @@ if exito:
         <button data-filter="TECNOLOGÍA" class="btn-filtro bg-[#1f2937] text-gray-300 px-5 py-2.5 rounded-full font-semibold text-sm hover:bg-gray-700 transition border border-gray-700 hover:border-cyan-500/50">Tecnología</button>
     </div>
 
-    <main class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
+    <main class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20" id="contenedor-noticias">
         {historial_recortado}
     </main>
 
     <section id="contacto" class="max-w-5xl mx-auto px-4 mt-20 border-t border-[#1f2937] pt-16">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
             <div class="flex flex-col gap-4 justify-center">
-                <a href="TU_LINK_DE_LINKEDIN_AQUI" target="_blank" class="bg-[#111827] border border-[#1f2937] hover:border-cyan-500/50 rounded-xl p-5 flex items-center gap-4 transition group">
-                    <div class="bg-cyan-500 text-black p-2 rounded text-xl font-black group-hover:scale-110 transition">in</div>
-                    <span class="text-white font-semibold">Conectá con Brian Hernan Yapura en LinkedIn</span>
+                <a href="TU_LINK_DE_LINKEDIN_AQUI" target="_blank" class="bg-[#111827] border border-[#1f2937] rounded-xl p-5 flex items-center gap-4 transition hover:bg-[#1a2333]">
+                    <div class="bg-yellow-500 text-black px-2 py-1 rounded text-lg font-bold">in</div>
+                    <span class="text-white font-semibold">Conectá conmigo en LinkedIn</span>
                 </a>
                 
-                <a href="mailto:TU_CORREO_REAL_AQUI@gmail.com" class="bg-[#111827] border border-[#1f2937] hover:border-cyan-500/50 rounded-xl p-5 flex items-center gap-4 transition group">
-                    <div class="text-cyan-500 text-2xl group-hover:scale-110 transition">✉</div>
-                    <span class="text-white font-semibold">TU_CORREO_REAL_AQUI@gmail.com</span>
+                <a href="mailto:tu-correo@gmail.com" class="bg-[#111827] border border-[#1f2937] rounded-xl p-5 flex items-center gap-4 transition hover:bg-[#1a2333]">
+                    <div class="text-yellow-500 text-2xl">✉</div>
+                    <span class="text-white font-semibold">tu-correo@gmail.com</span>
                 </a>
             </div>
             
-            <div class="bg-[#111827] border border-[#1f2937] rounded-2xl p-8 shadow-xl">
+            <div class="bg-[#111827] border border-[#1f2937] rounded-2xl p-8">
                 <form class="flex flex-col gap-5">
                     <div>
                         <label class="block text-sm font-semibold text-gray-400 mb-2">Nombre</label>
-                        <input type="text" placeholder="Tu nombre" class="w-full bg-[#1f2937] border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-cyan-500 transition">
+                        <input type="text" placeholder="Tu nombre" class="w-full bg-[#1a2333] border border-gray-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-yellow-500 transition">
                     </div>
                     <div>
                         <label class="block text-sm font-semibold text-gray-400 mb-2">Email</label>
-                        <input type="email" placeholder="tu@email.com" class="w-full bg-[#1f2937] border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-cyan-500 transition">
+                        <input type="email" placeholder="tu@email.com" class="w-full bg-[#1a2333] border border-gray-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-yellow-500 transition">
                     </div>
                     <div>
                         <label class="block text-sm font-semibold text-gray-400 mb-2">Mensaje</label>
-                        <textarea rows="4" placeholder="¿En qué puedo ayudarte?" class="w-full bg-[#1f2937] border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-cyan-500 transition resize-none"></textarea>
+                        <textarea rows="4" placeholder="¿En qué puedo ayudarte?" class="w-full bg-[#1a2333] border border-gray-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-yellow-500 transition resize-none"></textarea>
                     </div>
-                    <button type="button" class="w-full bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-cyan-500 hover:to-blue-600 text-black font-bold py-3 px-4 rounded-lg flex justify-center items-center gap-2 transition shadow-lg shadow-cyan-500/20 mt-2">
-                        Enviar Mensaje <span>🚀</span>
+                    <button type="button" class="w-full bg-yellow-500 hover:bg-yellow-400 text-black font-bold py-3 px-4 rounded-lg flex justify-center items-center gap-2 transition mt-2">
+                        Enviar Mensaje
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"></path></svg>
                     </button>
                 </form>
             </div>
@@ -302,22 +306,39 @@ if exito:
     <script>
         const botones = document.querySelectorAll('.btn-filtro');
         const articulos = document.querySelectorAll('.tarjeta-noticia');
+        const buscador = document.getElementById('buscador');
+        let categoriaActual = 'TODAS';
+
+        function filtrarNoticias() {{
+            const textoBusqueda = buscador.value.toLowerCase();
+            
+            articulos.forEach(art => {{
+                const categoriaArt = art.getAttribute('data-categoria');
+                const titulo = art.querySelector('h2').textContent.toLowerCase();
+                const resumen = art.querySelector('p').textContent.toLowerCase();
+                
+                const coincideCategoria = (categoriaActual === 'TODAS' || categoriaArt === categoriaActual);
+                const coincideTexto = (titulo.includes(textoBusqueda) || resumen.includes(textoBusqueda));
+                
+                if (coincideCategoria && coincideTexto) {{
+                    art.style.display = 'flex';
+                }} else {{
+                    art.style.display = 'none';
+                }}
+            }});
+        }}
 
         botones.forEach(boton => {{
             boton.addEventListener('click', () => {{
                 botones.forEach(b => b.className = 'btn-filtro bg-[#1f2937] text-gray-300 px-5 py-2.5 rounded-full font-semibold text-sm hover:bg-gray-700 transition border border-gray-700 hover:border-cyan-500/50');
                 boton.className = 'btn-filtro bg-gradient-to-r from-cyan-400 to-blue-500 text-black px-5 py-2.5 rounded-full font-bold text-sm shadow-lg shadow-cyan-500/20 transition';
                 
-                const categoriaElegida = boton.getAttribute('data-filter');
-                articulos.forEach(art => {{
-                    if (categoriaElegida === 'TODAS' || art.getAttribute('data-categoria') === categoriaElegida) {{
-                        art.style.display = 'flex';
-                    }} else {{
-                        art.style.display = 'none';
-                    }}
-                }});
+                categoriaActual = boton.getAttribute('data-filter');
+                filtrarNoticias();
             }});
         }});
+
+        buscador.addEventListener('input', filtrarNoticias);
 
         function actualizarTiempos() {{
             document.querySelectorAll('.tiempo-noticia').forEach(el => {{
