@@ -11,7 +11,7 @@ from datetime import datetime, timezone
 API_KEY = os.environ.get("LLAVESECRETABRAI")
 client = genai.Client(api_key=API_KEY)
 
-# --- 2. EL RECOLECTOR MULTI-FUENTE (Únicamente tus 7 fuentes elegidas) ---
+# --- 2. EL RECOLECTOR MULTI-FUENTE (Tus 7 fuentes estrictas) ---
 fuentes = [
     {"nombre": "ÁMBITO", "url": "https://www.ambito.com/", "base": "https://www.ambito.com"},
     {"nombre": "INFOBAE", "url": "https://www.infobae.com/", "base": "https://www.infobae.com"},
@@ -31,33 +31,39 @@ for fuente in fuentes:
         if respuesta.status_code == 200:
             sopa = BeautifulSoup(respuesta.text, 'html.parser')
             
-            # NUEVO: Ahora también busca etiquetas h3 (Crucial para Infobae, Yahoo y La Nación)
-            articulos = sopa.find_all(['h1', 'h2', 'h3']) 
+            # Ampliamos a h4 y h5 por si algún diario (como Olé o Yahoo) usa letras más chicas
+            articulos = sopa.find_all(['h1', 'h2', 'h3', 'h4', 'h5']) 
             contador = 0
             
             for articulo in articulos:
                 texto_limpio = articulo.text.strip()
                 
-                # Busca el link adentro o afuera del encabezado (Crucial para Olé)
+                # Ignorar títulos muy cortos (Ej: "Leer más", "Opinión")
+                if len(texto_limpio) < 25:
+                    continue
+                
+                # ESCÁNER PROFUNDO PARA ENLACES (Solución definitiva para Olé)
                 enlace_tag = articulo.find('a')
                 if not enlace_tag:
-                    enlace_tag = articulo.find_parent('a')
+                    padres = articulo.find_parents('a') # Busca en todas las cajas envolventes
+                    if padres:
+                        enlace_tag = padres[0]
                 
                 if enlace_tag and 'href' in enlace_tag.attrs:
                     link = enlace_tag['href']
                     if not link.startswith('http'):
                         link = fuente["base"] + link
                     
-                    if len(texto_limpio) > 25: 
+                    if "javascript" not in link and "mailto" not in link:
                         noticias_extraidas.append({"fuente": fuente["nombre"], "titulo": texto_limpio, "link": link})
                         contador += 1
-                        if contador >= 4: # Extraemos hasta 4 por diario para garantizar variedad
+                        if contador >= 4: 
                             break
     except Exception as e:
         pass
 
 random.shuffle(noticias_extraidas)
-noticias_finales = noticias_extraidas[:14] # Mandamos un buen bloque de noticias a la IA
+noticias_finales = noticias_extraidas[:14]
 
 # --- MOTOR FORENSE DE EXTRACCIÓN DE HORA ---
 print("Extrayendo metadatos de tiempo...")
@@ -189,27 +195,24 @@ if exito:
                 </article>
                 """
     
-    # --- PROCESAMIENTO DEL HISTORIAL VIEJO + PURGA DE GHOSTS ---
+    # --- PURGA DE FANTASMAS (Borra Cronista, Forbes y Bae Negocios del historial viejo) ---
     historial_viejo_limpio = ""
     if os.path.exists("historial.txt"):
         with open("historial.txt", "r", encoding="utf-8") as f:
             contenido_previo = f.read()
             
-        # Parseamos el historial viejo para expulsar a EL CRONISTA y FORBES de raíz
         sopa_vieja = BeautifulSoup(contenido_previo, 'html.parser')
         for tarjeta in sopa_vieja.find_all('article'):
             span_diario = tarjeta.find('span', class_=lambda c: c and 'bg-[#1f2937]' in c)
             if span_diario:
                 nombre_diario = span_diario.text.strip().upper()
-                # Si la tarjeta vieja es de El Cronista o Forbes, la desintegramos
-                if "CRONISTA" in nombre_diario or "FORBES" in nombre_diario:
-                    tarjeta.decompose()
+                if "CRONISTA" in nombre_diario or "FORBES" in nombre_diario or "BAE" in nombre_diario:
+                    tarjeta.decompose() # Destruye la tarjeta
         historial_viejo_limpio = str(sopa_vieja)
             
-    # Unimos las tarjetas nuevas con el historial ya purgado
     historial_completo_str = tarjetas_html + "\n" + historial_viejo_limpio
     
-    # Ordenamos cronológicamente de forma estricta
+    # --- ORDENAMIENTO CRONOLÓGICO SEGURO ---
     sopa_historial = BeautifulSoup(historial_completo_str, 'html.parser')
     todos_los_articulos = sopa_historial.find_all('article')
     
@@ -228,8 +231,7 @@ if exito:
 
     articulos_ordenados = sorted(todos_los_articulos, key=obtener_fecha_segura, reverse=True)
     
-    # Dejamos máximo 36 noticias totales en la pantalla
-    max_noticias = 36
+    max_noticias = 60
     articulos_finales = articulos_ordenados[:max_noticias]
     historial_recortado = "\n".join([str(art) for art in articulos_finales])
     
