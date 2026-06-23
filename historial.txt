@@ -1,3 +1,67 @@
+<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="MERCADOS">
+<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+<div class="flex gap-2">
+<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">ÁMBITO</span>
+<span class="bg-emerald-900/40 text-emerald-400 px-2.5 py-1 rounded-md">MERCADOS</span>
+</div>
+<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T19:53:00-03:00">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://www.ambito.com/finanzas/martes-rojo-los-mercados-las-tecnologicas-lideran-las-perdidas-y-wall-street-adelanta-una-fuerte-correccion-n6291724" target="_blank">
+<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+<span>El derrumbe de las acciones de chips sacudió a Wall Street y encendió alertas sobre la IA</span>
+<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">El derrumbe de las acciones de chips sacudió a Wall Street, provocando un "martes rojo" y encendiendo alertas sobre el sector de Inteligencia Artificial. Las empresas tecnológicas lideraron las pérdidas, anticipando una posible corrección significativa en el mercado, afectando la confianza de los inversores en las valoraciones actuales de estas empresas de alto crecimiento.</p>
+</article>
+<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
+<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+<div class="flex gap-2">
+<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">TN</span>
+<span class="bg-indigo-900/40 text-indigo-400 px-2.5 py-1 rounded-md">POLÍTICA</span>
+</div>
+<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T22:43:04.533Z">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://tn.com.ar/politica/2026/06/23/en-un-nuevo-gesto-de-diferenciacion-patricia-bullrich-faltara-a-la-reunion-de-los-senadores-de-lla-con-adorni/" target="_blank">
+<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+<span>Las últimas noticias de Javier Milei</span>
+<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">Patricia Bullrich se ausentará de la reunión de senadores de La Libertad Avanza (LLA) con Adorni, en un claro gesto de diferenciación política dentro de la coalición gobernante. Esta decisión destaca las crecientes tensiones y divergencias internas, reflejando estrategias individuales y la compleja dinámica de poder en el ámbito político nacional, generando especulaciones.</p>
+</article>
+<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="MERCADOS">
+<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+<div class="flex gap-2">
+<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">YAHOO FINANZAS</span>
+<span class="bg-emerald-900/40 text-emerald-400 px-2.5 py-1 rounded-md">MERCADOS</span>
+</div>
+<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T22:01:00.000Z">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://es.finance.yahoo.com/noticias/arthur-hayes-prev%C3%A9-fondo-bitcoin-220100924.html" target="_blank">
+<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+<span>Arthur Hayes prevé un fondo de Bitcoin (BTC) en $40,000 en los próximos seis meses Arthur Hayes espera que el precio de Bitcoin toque fondo cerca de los $40,000 durante los próximos seis meses.</span>
+<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">Arthur Hayes, reconocido inversor, pronostica que el precio de Bitcoin (BTC) alcanzará un mínimo de $40,000 en los próximos seis meses. Esta predicción se basa en análisis de mercado y patrones históricos, ofreciendo una perspectiva crucial para inversores y traders de criptomonedas que monitorean los movimientos del activo digital y sus tendencias.</p>
+</article>
+<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-orange-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="DEPORTES">
+<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+<div class="flex gap-2">
+<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">LA NACION</span>
+<span class="bg-orange-900/40 text-orange-400 px-2.5 py-1 rounded-md">DEPORTES</span>
+</div>
+<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T21:59:41.511Z">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://www.lanacion.com.ar/deportes/futbol/lionel-scaloni-perfila-un-equipo-con-varios-cambios-para-enfrentar-a-jordania-tras-asegurar-la-nid23062026/" target="_blank">
+<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+<span>LA NACION en Kansas City¿Juega Messi? Con la clasificación asegurada: la posible formación alternativa de la selección argentina ante JordaniaPor Leandro Contento, enviado especial</span>
+<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">La selección argentina, ya clasificada, prepara un posible equipo alternativo para enfrentar a Jordania, bajo la dirección de Lionel Scaloni. La principal incógnita es la participación de Messi, quien podría descansar o jugar minutos reducidos, dada la importancia de gestionar su físico y la oportunidad de evaluar nuevos talentos del plantel.</p>
+</article>
 <article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
 <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
 <div class="flex gap-2">
@@ -28,7 +92,7 @@
 <svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
 </h2>
 </a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">Manuel Adorni no presentará su informe de gestión en el Senado, una decisión impulsada por Patricia Bullrich para evitar su exposición ante la oposición. La bancada oficialista de La Libertad Avanza bloqueó la interpelación, evidenciando una estrategia de "blindaje" al jefe de Gabinete. Esta maniobra subraya las tensiones políticas y el control legislativo del gobierno.</p>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">El informe de gestión de Adorni en el Senado fue suspendido a pedido de Patricia Bullrich, mientras que La Libertad Avanza (LLA) bloquea su interpelación. Esta decisión genera controversia política y tensiones entre facciones del gobierno, reflejando movimientos estratégicos para proteger al jefe de Gabinete y eludir el escrutinio legislativo en un contexto complejo.</p>
 </article>
 <article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
 <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
@@ -40,11 +104,11 @@
 </div>
 <a class="group block mb-3" href="https://www.lanacion.com.ar/politica/senado-bullrich-confirmo-que-se-suspendio-el-informe-de-gestion-de-adorni-acordado-para-el-2-de-nid23062026/" target="_blank">
 <h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Senado. Bullrich anunció que se suspendió el informe de gestión de Adorni acordado para el 2 de julio</span>
+<span>"Estoy dispuesto a ir". Bullrich anunció que se suspendió el informe de gestión de Adorni en el Senado, pero el ministro la contradijoLa senadora también acordó con los dialoguistas endurecer las condiciones para impulsar la interpelación del jefe de Gabinete, a contramano del criterio que había fijado la propia jefa del bloque oficialista una semana atrásPolíticaPor Gustavo Ybarra</span>
 <svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
 </h2>
 </a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">La jefa del bloque oficialista en el Senado, Victoria Villarruel, confirmó la suspensión del informe de gestión que Manuel Adorni debía presentar el 2 de julio. La decisión busca proteger al jefe de Gabinete de una exposición pública ante las críticas de la oposición, generando controversia sobre la transparencia gubernamental y las estrategias políticas en el Congreso.</p>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">Patricia Bullrich anunció la suspensión del informe de gestión de Adorni en el Senado, contradicha por el propio ministro. Además, acordó con legisladores dialoguistas endurecer las condiciones para una posible interpelación. Esta situación revela tensiones políticas internas y desacuerdos sobre el control del Gabinete, generando incertidumbre en el ámbito legislativo.</p>
 </article>
 <article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-blue-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="ECONOMÍA">
 <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
@@ -84,6 +148,22 @@
 <span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">YAHOO FINANZAS</span>
 <span class="bg-blue-900/40 text-blue-400 px-2.5 py-1 rounded-md">ECONOMÍA</span>
 </div>
+<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T21:15:00.000Z">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://es.finance.yahoo.com/noticias/mark-zuckerberg-meta-mercados-predicci%C3%B3n-211500631.html" target="_blank">
+<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+<span>Mark Zuckerberg quiere que Meta entre en los mercados de predicción: ¿Será su camino para convertirse en billonario?</span>
+<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">Mark Zuckerberg busca incursionar con Meta en los mercados de predicción, explorando nuevas vías de negocio para la compañía. Esta estrategia podría representar una significativa fuente de ingresos y potenciar su fortuna personal, diversificando el modelo de Meta más allá de las redes sociales y el metaverso, buscando un crecimiento exponencial en un sector innovador.</p>
+</article>
+<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
+<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+<div class="flex gap-2">
+<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">YAHOO FINANZAS</span>
+<span class="bg-indigo-900/40 text-indigo-400 px-2.5 py-1 rounded-md">POLÍTICA</span>
+</div>
 <span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T21:07:15.000Z">Reciente</span>
 </div>
 <a class="group block mb-3" href="https://es.finance.yahoo.com/noticias/om%C3%A1n-anuncia-corredor-mar%C3%ADtimo-temporal-210715057.html" target="_blank">
@@ -92,7 +172,7 @@
 <svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
 </h2>
 </a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">Omán ha anunciado la implementación de un corredor marítimo temporal para gestionar el tráfico en el estratégico estrecho de Ormuz. Esta medida busca garantizar la seguridad y fluidez del tránsito de buques, especialmente petroleros, en una región geopolíticamente sensible. La iniciativa es crucial para la estabilidad del comercio global y el suministro energético.</p>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">Omán anunció la creación de un corredor marítimo temporal para gestionar el tráfico en el estratégico estrecho de Ormuz. Esta medida busca garantizar la seguridad y fluidez de la navegación en una de las rutas petroleras más cruciales del mundo, mitigando tensiones regionales y previniendo posibles incidentes en aguas internacionales.</p>
 </article>
 <article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
 <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
@@ -120,11 +200,11 @@
 </div>
 <a class="group block mb-3" href="https://www.infobae.com/estados-unidos/2026/06/23/trump-aseguro-que-el-oiea-inspeccionara-las-instalaciones-nucleares-de-iran-en-el-momento-oportuno/" target="_blank">
 <h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Trump aseguró que el OIEA inspeccionará las instalaciones nucleares de Irán “en el momento oportuno”</span>
+<span>Trump aseguró que el OIEA inspeccionará las instalaciones nucleares de Irán “en el momento oportuno” El mandatario republicano aseguró que la Casa Blanca dispone de información que respalda su versión sobre los compromisos asumidos por Teherán</span>
 <svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
 </h2>
 </a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">Donald Trump afirmó que la Agencia Internacional de Energía Atómica (OIEA) llevará a cabo inspecciones en las instalaciones nucleares de Irán "en el momento oportuno". Esta declaración, proveniente de una figura influyente en la política exterior estadounidense, sugiere un renovado enfoque en el monitoreo del programa nuclear iraní y las tensiones geopolíticas en la región.</p>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">Donald Trump afirmó que el Organismo Internacional de Energía Atómica (OIEA) inspeccionará las instalaciones nucleares de Irán “en el momento oportuno”, basándose en información de la Casa Blanca sobre compromisos de Teherán. Esta declaración subraya la postura de Estados Unidos respecto al programa nuclear iraní y la diplomacia internacional, manteniendo la presión para la transparencia.</p>
 </article>
 <article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-blue-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="ECONOMÍA">
 <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
@@ -140,7 +220,7 @@
 <svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
 </h2>
 </a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">El índice MSCI ha excluido a Argentina de su reporte, consolidando su estatus de país "no confiable" para inversiones internacionales. Esta omisión implica que Argentina no está siendo considerada para una reclasificación positiva, lo que dificulta la atracción de capitales extranjeros y subraya los desafíos persistentes en la estabilidad económica y financiera del país.</p>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">MSCI mantuvo la calificación de Argentina como país no confiable en su último reporte, ignorando las expectativas de mejora en el panorama financiero. Esta decisión implica que el país seguirá enfrentando dificultades para atraer inversiones de capital extranjero, afectando su acceso a mercados internacionales y su capacidad de crecimiento económico debido a la percepción de riesgo.</p>
 </article>
 <article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-orange-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="DEPORTES">
 <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
@@ -206,6 +286,22 @@
 </a>
 <p class="text-gray-400 text-sm flex-grow leading-relaxed">Los salarios registrados experimentaron un aumento del 3,5% en abril, superando por primera vez en siete meses a la inflación. Este dato representa un alivio para los trabajadores y podría indicar un incipiente cambio de tendencia en el poder adquisitivo, tras un prolongado período de deterioro. Sin embargo, analistas advierten que es necesario observar la sostenibilidad de esta recuperación.</p>
 </article>
+<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-blue-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="ECONOMÍA">
+<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+<div class="flex gap-2">
+<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">IPROFESIONAL</span>
+<span class="bg-blue-900/40 text-blue-400 px-2.5 py-1 rounded-md">ECONOMÍA</span>
+</div>
+<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T15:57:00-03:00">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://www.iprofesional.com/negocios/457946-renuncio-a-multinacionales-aposto-por-su-idea-y-lidera-un-negocio-que-factura-1-millon-de-dolares" target="_blank">
+<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+<span>Renunció a las multinacionales para apostar por su idea y hoy factura u$s1 millón con su negocio</span>
+<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">Una historia de éxito empresarial detalla cómo un individuo dejó su carrera en multinacionales para emprender con su propia idea. Su negocio innovador ahora genera un millón de dólares en facturación, demostrando el potencial de la visión y la perseverancia en el sector emprendedor, destacando un modelo de negocio próspero y disruptivo en el mercado.</p>
+</article>
 <article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="MERCADOS">
 <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
 <div class="flex gap-2">
@@ -221,6 +317,22 @@
 </h2>
 </a>
 <p class="text-gray-400 text-sm flex-grow leading-relaxed">En un contexto de incertidumbre global, los ADRs argentinos experimentaron caídas significativas de hasta el 4,4%, reflejando la cautela de los inversores. Paralelamente, el riesgo país se elevó, superando los 434 puntos básicos, lo que indica una mayor percepción de riesgo sobre la deuda soberana. Este escenario impacta directamente en las valoraciones de activos y el acceso al financiamiento.</p>
+</article>
+<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
+<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+<div class="flex gap-2">
+<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">INFOBAE</span>
+<span class="bg-indigo-900/40 text-indigo-400 px-2.5 py-1 rounded-md">POLÍTICA</span>
+</div>
+<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T18:53:14.185Z">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://www.infobae.com/america/america-latina/2026/06/23/la-cidh-afirmo-que-cuba-desaparecio-encarcelo-y-condeno-arbitrariamente-a-maykel-osorbo-por-patria-y-vida/" target="_blank">
+<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+<span>La CIDH afirmó que Cuba desapareció, encarceló y condenó arbitrariamente a Maykel Osorbo por “Patria y Vida”</span>
+<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">La Comisión Interamericana de Derechos Humanos (CIDH) afirmó que Cuba desapareció, encarceló y condenó arbitrariamente a Maykel Osorbo, artista y activista, en relación con la canción "Patria y Vida". Esta grave acusación destaca las violaciones a los derechos humanos y la represión de la disidencia en la isla, generando condena internacional y preocupación.</p>
 </article>
 <article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-orange-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="DEPORTES">
 <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
@@ -252,7 +364,7 @@
 <svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
 </h2>
 </a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">El gobierno de Jorge Macri en la Ciudad de Buenos Aires implementa una reforma laboral clave. Esta nueva reglamentación obliga a los sindicatos de transporte y servicios urbanos, como recolección de basura, a garantizar prestaciones mínimas esenciales durante jornadas de huelga o conflictos. La medida busca asegurar el funcionamiento básico de la ciudad ante paros futuros.</p>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">Jorge Macri implementa una reforma laboral en la Ciudad que garantiza el funcionamiento de transporte público y recolección de basura incluso durante paros. Esta medida busca asegurar servicios esenciales y mitigar el impacto de huelgas, generando un fuerte debate sobre los derechos laborales y la capacidad del gobierno para mantener la continuidad de servicios urbanos.</p>
 </article>
 <article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="MERCADOS">
 <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
@@ -696,11 +808,11 @@
 </div>
 <a class="group block mb-3" href="https://www.infobae.com/deportes/2026/06/23/inglaterra-ghana-en-vivo-por-el-mundial-2026-hora-tv-formaciones-y-todo-lo-que-hay-que-saber/" target="_blank">
 <h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Inglaterra se mide con Ghana en busca de la clasificación a 16avos de final</span>
+<span>Inglaterra no pudo con Ghana en la segunda fecha del Grupo L</span>
 <svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
 </h2>
 </a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">Inglaterra se enfrentará a Ghana en un partido crucial del Mundial 2026, buscando asegurar su clasificación a los dieciseisavos de final. El encuentro promete ser intenso, con ambos equipos luchando por avanzar en la competición. Se espera un despliegue táctico y físico importante en este decisivo duelo por el pase a la siguiente ronda.</p>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">La selección de Inglaterra empató con Ghana en la segunda fecha del Grupo L del Mundial 2026, sin poder asegurar una victoria crucial. Este resultado inesperado complica sus aspiraciones de clasificación directa a la siguiente ronda y genera análisis sobre el rendimiento del equipo, dejando abierta la competencia en el grupo.</p>
 </article>
 <article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
 <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
