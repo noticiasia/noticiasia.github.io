@@ -114,7 +114,7 @@ texto_para_ia = ""
 for i, noticia in enumerate(noticias_finales):
     texto_para_ia += f"ID: {i+1} | Diario: {noticia['fuente']} | Título: {noticia['titulo']} | Link: {noticia['link']}\n"
 
-# --- 3. EL SÚPER CEREBRO DE LA IA (Agrupación, Sentimiento y Viñetas) ---
+# --- 3. EL SÚPER CEREBRO DE LA IA ---
 prompt = f"""
 Eres un analista de mercados de alto nivel. Tienes esta lista de noticias:
 {texto_para_ia}
@@ -170,7 +170,6 @@ if exito:
                 impacto = partes[6].strip()
                 link = partes[7].strip()
                 
-                # Tiempo y Guillotina
                 timestamp_iso = tiempos_reales.get(link, datetime.now(timezone.utc).isoformat())
                 try:
                     dt_noticia = datetime.fromisoformat(timestamp_iso.replace('Z', '+00:00'))
@@ -182,11 +181,9 @@ if exito:
                 except:
                     pass
                 
-                # Impacto al Ticker
                 if impacto == "5" or impacto == "4":
                     noticias_urgentes_ticker.append(titulo)
 
-                # Colores por Categoría
                 if categoria == "MERCADOS":
                     pill = "bg-emerald-900/40 text-emerald-400 border border-emerald-500/30"
                 elif categoria == "ECONOMÍA":
@@ -198,7 +195,6 @@ if exito:
                 else: 
                     pill = "bg-teal-900/40 text-teal-400 border border-teal-500/30"
                 
-                # Icono y Color Sentimiento
                 if "POSITIVO" in sentimiento:
                     icono_sent = "🟢"
                     borde_sent = "border-t-4 border-t-emerald-500"
@@ -209,19 +205,16 @@ if exito:
                     icono_sent = "⚪"
                     borde_sent = "border-t-4 border-t-gray-500"
                     
-                # Etiqueta de Clones
                 cantidad_diarios = len(diarios.split(","))
                 badge_clon = f'<span class="text-[10px] font-bold bg-yellow-500/20 text-yellow-500 px-2 py-0.5 rounded border border-yellow-500/30 mt-2 inline-block">🗞️ Cubierto por {cantidad_diarios} medios</span>' if cantidad_diarios > 1 else ""
 
-                # Generación de Micro-Tags HTML
                 tags_html = "".join([f'<span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#{t.strip().upper()}</span>' for t in tags_raw.split(",") if t.strip()])
 
-                # Formatear el primer bullet si no lo tiene
                 if not vinetas.startswith('•'):
                     vinetas = '• ' + vinetas
 
                 tarjetas_html += f"""
-                <article data-categoria="{categoria}" data-sentimiento="{sentimiento}" class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col {borde_sent} hover:scale-[1.02] transition-transform duration-300 shadow-xl shadow-black/60 border border-gray-800/60">
+                <article data-categoria="{categoria}" class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col {borde_sent} hover:scale-[1.02] transition-transform duration-300 shadow-xl shadow-black/60 border border-gray-800/60">
                     <div class="flex justify-between items-start mb-4">
                         <div class="flex flex-col gap-2">
                             <div class="flex gap-2 text-[11px] font-bold tracking-wide">
@@ -302,7 +295,7 @@ historial_recortado = "\n".join([str(art) for art in articulos_finales])
 with open("historial.txt", "w", encoding="utf-8") as f:
     f.write(historial_recortado)
 
-# --- 4. EXTRACCIÓN DEL MERCADO BURSÁTIL (DÓLAR CON BRECHA Y RIESGO PAÍS) ---
+# --- 4. EXTRACCIÓN DEL MERCADO BURSÁTIL ---
 print("Obteniendo cotizaciones del mercado...")
 widgets_html = ""
 oficial_venta = 1 
@@ -324,7 +317,6 @@ try:
                 compra = d_info.get("compra", venta)
                 
                 brecha_html = ""
-                # Variación simulada visual (verde/rojo) para diseño UI
                 variacion_visual = '<span class="text-[10px] text-rose-500 flex items-center">▲<span class="opacity-50 text-[8px]">+0.5%</span></span>'
                 if casa != "oficial":
                     brecha = ((venta / oficial_venta) - 1) * 100
@@ -356,7 +348,7 @@ try:
             widgets_html += f"""
             <div class="bg-[#0f172a]/80 backdrop-blur-xl border border-rose-900/40 rounded-xl p-4 flex-1 min-w-[150px] shadow-[0_8px_30px_rgb(0,0,0,0.5)]">
                 <span class="text-rose-400 text-[10px] font-black tracking-wider uppercase">RIESGO PAÍS</span>
-                <div class="text-2xl font-mono font-black text-gray-100 mt-1 flex items-center justify-between">
+                <div class="text-2xl font-mono font-black text-white mt-1 flex items-center justify-between">
                     {int(ultimo_rp)} <span class="text-[10px] text-rose-500 flex items-center">▲</span>
                 </div>
                 <div class="mt-2 border-t border-gray-800/50 pt-2">
@@ -390,13 +382,10 @@ html_completo = f"""<!DOCTYPE html>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {{ background-color: #020617; font-family: 'Inter', sans-serif; scroll-behavior: smooth; color: #f8fafc; }}
-        /* Animación del Ticker TV */
         @keyframes ticker {{ 0% {{ transform: translateX(100vw); }} 100% {{ transform: translateX(-100%); }} }}
         .animate-ticker {{ display: inline-flex; white-space: nowrap; animation: ticker 35s linear infinite; }}
         .animate-ticker:hover {{ animation-play-state: paused; }}
-        /* Resaltado IA (Lectura Activa) */
         article b {{ color: #38bdf8; font-weight: 800; background: rgba(56, 189, 248, 0.15); padding: 0 4px; border-radius: 4px; border: 1px solid rgba(56,189,248,0.2);}}
-        /* Scrollbar custom */
         ::-webkit-scrollbar {{ width: 8px; }}
         ::-webkit-scrollbar-track {{ background: #0f172a; }}
         ::-webkit-scrollbar-thumb {{ background: #334155; border-radius: 4px; }}
@@ -414,21 +403,13 @@ html_completo = f"""<!DOCTYPE html>
         </div>
         
         <div class="p-6 flex-grow overflow-y-auto">
-            <p class="text-[10px] text-gray-500 uppercase tracking-widest font-black mb-4">6. Categorías</p>
+            <p class="text-[10px] text-gray-500 uppercase tracking-widest font-black mb-4">Categorías</p>
             <div class="flex flex-col gap-2 mb-10">
-                <button data-filter="TODAS" class="btn-filtro bg-cyan-900/30 text-cyan-400 border border-cyan-500/50 text-left px-4 py-3 rounded-xl font-bold text-sm transition">🏦 Todo el Feed</button>
+                <button data-filter="TODAS" class="btn-filtro bg-cyan-900/30 text-cyan-400 border border-cyan-500/50 text-left px-4 py-3 rounded-xl font-bold text-sm transition shadow-[0_0_15px_rgba(34,211,238,0.1)]">🏦 Todo el Feed</button>
                 <button data-filter="MERCADOS" class="btn-filtro hover:bg-gray-800/50 text-gray-400 border border-transparent text-left px-4 py-3 rounded-xl font-semibold text-sm transition">📈 Mercados</button>
                 <button data-filter="ECONOMÍA" class="btn-filtro hover:bg-gray-800/50 text-gray-400 border border-transparent text-left px-4 py-3 rounded-xl font-semibold text-sm transition">💰 Economía</button>
                 <button data-filter="POLÍTICA" class="btn-filtro hover:bg-gray-800/50 text-gray-400 border border-transparent text-left px-4 py-3 rounded-xl font-semibold text-sm transition">🏛️ Política</button>
                 <button data-filter="DEPORTES" class="btn-filtro hover:bg-gray-800/50 text-gray-400 border border-transparent text-left px-4 py-3 rounded-xl font-semibold text-sm transition">⚽ Deportes</button>
-            </div>
-
-            <p class="text-[10px] text-gray-500 uppercase tracking-widest font-black mb-4">11. Filtro Sentimiento</p>
-            <div class="flex flex-col gap-2">
-                <button data-sent="TODOS" class="btn-sent bg-gray-800 text-gray-200 border border-gray-600/50 text-left px-4 py-2.5 rounded-xl font-semibold text-xs transition">Todos</button>
-                <button data-sent="POSITIVO" class="btn-sent hover:bg-emerald-900/20 text-gray-400 border border-transparent hover:border-emerald-500/30 text-left px-4 py-2.5 rounded-xl font-semibold text-xs transition">🟢 Bullish / Positivo</button>
-                <button data-sent="NEGATIVO" class="btn-sent hover:bg-rose-900/20 text-gray-400 border border-transparent hover:border-rose-500/30 text-left px-4 py-2.5 rounded-xl font-semibold text-xs transition">🔴 Bearish / Negativo</button>
-                <button data-sent="NEUTRAL" class="btn-sent hover:bg-gray-800/40 text-gray-400 border border-transparent hover:border-gray-500/30 text-left px-4 py-2.5 rounded-xl font-semibold text-xs transition">⚪ Neutral</button>
             </div>
         </div>
 
@@ -442,7 +423,7 @@ html_completo = f"""<!DOCTYPE html>
 
     <main class="md:ml-64 flex-1 flex flex-col min-h-screen">
         
-        <header class="sticky top-0 z-30 bg-[#020617]/80 backdrop-blur-2xl border-b border-gray-800/80 shadow-[0_10px_30px_rgba(0,0,0,0.8)]">
+        <header class="sticky top-0 z-30 w-full bg-[#020617]/80 backdrop-blur-2xl border-b border-gray-800/80 shadow-[0_10px_30px_rgba(0,0,0,0.8)]">
             
             <div class="w-full bg-[#4c0519]/40 border-b border-rose-900/50 text-rose-200 text-xs py-1.5 overflow-hidden font-mono tracking-wide">
                 <div class="animate-ticker w-full">
@@ -458,12 +439,12 @@ html_completo = f"""<!DOCTYPE html>
                 <button data-filter="DEPORTES" class="btn-filtro-movil bg-gray-800 text-gray-400 px-4 py-2 rounded-lg font-semibold text-xs whitespace-nowrap">Deportes</button>
             </div>
 
-            <div class="p-4 md:p-6 flex flex-wrap gap-4 justify-between items-center">
+            <div class="w-full p-4 md:p-6 flex flex-wrap gap-4 justify-between items-center">
                 {widgets_html}
             </div>
         </header>
 
-        <div class="p-4 md:p-8 max-w-7xl mx-auto w-full flex-grow">
+        <div class="p-6 md:p-8 w-full flex-grow">
             
             <div id="separador-hoy" class="flex items-center gap-4 mb-8 mt-2">
                 <div class="h-px bg-gray-800 flex-grow"></div>
@@ -471,15 +452,15 @@ html_completo = f"""<!DOCTYPE html>
                 <div class="h-px bg-gray-800 flex-grow"></div>
             </div>
 
-            <div class="grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-6" id="contenedor-noticias">
+            <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-6" id="contenedor-noticias">
                 {historial_recortado}
             </div>
 
-            <div id="loading-spinner" class="hidden justify-center my-16">
+            <div id="loading-spinner" class="hidden justify-center my-16 w-full">
                 <div class="w-10 h-10 border-4 border-cyan-900 border-t-cyan-400 rounded-full animate-spin shadow-[0_0_15px_#22d3ee]"></div>
             </div>
             
-            <div class="flex justify-center mt-16 mb-12">
+            <div class="flex justify-center mt-16 mb-12 w-full">
                 <button id="btn-volver-arriba" class="hidden bg-[#1e293b] hover:bg-cyan-600 hover:text-black border border-gray-700 hover:border-cyan-400 text-gray-300 font-mono text-xs px-8 py-4 rounded-full transition-all duration-300 shadow-[0_10px_20px_rgba(0,0,0,0.5)] gap-2 items-center tracking-widest uppercase font-bold">
                     ↑ Ocultar leídas y volver al inicio
                 </button>
@@ -490,21 +471,16 @@ html_completo = f"""<!DOCTYPE html>
     <script>
         // LÓGICA DE FILTRADO
         const botonesCat = document.querySelectorAll('.btn-filtro, .btn-filtro-movil');
-        const botonesSent = document.querySelectorAll('.btn-sent');
         const articulos = Array.from(document.querySelectorAll('.tarjeta-noticia'));
         
         let categoriaActual = 'TODAS';
-        let sentimientoActual = 'TODOS';
 
         function aplicarFiltros() {{
             articulos.forEach(art => {{
                 const cat = art.getAttribute('data-categoria');
-                const sent = art.getAttribute('data-sentimiento');
-                
                 const matchCat = (categoriaActual === 'TODAS' || cat === categoriaActual);
-                const matchSent = (sentimientoActual === 'TODOS' || sent.includes(sentimientoActual));
                 
-                if (matchCat && matchSent) {{
+                if (matchCat) {{
                     art.classList.remove('hidden-by-filter');
                 }} else {{
                     art.classList.add('hidden-by-filter');
@@ -532,33 +508,14 @@ html_completo = f"""<!DOCTYPE html>
             }});
         }});
 
-        botonesSent.forEach(boton => {{
-            boton.addEventListener('click', () => {{
-                botonesSent.forEach(b => b.className = b.className.replace('bg-gray-800 text-gray-200 border-gray-600/50', 'text-gray-400 border-transparent').replace(/bg-(emerald|rose)-900\/20 border-(emerald|rose)-500\/30 text-(emerald|rose)-400/, 'text-gray-400 border-transparent'));
-                
-                if(boton.getAttribute('data-sent') === 'TODOS') {{
-                    boton.className = 'btn-sent bg-gray-800 text-gray-200 border border-gray-600/50 text-left px-4 py-2.5 rounded-xl font-semibold text-xs transition';
-                }} else if (boton.getAttribute('data-sent') === 'POSITIVO') {{
-                    boton.className = 'btn-sent bg-emerald-900/20 border border-emerald-500/30 text-emerald-400 text-left px-4 py-2.5 rounded-xl font-semibold text-xs transition shadow-[0_0_15px_rgba(16,185,129,0.1)]';
-                }} else if (boton.getAttribute('data-sent') === 'NEGATIVO') {{
-                    boton.className = 'btn-sent bg-rose-900/20 border border-rose-500/30 text-rose-400 text-left px-4 py-2.5 rounded-xl font-semibold text-xs transition shadow-[0_0_15px_rgba(244,63,94,0.1)]';
-                }} else {{
-                    boton.className = 'btn-sent bg-gray-800/80 border border-gray-500/50 text-gray-200 text-left px-4 py-2.5 rounded-xl font-semibold text-xs transition';
-                }}
-                
-                sentimientoActual = boton.getAttribute('data-sent');
-                aplicarFiltros();
-            }});
-        }});
-
         // LÓGICA DE SCROLL AUTOMÁTICO
-        let itemsMostrados = 10;
+        let itemsMostrados = 12;
         let isFetching = false;
         const spinner = document.getElementById('loading-spinner');
         const btnVolver = document.getElementById('btn-volver-arriba');
 
         function reiniciarScroll() {{
-            itemsMostrados = 10;
+            itemsMostrados = 12;
             window.scrollTo({{ top: 0, behavior: 'smooth' }});
             renderizarScroll();
         }}
@@ -585,13 +542,11 @@ html_completo = f"""<!DOCTYPE html>
         }}
 
         window.addEventListener('scroll', () => {{
-            // 12. Barra de progreso
             const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
             const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
             const scrolled = height > 0 ? (winScroll / height) * 100 : 0;
             document.getElementById("progressBar").style.width = scrolled + "%";
 
-            // 1. Trigger Infinite Scroll
             if (!isFetching && (window.innerHeight + window.scrollY) >= document.body.offsetHeight - 800) {{
                 const articulosFiltrados = articulos.filter(art => !art.classList.contains('hidden-by-filter'));
                 if (itemsMostrados < articulosFiltrados.length) {{
@@ -600,12 +555,12 @@ html_completo = f"""<!DOCTYPE html>
                     spinner.classList.add('flex');
                     
                     setTimeout(() => {{
-                        itemsMostrados += 10;
+                        itemsMostrados += 12;
                         renderizarScroll();
                         spinner.classList.add('hidden');
                         spinner.classList.remove('flex');
                         isFetching = false;
-                    }}, 800); // Simulamos carga para UX premium
+                    }}, 800); 
                 }}
             }}
         }});
@@ -614,7 +569,7 @@ html_completo = f"""<!DOCTYPE html>
             reiniciarScroll();
         }});
 
-        // 9. SEPARADOR "AYER" DINÁMICO Y TIEMPOS
+        // SEPARADOR "AYER" DINÁMICO Y TIEMPOS
         function actualizarTiempos() {{
             document.querySelectorAll('.tiempo-noticia').forEach(el => {{
                 const timestampStr = el.getAttribute('data-timestamp');
@@ -654,7 +609,7 @@ html_completo = f"""<!DOCTYPE html>
                 if(tagTiempo.includes('AYER') || tagTiempo.includes('DÍAS')) {{
                     const div = document.createElement('div');
                     div.id = 'separador-ayer-dinamico';
-                    div.className = 'col-span-1 xl:col-span-2 2xl:col-span-3 flex items-center gap-4 my-8';
+                    div.className = 'col-span-1 lg:col-span-2 xl:col-span-3 2xl:col-span-4 flex items-center gap-4 my-8 w-full';
                     div.innerHTML = '<div class="h-px bg-gray-800/80 flex-grow"></div><span class="text-[10px] font-mono text-gray-500 border border-gray-800 bg-[#0b0f19] px-4 py-1.5 rounded-full uppercase tracking-widest">Jornada Anterior</span><div class="h-px bg-gray-800/80 flex-grow"></div>';
                     todosVisibles[i].parentNode.insertBefore(div, todosVisibles[i]);
                     break;
