@@ -19,14 +19,18 @@
         @keyframes ticker { 0% { transform: translateX(100vw); } 100% { transform: translateX(-100%); } }
         .animate-ticker { display: inline-flex; white-space: nowrap; animation: ticker 35s linear infinite; }
         .animate-ticker:hover { animation-play-state: paused; }
-        article b { color: #38bdf8; font-weight: 800; background: rgba(56, 189, 248, 0.15); padding: 0 4px; border-radius: 4px; border: 1px solid rgba(56,189,248,0.2);}
-        ::-webkit-scrollbar { width: 8px; }
+        article b { color: #38bdf8; font-weight: 800; background: rgba(56, 189, 248, 0.12); padding: 0 4px; border-radius: 4px; border: 1px solid rgba(56,189,248,0.2);}
+        ::-webkit-scrollbar { width: 6px; }
         ::-webkit-scrollbar-track { background: #0f172a; }
         ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
         ::-webkit-scrollbar-thumb:hover { background: #475569; }
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
         .break-words { overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; }
+        .line-clamp-2 { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+        
+        /* Efecto Atenuación Leídas (35% Opacidad) */
+        .tarjeta-leida { opacity: 0.35 !important; filter: grayscale(40%); border-top-color: #475569 !important; transition: all 0.3s ease; }
     </style>
 </head>
 <body class="flex w-full min-h-screen m-0 p-0">
@@ -39,19 +43,33 @@
             <p class="text-[10px] text-gray-500 mt-1 font-mono tracking-widest">v26.0 - MASTER EDITION</p>
         </div>
         
-        <div class="p-6 flex-grow overflow-y-auto">
-            <p class="text-[10px] text-gray-500 uppercase tracking-widest font-black mb-4">Categorías</p>
-            <div class="flex flex-col gap-2 mb-10">
-                <button data-filter="TODAS" class="btn-filtro bg-cyan-900/30 text-cyan-400 border border-cyan-500/50 text-left px-4 py-3 rounded-xl font-bold text-sm transition shadow-[0_0_15px_rgba(34,211,238,0.1)]">🏦 Todo el Feed</button>
-                <button data-filter="MERCADOS" class="btn-filtro hover:bg-gray-800/50 text-gray-400 border border-transparent text-left px-4 py-3 rounded-xl font-semibold text-sm transition">📈 Mercados</button>
-                <button data-filter="ECONOMÍA" class="btn-filtro hover:bg-gray-800/50 text-gray-400 border border-transparent text-left px-4 py-3 rounded-xl font-semibold text-sm transition">💰 Economía</button>
-                <button data-filter="POLÍTICA" class="btn-filtro hover:bg-gray-800/50 text-gray-400 border border-transparent text-left px-4 py-3 rounded-xl font-semibold text-sm transition">🏛️ Política</button>
-                <button data-filter="DEPORTES" class="btn-filtro hover:bg-gray-800/50 text-gray-400 border border-transparent text-left px-4 py-3 rounded-xl font-semibold text-sm transition">⚽ Deportes</button>
+        <div class="p-6 flex-grow overflow-y-auto flex flex-col gap-6">
+            <div class="bg-[#0f172a]/70 border border-gray-800 rounded-xl p-4 text-center">
+                <p class="text-[10px] text-gray-500 uppercase tracking-widest font-black mb-1">Hora Oficial ART</p>
+                <div id="reloj-digital" class="text-3xl font-mono font-black text-gray-100 tracking-wider">00:00:00</div>
+                <div id="mercado-estado" class="mt-2 text-xs font-bold px-2.5 py-1 rounded-full inline-block">--</div>
+            </div>
+
+            <div>
+                <p class="text-[10px] text-gray-500 uppercase tracking-widest font-black mb-3">Categorías</p>
+                <div class="flex flex-col gap-2">
+                    <button data-filter="TODAS" class="btn-filtro bg-cyan-900/30 text-cyan-400 border border-cyan-500/50 text-left px-4 py-3 rounded-xl font-bold text-sm transition shadow-[0_0_15px_rgba(34,211,238,0.1)]">🏦 Todo el Feed</button>
+                    <button data-filter="MERCADOS" class="btn-filtro hover:bg-gray-800/50 text-gray-400 border border-transparent text-left px-4 py-3 rounded-xl font-semibold text-sm transition">📈 Mercados</button>
+                    <button data-filter="ECONOMÍA" class="btn-filtro hover:bg-gray-800/50 text-gray-400 border border-transparent text-left px-4 py-3 rounded-xl font-semibold text-sm transition">💰 Economía</button>
+                    <button data-filter="POLÍTICA" class="btn-filtro hover:bg-gray-800/50 text-gray-400 border border-transparent text-left px-4 py-3 rounded-xl font-semibold text-sm transition">🏛️ Política</button>
+                    <button data-filter="DEPORTES" class="btn-filtro hover:bg-gray-800/50 text-gray-400 border border-transparent text-left px-4 py-3 rounded-xl font-semibold text-sm transition">⚽ Deportes</button>
+                </div>
+            </div>
+
+            <div class="mt-auto">
+                <button id="btn-reset-leidas" class="w-full bg-gray-900 hover:bg-gray-800 text-gray-400 border border-gray-800 hover:border-gray-700 rounded-xl py-2.5 text-xs font-mono transition">
+                    🔄 Resetear Leídas
+                </button>
             </div>
         </div>
 
         <div class="p-6 border-t border-gray-800/80 bg-[#0f172a]/30">
-            <a href="https://www.linkedin.com/in/brian-yapura-061522156/" target="_blank" class="w-full bg-[#1e293b] hover:bg-[#334155] border border-gray-700/50 rounded-xl p-3 flex justify-center items-center gap-3 transition shadow-lg">
+            <a href="TU_LINK_DE_LINKEDIN_AQUI" target="_blank" class="w-full bg-[#1e293b] hover:bg-[#334155] border border-gray-700/50 rounded-xl p-3 flex justify-center items-center gap-3 transition shadow-lg">
                 <div class="bg-[#0a66c2] text-white px-1.5 py-0.5 rounded text-sm font-bold">in</div>
                 <span class="text-gray-200 font-semibold text-xs tracking-wide">Conectar en LinkedIn</span>
             </a>
@@ -64,7 +82,7 @@
             
             <div class="w-full bg-[#4c0519]/40 border-b border-rose-900/50 text-rose-200 text-xs py-1.5 overflow-hidden font-mono tracking-wide">
                 <div class="animate-ticker w-full">
-                    <span class="mx-10 flex items-center gap-2"><span class="text-rose-500 animate-pulse">⚡</span> Gobierno de Milei: Aprobación del Super RIGI y tensiones internas</span><span class="mx-10 flex items-center gap-2"><span class="text-rose-500 animate-pulse">⚡</span> Compañía Mega proyecta un aumento del 50% en exportaciones gracias a obra en Vaca Muerta</span><span class="mx-10 flex items-center gap-2"><span class="text-rose-500 animate-pulse">⚡</span> Dólar blue se despierta y escala $100 en junio: tres razones detrás del aumento</span>
+                    <span class="mx-10 flex items-center gap-2"><span class="text-rose-500 animate-pulse">⚡</span> El dólar se dispara y el BCRA busca contener la liquidez con vencimientos millonarios</span><span class="mx-10 flex items-center gap-2"><span class="text-rose-500 animate-pulse">⚡</span> Acciones castigadas tras la negativa de MSCI a revisar la calificación de Argentina</span>
                 </div>
             </div>
             
@@ -81,7 +99,7 @@
                 <div class="bg-[#0f172a]/80 backdrop-blur-xl border border-gray-700/60 rounded-xl p-3 md:p-4 flex-1 min-w-[130px] max-w-[48%] md:max-w-none shadow-[0_8px_30px_rgb(0,0,0,0.5)] flex flex-col justify-between">
                     <span class="text-gray-400 text-[9px] md:text-[10px] font-black tracking-wider uppercase truncate">DÓLAR OFICIAL</span>
                     <div class="text-xl md:text-2xl font-mono font-black text-gray-100 mt-1 flex items-center justify-between gap-1">
-                        $1495 <span class="text-[10px] text-emerald-500 flex items-center">▼<span class="opacity-50 text-[8px]">-0.1%</span></span>
+                        $1495 <span class="text-[10px] text-emerald-500 flex items-center font-bold">▼<span class="opacity-60 text-[8px]">-0.1%</span></span>
                     </div>
                     <div class="flex justify-between items-center mt-2 border-t border-gray-800/50 pt-2 gap-1 flex-wrap">
                         <span class="text-[9px] md:text-[10px] text-gray-500 font-mono">C: $1445</span>
@@ -92,33 +110,33 @@
                 <div class="bg-[#0f172a]/80 backdrop-blur-xl border border-gray-700/60 rounded-xl p-3 md:p-4 flex-1 min-w-[130px] max-w-[48%] md:max-w-none shadow-[0_8px_30px_rgb(0,0,0,0.5)] flex flex-col justify-between">
                     <span class="text-gray-400 text-[9px] md:text-[10px] font-black tracking-wider uppercase truncate">DÓLAR BLUE</span>
                     <div class="text-xl md:text-2xl font-mono font-black text-gray-100 mt-1 flex items-center justify-between gap-1">
-                        $1530 <span class="text-[10px] text-rose-500 flex items-center">▲<span class="opacity-50 text-[8px]">+0.5%</span></span>
+                        $1530 <span class="text-[10px] text-rose-500 flex items-center font-bold">▲<span class="opacity-60 text-[8px]">+0.5%</span></span>
                     </div>
                     <div class="flex justify-between items-center mt-2 border-t border-gray-800/50 pt-2 gap-1 flex-wrap">
                         <span class="text-[9px] md:text-[10px] text-gray-500 font-mono">C: $1510</span>
-                        <div class="text-[10px] text-cyan-400 font-mono mt-1 bg-cyan-900/30 rounded border border-cyan-500/30 px-1.5 py-0.5 w-max">Brecha: 2.3%</div>
+                        <div class="text-[10px] text-cyan-400 font-mono mt-1 bg-cyan-950/30 rounded border border-cyan-500/30 px-1.5 py-0.5 w-max">Brecha: 2.3%</div>
                     </div>
                 </div>
                 
                 <div class="bg-[#0f172a]/80 backdrop-blur-xl border border-gray-700/60 rounded-xl p-3 md:p-4 flex-1 min-w-[130px] max-w-[48%] md:max-w-none shadow-[0_8px_30px_rgb(0,0,0,0.5)] flex flex-col justify-between">
                     <span class="text-gray-400 text-[9px] md:text-[10px] font-black tracking-wider uppercase truncate">DÓLAR MEP</span>
                     <div class="text-xl md:text-2xl font-mono font-black text-gray-100 mt-1 flex items-center justify-between gap-1">
-                        $1507.7 <span class="text-[10px] text-rose-500 flex items-center">▲<span class="opacity-50 text-[8px]">+0.5%</span></span>
+                        $1507.1 <span class="text-[10px] text-rose-500 flex items-center font-bold">▲<span class="opacity-60 text-[8px]">+0.5%</span></span>
                     </div>
                     <div class="flex justify-between items-center mt-2 border-t border-gray-800/50 pt-2 gap-1 flex-wrap">
-                        <span class="text-[9px] md:text-[10px] text-gray-500 font-mono">C: $1502.4</span>
-                        <div class="text-[10px] text-cyan-400 font-mono mt-1 bg-cyan-900/30 rounded border border-cyan-500/30 px-1.5 py-0.5 w-max">Brecha: 0.8%</div>
+                        <span class="text-[9px] md:text-[10px] text-gray-500 font-mono">C: $1503.8</span>
+                        <div class="text-[10px] text-cyan-400 font-mono mt-1 bg-cyan-950/30 rounded border border-cyan-500/30 px-1.5 py-0.5 w-max">Brecha: 0.8%</div>
                     </div>
                 </div>
                 
                 <div class="bg-[#0f172a]/80 backdrop-blur-xl border border-gray-700/60 rounded-xl p-3 md:p-4 flex-1 min-w-[130px] max-w-[48%] md:max-w-none shadow-[0_8px_30px_rgb(0,0,0,0.5)] flex flex-col justify-between">
                     <span class="text-gray-400 text-[9px] md:text-[10px] font-black tracking-wider uppercase truncate">DÓLAR CCL</span>
                     <div class="text-xl md:text-2xl font-mono font-black text-gray-100 mt-1 flex items-center justify-between gap-1">
-                        $1550.4 <span class="text-[10px] text-rose-500 flex items-center">▲<span class="opacity-50 text-[8px]">+0.5%</span></span>
+                        $1550.3 <span class="text-[10px] text-rose-500 flex items-center font-bold">▲<span class="opacity-60 text-[8px]">+0.5%</span></span>
                     </div>
                     <div class="flex justify-between items-center mt-2 border-t border-gray-800/50 pt-2 gap-1 flex-wrap">
-                        <span class="text-[9px] md:text-[10px] text-gray-500 font-mono">C: $1548.4</span>
-                        <div class="text-[10px] text-cyan-400 font-mono mt-1 bg-cyan-900/30 rounded border border-cyan-500/30 px-1.5 py-0.5 w-max">Brecha: 3.7%</div>
+                        <span class="text-[9px] md:text-[10px] text-gray-500 font-mono">C: $1549.7</span>
+                        <div class="text-[10px] text-cyan-400 font-mono mt-1 bg-cyan-950/30 rounded border border-cyan-500/30 px-1.5 py-0.5 w-max">Brecha: 3.7%</div>
                     </div>
                 </div>
                 
@@ -137,14 +155,200 @@
 
         <div class="p-4 md:p-8 w-full flex-grow max-w-full overflow-x-hidden box-border">
             
-            <div id="separador-hoy" class="flex items-center gap-4 mb-8 mt-2 w-full">
+            <div id="separador-hoy" class="flex items-center gap-4 mb-6 mt-2 w-full">
                 <div class="h-px bg-gray-800 flex-grow"></div>
                 <span class="text-[10px] font-mono text-cyan-500 border border-cyan-500/30 bg-cyan-900/20 px-4 py-1.5 rounded-full uppercase tracking-widest shadow-[0_0_10px_rgba(34,211,238,0.1)] whitespace-nowrap">Últimas Noticias</span>
                 <div class="h-px bg-gray-800 flex-grow"></div>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 w-full" id="contenedor-noticias">
-                <article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 hover:scale-[1.02] transition-transform duration-300 shadow-xl shadow-black/60 border border-gray-800/60 break-words overflow-hidden" data-categoria="POLÍTICA">
+                <article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-rose-500 hover:scale-[1.02] transition-all duration-300 shadow-xl shadow-black/60 border border-gray-800/60 h-[380px] overflow-hidden" data-categoria="ECONOMÍA" data-url="https://www.iprofesional.com/impuestos/458215-compras-por-amazon-aduana-argentina-prepara-nuevo-esquema-de-control-y-cobro-de-impuestos/">
+<div class="flex justify-between items-start mb-3 shrink-0">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-blue-900/40 text-blue-400 border border-blue-500/30 px-2 py-1 rounded-md whitespace-nowrap">ECONOMÍA</span>
+<span class="bg-gray-800/80 text-gray-300 px-2 py-1 rounded-md border border-gray-700 whitespace-nowrap">🔴 NEGATIVO</span>
+</div>
+</div>
+<div class="flex flex-col items-end gap-1 shrink-0">
+<span class="tiempo-noticia text-gray-400 text-xs font-mono bg-gray-900/80 border border-gray-700 px-2 py-1 rounded" data-timestamp="2026-06-25T15:13:40.613057+00:00">Reciente</span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">Leída</span>
+</div>
+</div>
+<span class="text-sm md:text-base text-cyan-400 font-black font-mono tracking-wide mb-1 uppercase shrink-0">IPROFESIONAL</span>
+<a class="ln-link group block mb-2 shrink-0 overflow-hidden" href="https://www.iprofesional.com/impuestos/458215-compras-por-amazon-aduana-argentina-prepara-nuevo-esquema-de-control-y-cobro-de-impuestos/" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 line-clamp-2 break-words">Aduana prepara nuevo esquema de control y cobro de impuestos para compras por Amazon</h2>
+</a>
+<div class="text-gray-400 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words">
+<span class="text-cyan-400 font-bold mr-2">▪</span>La <b>Aduana argentina</b> está desarrollando un nuevo esquema para el control y cobro de impuestos sobre las compras realizadas a través de <b>Amazon</b>.<br/><span class="text-cyan-400 font-bold mr-2">▪</span>Esta medida busca regular las importaciones por courier y podría tener un impacto significativo en los costos finales para los consumidores.<br/><span class="text-cyan-400 font-bold mr-2">▪</span>El nuevo sistema generará cambios en las reglas de juego para los compradores online y el comercio electrónico internacional.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-gray-800/50 flex flex-wrap items-center justify-between gap-2">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#ADUANA</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#IMPUESTOS</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#AMAZON</span>
+</div>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-rose-500 hover:scale-[1.02] transition-all duration-300 shadow-xl shadow-black/60 border border-gray-800/60 h-[380px] overflow-hidden" data-categoria="ECONOMÍA" data-url="https://www.ambito.com/autos/la-inflacion-verde-los-0km-y-el-dilema-del-dolar-colchon-n6292295/">
+<div class="flex justify-between items-start mb-3 shrink-0">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-blue-900/40 text-blue-400 border border-blue-500/30 px-2 py-1 rounded-md whitespace-nowrap">ECONOMÍA</span>
+<span class="bg-gray-800/80 text-gray-300 px-2 py-1 rounded-md border border-gray-700 whitespace-nowrap">🔴 NEGATIVO</span>
+</div>
+</div>
+<div class="flex flex-col items-end gap-1 shrink-0">
+<span class="tiempo-noticia text-gray-400 text-xs font-mono bg-gray-900/80 border border-gray-700 px-2 py-1 rounded" data-timestamp="2026-06-25T15:13:40.613038+00:00">Reciente</span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">Leída</span>
+</div>
+</div>
+<span class="text-sm md:text-base text-cyan-400 font-black font-mono tracking-wide mb-1 uppercase shrink-0">ÁMBITO</span>
+<a class="ln-link group block mb-2 shrink-0 overflow-hidden" href="https://www.ambito.com/autos/la-inflacion-verde-los-0km-y-el-dilema-del-dolar-colchon-n6292295/" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 line-clamp-2 break-words">La "inflación verde" impacta en los autos 0km y el dilema del dólar colchón</h2>
+</a>
+<div class="text-gray-400 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words">
+<span class="text-cyan-400 font-bold mr-2">▪</span>Se observa una "inflación verde" en el mercado de <b>autos 0km</b>, indicando un aumento de precios impulsado por factores específicos del sector.<br/><span class="text-cyan-400 font-bold mr-2">▪</span>Este fenómeno resalta el dilema para los consumidores y ahorristas respecto al "dólar colchón" y su capacidad de preservar valor.<br/><span class="text-cyan-400 font-bold mr-2">▪</span>La dinámica de precios en el sector automotriz es un reflejo de las distorsiones económicas y la búsqueda de refugio de valor.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-gray-800/50 flex flex-wrap items-center justify-between gap-2">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#INFLACIÓN</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#AUTOS</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#DÓLAR</span>
+</div>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-rose-500 hover:scale-[1.02] transition-all duration-300 shadow-xl shadow-black/60 border border-gray-800/60 h-[380px] overflow-hidden" data-categoria="MERCADOS" data-url="https://www.iprofesional.com/finanzas/458246-cuales-son-las-acciones-mas-castigadas-tras-negativa-de-msci-de-revisar-calificacion-de-argentina/">
+<div class="flex justify-between items-start mb-3 shrink-0">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-emerald-900/40 text-emerald-400 border border-emerald-500/30 px-2 py-1 rounded-md whitespace-nowrap">MERCADOS</span>
+<span class="bg-gray-800/80 text-gray-300 px-2 py-1 rounded-md border border-gray-700 whitespace-nowrap">🔴 NEGATIVO</span>
+</div>
+</div>
+<div class="flex flex-col items-end gap-1 shrink-0">
+<span class="tiempo-noticia text-gray-400 text-xs font-mono bg-gray-900/80 border border-gray-700 px-2 py-1 rounded" data-timestamp="2026-06-25T15:13:40.613023+00:00">Reciente</span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">Leída</span>
+</div>
+</div>
+<span class="text-sm md:text-base text-cyan-400 font-black font-mono tracking-wide mb-1 uppercase shrink-0">IPROFESIONAL</span>
+<a class="ln-link group block mb-2 shrink-0 overflow-hidden" href="https://www.iprofesional.com/finanzas/458246-cuales-son-las-acciones-mas-castigadas-tras-negativa-de-msci-de-revisar-calificacion-de-argentina/" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 line-clamp-2 break-words">Acciones castigadas tras la negativa de MSCI a revisar la calificación de Argentina</h2>
+</a>
+<div class="text-gray-400 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words">
+<span class="text-cyan-400 font-bold mr-2">▪</span><b>MSCI</b> decidió no revisar la calificación de <b>Argentina</b> como mercado "Emergente", manteniendo su estatus actual, lo que generó un impacto negativo en el mercado.<br/><span class="text-cyan-400 font-bold mr-2">▪</span>Esta decisión ha castigado a varias acciones locales, llevando a los analistas a revisar sus recomendaciones de inversión.<br/><span class="text-cyan-400 font-bold mr-2">▪</span>La no consideración de <b>MSCI</b> es un golpe para las expectativas de atraer mayor inversión extranjera y el interés de fondos globales.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-gray-800/50 flex flex-wrap items-center justify-between gap-2">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#MSCI</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#ACCIONES</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#INVERSIONES</span>
+</div>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-rose-500 hover:scale-[1.02] transition-all duration-300 shadow-xl shadow-black/60 border border-gray-800/60 h-[380px] overflow-hidden" data-categoria="ECONOMÍA" data-url="https://www.iprofesional.com/finanzas/458245-el-dolar-vuelve-a-los-1500-pesos-y-la-city-esta-convencida-de-que-hay-un-cambio-de-estrategia/">
+<div class="flex justify-between items-start mb-3 shrink-0">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-blue-900/40 text-blue-400 border border-blue-500/30 px-2 py-1 rounded-md whitespace-nowrap">ECONOMÍA</span>
+<span class="bg-gray-800/80 text-gray-300 px-2 py-1 rounded-md border border-gray-700 whitespace-nowrap">🔴 NEGATIVO</span>
+</div>
+</div>
+<div class="flex flex-col items-end gap-1 shrink-0">
+<span class="tiempo-noticia text-gray-400 text-xs font-mono bg-gray-900/80 border border-gray-700 px-2 py-1 rounded" data-timestamp="2026-06-25T15:13:40.613003+00:00">Reciente</span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">Leída</span>
+</div>
+</div>
+<span class="text-sm md:text-base text-cyan-400 font-black font-mono tracking-wide mb-1 uppercase shrink-0">IPROFESIONAL, ÁMBITO</span>
+<a class="ln-link group block mb-2 shrink-0 overflow-hidden" href="https://www.iprofesional.com/finanzas/458245-el-dolar-vuelve-a-los-1500-pesos-y-la-city-esta-convencida-de-que-hay-un-cambio-de-estrategia/" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 line-clamp-2 break-words">El dólar se dispara y el BCRA busca contener la liquidez con vencimientos millonarios</h2>
+</a>
+<div class="text-gray-400 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words">
+<span class="text-cyan-400 font-bold mr-2">▪</span>El dólar vuelve a cotizar en torno a los <b>$1.500</b>, generando incertidumbre y una fuerte demanda de cobertura, con el <b>dólar blue</b> escalando <b>$100</b> en junio.<br/><span class="text-cyan-400 font-bold mr-2">▪</span>En este contexto de dólar inquieto, el <b>Banco Central</b> se prepara para un importante vencimiento de deuda por <b>$16 billones</b>, con el ministro <b>Caputo</b> buscando absorber pesos.<br/><span class="text-cyan-400 font-bold mr-2">▪</span>La City está convencida de que hay un cambio de estrategia monetaria, en medio de las tres razones que despertaron la escalada del dólar blue, indicando un mercado volátil.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-gray-800/50 flex flex-wrap items-center justify-between gap-2">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#DÓLAR</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#BCRA</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#POLÍTICA MONETARIA</span>
+</div>
+<span class="text-[10px] font-bold bg-yellow-500/20 text-yellow-500 px-2 py-0.5 rounded border border-yellow-500/30 mt-2 inline-block">🗞️ Cubierto por 2 medios</span>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 hover:scale-[1.02] transition-all duration-300 shadow-xl shadow-black/60 border border-gray-800/60 h-[380px] overflow-hidden" data-categoria="POLÍTICA" data-url="https://www.ambito.com/politica/tension-patricia-bullrich-y-manuel-adorni-llega-al-senado-sesion-este-jueves-podria-definir-interpelacion-n6292535/">
+<div class="flex justify-between items-start mb-3 shrink-0">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-indigo-900/40 text-indigo-400 border border-indigo-500/30 px-2 py-1 rounded-md whitespace-nowrap">POLÍTICA</span>
+<span class="bg-gray-800/80 text-gray-300 px-2 py-1 rounded-md border border-gray-700 whitespace-nowrap">⚪ NEUTRAL</span>
+</div>
+</div>
+<div class="flex flex-col items-end gap-1 shrink-0">
+<span class="tiempo-noticia text-gray-400 text-xs font-mono bg-gray-900/80 border border-gray-700 px-2 py-1 rounded" data-timestamp="2026-06-25T15:13:40.612982+00:00">Reciente</span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">Leída</span>
+</div>
+</div>
+<span class="text-sm md:text-base text-cyan-400 font-black font-mono tracking-wide mb-1 uppercase shrink-0">ÁMBITO, LA NACION, TN</span>
+<a class="ln-link group block mb-2 shrink-0 overflow-hidden" href="https://www.ambito.com/politica/tension-patricia-bullrich-y-manuel-adorni-llega-al-senado-sesion-este-jueves-podria-definir-interpelacion-n6292535/" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 line-clamp-2 break-words">El oficialismo logró frenar la interpelación a Adorni en el Senado</h2>
+</a>
+<div class="text-gray-400 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words">
+<span class="text-cyan-400 font-bold mr-2">▪</span>Una sesión clave en el <b>Senado</b>, donde la oposición buscaba interpelar al vocero presidencial <b>Manuel Adorni</b>, fue desactivada por el oficialismo.<br/><span class="text-cyan-400 font-bold mr-2">▪</span>La maniobra contó con el acuerdo de los bloques aliados, blindando a <b>Adorni</b> y evitando un nuevo pedido de explicaciones en el recinto.<br/><span class="text-cyan-400 font-bold mr-2">▪</span>Esto marca una nueva tensión en la interna libertaria y en las relaciones con los bloques opositores, demostrando la dificultad del gobierno para avanzar en el parlamento.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-gray-800/50 flex flex-wrap items-center justify-between gap-2">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#SENADO</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#ADORNI</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#POLÍTICA</span>
+</div>
+<span class="text-[10px] font-bold bg-yellow-500/20 text-yellow-500 px-2 py-0.5 rounded border border-yellow-500/30 mt-2 inline-block">🗞️ Cubierto por 3 medios</span>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 hover:scale-[1.02] transition-all duration-300 shadow-xl shadow-black/60 border border-gray-800/60 h-[380px] overflow-hidden" data-categoria="POLÍTICA" data-url="https://www.lanacion.com.ar/el-mundo/terremotos-en-venezuela-ya-son-164-los-muertos-en-venezuela-nid25062026/">
+<div class="flex justify-between items-start mb-3 shrink-0">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-indigo-900/40 text-indigo-400 border border-indigo-500/30 px-2 py-1 rounded-md whitespace-nowrap">POLÍTICA</span>
+<span class="bg-gray-800/80 text-gray-300 px-2 py-1 rounded-md border border-gray-700 whitespace-nowrap">⚪ NEUTRAL</span>
+</div>
+</div>
+<div class="flex flex-col items-end gap-1 shrink-0">
+<span class="tiempo-noticia text-gray-400 text-xs font-mono bg-gray-900/80 border border-gray-700 px-2 py-1 rounded" data-timestamp="2026-06-25T10:34:47.943Z">Reciente</span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">Leída</span>
+</div>
+</div>
+<span class="text-sm md:text-base text-cyan-400 font-black font-mono tracking-wide mb-1 uppercase shrink-0">LA NACION, TN, INFOBAE, ÁMBITO</span>
+<a class="ln-link group block mb-2 shrink-0 overflow-hidden" href="https://www.lanacion.com.ar/el-mundo/terremotos-en-venezuela-ya-son-164-los-muertos-en-venezuela-nid25062026/" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 line-clamp-2 break-words">Terremotos devastan Venezuela: 164 muertos, pánico y ayuda internacional</h2>
+</a>
+<div class="text-gray-400 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words">
+<span class="text-cyan-400 font-bold mr-2">▪</span>Un devastador terremoto ha golpeado Venezuela, dejando un saldo de al menos <b>164 muertos</b> y <b>971 heridos</b>, con decenas de desaparecidos y una gran devastación en infraestructuras.<br/><span class="text-cyan-400 font-bold mr-2">▪</span>La presidenta interina <b>Delcy Rodríguez</b> confirmó la cifra de víctimas, mientras se reporta el cierre del aeropuerto principal, suspensión de clases y subtes en Caracas.<br/><span class="text-cyan-400 font-bold mr-2">▪</span><b>EE.UU.</b>, países europeos y latinoamericanos, incluida Argentina, han ofrecido y desplegado ayuda humanitaria y rescatistas, en lo que se considera el mayor sismo en un siglo para el país.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-gray-800/50 flex flex-wrap items-center justify-between gap-2">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#VENEZUELA</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#TERREMOTO</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#AYUDA HUMANITARIA</span>
+</div>
+<span class="text-[10px] font-bold bg-yellow-500/20 text-yellow-500 px-2 py-0.5 rounded border border-yellow-500/30 mt-2 inline-block">🗞️ Cubierto por 4 medios</span>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 hover:scale-[1.02] transition-all duration-300 shadow-xl shadow-black/60 border border-gray-800/60 h-[380px] overflow-hidden" data-categoria="DEPORTES" data-url="https://www.infobae.com/deportes/2026/06/25/paraguay-australia-en-vivo-por-el-mundial-2026-hora-tv-formaciones-y-todo-lo-que-hay-que-saber-clone-clone/">
+<div class="flex justify-between items-start mb-3 shrink-0">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-orange-900/40 text-orange-400 border border-orange-500/30 px-2 py-1 rounded-md whitespace-nowrap">DEPORTES</span>
+<span class="bg-gray-800/80 text-gray-300 px-2 py-1 rounded-md border border-gray-700 whitespace-nowrap">⚪ NEUTRAL</span>
+</div>
+</div>
+<div class="flex flex-col items-end gap-1 shrink-0">
+<span class="tiempo-noticia text-gray-400 text-xs font-mono bg-gray-900/80 border border-gray-700 px-2 py-1 rounded" data-timestamp="2026-06-25T09:17:41.589Z">Reciente</span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">Leída</span>
+</div>
+</div>
+<span class="text-sm md:text-base text-cyan-400 font-black font-mono tracking-wide mb-1 uppercase shrink-0">INFOBAE, LA NACION, TN</span>
+<a class="ln-link group block mb-2 shrink-0 overflow-hidden" href="https://www.infobae.com/deportes/2026/06/25/paraguay-australia-en-vivo-por-el-mundial-2026-hora-tv-formaciones-y-todo-lo-que-hay-que-saber-clone-clone/" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 line-clamp-2 break-words">Mundial 2026: Paraguay-Australia, resultados y definición de grupos</h2>
+</a>
+<div class="text-gray-400 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words">
+<span class="text-cyan-400 font-bold mr-2">▪</span>Se vive una jornada clave en el <b>Mundial 2026</b> con la definición de varios grupos y partidos importantes.<br/><span class="text-cyan-400 font-bold mr-2">▪</span>Destaca el enfrentamiento entre <b>Paraguay</b> y <b>Australia</b>, con todos los detalles de hora, TV y formaciones.<br/><span class="text-cyan-400 font-bold mr-2">▪</span><b>Brasil</b> ya aseguró su clasificación a <b>octavos de final</b>, y se especula con la posible formación de <b>Scaloni</b> para los próximos encuentros.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-gray-800/50 flex flex-wrap items-center justify-between gap-2">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#MUNDIAL 2026</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#FÚTBOL</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#DEPORTES</span>
+</div>
+<span class="text-[10px] font-bold bg-yellow-500/20 text-yellow-500 px-2 py-0.5 rounded border border-yellow-500/30 mt-2 inline-block">🗞️ Cubierto por 3 medios</span>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 hover:scale-[1.02] transition-transform duration-300 shadow-xl shadow-black/60 border border-gray-800/60 break-words overflow-hidden" data-categoria="POLÍTICA">
 <div class="flex justify-between items-start mb-4">
 <div class="flex flex-col gap-2 max-w-[70%]">
 <div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
@@ -596,23 +800,30 @@
 <span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#MERVAL</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#RIESGO PAÍS</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#MSCI</span>
 </div>
 </article>
-<article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-xl shadow-black/60 border border-gray-800/60 break-words overflow-hidden" data-categoria="MERCADOS">
-<div class="flex justify-between items-start mb-4">
+<article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 hover:scale-[1.02] transition-all duration-300 shadow-xl shadow-black/60 border border-gray-800/60 h-[380px] overflow-hidden" data-categoria="ECONOMÍA" data-url="https://www.iprofesional.com/realestate/458087-nuevas-casas-prefabricadas-de-madera-baratas-confortables-y-se-construyen-en-9-dias">
+<div class="flex justify-between items-start mb-3 shrink-0">
 <div class="flex flex-col gap-2 max-w-[70%]">
 <div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
-<span class="bg-emerald-900/40 text-emerald-400 border border-emerald-500/30 px-2 py-1 rounded-md whitespace-nowrap">MERCADOS</span>
-<span class="bg-gray-800/80 text-gray-300 px-2 py-1 rounded-md border border-gray-700 whitespace-nowrap">🟢 POSITIVO</span>
+<span class="bg-blue-900/40 text-blue-400 border border-blue-500/30 px-2 py-1 rounded-md whitespace-nowrap">ECONOMÍA</span>
+<span class="bg-gray-800/80 text-gray-300 px-2 py-1 rounded-md border border-gray-700 whitespace-nowrap">⚪ NEUTRAL</span>
 </div>
-<span class="text-[9px] text-gray-500 font-mono uppercase tracking-widest break-all">IPROFESIONAL</span>
 </div>
-<span class="tiempo-noticia text-gray-400 text-xs font-mono bg-gray-900/80 border border-gray-700 px-2 py-1 rounded shrink-0" data-timestamp="2026-06-24T16:02:00-03:00">Reciente</span>
+<div class="flex flex-col items-end gap-1 shrink-0">
+<span class="tiempo-noticia text-gray-400 text-xs font-mono bg-gray-900/80 border border-gray-700 px-2 py-1 rounded" data-timestamp="2026-06-24T16:02:00-03:00">Reciente</span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">Leída</span>
 </div>
-<a class="group block mb-3 overflow-hidden" href="https://www.iprofesional.com/realestate/458087-nuevas-casas-prefabricadas-de-madera-baratas-confortables-y-se-construyen-en-9-dias" target="_blank">
-<h2 class="text-lg md:text-xl font-bold text-gray-100 leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 break-words">Casas prefabricadas de madera: confortables, económicas y construcción rápida</h2>
+</div>
+<span class="text-sm md:text-base text-cyan-400 font-black font-mono tracking-wide mb-1 uppercase shrink-0">IPROFESIONAL</span>
+<a class="ln-link group block mb-2 shrink-0 overflow-hidden" href="https://www.iprofesional.com/realestate/458087-nuevas-casas-prefabricadas-de-madera-baratas-confortables-y-se-construyen-en-9-dias" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 line-clamp-2 break-words">Casas prefabricadas de madera: confortables y se construyen en 9 días</h2>
 </a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed mt-2 space-y-1 break-words">• <br/>• Nuevas opciones de <b>casas prefabricadas de madera</b> se presentan como una solución rápida y confortable.<br/>• Son construidas en solo <b>9 días</b>, ofreciendo una alternativa eficiente en el mercado inmobiliario.<br/>• La noticia destaca su relación costo-beneficio y facilidad de construcción.</p>
-<div class="flex flex-wrap gap-2 mt-4 pt-4 border-t border-gray-800/50">
+<div class="text-gray-400 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words">
+<span class="text-cyan-400 font-bold mr-2">▪</span>El mercado inmobiliario presenta nuevas opciones con casas prefabricadas de madera, destacadas por su confortabilidad y rapidez de construcción.<br/><span class="text-cyan-400 font-bold mr-2">▪</span>Estas viviendas se pueden edificar en tan solo <b>9 días</b>, ofreciendo una solución rápida y potencialmente más económica para la vivienda.<br/><span class="text-cyan-400 font-bold mr-2">▪</span>La nota detalla los costos asociados a estas casas, posicionándolas como una alternativa accesible en el sector de <b>Real Estate</b>.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-gray-800/50 flex flex-wrap items-center justify-between gap-2">
+<div class="flex flex-wrap gap-1.5">
 <span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#REAL ESTATE</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#VIVIENDA</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#CONSTRUCCIÓN</span>
+</div>
 </div>
 </article>
 <article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-orange-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="DEPORTES">
@@ -1072,124 +1283,6 @@
 <span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#FÚTBOL</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#MUNDIAL 2026</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#BRASIL</span>
 </div>
 </article>
-<article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 hover:scale-[1.02] transition-transform duration-300 shadow-xl shadow-black/60 border border-gray-800/60 break-words overflow-hidden" data-categoria="DEPORTES">
-<div class="flex justify-between items-start mb-4">
-<div class="flex flex-col gap-2 max-w-[70%]">
-<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
-<span class="bg-orange-900/40 text-orange-400 border border-orange-500/30 px-2 py-1 rounded-md whitespace-nowrap">DEPORTES</span>
-<span class="bg-gray-800/80 text-gray-300 px-2 py-1 rounded-md border border-gray-700 whitespace-nowrap">⚪ NEUTRAL</span>
-</div>
-<span class="text-[9px] text-gray-500 font-mono uppercase tracking-widest break-all">INFOBAE</span>
-</div>
-<span class="tiempo-noticia text-gray-400 text-xs font-mono bg-gray-900/80 border border-gray-700 px-2 py-1 rounded shrink-0" data-timestamp="2026-06-24T09:11:07.938Z">Reciente</span>
-</div>
-<a class="group block mb-3 overflow-hidden" href="https://www.infobae.com/deportes/2026/06/24/marruecos-haiti-en-vivo-por-el-mundial-2026-hora-tv-formaciones-y-todo-lo-que-hay-que-saber/" target="_blank">
-<h2 class="text-lg md:text-xl font-bold text-gray-100 leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 break-words">Marruecos derrotó a Haití y terminó segundo en el Grupo C del Mundial 2026</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed mt-2 space-y-1 break-words">• <br/>• <b>Marruecos</b> venció a <b>Haití</b> en el Mundial 2026.<br/>• Con este resultado, <b>Marruecos</b> se aseguró el <b>segundo lugar</b> en el <b>Grupo C</b>.<br/>• El equipo avanza a la siguiente ronda de la competición.</p>
-<div class="flex flex-wrap gap-2 mt-4 pt-4 border-t border-gray-800/50">
-<span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#FÚTBOL</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#MUNDIAL 2026</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#MARRUECOS</span>
-</div>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-orange-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="DEPORTES">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">INFOBAE</span>
-<span class="bg-orange-900/40 text-orange-400 px-2.5 py-1 rounded-md">DEPORTES</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-24T09:00:11.911Z">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://www.infobae.com/colombia/deportes/2026/06/24/suiza-vs-canada-en-vivo-siga-el-minuto-a-minuto-del-partido-en-el-grupo-b-del-mundial-2026/" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Suiza derrotó a Canadá y se aseguró el liderato del Grupo B</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">Suiza consiguió una importante victoria sobre Canadá en el Mundial 2026, lo que le permitió asegurar el liderato del Grupo B. Este triunfo consolida su posición, demostrando un rendimiento destacado y avanzando con firmeza en el torneo, con miras a las fases eliminatorias del campeonato.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">TN</span>
-<span class="bg-indigo-900/40 text-indigo-400 px-2.5 py-1 rounded-md">POLÍTICA</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-24T08:05:00.000Z">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://tn.com.ar/politica/2026/06/24/el-gobierno-baja-la-tension-con-bullrich-pese-a-su-faltazo-y-prepara-para-esta-semana-el-debut-de-ravier-como-vocero/" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>La estrategia del oficialismoEl Gobierno baja la tensión con Bullrich pese a los cortocircuitos con Adorni y prepara el debut de Ravier como voceroEn la Casa Rosada evitan escalar el conflicto con la jefa del bloque libertario en el Senado y reconocen que deberán convivir con sus diferenciaciones públicas. En paralelo, trabajan en la primera conferencia de prensa del nuevo portavoz para enfocar la agenda en la gestión económica.Por Ignacio Salerno</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">El Gobierno busca reducir la tensión con Patricia Bullrich, pese a los cortocircuitos con Adorni, aceptando la coexistencia de diferencias públicas. Simultáneamente, prepara el debut del nuevo vocero, Ravier, para reorientar la agenda hacia la gestión económica, proyectando una imagen de estabilidad gubernamental a pesar de las fricciones internas.</p>
-</article>
-<article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 hover:scale-[1.02] transition-transform duration-300 shadow-xl shadow-black/60 border border-gray-800/60" data-categoria="POLÍTICA" data-sentimiento="NEUTRAL">
-<div class="flex justify-between items-start mb-4">
-<div class="flex flex-col gap-2">
-<div class="flex gap-2 text-[11px] font-bold tracking-wide">
-<span class="bg-indigo-900/40 text-indigo-400 border border-indigo-500/30 px-2 py-1 rounded-md">POLÍTICA</span>
-<span class="bg-gray-800/80 text-gray-300 px-2 py-1 rounded-md border border-gray-700">⚪ NEUTRAL</span>
-</div>
-<span class="text-[9px] text-gray-500 font-mono uppercase tracking-widest">LA NACION</span>
-</div>
-<span class="tiempo-noticia text-gray-400 text-xs font-mono bg-gray-900/80 border border-gray-700 px-2 py-1 rounded" data-timestamp="2026-06-24T05:00:00Z">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://www.lanacion.com.ar/politica/javier-milei-y-sus-medidas-en-vivo-la-situacion-judicial-de-adorni-y-un-nuevo-embate-de-patricia-nid24062026/" target="_blank">
-<h2 class="text-xl font-bold text-gray-100 leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200">Actualidad política: Medidas de Milei, situación de Adorni y embate de Patricia</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed mt-2 space-y-1">• Actualizaciones sobre las <b>medidas del gobierno de Milei</b> en curso.<br/>• Se sigue de cerca la <b>situación judicial de Adorni</b>.<br/>• Nuevo embate político por parte de <b>Patricia Bullrich</b>.</p>
-<div class="flex flex-wrap gap-2 mt-4 pt-4 border-t border-gray-800/50">
-<span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#MILEI</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#ADORNI</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#POLÍTICA</span>
-</div>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-orange-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="DEPORTES">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">LA NACION</span>
-<span class="bg-orange-900/40 text-orange-400 px-2.5 py-1 rounded-md">DEPORTES</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-24T05:00:00Z">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://www.lanacion.com.ar/deportes/mundial-2026-en-vivo-los-cambios-en-la-formacion-a-la-espera-de-jordania-y-el-cumpleanos-39-de-nid24062026/" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Mundial 2026Hace 3 min</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">En el Mundial 2026, se reportan cambios de último momento en las formaciones de equipos, con la expectativa puesta en el próximo encuentro contra Jordania. Las decisiones tácticas son clave, mientras un jugador celebra su cumpleaños número 39 en medio de la competencia, añadiendo un toque personal a la cobertura deportiva.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">LA NACION</span>
-<span class="bg-indigo-900/40 text-indigo-400 px-2.5 py-1 rounded-md">POLÍTICA</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-24T03:02:00Z">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://www.lanacion.com.ar/economia/el-guardarropas-de-el-chacal-que-esconden-los-cajones-con-millones-de-dolares-en-la-casa-de-nid24062026/" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>A FondoEl guardarropas de "El Chacal”. Qué esconden los cajones con millones de dólares en la casa de Insaurralde y CirioPor Diego Cabot</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">Una investigación a fondo revela el escandaloso hallazgo de millones de dólares ocultos en la residencia de Insaurralde y Cirio. El reportaje, titulado "El guardarropas de El Chacal", busca desentrañar el origen de estos fondos ilícitos, exponiendo un presunto caso de corrupción que genera gran escrutinio público sobre figuras políticas.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-orange-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="DEPORTES">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">TN</span>
-<span class="bg-orange-900/40 text-orange-400 px-2.5 py-1 rounded-md">DEPORTES</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-24T03:00:00.000Z">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://tn.com.ar/deportes/mundial/2026/2026/06/24/el-cumpleanos-de-messi-su-primer-entrenador-revelo-el-recuerdo-que-guarda-del-nino-que-brillaba-en-newells/" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>El cumpleaños de Messi: su primer entrenador reveló el recuerdo que guarda del niño que brillaba en Newell’sPor Nicolás Campolongo</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">En el cumpleaños de Lionel Messi, su primer entrenador compartió emotivos recuerdos del prodigio del fútbol durante su etapa en Newell’s. Las anécdotas del técnico ilustran el talento y la dedicación tempranos del joven Messi, ofreciendo una mirada nostálgica y reveladora a los años formativos que moldearon a uno de los más grandes íconos del fútbol.</p>
-</article>
             </div>
 
             <div id="loading-spinner" class="hidden justify-center my-16 w-full">
@@ -1228,9 +1321,7 @@
 
         botonesCat.forEach(boton => {
             boton.addEventListener('click', () => {
-                // Reset visual desktop
                 document.querySelectorAll('.btn-filtro').forEach(b => b.className = 'btn-filtro hover:bg-gray-800/50 text-gray-400 border border-transparent text-left px-4 py-3 rounded-xl font-semibold text-sm transition');
-                // Reset visual movil
                 document.querySelectorAll('.btn-filtro-movil').forEach(b => b.className = 'btn-filtro-movil bg-gray-800 text-gray-400 px-4 py-2 rounded-lg font-semibold text-xs whitespace-nowrap');
                 
                 if(boton.classList.contains('btn-filtro')) {
@@ -1244,6 +1335,43 @@
             });
         });
 
+        // LÓGICA DE SISTEMA LEÍDO (localStorage)
+        function chequearLeidas() {
+            const leidas = JSON.parse(localStorage.getItem('noticias_leidas') || '[]');
+            articulos.forEach(art => {
+                const url = art.getAttribute('data-url');
+                if (leidas.includes(url)) {
+                    art.classList.add('tarjeta-leida');
+                    const badge = art.querySelector('.badge-leida');
+                    if (badge) badge.classList.remove('hidden');
+                } else {
+                    art.classList.remove('tarjeta-leida');
+                    const badge = art.querySelector('.badge-leida');
+                    if (badge) badge.classList.add('hidden');
+                }
+            });
+        }
+
+        articulos.forEach(art => {
+            const linkTag = art.querySelector('.ln-link');
+            if (linkTag) {
+                linkTag.addEventListener('click', () => {
+                    const url = art.getAttribute('data-url');
+                    let leidas = JSON.parse(localStorage.getItem('noticias_leidas') || '[]');
+                    if (!leidas.includes(url)) {
+                        leidas.push(url);
+                        localStorage.setItem('noticias_leidas', JSON.stringify(leidas));
+                    }
+                    chequearLeidas();
+                });
+            }
+        });
+
+        document.getElementById('btn-reset-leidas').addEventListener('click', () => {
+            localStorage.removeItem('noticias_leidas');
+            chequearLeidas();
+        });
+
         // LÓGICA DE SCROLL AUTOMÁTICO
         let itemsMostrados = 12;
         let isFetching = false;
@@ -1253,10 +1381,10 @@
         function reiniciarScroll() {
             itemsMostrados = 12;
             window.scrollTo({ top: 0, behavior: 'smooth' });
-            renderizarScroll();
+            renderScrollConRespeto();
         }
 
-        function renderizarScroll() {
+        function renderScrollConRespeto() {
             const articulosFiltrados = articulos.filter(art => !art.classList.contains('hidden-by-filter'));
             
             articulosFiltrados.forEach((art, index) => {
@@ -1292,7 +1420,7 @@
                     
                     setTimeout(() => {
                         itemsMostrados += 12;
-                        renderizarScroll();
+                        renderScrollConRespeto();
                         spinner.classList.add('hidden');
                         spinner.classList.remove('flex');
                         isFetching = false;
@@ -1304,6 +1432,28 @@
         btnVolver.addEventListener('click', () => {
             reiniciarScroll();
         });
+
+        // RELOJ DIGITAL DE MERCADOS (Idea A)
+        function actualizarReloj() {
+            const ahora = new Date();
+            // Ajuste a hora oficial Argentina (ART / UTC-3)
+            const opciones = { timeZone: 'America/Argentina/Buenos_Aires', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false };
+            const horaStr = ahora.toLocaleTimeString('es-AR', opciones);
+            document.getElementById('reloj-digital').textContent = horaStr;
+            
+            // Evaluar estado del mercado (Lunes=1 a Viernes=5, entre las 11 y las 17 hs)
+            const diaSemana = ahora.getDay(); 
+            const horaActual = ahora.getHours();
+            const estadoEl = document.getElementById('mercado-estado');
+            
+            if (diaSemana >= 1 && diaSemana <= 5 && horaActual >= 11 && horaActual < 17) {
+                estadoEl.textContent = "🟢 OPERANDO";
+                estadoEl.className = "mt-2 text-xs font-bold px-3 py-1 rounded-full inline-block bg-emerald-950/40 text-emerald-400 border border-emerald-500/30 shadow-[0_0_10px_rgba(16,185,129,0.1)] animate-pulse";
+            } else {
+                estadoEl.textContent = "🔴 CERRADO";
+                estadoEl.className = "mt-2 text-xs font-bold px-3 py-1 rounded-full inline-block bg-rose-950/40 text-rose-400 border border-rose-500/30";
+            }
+        }
 
         // SEPARADOR "AYER" DINÁMICO Y TIEMPOS
         function actualizarTiempos() {
@@ -1346,16 +1496,20 @@
                     const div = document.createElement('div');
                     div.id = 'separador-ayer-dinamico';
                     div.className = 'col-span-1 md:col-span-2 xl:col-span-3 flex items-center gap-4 my-8 w-full';
-                    div.innerHTML = '<div class="h-px bg-gray-800/80 flex-grow"></div><span class="text-[10px] font-mono text-gray-500 border border-gray-800 bg-[#0b0f19] px-4 py-1.5 rounded-full uppercase tracking-widest">Jornada Anterior</span><div class="h-px bg-gray-800/80 flex-grow"></div>';
+                    div.innerHTML = '<div class="h-px bg-gray-800/80 flex-grow"></div><span class="text-[10px] font-mono text-gray-500 border border-gray-800 bg-[#020617] px-4 py-1.5 rounded-full uppercase tracking-widest">Jornada Anterior</span><div class="h-px bg-gray-800/80 flex-grow"></div>';
                     todosVisibles[i].parentNode.insertBefore(div, todosVisibles[i]);
                     break;
                 }
             }
         }
         
+        // Inicialización
+        chequearLeidas();
         aplicarFiltros();
         actualizarTiempos();
+        actualizarReloj();
         setInterval(actualizarTiempos, 60000);
+        setInterval(actualizarReloj, 1000);
     </script>
 </body>
 </html>
