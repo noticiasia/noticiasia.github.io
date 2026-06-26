@@ -90,7 +90,7 @@ def extraer_fecha_exacta(sopa):
                     for item in data:
                         if isinstance(item, dict) and 'datePublished' in item:
                             return item['datePublished']
-        except:
+        except Exception:
             pass
     return None
 
@@ -440,7 +440,7 @@ html_completo = f"""<!DOCTYPE html>
             <div class="bg-[#0f172a]/70 border border-gray-800 rounded-xl p-4 text-center">
                 <p class="text-[9px] text-gray-400 font-bold tracking-widest uppercase mb-2">Hora Argentina. Mercado desde 10:30hs a 17hs</p>
                 <div id="reloj-digital" class="text-4xl font-mono font-black text-gray-100 tracking-wider">00:00:00</div>
-                <div id="mercado-estado" class="mt-3 text-xs font-bold px-3 py-1 rounded-full inline-block">--</div>
+                <div id="mercado-estado" class="mt-3 text-xs font-bold px-3 py-1 rounded-full inline-block animate-pulse">--</div>
             </div>
 
             <div>
@@ -468,6 +468,7 @@ html_completo = f"""<!DOCTYPE html>
             </div>
 
             <div class="w-full p-6 md:p-8 flex flex-wrap gap-6 justify-around md:justify-between items-center max-w-7xl mx-auto">
+                {historial_recortado}
                 {widgets_html}
             </div>
         </header>
@@ -500,100 +501,99 @@ html_completo = f"""<!DOCTYPE html>
         const articulos = Array.from(document.querySelectorAll('.tarjeta-noticia'));
         let vistaActual = "principales";
 
-        function aplicarVistas() {
+        function aplicarVistas() {{
             const leidas = JSON.parse(localStorage.getItem('noticias_leidas') || '[]');
-            articulos.forEach(art => {
+            articulos.forEach(art => {{
                 const url = art.getAttribute('data-url');
                 const isRead = leidas.includes(url);
                 
-                if (vistaActual === "principales") {
-                    if (isRead) {
+                if (vistaActual === "principales") {{
+                    if (isRead) {{
                         art.style.display = 'none';
-                    } else {
+                    }} else {{
                         art.style.display = 'flex';
                         art.classList.remove('tarjeta-leida');
-                    }
-                } else {
-                    if (isRead) {
+                    }}
+                }} else {{
+                    if (isRead) {{
                         art.style.display = 'flex';
                         art.classList.add('tarjeta-leida');
-                    } else {
+                    }} else {{
                         art.style.display = 'none';
-                    }
-                }
-            });
+                    }}
+                }}
+            }});
             actualizarSeparadorAyer();
-        }
+        }}
 
-        
         // Marcar como leída al hacer clic en cualquier parte de la tarjeta
-        articulos.forEach(art => {
-            art.addEventListener('click', () => {
+        articulos.forEach(art => {{
+            art.addEventListener('click', () => {{
                 if (vistaActual !== "principales") return;
                 const url = art.getAttribute('data-url');
                 let leidas = JSON.parse(localStorage.getItem('noticias_leidas') || '[]');
-                if (!leidas.includes(url)) {
+                if (!leidas.includes(url)) {{
                     leidas.push(url);
                     localStorage.setItem('noticias_leidas', JSON.stringify(leidas));
-                }
+                }}
                 
                 art.style.transition = "all 0.3s ease";
                 art.style.opacity = "0";
                 art.style.transform = "scale(0.95)";
-                setTimeout(() => {
+                setTimeout(() => {{
                     aplicarVistas();
                     art.style.opacity = "1";
                     art.style.transform = "scale(1)";
-                }, 300);
-            });
-        });
+                }}, 300);
+            }});
+        }});
 
         const btnVerLeidas = document.getElementById('btn-ver-leidas');
         const tituloSeccion = document.getElementById('titulo-seccion');
 
-        btnVerLeidas.addEventListener('click', () => {
-            if (vistaActual === "principales") {
+        btnVerLeidas.addEventListener('click', () => {{
+            if (vistaActual === "principales") {{
                 vistaActual = "leidas";
                 btnVerLeidas.innerText = "👁️ Ver Principales";
                 tituloSeccion.innerText = "Historial de Noticias Leídas";
-            } else {
+            }} else {{
                 vistaActual = "principales";
                 btnVerLeidas.innerText = "👁️ Ver Noticias Leídas";
                 tituloSeccion.innerText = "Últimas Noticias";
-            }
+            }}
             aplicarVistas();
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
+            window.scrollTo({{ top: 0, behavior: 'smooth' }});
+        }});
 
-        document.getElementById('btn-reset-leidas').addEventListener('click', () => {
+        document.getElementById('btn-reset-leidas').addEventListener('click', () => {{
             localStorage.removeItem('noticias_leidas');
             vistaActual = "principales";
             btnVerLeidas.innerText = "👁️ Ver Noticias Leídas";
             tituloSeccion.innerText = "Últimas Noticias";
             aplicarVistas();
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
+            window.scrollTo({{ top: 0, behavior: 'smooth' }});
+        }});
 
-        function actualizarReloj() {
+        function actualizarReloj() {{
             const ahora = new Date();
-            const opciones = { timeZone: 'America/Argentina/Buenos_Aires', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false };
+            const opciones = {{ timeZone: 'America/Argentina/Buenos_Aires', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false }};
             document.getElementById('reloj-digital').textContent = ahora.toLocaleTimeString('es-AR', opciones);
             
             const dia = ahora.getDay(); 
             const hora = ahora.getHours();
             const estadoEl = document.getElementById('mercado-estado');
             
-            if (dia >= 1 && dia <= 5 && hora >= 10 && hora < 17) {
+            if (dia >= 1 && dia <= 5 && hora >= 10 && hora < 17) {{
                 estadoEl.textContent = "ABIERTO";
                 estadoEl.className = "mt-3 text-xs font-bold px-4 py-1.5 rounded-full inline-block bg-emerald-950/40 text-emerald-400 border border-emerald-500/30 animate-pulse tracking-wider";
-            } else {
+            }} else {{
                 estadoEl.textContent = "CERRADO";
                 estadoEl.className = "mt-3 text-xs font-bold px-4 py-1.5 rounded-full inline-block bg-rose-950/40 text-rose-400 border border-rose-500/30 tracking-wider";
-            }
-        }
+            }}
+        }}
 
-        function actualizarTiempos() {
-            document.querySelectorAll('.tiempo-noticia').forEach(el => {
+        function actualizarTiempos() {{
+            document.querySelectorAll('.tiempo-noticia').forEach(el => {{
                 const timestampStr = el.getAttribute('data-timestamp');
                 if(!timestampStr) return; 
                 
@@ -603,46 +603,46 @@ html_completo = f"""<!DOCTYPE html>
                 
                 if (isNaN(diffMinutos)) return;
 
-                if (diffMinutos < 1) {
+                if (diffMinutos < 1) {{
                     el.textContent = "INSTANTES";
                     el.className = "tiempo-noticia text-cyan-400 text-[10px] font-black font-mono bg-cyan-900/30 border border-cyan-500/50 px-2 py-1 rounded shadow-[0_0_10px_rgba(34,211,238,0.2)]";
-                } else if (diffMinutos < 60) {
-                    el.textContent = `HACE ${diffMinutos}m`;
+                }} else if (diffMinutos < 60) {{
+                    el.textContent = `HACE ${{diffMinutos}}m`;
                     el.className = "tiempo-noticia text-gray-300 text-[10px] font-mono bg-gray-800 border border-gray-600 px-2 py-1 rounded";
-                } else if (diffMinutos < 1440) {
+                }} else if (diffMinutos < 1440) {{
                     const diffHoras = Math.floor(diffMinutos / 60);
-                    el.textContent = `HACE ${diffHoras}h`;
+                    el.textContent = `HACE ${{diffHoras}}h`;
                     el.className = "tiempo-noticia text-gray-400 text-[10px] font-mono bg-gray-900/80 border border-gray-700 px-2 py-1 rounded";
-                } else {
+                }} else {{
                     el.textContent = 'AYER';
                     el.className = "tiempo-noticia text-gray-600 text-[10px] font-mono bg-transparent border border-gray-800 px-2 py-1 rounded";
-                }
-            });
+                }}
+            }});
             actualizarSeparadorAyer();
-        }
+        }}
         
-        function actualizarSeparadorAyer() {
+        function actualizarSeparadorAyer() {{
             const sep = document.getElementById('separador-ayer-dinamico');
             if(sep) sep.remove();
 
             const todosVisibles = articulos.filter(art => art.style.display !== 'none');
-            for(let i=0; i<todosVisibles.length; i++) {
+            for(let i=0; i<todosVisibles.length; i++) {{
                 const tagTiempo = todosVisibles[i].querySelector('.tiempo-noticia').textContent;
-                if(tagTiempo.includes('AYER')) {
+                if(tagTiempo.includes('AYER')) {{
                     const div = document.createElement('div');
                     div.id = 'separador-ayer-dinamico';
                     div.className = 'col-span-1 md:col-span-2 xl:col-span-3 flex items-center gap-4 my-8 w-full';
                     div.innerHTML = '<div class="h-px bg-gray-800/80 flex-grow"></div><span class="text-[10px] font-mono text-gray-500 border border-gray-800 bg-[#020617] px-4 py-1.5 rounded-full uppercase tracking-widest">Jornada Anterior</span><div class="h-px bg-gray-800/80 flex-grow"></div>';
                     todosVisibles[i].parentNode.insertBefore(div, todosVisibles[i]);
                     break;
-                }
-            }
-        }
+                }}
+            }}
+        }}
         
         aplicarVistas();
         actualizarTiempos();
         actualizarReloj();
-        setInterval(actualizarTiempos, 60000);
+        setInterval(actualizarTiemmas, 60000);
         setInterval(actualizarReloj, 1000);
     </script>
 </body>
