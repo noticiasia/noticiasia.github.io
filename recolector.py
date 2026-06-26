@@ -123,7 +123,7 @@ Eres un analista de mercados de alto nivel. Tienes esta lista de noticias:
 TAREAS ESTRICTAS:
 1. ELIMINAR CLONES: Si varias noticias hablan de exactamente lo mismo, agrúpalas en una sola. En el campo 'DIARIOS', pon el nombre de todos los medios separados por coma (Ej: INFOBAE, TN).
 2. CATEGORÍA: Solo DEPORTES, POLÍTICA, ECONOMÍA o MERCADOS.
-3. VIÑETAS & LECTURA ACTIVA: Escribe el resumen en exactamente 3 viñetas cortas, separadas por la etiqueta <br>•. Usa la etiqueta HTML <b>texto</b> para resaltar los datos duros más importantes (cifras, nombres, tickers).
+3. VIÑETAS & LECTURA ACTIVA: Escribe el resumen en exactamente 3 viñetas cortas, separadas por la etiqueta <br><span class="text-cyan-400 font-bold mr-2">▪</span>. Usa la etiqueta HTML <b>texto</b> para resaltar los datos duros más importantes (cifras, nombres, tickers).
 4. TAGS: 2 o 3 palabras clave separadas por coma.
 5. SENTIMIENTO: Evalúa la noticia para el inversor argentino. Responde solo con: POSITIVO, NEGATIVO o NEUTRAL.
 6. IMPACTO: Del 1 al 5.
@@ -211,12 +211,12 @@ if exito:
 
                 tags_html = "".join([f'<span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#{t.strip().upper()}</span>' for t in tags_raw.split(",") if t.strip()])
 
-                if not vinetas.startswith('•'):
-                    vinetas = '• ' + vinetas
+                if not vinetas.startswith('<span'):
+                    vinetas = '<span class="text-cyan-400 font-bold mr-2">▪</span>' + vinetas
 
                 tarjetas_html += f"""
-                <article data-categoria="{categoria}" class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col {borde_sent} hover:scale-[1.02] transition-transform duration-300 shadow-xl shadow-black/60 border border-gray-800/60 break-words overflow-hidden">
-                    <div class="flex justify-between items-start mb-4">
+                <article data-categoria="{categoria}" data-url="{link}" class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col {borde_sent} hover:scale-[1.02] transition-all duration-300 shadow-xl shadow-black/60 border border-gray-800/60 h-[380px] overflow-hidden">
+                    <div class="flex justify-between items-start mb-3 shrink-0">
                         <div class="flex flex-col gap-2 max-w-[70%]">
                             <div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
                                 <span class="{pill} px-2 py-1 rounded-md whitespace-nowrap">{categoria}</span>
@@ -224,19 +224,25 @@ if exito:
                             </div>
                             <span class="text-[9px] text-gray-500 font-mono uppercase tracking-widest break-all">{diarios}</span>
                         </div>
-                        <span class="tiempo-noticia text-gray-400 text-xs font-mono bg-gray-900/80 border border-gray-700 px-2 py-1 rounded shrink-0" data-timestamp="{timestamp_iso}">Reciente</span>
+                        <div class="flex flex-col items-end gap-1 shrink-0">
+                            <span class="tiempo-noticia text-gray-400 text-xs font-mono bg-gray-900/80 border border-gray-700 px-2 py-1 rounded" data-timestamp="{timestamp_iso}">Reciente</span>
+                            <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">Leída</span>
+                        </div>
                     </div>
                     
-                    <a href="{link}" target="_blank" class="group block mb-3 overflow-hidden">
-                        <h2 class="text-lg md:text-xl font-bold text-gray-100 leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 break-words">{titulo}</h2>
+                    <a href="{link}" target="_blank" class="ln-link group block mb-2 shrink-0 overflow-hidden">
+                        <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 line-clamp-2 break-words">{titulo}</h2>
                     </a>
                     
-                    <p class="text-gray-400 text-sm flex-grow leading-relaxed mt-2 space-y-1 break-words">{vinetas}</p>
+                    <div class="text-gray-400 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words">
+                        {vinetas}
+                    </div>
                     
-                    {badge_clon}
-                    
-                    <div class="flex flex-wrap gap-2 mt-4 pt-4 border-t border-gray-800/50">
-                        {tags_html}
+                    <div class="shrink-0 mt-3 pt-3 border-t border-gray-800/50 flex flex-wrap items-center justify-between gap-2">
+                        <div class="flex flex-wrap gap-1.5">
+                            {tags_html}
+                        </div>
+                        {badge_clon}
                     </div>
                 </article>
                 """
@@ -280,7 +286,7 @@ urls_historial = set()
 articulos_unicos = []
 
 for articulo in articulos_ordenados:
-    enlace = articulo.find('a', target="_blank")
+    enlace = articulo.find('a', class_='ln-link', target="_blank")
     if enlace and 'href' in enlace.attrs:
         link_articulo = enlace['href']
         if link_articulo not in urls_historial:
@@ -301,7 +307,6 @@ print("Obteniendo cotizaciones del mercado...")
 widgets_html = ""
 oficial_venta = 1 
 
-# Dólares
 try:
     req_dolar = requests.get("https://dolarapi.com/v1/dolares", timeout=10)
     if req_dolar.status_code == 200:
@@ -319,12 +324,13 @@ try:
                 compra = d_info.get("compra", venta)
 
                 brecha_html = ""
-                variacion_visual = '<span class="text-[10px] text-rose-500 flex items-center">▲<span class="opacity-50 text-[8px]">+0.5%</span></span>'
+                variacion_visual = '<span class="text-[10px] text-rose-500 flex items-center font-bold">▲<span class="opacity-60 text-[8px]">+0.5%</span></span>'
+                
                 if casa != "oficial":
                     brecha = ((venta / oficial_venta) - 1) * 100
-                    brecha_html = f'<div class="text-[10px] text-cyan-400 font-mono mt-1 bg-cyan-900/30 rounded border border-cyan-500/30 px-1.5 py-0.5 w-max">Brecha: {brecha:.1f}%</div>'
+                    brecha_html = f'<div class="text-[10px] text-cyan-400 font-mono mt-1 bg-cyan-950/30 rounded border border-cyan-500/30 px-1.5 py-0.5 w-max">Brecha: {brecha:.1f}%</div>'
                 else:
-                    variacion_visual = '<span class="text-[10px] text-emerald-500 flex items-center">▼<span class="opacity-50 text-[8px]">-0.1%</span></span>'
+                    variacion_visual = '<span class="text-[10px] text-emerald-500 flex items-center font-bold">▼<span class="opacity-60 text-[8px]">-0.1%</span></span>'
 
                 widgets_html += f"""
                 <div class="bg-[#0f172a]/80 backdrop-blur-xl border border-gray-700/60 rounded-xl p-3 md:p-4 flex-1 min-w-[130px] max-w-[48%] md:max-w-none shadow-[0_8px_30px_rgb(0,0,0,0.5)] flex flex-col justify-between">
@@ -341,7 +347,6 @@ try:
 except:
     pass
 
-# Riesgo País
 try:
     req_rp = requests.get("https://api.argentinadatos.com/v1/finanzas/indices/riesgo-pais", timeout=10)
     if req_rp.status_code == 200:
@@ -362,68 +367,9 @@ try:
 except:
     pass
 
-# Yahoo Finanzas
-headers_yahoo = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
-activos = [
-    {"ticker": "YPF", "nombre": "YPF (ADR)", "bandera": "🇦🇷"},
-    {"ticker": "GGAL", "nombre": "GALICIA (ADR)", "bandera": "🇦🇷"},
-    {"ticker": "^GSPC", "nombre": "S&P 500", "bandera": "🇺🇸"}
-]
-for activo in activos:
-    try:
-        url_yahoo = f"https://query1.finance.yahoo.com/v8/finance/chart/{activo['ticker']}?region=US&lang=en-US"
-        req_yahoo = requests.get(url_yahoo, headers=headers_yahoo, timeout=5)
-        if req_yahoo.status_code == 200:
-            data = req_yahoo.json()
-            meta = data['chart']['result'][0]['meta']
-            
-            precio = meta['regularMarketPrice']
-            cierre_previo = meta.get('previousClose', precio)
-            
-            if cierre_previo > 0:
-                variacion_pct = ((precio / cierre_previo) - 1) * 100
-            else:
-                variacion_pct = 0
-                
-            if variacion_pct > 0:
-                color_var = "text-[#00E5FF]" 
-                signo = "+"
-            elif variacion_pct < 0:
-                color_var = "text-rose-500"  
-                signo = ""
-            else:
-                color_var = "text-gray-500"  
-                signo = ""
-                
-            var_html = f'<span class="{color_var} text-[10px] ml-1 font-bold">{signo}{variacion_pct:.2f}%</span>'
-
-            if "^" in activo['ticker']:
-                precio_form = f"{int(precio):,}".replace(",", ".")
-            else:
-                precio_form = f"US$ {precio:.2f}"
-            
-            widgets_html += f"""
-            <div class="bg-[#0f172a]/80 backdrop-blur-xl border border-gray-700/60 rounded-xl p-3 md:p-4 flex-1 min-w-[130px] max-w-[48%] md:max-w-none shadow-[0_8px_30px_rgb(0,0,0,0.5)] hover:border-blue-500/50 transition flex flex-col justify-between">
-                <div class="flex justify-between items-center w-full">
-                    <span class="text-blue-400 text-[9px] md:text-[10px] font-black tracking-wider uppercase truncate">{activo['nombre']}</span>
-                    <span class="text-gray-500 text-xs opacity-80">{activo['bandera']}</span>
-                </div>
-                <div class="text-xl md:text-2xl font-mono font-black text-white mt-1 flex items-center justify-between gap-1">
-                    {precio_form} {var_html}
-                </div>
-                <div class="mt-2 border-t border-gray-800/50 pt-2">
-                    <span class="text-[9px] md:text-[10px] text-gray-500 font-mono">Wall Street</span>
-                </div>
-            </div>
-            """
-    except:
-        pass
-
-
 if not noticias_urgentes_ticker:
     noticias_urgentes_ticker = ["El mercado opera con cautela a la espera de nuevos datos macroeconómicos.", "Jornada clave en la bolsa porteña."]
 ticker_items = "".join([f'<span class="mx-10 flex items-center gap-2"><span class="text-rose-500 animate-pulse">⚡</span> {tit}</span>' for tit in noticias_urgentes_ticker])
-
 
 # --- PLANTILLA HTML DEFINITIVA ---
 html_completo = f"""<!DOCTYPE html>
@@ -447,14 +393,18 @@ html_completo = f"""<!DOCTYPE html>
         @keyframes ticker {{ 0% {{ transform: translateX(100vw); }} 100% {{ transform: translateX(-100%); }} }}
         .animate-ticker {{ display: inline-flex; white-space: nowrap; animation: ticker 35s linear infinite; }}
         .animate-ticker:hover {{ animation-play-state: paused; }}
-        article b {{ color: #38bdf8; font-weight: 800; background: rgba(56, 189, 248, 0.15); padding: 0 4px; border-radius: 4px; border: 1px solid rgba(56,189,248,0.2);}}
-        ::-webkit-scrollbar {{ width: 8px; }}
+        article b {{ color: #38bdf8; font-weight: 800; background: rgba(56, 189, 248, 0.12); padding: 0 4px; border-radius: 4px; border: 1px solid rgba(56,189,248,0.2);}}
+        ::-webkit-scrollbar {{ width: 6px; }}
         ::-webkit-scrollbar-track {{ background: #0f172a; }}
         ::-webkit-scrollbar-thumb {{ background: #334155; border-radius: 4px; }}
         ::-webkit-scrollbar-thumb:hover {{ background: #475569; }}
         .no-scrollbar::-webkit-scrollbar {{ display: none; }}
         .no-scrollbar {{ -ms-overflow-style: none; scrollbar-width: none; }}
         .break-words {{ overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; }}
+        .line-clamp-2 {{ display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }}
+        
+        /* Efecto Atenuación Leídas (35% Opacidad) */
+        .tarjeta-leida {{ opacity: 0.35 !important; filter: grayscale(40%); border-top-color: #475569 !important; transition: all 0.3s ease; }}
     </style>
 </head>
 <body class="flex w-full min-h-screen m-0 p-0">
@@ -467,19 +417,33 @@ html_completo = f"""<!DOCTYPE html>
             <p class="text-[10px] text-gray-500 mt-1 font-mono tracking-widest">v26.0 - MASTER EDITION</p>
         </div>
         
-        <div class="p-6 flex-grow overflow-y-auto">
-            <p class="text-[10px] text-gray-500 uppercase tracking-widest font-black mb-4">Categorías</p>
-            <div class="flex flex-col gap-2 mb-10">
-                <button data-filter="TODAS" class="btn-filtro bg-cyan-900/30 text-cyan-400 border border-cyan-500/50 text-left px-4 py-3 rounded-xl font-bold text-sm transition shadow-[0_0_15px_rgba(34,211,238,0.1)]">🏦 Todo el Feed</button>
-                <button data-filter="MERCADOS" class="btn-filtro hover:bg-gray-800/50 text-gray-400 border border-transparent text-left px-4 py-3 rounded-xl font-semibold text-sm transition">📈 Mercados</button>
-                <button data-filter="ECONOMÍA" class="btn-filtro hover:bg-gray-800/50 text-gray-400 border border-transparent text-left px-4 py-3 rounded-xl font-semibold text-sm transition">💰 Economía</button>
-                <button data-filter="POLÍTICA" class="btn-filtro hover:bg-gray-800/50 text-gray-400 border border-transparent text-left px-4 py-3 rounded-xl font-semibold text-sm transition">🏛️ Política</button>
-                <button data-filter="DEPORTES" class="btn-filtro hover:bg-gray-800/50 text-gray-400 border border-transparent text-left px-4 py-3 rounded-xl font-semibold text-sm transition">⚽ Deportes</button>
+        <div class="p-6 flex-grow overflow-y-auto flex flex-col gap-6">
+            <div class="bg-[#0f172a]/70 border border-gray-800 rounded-xl p-4 text-center">
+                <p class="text-[10px] text-gray-500 uppercase tracking-widest font-black mb-1">Hora Oficial ART</p>
+                <div id="reloj-digital" class="text-3xl font-mono font-black text-gray-100 tracking-wider">00:00:00</div>
+                <div id="mercado-estado" class="mt-2 text-xs font-bold px-2.5 py-1 rounded-full inline-block">--</div>
+            </div>
+
+            <div>
+                <p class="text-[10px] text-gray-500 uppercase tracking-widest font-black mb-3">Categorías</p>
+                <div class="flex flex-col gap-2">
+                    <button data-filter="TODAS" class="btn-filtro bg-cyan-900/30 text-cyan-400 border border-cyan-500/50 text-left px-4 py-3 rounded-xl font-bold text-sm transition shadow-[0_0_15px_rgba(34,211,238,0.1)]">🏦 Todo el Feed</button>
+                    <button data-filter="MERCADOS" class="btn-filtro hover:bg-gray-800/50 text-gray-400 border border-transparent text-left px-4 py-3 rounded-xl font-semibold text-sm transition">📈 Mercados</button>
+                    <button data-filter="ECONOMÍA" class="btn-filtro hover:bg-gray-800/50 text-gray-400 border border-transparent text-left px-4 py-3 rounded-xl font-semibold text-sm transition">💰 Economía</button>
+                    <button data-filter="POLÍTICA" class="btn-filtro hover:bg-gray-800/50 text-gray-400 border border-transparent text-left px-4 py-3 rounded-xl font-semibold text-sm transition">🏛️ Política</button>
+                    <button data-filter="DEPORTES" class="btn-filtro hover:bg-gray-800/50 text-gray-400 border border-transparent text-left px-4 py-3 rounded-xl font-semibold text-sm transition">⚽ Deportes</button>
+                </div>
+            </div>
+
+            <div class="mt-auto">
+                <button id="btn-reset-leidas" class="w-full bg-gray-900 hover:bg-gray-800 text-gray-400 border border-gray-800 hover:border-gray-700 rounded-xl py-2.5 text-xs font-mono transition">
+                    🔄 Resetear Leídas
+                </button>
             </div>
         </div>
 
         <div class="p-6 border-t border-gray-800/80 bg-[#0f172a]/30">
-            <a href="https://www.linkedin.com/in/brian-yapura-061522156/" target="_blank" class="w-full bg-[#1e293b] hover:bg-[#334155] border border-gray-700/50 rounded-xl p-3 flex justify-center items-center gap-3 transition shadow-lg">
+            <a href="TU_LINK_DE_LINKEDIN_AQUI" target="_blank" class="w-full bg-[#1e293b] hover:bg-[#334155] border border-gray-700/50 rounded-xl p-3 flex justify-center items-center gap-3 transition shadow-lg">
                 <div class="bg-[#0a66c2] text-white px-1.5 py-0.5 rounded text-sm font-bold">in</div>
                 <span class="text-gray-200 font-semibold text-xs tracking-wide">Conectar en LinkedIn</span>
             </a>
@@ -511,7 +475,7 @@ html_completo = f"""<!DOCTYPE html>
 
         <div class="p-4 md:p-8 w-full flex-grow max-w-full overflow-x-hidden box-border">
             
-            <div id="separador-hoy" class="flex items-center gap-4 mb-8 mt-2 w-full">
+            <div id="separador-hoy" class="flex items-center gap-4 mb-6 mt-2 w-full">
                 <div class="h-px bg-gray-800 flex-grow"></div>
                 <span class="text-[10px] font-mono text-cyan-500 border border-cyan-500/30 bg-cyan-900/20 px-4 py-1.5 rounded-full uppercase tracking-widest shadow-[0_0_10px_rgba(34,211,238,0.1)] whitespace-nowrap">Últimas Noticias</span>
                 <div class="h-px bg-gray-800 flex-grow"></div>
@@ -534,6 +498,7 @@ html_completo = f"""<!DOCTYPE html>
     </div>
 
     <script>
+        // LÓGICA DE FILTRADO
         const botonesCat = document.querySelectorAll('.btn-filtro, .btn-filtro-movil');
         const articulos = Array.from(document.querySelectorAll('.tarjeta-noticia'));
         
@@ -556,7 +521,9 @@ html_completo = f"""<!DOCTYPE html>
 
         botonesCat.forEach(boton => {{
             boton.addEventListener('click', () => {{
+                // Reset visual desktop
                 document.querySelectorAll('.btn-filtro').forEach(b => b.className = 'btn-filtro hover:bg-gray-800/50 text-gray-400 border border-transparent text-left px-4 py-3 rounded-xl font-semibold text-sm transition');
+                // Reset visual movil
                 document.querySelectorAll('.btn-filtro-movil').forEach(b => b.className = 'btn-filtro-movil bg-gray-800 text-gray-400 px-4 py-2 rounded-lg font-semibold text-xs whitespace-nowrap');
                 
                 if(boton.classList.contains('btn-filtro')) {{
@@ -570,6 +537,44 @@ html_completo = f"""<!DOCTYPE html>
             }});
         }});
 
+        // LÓGICA DE SISTEMA LEÍDO (localStorage)
+        function chequearLeidas() {{
+            const leidas = JSON.parse(localStorage.getItem('noticias_leidas') || '[]');
+            articulos.forEach(art => {{
+                const url = art.getAttribute('data-url');
+                if (leidas.includes(url)) {{
+                    art.classList.add('tarjeta-leida');
+                    const badge = art.querySelector('.badge-leida');
+                    if (badge) badge.classList.remove('hidden');
+                }} else {{
+                    art.classList.remove('tarjeta-leida');
+                    const badge = art.querySelector('.badge-leida');
+                    if (badge) badge.classList.add('hidden');
+                }}
+            }});
+        }}
+
+        articulos.forEach(art => {{
+            const linkTag = art.querySelector('.ln-link');
+            if (linkTag) {{
+                linkTag.addEventListener('click', () => {{
+                    const url = art.getAttribute('data-url');
+                    let leidas = JSON.parse(localStorage.getItem('noticias_leidas') || '[]');
+                    if (!leidas.includes(url)) {{
+                        leidas.push(url);
+                        localStorage.setItem('noticias_leidas', JSON.stringify(leidas));
+                    }}
+                    chequearLeidas();
+                }});
+            }}
+        }});
+
+        document.getElementById('btn-reset-leidas').addEventListener('click', () => {{
+            localStorage.removeItem('noticias_leidas');
+            chequearLeidas();
+        }});
+
+        // LÓGICA DE SCROLL AUTOMÁTICO
         let itemsMostrados = 12;
         let isFetching = false;
         const spinner = document.getElementById('loading-spinner');
@@ -578,10 +583,10 @@ html_completo = f"""<!DOCTYPE html>
         function reiniciarScroll() {{
             itemsMostrados = 12;
             window.scrollTo({{ top: 0, behavior: 'smooth' }});
-            renderizarScroll();
+            renderScrollConRespeto();
         }}
 
-        function renderizarScroll() {{
+        function renderScrollConRespeto() {{
             const articulosFiltrados = articulos.filter(art => !art.classList.contains('hidden-by-filter'));
             
             articulosFiltrados.forEach((art, index) => {{
@@ -617,7 +622,7 @@ html_completo = f"""<!DOCTYPE html>
                     
                     setTimeout(() => {{
                         itemsMostrados += 12;
-                        renderizarScroll();
+                        renderScrollConRespeto();
                         spinner.classList.add('hidden');
                         spinner.classList.remove('flex');
                         isFetching = false;
@@ -630,6 +635,29 @@ html_completo = f"""<!DOCTYPE html>
             reiniciarScroll();
         }});
 
+        // RELOJ DIGITAL DE MERCADOS (Idea A)
+        function actualizarReloj() {{
+            const ahora = new Date();
+            // Ajuste a hora oficial Argentina (ART / UTC-3)
+            const opciones = {{ timeZone: 'America/Argentina/Buenos_Aires', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false }};
+            const horaStr = ahora.toLocaleTimeString('es-AR', opciones);
+            document.getElementById('reloj-digital').textContent = horaStr;
+            
+            // Evaluar estado del mercado (Lunes=1 a Viernes=5, entre las 11 y las 17 hs)
+            const diaSemana = ahora.getDay(); 
+            const horaActual = ahora.getHours();
+            const estadoEl = document.getElementById('mercado-estado');
+            
+            if (diaSemana >= 1 && diaSemana <= 5 && horaActual >= 11 && horaActual < 17) {{
+                estadoEl.textContent = "🟢 OPERANDO";
+                estadoEl.className = "mt-2 text-xs font-bold px-3 py-1 rounded-full inline-block bg-emerald-950/40 text-emerald-400 border border-emerald-500/30 shadow-[0_0_10px_rgba(16,185,129,0.1)] animate-pulse";
+            }} else {{
+                estadoEl.textContent = "🔴 CERRADO";
+                estadoEl.className = "mt-2 text-xs font-bold px-3 py-1 rounded-full inline-block bg-rose-950/40 text-rose-400 border border-rose-500/30";
+            }}
+        }}
+
+        // SEPARADOR "AYER" DINÁMICO Y TIEMPOS
         function actualizarTiempos() {{
             document.querySelectorAll('.tiempo-noticia').forEach(el => {{
                 const timestampStr = el.getAttribute('data-timestamp');
@@ -670,16 +698,20 @@ html_completo = f"""<!DOCTYPE html>
                     const div = document.createElement('div');
                     div.id = 'separador-ayer-dinamico';
                     div.className = 'col-span-1 md:col-span-2 xl:col-span-3 flex items-center gap-4 my-8 w-full';
-                    div.innerHTML = '<div class="h-px bg-gray-800/80 flex-grow"></div><span class="text-[10px] font-mono text-gray-500 border border-gray-800 bg-[#0b0f19] px-4 py-1.5 rounded-full uppercase tracking-widest">Jornada Anterior</span><div class="h-px bg-gray-800/80 flex-grow"></div>';
+                    div.innerHTML = '<div class="h-px bg-gray-800/80 flex-grow"></div><span class="text-[10px] font-mono text-gray-500 border border-gray-800 bg-[#020617] px-4 py-1.5 rounded-full uppercase tracking-widest">Jornada Anterior</span><div class="h-px bg-gray-800/80 flex-grow"></div>';
                     todosVisibles[i].parentNode.insertBefore(div, todosVisibles[i]);
                     break;
                 }}
             }}
         }}
         
+        // Inicialización
+        chequearLeidas();
         aplicarFiltros();
         actualizarTiempos();
+        actualizarReloj();
         setInterval(actualizarTiempos, 60000);
+        setInterval(actualizarReloj, 1000);
     </script>
 </body>
 </html>"""
