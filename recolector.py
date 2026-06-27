@@ -61,13 +61,14 @@ for fuente in fuentes:
                         urls_vistas_ronda_actual.add(link)
                         noticias_extraidas.append({"fuente": fuente["nombre"], "titulo": texto_limpio, "link": link})
                         contador += 1
-                        if contador >= 8: # Extraemos más volumen para alimentar el scroll infinito
+                        if contador >= 12: # Extraemos más volumen por fuente para llenar la grilla
                             break
     except Exception:
         pass
 
 random.shuffle(noticias_extraidas)
-noticias_finales = noticias_extraidas[:35] 
+# Aumentamos el límite a 40 noticias para procesar con IA
+noticias_finales = noticias_extraidas[:40] 
 
 # --- MOTOR FORENSE DE EXTRACCIÓN DE HORA ---
 print("Extrayendo metadatos de tiempo...")
@@ -123,7 +124,7 @@ TAREAS ESTRICTAS:
 1. ELIMINAR CLONES: Si varias noticias hablan de exactamente lo mismo, agrúpalas en una sola. En el campo 'DIARIOS', pon el nombre de todos los medios separados por coma (Ej: INFOBAE, TN).
 2. CATEGORÍA: Solo DEPORTES, POLÍTICA, ECONOMÍA o MERCADOS.
 3. VIÑETAS & LECTURA ACTIVA: Escribe el resumen en exactamente 3 viñetas cortas, separadas por la etiqueta <br><span class="text-[#00E5FF] font-bold mr-2">▪</span>. Usa la etiqueta HTML <b>texto</b> para resaltar los datos duros más importantes (cifras, nombres).
-4. CONTEXTO DE IMPACTO: En la tercera y última viñeta, argumenta de forma obligatoria el porqué de la calificación de impacto asignada (ej. "Impacto de nivel 4 porque la medida presiona las reservas del BCRA...").
+4. CONTEXTO DE IMPACTO: En la tercera y última viñeta, argumenta de forma obligatoria el porqué de la calificación de impacto asignada (ej. "Impacto negativo porque afecta la inflación local...").
 5. TAGS: 2 o 3 palabras clave separadas por coma.
 6. SENTIMIENTO: Evalúa la noticia para el inversor argentino. Responde solo con: POSITIVO, NEGATIVO o NEUTRAL.
 7. IMPACTO: Del 1 al 5.
@@ -176,8 +177,6 @@ if exito:
                     dt_noticia = datetime.fromisoformat(timestamp_iso.replace('Z', '+00:00'))
                     if dt_noticia.tzinfo is None:
                         dt_noticia = dt_noticia.replace(tzinfo=timezone.utc)
-                    
-                    # GUILLOTINA ABSOLUTA: Purga total de rastro de noticias mayores a 48 horas
                     diferencia_horas = (datetime.now(timezone.utc) - dt_noticia).total_seconds() / 3600
                     if diferencia_horas > 48:
                         continue 
@@ -308,7 +307,8 @@ for articulo in articulos_ordenados:
     else:
         articulos_unicos.append(articulo)
 
-max_noticias = 80
+# Aumentamos el límite histórico a 100 para garantizar volumen
+max_noticias = 100
 articulos_finales = articulos_unicos[:max_noticias]
 historial_recortado = "\n".join([str(art) for art in articulos_finales])
 
@@ -320,7 +320,7 @@ print("Obteniendo cotizaciones del mercado...")
 widgets_html = ""
 oficial_venta = 1 
 
-# 4.1 Dólares (Formato Premium Idéntico a Captura)
+# 4.1 Dólares (Formato Premium)
 try:
     req_dolar = requests.get("https://dolarapi.com/v1/dolares", timeout=10)
     if req_dolar.status_code == 200:
@@ -365,7 +365,7 @@ try:
 except Exception:
     pass
 
-# 4.2 Riesgo País Dinámico (Cálculo real de porcentaje e historial de ayer)
+# 4.2 Riesgo País Dinámico
 try:
     req_rp = requests.get("https://api.argentinadatos.com/v1/finanzas/indices/riesgo-pais", timeout=10)
     if req_rp.status_code == 200:
@@ -412,7 +412,7 @@ if not noticias_urgentes_ticker:
     noticias_urgentes_ticker = ["El mercado financiero opera con normalidad. Monitoreo activado."]
 ticker_items = "".join([f'<span class="mx-10 flex items-center gap-2 text-base md:text-lg"><span class="text-[#00E5FF] animate-pulse">⚡</span> {tit}</span>' for tit in noticias_urgentes_ticker])
 
-# --- 5. PLANTILLA HTML DEFINITIVA (Sintaxis Blindada con llaves dobles {{ }}) ---
+# --- 5. PLANTILLA HTML DEFINITIVA (Sintaxis Blindada) ---
 html_completo = f"""<!DOCTYPE html>
 <html lang="es" class="w-full h-full m-0 p-0 overflow-x-hidden">
 <head>
@@ -420,7 +420,6 @@ html_completo = f"""<!DOCTYPE html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terminal | Mercados & Actualidad</title>
     <meta name="description" content="Terminal de mercados y actualidad analizada por IA.">
-    <meta property="og:image" content="https://itu.uncuyo.edu.ar/cache/16c63c321040ab4da2010172ba336d67_732_1296.jpg"> 
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=JetBrains+Mono:wght@400;700&display=swap');
@@ -467,7 +466,7 @@ html_completo = f"""<!DOCTYPE html>
         <div class="p-6 border-t border-[#2A2A2A] bg-[#111111]">
             <a href="https://www.linkedin.com/in/brian-yapura-061522156/" target="_blank" class="w-full bg-[#1A1A1A] hover:bg-[#2A2A2A] border border-[#333333] rounded-xl p-3 flex justify-center items-center gap-3 transition shadow-lg">
                 <div class="bg-[#00E5FF] text-black px-2 py-0.5 rounded text-sm font-bold">in</div>
-                <span class="text-gray-200 font-semibold text-xs tracking-wide">Perfil Profesional</span>
+                <span class="text-white font-semibold text-xs tracking-wide">Perfil Profesional</span>
             </a>
         </div>
     </aside>
@@ -490,7 +489,7 @@ html_completo = f"""<!DOCTYPE html>
             
             <div class="w-full bg-cyan-950/20 border border-cyan-500/20 rounded-xl p-4 mb-6 text-xs text-cyan-400 font-medium flex items-center gap-2.5 shadow-md">
                 <span>💡</span>
-                <p><b>Info:</b> Las noticias que leas o en las que hagas clic desaparecerán automáticamente de este feed principal. Podrás consultarlas o recuperarlas en cualquier momento usando el menú lateral izquierdo.</p>
+                <p><b>Info:</b> Las noticias que leas o en las que hagas clic desaparecerán de este feed principal. Podrás consultarlas o recuperarlas en cualquier momento usando el menú lateral izquierdo.</p>
             </div>
 
             <div id="separador-hoy" class="flex items-center gap-4 mb-8 w-full">
@@ -523,7 +522,6 @@ html_completo = f"""<!DOCTYPE html>
         function aplicarVistas() {{
             const leidas = JSON.parse(localStorage.getItem('noticias_leidas') || '[]');
             
-            // Filtrar del universo total
             const universo = articulos.filter(art => {{
                 const url = art.getAttribute('data-url');
                 const isRead = leidas.includes(url);
@@ -532,7 +530,6 @@ html_completo = f"""<!DOCTYPE html>
 
             articulos.forEach(art => art.style.display = 'none');
 
-            // Renderizado segmentado (Scroll Infinito Controlado)
             universo.forEach((art, index) => {{
                 if (index < limitNoticias) {{
                     art.style.display = 'flex';
@@ -560,12 +557,9 @@ html_completo = f"""<!DOCTYPE html>
             actualizarSeparadorAyer();
         }}
 
-        // Sistema de marcado por clic en cualquier parte del bloque
         articulos.forEach(art => {{
             art.addEventListener('click', (e) => {{
                 if (vistaActual !== "principales") return;
-                
-                // Evitamos conflictos si hace clic en el enlace directo
                 if (e.target.closest('a')) return;
 
                 const url = art.getAttribute('data-url');
@@ -586,7 +580,6 @@ html_completo = f"""<!DOCTYPE html>
             }});
         }});
 
-        // Manejo del Scroll Infinito Nativo de a 12 elementos
         window.addEventListener('scroll', () => {{
             const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
             const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -612,14 +605,12 @@ html_completo = f"""<!DOCTYPE html>
             }}
         }});
 
-        // Botón Contraer Historial Extra
         document.getElementById('btn-volver-arriba').addEventListener('click', () => {{
             limitNoticias = 12;
             window.scrollTo({{ top: 0, behavior: 'smooth' }});
             setTimeout(() => aplicarVistas(), 400);
         }});
 
-        // Conmutadores del Sidebar Izquierdo
         const btnVerLeidas = document.getElementById('btn-ver-leidas');
         const tituloSeccion = document.getElementById('titulo-seccion');
 
@@ -648,7 +639,6 @@ html_completo = f"""<!DOCTYPE html>
             window.scrollTo({{ top: 0, behavior: 'smooth' }});
         }});
 
-        // Reloj ART con Estado de Mercado Dinámico
         function actualizarReloj() {{
             const ahora = new Date();
             const opciones = {{ timeZone: 'America/Argentina/Buenos_Aires', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false }};
@@ -659,7 +649,6 @@ html_completo = f"""<!DOCTYPE html>
             const min = ahora.getMinutes();
             const estadoEl = document.getElementById('mercado-estado');
             
-            // Validamos franja estricta desde 10:30 hs hasta las 17:00 hs de Lunes a Viernes
             const enHorario = (hora > 10 && hora < 17) || (hora === 10 && min >= 30);
             const abierto = dia >= 1 && dia <= 5 && enHorario;
 
@@ -688,11 +677,11 @@ html_completo = f"""<!DOCTYPE html>
                     el.className = "tiempo-noticia text-[#00E5FF] text-[10px] font-black font-mono bg-[#00E5FF]/10 border border-[#00E5FF]/30 px-2 py-1 rounded shadow-[0_0_10px_rgba(0,229,255,0.2)]";
                 }} else if (diffMinutos < 60) {{
                     el.textContent = `HACE ${{diffMinutos}}m`;
-                    el.className = "tiempo-noticia text-gray-300 text-[10px] font-mono bg-gray-800 border border-gray-700 px-2 py-1 rounded";
+                    el.className = "tiempo-noticia text-gray-300 text-[10px] font-mono bg-[#1A1A1A] border border-[#2A2A2A] px-2 py-1 rounded";
                 }} else if (diffMinutos < 1440) {{
                     const diffHoras = Math.floor(diffMinutos / 60);
                     el.textContent = `HACE ${{diffHoras}}h`;
-                    el.className = "tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A] border border-[#2A2A2A] px-2 py-1 rounded";
+                    el.className = "tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#111111] border border-[#2A2A2A] px-2 py-1 rounded";
                 }} else {{
                     el.textContent = 'AYER';
                     el.className = "tiempo-noticia text-gray-600 text-[10px] font-mono bg-transparent border border-[#2A2A2A] px-2 py-1 rounded";
