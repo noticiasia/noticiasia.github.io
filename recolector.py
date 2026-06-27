@@ -1,11 +1,11 @@
+import json
+import os
+import random
+import time
+from datetime import datetime, timezone
 import requests
 from bs4 import BeautifulSoup
 from google import genai
-import os
-import time
-import random
-import json
-from datetime import datetime, timezone
 
 # --- 1. CONFIGURACIÓN DE LA IA ---
 API_KEY = os.environ.get("LLAVESECRETABRAI")
@@ -61,13 +61,13 @@ for fuente in fuentes:
                         urls_vistas_ronda_actual.add(link)
                         noticias_extraidas.append({"fuente": fuente["nombre"], "titulo": texto_limpio, "link": link})
                         contador += 1
-                        if contador >= 5: 
+                        if contador >= 8: # Extraemos más volumen para alimentar el scroll infinito
                             break
     except Exception:
         pass
 
 random.shuffle(noticias_extraidas)
-noticias_finales = noticias_extraidas[:20] 
+noticias_finales = noticias_extraidas[:35] 
 
 # --- MOTOR FORENSE DE EXTRACCIÓN DE HORA ---
 print("Extrayendo metadatos de tiempo...")
@@ -123,7 +123,7 @@ TAREAS ESTRICTAS:
 1. ELIMINAR CLONES: Si varias noticias hablan de exactamente lo mismo, agrúpalas en una sola. En el campo 'DIARIOS', pon el nombre de todos los medios separados por coma (Ej: INFOBAE, TN).
 2. CATEGORÍA: Solo DEPORTES, POLÍTICA, ECONOMÍA o MERCADOS.
 3. VIÑETAS & LECTURA ACTIVA: Escribe el resumen en exactamente 3 viñetas cortas, separadas por la etiqueta <br><span class="text-[#00E5FF] font-bold mr-2">▪</span>. Usa la etiqueta HTML <b>texto</b> para resaltar los datos duros más importantes (cifras, nombres).
-4. CONTEXTO DE IMPACTO: En la última viñeta, argumenta de forma concisa el porqué de la calificación de impacto asignada (ej. "Impacto negativo porque afecta la inflación local...").
+4. CONTEXTO DE IMPACTO: En la tercera y última viñeta, argumenta de forma obligatoria el porqué de la calificación de impacto asignada (ej. "Impacto de nivel 4 porque la medida presiona las reservas del BCRA...").
 5. TAGS: 2 o 3 palabras clave separadas por coma.
 6. SENTIMIENTO: Evalúa la noticia para el inversor argentino. Responde solo con: POSITIVO, NEGATIVO o NEUTRAL.
 7. IMPACTO: Del 1 al 5.
@@ -176,8 +176,10 @@ if exito:
                     dt_noticia = datetime.fromisoformat(timestamp_iso.replace('Z', '+00:00'))
                     if dt_noticia.tzinfo is None:
                         dt_noticia = dt_noticia.replace(tzinfo=timezone.utc)
+                    
+                    # GUILLOTINA ABSOLUTA: Purga total de rastro de noticias mayores a 48 horas
                     diferencia_horas = (datetime.now(timezone.utc) - dt_noticia).total_seconds() / 3600
-                    if diferencia_horas > 24:
+                    if diferencia_horas > 48:
                         continue 
                 except Exception:
                     pass
@@ -215,8 +217,8 @@ if exito:
                     vinetas = '<span class="text-[#00E5FF] font-bold mr-2">▪</span>' + vinetas
 
                 tarjetas_html += f"""
-                <article data-categoria="{categoria}" data-url="{link}" class="tarjeta-noticia bg-[#121212] rounded-xl p-6 flex flex-col {borde_sent} border-x border-b border-[#2A2A2A] hover:border-gray-500 transition-all duration-300 shadow-xl h-[380px] overflow-hidden cursor-pointer group">
-                    <div class="flex justify-between items-start mb-3 shrink-0">
+                <article data-categoria="{categoria}" data-url="{link}" class="tarjeta-noticia bg-[#121212] rounded-xl p-6 flex flex-col {borde_sent} border-x border-b border-[#2A2A2A] hover:border-gray-500 transition-all duration-300 shadow-xl h-[380px] overflow-hidden cursor-pointer group relative">
+                    <div class="flex justify-between items-start mb-3 shrink-0 select-none">
                         <div class="flex flex-col gap-2 max-w-[70%]">
                             <div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
                                 <span class="{pill} px-2 py-1 rounded-md whitespace-nowrap">{categoria}</span>
@@ -234,11 +236,11 @@ if exito:
                         <h2 class="text-lg md:text-xl font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">{titulo}</h2>
                     </a>
                     
-                    <div class="text-gray-400 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words">
+                    <div class="text-gray-400 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
                         {vinetas}
                     </div>
                     
-                    <div class="shrink-0 mt-3 pt-3 border-t border-[#2A2A2A] flex flex-wrap items-center justify-between gap-2">
+                    <div class="shrink-0 mt-3 pt-3 border-t border-[#2A2A2A] flex flex-wrap items-center justify-between gap-2 select-none">
                         <div class="flex flex-wrap gap-1.5">
                             {tags_html}
                         </div>
@@ -247,7 +249,7 @@ if exito:
                 </article>
                 """
     
-# --- PURGA DE FANTASMAS ---
+# --- PURGA DE HISTORIAL VIEJO ---
 historial_viejo_limpio = ""
 if os.path.exists("historial.txt"):
     with open("historial.txt", "r", encoding="utf-8") as f:
@@ -255,6 +257,17 @@ if os.path.exists("historial.txt"):
 
     sopa_vieja = BeautifulSoup(contenido_previo, 'html.parser')
     for tarjeta in sopa_vieja.find_all('article'):
+        # Aplicamos guillotina estricta de 48 horas también al historial guardado
+        tag_tiempo = tarjeta.find('span', class_='tiempo-noticia')
+        if tag_tiempo and tag_tiempo.has_attr('data-timestamp'):
+            try:
+                dt_tarjeta = datetime.fromisoformat(tag_tiempo['data-timestamp'].replace('Z', '+00:00'))
+                if (datetime.now(timezone.utc) - dt_tarjeta).total_seconds() / 3600 > 48:
+                    tarjeta.decompose()
+                    continue
+            except Exception:
+                pass
+        
         categoria_tarjeta = tarjeta.get('data-categoria', '').upper()
         if categoria_tarjeta not in ["DEPORTES", "POLÍTICA", "ECONOMÍA", "MERCADOS"]:
             tarjeta.decompose()
@@ -263,7 +276,7 @@ if os.path.exists("historial.txt"):
 
 historial_completo_str = tarjetas_html + "\n" + historial_viejo_limpio
 
-# --- ORDENAMIENTO Y ANTI-DUPLICADOS ---
+# --- ORDENAMIENTO Y ANTI-DUPLICADOS (Estructura Limpia Unificada) ---
 sopa_historial = BeautifulSoup(historial_completo_str, 'html.parser')
 todos_los_articulos = sopa_historial.find_all('article')
 
@@ -286,7 +299,7 @@ urls_historial = set()
 articulos_unicos = []
 
 for articulo in articulos_ordenados:
-    enlace = articulo.find('a', class_='ln-link', target="_blank")
+    enlace = articulo.find('a', class_='ln-link')
     if enlace and 'href' in enlace.attrs:
         link_articulo = enlace['href']
         if link_articulo not in urls_historial:
@@ -295,19 +308,19 @@ for articulo in articulos_ordenados:
     else:
         articulos_unicos.append(articulo)
 
-max_noticias = 60
+max_noticias = 80
 articulos_finales = articulos_unicos[:max_noticias]
 historial_recortado = "\n".join([str(art) for art in articulos_finales])
 
 with open("historial.txt", "w", encoding="utf-8") as f:
     f.write(historial_recortado)
 
-# --- 4. EXTRACCIÓN DEL MERCADO BURSÁTIL ---
+# --- 4. EXTRACCIÓN DEL MERCADO BURSÁTIL (SOLO DÓLARES Y RIESGO PAÍS) ---
 print("Obteniendo cotizaciones del mercado...")
 widgets_html = ""
 oficial_venta = 1 
 
-# Dólares (Estética de la captura)
+# 4.1 Dólares (Formato Premium Idéntico a Captura)
 try:
     req_dolar = requests.get("https://dolarapi.com/v1/dolares", timeout=10)
     if req_dolar.status_code == 200:
@@ -322,11 +335,9 @@ try:
             d_info = next((d for d in dolares if d["casa"] == casa), None)
             if d_info:
                 venta = d_info["venta"]
+                compra = d_info.get("compra", venta)
                 
-                # Simulamos la variación estética requerida (Cian si baja/neutro, Rojo si sube)
-                var_simulada_pct = 0.00
                 color_var = "text-[#00E5FF]"
-                
                 if casa != "oficial":
                     brecha = ((venta / oficial_venta) - 1) * 100
                     brecha_txt = f"Brecha {brecha:.1f}%"
@@ -334,24 +345,27 @@ try:
                     brecha_txt = "---"
 
                 widgets_html += f"""
-                <div class="bg-[#1A1A1A] border border-[#2A2A2A] rounded p-4 flex flex-col justify-center min-w-[170px] max-w-[48%] md:max-w-none">
+                <div class="bg-[#1A1A1A] border border-[#2A2A2A] rounded p-5 flex flex-col justify-center min-w-[190px] flex-1 shadow-lg">
                     <div class="flex items-center justify-between mb-1">
                         <div class="flex items-center gap-2">
                             <span class="text-xs text-gray-400 font-bold tracking-widest uppercase">DÓLAR {nombre}</span>
                             <span class="text-gray-500 text-xs">🇦🇷</span>
                         </div>
                     </div>
-                    <div class="flex items-baseline gap-2">
-                        <span class="text-2xl font-mono font-bold text-white">{venta}</span>
+                    <div class="flex items-baseline justify-between w-full mt-1">
+                        <span class="text-3xl font-mono font-bold text-white">${int(venta) if venta % 1 == 0 else venta}</span>
                         <span class="{color_var} text-sm font-mono font-bold">0.00%</span>
                     </div>
-                    <div class="mt-1 text-[10px] text-gray-500 font-mono uppercase">{brecha_txt}</div>
+                    <div class="mt-2 border-t border-[#232323] pt-1.5 flex justify-between text-[10px] text-gray-500 font-mono uppercase">
+                        <span>C: ${int(compra)}</span>
+                        <span>{brecha_txt}</span>
+                    </div>
                 </div>
                 """
 except Exception:
     pass
 
-# Riesgo País (Estética de la captura + Cálculo Real)
+# 4.2 Riesgo País Dinámico (Cálculo real de porcentaje e historial de ayer)
 try:
     req_rp = requests.get("https://api.argentinadatos.com/v1/finanzas/indices/riesgo-pais", timeout=10)
     if req_rp.status_code == 200:
@@ -362,44 +376,51 @@ try:
             dif_puntos = ultimo_rp - rp_ayer
             pct_var = (dif_puntos / rp_ayer) * 100 if rp_ayer else 0
             
-            # Cian es bueno (Riesgo baja), Rojo es malo (Riesgo sube)
             if dif_puntos < 0:
                 color_var = "text-[#00E5FF]"
+                simbolo = "▼"
                 signo = ""
             elif dif_puntos > 0:
                 color_var = "text-rose-500"
+                simbolo = "▲"
                 signo = "+"
             else:
                 color_var = "text-gray-500"
+                simbolo = ""
                 signo = ""
                 
             widgets_html += f"""
-            <div class="bg-[#1A1A1A] border border-[#2A2A2A] rounded p-4 flex flex-col justify-center min-w-[170px] max-w-[48%] md:max-w-none">
+            <div class="bg-[#1A1A1A] border border-[#2A2A2A] rounded p-5 flex flex-col justify-center min-w-[190px] flex-1 shadow-lg">
                 <div class="flex items-center gap-2 mb-1">
-                    <span class="text-xs text-gray-400 font-bold tracking-widest uppercase">RIESGO PAÍS</span>
+                    <span class="text-xs text-rose-400 font-bold tracking-widest uppercase">RIESGO PAÍS</span>
                     <span class="text-gray-500 text-xs">🇦🇷</span>
                 </div>
-                <div class="flex items-baseline gap-2">
-                    <span class="text-2xl font-mono font-bold text-white">{int(ultimo_rp)}</span>
-                    <span class="{color_var} text-sm font-mono font-bold">{signo}{pct_var:.2f}%</span>
+                <div class="flex items-baseline justify-between w-full mt-1">
+                    <span class="text-3xl font-mono font-bold text-white">{int(ultimo_rp)}</span>
+                    <span class="{color_var} text-sm font-mono font-bold">{simbolo}{abs(dif_puntos)} ({signo}{pct_var:.2f}%)</span>
                 </div>
-                <div class="mt-1 text-[10px] text-gray-500 font-mono uppercase">Ayer: {int(rp_ayer)} (EMBI)</div>
+                <div class="mt-2 border-t border-[#232323] pt-1.5 flex justify-between text-[10px] text-gray-500 font-mono uppercase">
+                    <span>CIERRE ANTERIOR</span>
+                    <span>Ayer: {int(rp_ayer)}</span>
+                </div>
             </div>
             """
 except Exception:
     pass
 
 if not noticias_urgentes_ticker:
-    noticias_urgentes_ticker = ["El mercado opera con cautela a la espera de nuevos datos macroeconómicos."]
+    noticias_urgentes_ticker = ["El mercado financiero opera con normalidad. Monitoreo activado."]
 ticker_items = "".join([f'<span class="mx-10 flex items-center gap-2 text-base md:text-lg"><span class="text-[#00E5FF] animate-pulse">⚡</span> {tit}</span>' for tit in noticias_urgentes_ticker])
 
-# --- PLANTILLA HTML DEFINITIVA ---
+# --- 5. PLANTILLA HTML DEFINITIVA (Sintaxis Blindada con llaves dobles {{ }}) ---
 html_completo = f"""<!DOCTYPE html>
 <html lang="es" class="w-full h-full m-0 p-0 overflow-x-hidden">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terminal | Mercados & Actualidad</title>
+    <meta name="description" content="Terminal de mercados y actualidad analizada por IA.">
+    <meta property="og:image" content="https://itu.uncuyo.edu.ar/cache/16c63c321040ab4da2010172ba336d67_732_1296.jpg"> 
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=JetBrains+Mono:wght@400;700&display=swap');
@@ -408,7 +429,7 @@ html_completo = f"""<!DOCTYPE html>
         @keyframes ticker {{ 0% {{ transform: translateX(100vw); }} 100% {{ transform: translateX(-100%); }} }}
         .animate-ticker {{ display: inline-flex; white-space: nowrap; animation: ticker 35s linear infinite; }}
         .animate-ticker:hover {{ animation-play-state: paused; }}
-        article b {{ color: #00E5FF; font-weight: 800; background: rgba(0, 229, 255, 0.1); padding: 0 4px; border-radius: 4px; border: 1px solid rgba(0, 229, 255, 0.2);}}
+        article b {{ color: #00E5FF; font-weight: 800; background: rgba(0, 229, 255, 0.12); padding: 0 4px; border-radius: 4px; border: 1px solid rgba(0, 229, 255, 0.2);}}
         ::-webkit-scrollbar {{ width: 6px; }}
         ::-webkit-scrollbar-track {{ background: #050505; }}
         ::-webkit-scrollbar-thumb {{ background: #2A2A2A; border-radius: 4px; }}
@@ -416,40 +437,37 @@ html_completo = f"""<!DOCTYPE html>
         .no-scrollbar::-webkit-scrollbar {{ display: none; }}
         .no-scrollbar {{ -ms-overflow-style: none; scrollbar-width: none; }}
         .break-words {{ overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; }}
-        .line-clamp-2 {{ display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }}
         .line-clamp-3 {{ display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }}
-        
-        /* Efecto Atenuación Leídas */
         .tarjeta-leida {{ opacity: 0.35 !important; filter: grayscale(80%); border-color: #2A2A2A !important; transition: all 0.3s ease; }}
     </style>
 </head>
-<body class="flex w-full min-h-screen m-0 p-0">
+<body class="flex w-full min-h-screen m-0 p-0 select-none">
 
     <div id="progressBar" class="fixed top-0 left-0 h-1 bg-[#00E5FF] z-[100] transition-all duration-150 shadow-[0_0_10px_#00E5FF]" style="width: 0%;"></div>
 
     <aside class="fixed w-64 h-screen bg-[#0A0A0A] border-r border-[#2A2A2A] flex flex-col z-40 hidden md:flex shrink-0">
         <div class="p-6 border-b border-[#2A2A2A] bg-[#111111]">
-            <h1 class="text-3xl font-black text-white tracking-tight">TERMINAL <span class="text-[#00E5FF]">IA</span></h1>
-            <p class="text-[10px] text-gray-500 mt-1 font-mono tracking-widest">v26.0 - MASTER EDITION</p>
+            <h1 class="text-2xl font-black text-white tracking-tight uppercase">RADAR <span class="text-[#00E5FF]">FINANCIERO</span></h1>
+            <p class="text-[10px] text-gray-500 mt-1 font-mono tracking-widest">MONITOR DE ACTUALIDAD</p>
         </div>
         
         <div class="p-6 flex-grow overflow-y-auto flex flex-col gap-6">
             <div class="bg-[#1A1A1A] border border-[#2A2A2A] rounded-xl p-4 text-center shadow-lg">
-                <p class="text-[9px] text-gray-400 font-bold tracking-widest uppercase mb-2">Hora Argentina. Mercado 10:30 a 17:00</p>
+                <p class="text-[9px] text-gray-400 font-bold tracking-widest uppercase mb-2">Hora Argentina. Mercado desde 10:30hs a 17hs</p>
                 <div id="reloj-digital" class="text-4xl font-mono font-black text-white tracking-wider">00:00:00</div>
-                <div id="mercado-estado" class="mt-3 text-xs font-bold px-3 py-1 rounded-full inline-block animate-pulse">--</div>
+                <div id="mercado-estado" class="mt-3 text-xs font-bold px-4 py-1 rounded-full inline-block tracking-wider">--</div>
             </div>
 
             <div class="mt-4">
-                <button id="btn-ver-leidas" class="w-full bg-[#111111] hover:bg-[#1A1A1A] text-[#00E5FF] border border-[#00E5FF]/30 rounded-xl py-4 text-xs font-bold transition mb-4 tracking-wider uppercase cursor-pointer shadow-lg">👁️ Ver Leídas</button>
-                <button id="btn-reset-leidas" class="w-full bg-rose-950/20 hover:bg-rose-950/40 text-rose-400 border border-rose-500/30 rounded-xl py-4 text-xs font-bold transition tracking-wider uppercase cursor-pointer shadow-lg">🗑️ Resetear</button>
+                <button id="btn-ver-leidas" class="w-full bg-[#111111] hover:bg-[#1A1A1A] text-[#00E5FF] border border-[#00E5FF]/30 rounded-xl py-4 text-xs font-bold transition mb-4 tracking-wider uppercase cursor-pointer shadow-lg">👁️ Ver Noticias Leídas</button>
+                <button id="btn-reset-leidas" class="w-full bg-rose-950/20 hover:bg-rose-950/40 text-rose-400 border border-rose-500/30 rounded-xl py-4 text-xs font-bold transition tracking-wider uppercase cursor-pointer shadow-lg">🗑️ Resetear Historial</button>
             </div>
         </div>
 
         <div class="p-6 border-t border-[#2A2A2A] bg-[#111111]">
             <a href="https://www.linkedin.com/in/brian-yapura-061522156/" target="_blank" class="w-full bg-[#1A1A1A] hover:bg-[#2A2A2A] border border-[#333333] rounded-xl p-3 flex justify-center items-center gap-3 transition shadow-lg">
                 <div class="bg-[#00E5FF] text-black px-2 py-0.5 rounded text-sm font-bold">in</div>
-                <span class="text-white font-semibold text-xs tracking-wide">Conectar en LinkedIn</span>
+                <span class="text-gray-200 font-semibold text-xs tracking-wide">Perfil Profesional</span>
             </a>
         </div>
     </aside>
@@ -463,30 +481,35 @@ html_completo = f"""<!DOCTYPE html>
                 </div>
             </div>
 
-            <div class="w-full p-6 flex flex-wrap gap-4 justify-around md:justify-start items-center">
+            <div class="w-full p-6 flex flex-wrap gap-4 justify-between items-center max-w-7xl mx-auto">
                 {widgets_html}
             </div>
         </header>
 
-        <div class="p-6 md:p-10 w-full flex-grow box-border">
+        <div class="p-6 md:p-10 w-full flex-grow max-w-7xl box-border">
             
-            <div id="separador-hoy" class="flex items-center gap-4 mb-10 mt-2 w-full">
+            <div class="w-full bg-cyan-950/20 border border-cyan-500/20 rounded-xl p-4 mb-6 text-xs text-cyan-400 font-medium flex items-center gap-2.5 shadow-md">
+                <span>💡</span>
+                <p><b>Info:</b> Las noticias que leas o en las que hagas clic desaparecerán automáticamente de este feed principal. Podrás consultarlas o recuperarlas en cualquier momento usando el menú lateral izquierdo.</p>
+            </div>
+
+            <div id="separador-hoy" class="flex items-center gap-4 mb-8 w-full">
                 <div class="h-px bg-[#2A2A2A] flex-grow"></div>
-                <span id="titulo-seccion" class="text-xs font-mono text-[#00E5FF] border border-[#00E5FF]/30 bg-[#00E5FF]/10 px-6 py-2 rounded-full uppercase tracking-widest whitespace-nowrap shadow-[0_0_15px_rgba(0,229,255,0.2)]">Últimas Noticias</span>
+                <span id="titulo-seccion" class="text-[10px] font-mono text-[#00E5FF] border border-[#00E5FF]/30 bg-[#00E5FF]/10 px-6 py-2 rounded-full uppercase tracking-widest whitespace-nowrap shadow-[0_0_15px_rgba(0,229,255,0.15)]">Últimas Noticias</span>
                 <div class="h-px bg-[#2A2A2A] flex-grow"></div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 w-full" id="contenedor-noticias">
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 w-full animate-fadeIn" id="contenedor-noticias">
                 {historial_recortado}
             </div>
 
-            <div id="loading-spinner" class="hidden justify-center my-20 w-full">
-                <div class="w-12 h-12 border-4 border-[#1A1A1A] border-t-[#00E5FF] rounded-full animate-spin shadow-[0_0_20px_#00E5FF]"></div>
+            <div id="loading-spinner" class="hidden justify-center my-16 w-full">
+                <div class="w-10 h-10 border-4 border-[#1A1A1A] border-t-[#00E5FF] rounded-full animate-spin shadow-[0_0_15px_#00E5FF]"></div>
             </div>
             
-            <div class="flex justify-center mt-20 mb-12 w-full">
-                <button id="btn-volver-arriba" class="hidden bg-[#1A1A1A] hover:bg-[#00E5FF] hover:text-black border border-[#2A2A2A] text-gray-300 font-mono text-xs px-10 py-5 rounded-full transition-all duration-300 shadow-lg gap-2 items-center tracking-widest uppercase font-bold text-center">
-                    ↑ Volver al inicio
+            <div class="flex justify-center mt-16 mb-8 w-full">
+                <button id="btn-volver-arriba" class="hidden bg-[#1A1A1A] hover:bg-[#00E5FF] hover:text-black border border-[#2A2A2A] text-gray-300 font-mono text-xs px-8 py-4 rounded-full transition-all duration-300 shadow-xl gap-2 items-center tracking-widest uppercase font-bold text-center cursor-pointer">
+                    ↑ Ocultar noticias extras y volver al inicio
                 </button>
             </div>
         </div>
@@ -495,36 +518,56 @@ html_completo = f"""<!DOCTYPE html>
     <script>
         const articulos = Array.from(document.querySelectorAll('.tarjeta-noticia'));
         let vistaActual = "principales";
+        let limitNoticias = 12;
 
         function aplicarVistas() {{
             const leidas = JSON.parse(localStorage.getItem('noticias_leidas') || '[]');
-            articulos.forEach(art => {{
+            
+            // Filtrar del universo total
+            const universo = articulos.filter(art => {{
                 const url = art.getAttribute('data-url');
                 const isRead = leidas.includes(url);
-                
-                if (vistaActual === "principales") {{
-                    if (isRead) {{
-                        art.style.display = 'none';
-                    }} else {{
-                        art.style.display = 'flex';
-                        art.classList.remove('tarjeta-leida');
-                    }}
-                }} else {{
-                    if (isRead) {{
-                        art.style.display = 'flex';
+                return vistaActual === "principales" ? !isRead : isRead;
+            }});
+
+            articulos.forEach(art => art.style.display = 'none');
+
+            // Renderizado segmentado (Scroll Infinito Controlado)
+            universo.forEach((art, index) => {{
+                if (index < limitNoticias) {{
+                    art.style.display = 'flex';
+                    if (vistaActual === "leidas") {{
                         art.classList.add('tarjeta-leida');
+                        const bRead = art.querySelector('.badge-leida');
+                        if (bRead) bRead.classList.remove('hidden');
                     }} else {{
-                        art.style.display = 'none';
+                        art.classList.remove('tarjeta-leida');
+                        const bRead = art.querySelector('.badge-leida');
+                        if (bRead) bRead.classList.add('hidden');
                     }}
                 }}
             }});
+
+            const btnVolver = document.getElementById('btn-volver-arriba');
+            if (limitNoticias >= universo.length && universo.length > 12) {{
+                btnVolver.classList.remove('hidden');
+                btnVolver.classList.add('flex');
+            }} else {{
+                btnVolver.classList.add('hidden');
+                btnVolver.classList.remove('flex');
+            }}
+
             actualizarSeparadorAyer();
         }}
 
-        // Marcar como leída al hacer clic
+        // Sistema de marcado por clic en cualquier parte del bloque
         articulos.forEach(art => {{
-            art.addEventListener('click', () => {{
+            art.addEventListener('click', (e) => {{
                 if (vistaActual !== "principales") return;
+                
+                // Evitamos conflictos si hace clic en el enlace directo
+                if (e.target.closest('a')) return;
+
                 const url = art.getAttribute('data-url');
                 let leidas = JSON.parse(localStorage.getItem('noticias_leidas') || '[]');
                 if (!leidas.includes(url)) {{
@@ -543,7 +586,40 @@ html_completo = f"""<!DOCTYPE html>
             }});
         }});
 
-        // Botones Sidebar
+        // Manejo del Scroll Infinito Nativo de a 12 elementos
+        window.addEventListener('scroll', () => {{
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = height > 0 ? (winScroll / height) * 100 : 0;
+            document.getElementById("progressBar").style.width = scrolled + "%";
+
+            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 600) {{
+                const leidas = JSON.parse(localStorage.getItem('noticias_leidas') || '[]');
+                const universo = articulos.filter(art => vistaActual === "principales" ? !leidas.includes(art.getAttribute('data-url')) : leidas.includes(art.getAttribute('data-url')));
+                
+                if (limitNoticias < universo.length) {{
+                    const spinner = document.getElementById('loading-spinner');
+                    spinner.classList.remove('hidden');
+                    spinner.classList.add('flex');
+                    
+                    setTimeout(() => {{
+                        limitNoticias += 12;
+                        aplicarVistas();
+                        spinner.classList.add('hidden');
+                        spinner.classList.remove('flex');
+                    }}, 500);
+                }}
+            }}
+        }});
+
+        // Botón Contraer Historial Extra
+        document.getElementById('btn-volver-arriba').addEventListener('click', () => {{
+            limitNoticias = 12;
+            window.scrollTo({{ top: 0, behavior: 'smooth' }});
+            setTimeout(() => aplicarVistas(), 400);
+        }});
+
+        // Conmutadores del Sidebar Izquierdo
         const btnVerLeidas = document.getElementById('btn-ver-leidas');
         const tituloSeccion = document.getElementById('titulo-seccion');
 
@@ -554,9 +630,10 @@ html_completo = f"""<!DOCTYPE html>
                 tituloSeccion.innerText = "Historial de Noticias Leídas";
             }} else {{
                 vistaActual = "principales";
-                btnVerLeidas.innerText = "👁️ Ver Leídas";
+                btnVerLeidas.innerText = "👁️ Ver Noticias Leídas";
                 tituloSeccion.innerText = "Últimas Noticias";
             }}
+            limitNoticias = 12;
             aplicarVistas();
             window.scrollTo({{ top: 0, behavior: 'smooth' }});
         }});
@@ -564,73 +641,14 @@ html_completo = f"""<!DOCTYPE html>
         document.getElementById('btn-reset-leidas').addEventListener('click', () => {{
             localStorage.removeItem('noticias_leidas');
             vistaActual = "principales";
-            btnVerLeidas.innerText = "👁️ Ver Leídas";
+            btnVerLeidas.innerText = "👁️ Ver Noticias Leídas";
             tituloSeccion.innerText = "Últimas Noticias";
+            limitNoticias = 12;
             aplicarVistas();
             window.scrollTo({{ top: 0, behavior: 'smooth' }});
         }});
 
-        // Scroll
-        let itemsMostrados = 12;
-        let isFetching = false;
-        const spinner = document.getElementById('loading-spinner');
-        const btnVolver = document.getElementById('btn-volver-arriba');
-
-        function reiniciarScroll() {{
-            itemsMostrados = 12;
-            window.scrollTo({{ top: 0, behavior: 'smooth' }});
-            renderScrollConRespeto();
-        }}
-
-        function renderScrollConRespeto() {{
-            const vis = articulos.filter(a => vistaActual === "principales" ? !a.classList.contains('tarjeta-leida') : a.classList.contains('tarjeta-leida'));
-            vis.forEach((art, index) => {{
-                if (index < itemsMostrados) {{
-                    art.style.display = 'flex';
-                }} else {{
-                    art.style.display = 'none';
-                }}
-            }});
-
-            if (itemsMostrados >= vis.length && vis.length > 0) {{
-                btnVolver.classList.remove('hidden');
-                btnVolver.classList.add('flex');
-            }} else {{
-                btnVolver.classList.add('hidden');
-                btnVolver.classList.remove('flex');
-            }}
-            actualizarSeparadorAyer();
-        }}
-
-        window.addEventListener('scroll', () => {{
-            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            const scrolled = height > 0 ? (winScroll / height) * 100 : 0;
-            document.getElementById("progressBar").style.width = scrolled + "%";
-
-            if (!isFetching && (window.innerHeight + window.scrollY) >= document.body.offsetHeight - 800) {{
-                const vis = articulos.filter(a => vistaActual === "principales" ? !a.classList.contains('tarjeta-leida') : a.classList.contains('tarjeta-leida'));
-                if (itemsMostrados < vis.length) {{
-                    isFetching = true;
-                    spinner.classList.remove('hidden');
-                    spinner.classList.add('flex');
-                    
-                    setTimeout(() => {{
-                        itemsMostrados += 12;
-                        renderScrollConRespeto();
-                        spinner.classList.add('hidden');
-                        spinner.classList.remove('flex');
-                        isFetching = false;
-                    }}, 800); 
-                }}
-            }}
-        }});
-
-        btnVolver.addEventListener('click', () => {{
-            reiniciarScroll();
-        }});
-
-        // Reloj
+        // Reloj ART con Estado de Mercado Dinámico
         function actualizarReloj() {{
             const ahora = new Date();
             const opciones = {{ timeZone: 'America/Argentina/Buenos_Aires', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false }};
@@ -641,9 +659,11 @@ html_completo = f"""<!DOCTYPE html>
             const min = ahora.getMinutes();
             const estadoEl = document.getElementById('mercado-estado');
             
-            const isAbierto = dia >= 1 && dia <= 5 && ((hora === 10 && min >= 30) || (hora > 10 && hora < 17));
+            // Validamos franja estricta desde 10:30 hs hasta las 17:00 hs de Lunes a Viernes
+            const enHorario = (hora > 10 && hora < 17) || (hora === 10 && min >= 30);
+            const abierto = dia >= 1 && dia <= 5 && enHorario;
 
-            if (isAbierto) {{
+            if (abierto) {{
                 estadoEl.textContent = "ABIERTO";
                 estadoEl.className = "mt-3 text-xs font-bold px-4 py-1.5 rounded-full inline-block bg-emerald-950/40 text-emerald-400 border border-emerald-500/30 animate-pulse tracking-wider";
             }} else {{
@@ -668,11 +688,11 @@ html_completo = f"""<!DOCTYPE html>
                     el.className = "tiempo-noticia text-[#00E5FF] text-[10px] font-black font-mono bg-[#00E5FF]/10 border border-[#00E5FF]/30 px-2 py-1 rounded shadow-[0_0_10px_rgba(0,229,255,0.2)]";
                 }} else if (diffMinutos < 60) {{
                     el.textContent = `HACE ${{diffMinutos}}m`;
-                    el.className = "tiempo-noticia text-gray-300 text-[10px] font-mono bg-[#1A1A1A] border border-[#2A2A2A] px-2 py-1 rounded";
+                    el.className = "tiempo-noticia text-gray-300 text-[10px] font-mono bg-gray-800 border border-gray-700 px-2 py-1 rounded";
                 }} else if (diffMinutos < 1440) {{
                     const diffHoras = Math.floor(diffMinutos / 60);
                     el.textContent = `HACE ${{diffHoras}}h`;
-                    el.className = "tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#111111] border border-[#2A2A2A] px-2 py-1 rounded";
+                    el.className = "tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A] border border-[#2A2A2A] px-2 py-1 rounded";
                 }} else {{
                     el.textContent = 'AYER';
                     el.className = "tiempo-noticia text-gray-600 text-[10px] font-mono bg-transparent border border-[#2A2A2A] px-2 py-1 rounded";
@@ -685,15 +705,15 @@ html_completo = f"""<!DOCTYPE html>
             const sep = document.getElementById('separador-ayer-dinamico');
             if(sep) sep.remove();
 
-            const vis = articulos.filter(a => a.style.display !== 'none');
-            for(let i=0; i<vis.length; i++) {{
-                const t = vis[i].querySelector('.tiempo-noticia').textContent;
-                if(t.includes('AYER')) {{
+            const todosVisibles = articulos.filter(art => art.style.display !== 'none');
+            for(let i=0; i<todosVisibles.length; i++) {{
+                const tagTiempo = todosVisibles[i].querySelector('.tiempo-noticia').textContent;
+                if(tagTiempo.includes('AYER')) {{
                     const div = document.createElement('div');
                     div.id = 'separador-ayer-dinamico';
                     div.className = 'col-span-1 md:col-span-2 xl:col-span-3 flex items-center gap-4 my-8 w-full';
-                    div.innerHTML = '<div class="h-px bg-[#2A2A2A] flex-grow"></div><span class="text-[10px] font-mono text-gray-500 border border-[#2A2A2A] bg-[#050505] px-4 py-1.5 rounded-full uppercase tracking-widest">Jornada Anterior</span><div class="h-px bg-[#2A2A2A] flex-grow"></div>';
-                    vis[i].parentNode.insertBefore(div, vis[i]);
+                    div.innerHTML = '<div class="h-px bg-[#2A2A2A] flex-grow"></div><span class="text-[10px] font-mono text-gray-500 border border-[#2A2A2A] bg-[#050505] px-4 py-1.5 rounded-full uppercase tracking-widest">Noticias del día anterior</span><div class="h-px bg-[#2A2A2A] flex-grow"></div>';
+                    todosVisibles[i].parentNode.insertBefore(div, todosVisibles[i]);
                     break;
                 }}
             }}
