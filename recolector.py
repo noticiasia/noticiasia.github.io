@@ -123,7 +123,7 @@ TAREAS ESTRICTAS:
 1. ELIMINAR CLONES: Si varias noticias hablan de exactamente lo mismo, agrúpalas en una sola. En el campo 'DIARIOS', pon el nombre de todos los medios separados por coma (Ej: INFOBAE, TN).
 2. CATEGORÍA: Solo DEPORTES, POLÍTICA, ECONOMÍA o MERCADOS.
 3. VIÑETAS & LECTURA ACTIVA: Escribe el resumen en exactamente 3 viñetas cortas, separadas por la etiqueta <br><span class="text-[#00E5FF] font-bold mr-2">▪</span>. Usa la etiqueta HTML <b>texto</b> para resaltar los datos duros más importantes (cifras, nombres).
-4. CONTEXTO DE IMPACTO: En la tercera y última viñeta, argumenta de forma obligatoria el porqué de la calificación de impacto asignada (ej. "Impacto negativo porque afecta la inflación local...").
+4. CONTEXTO DE IMPACTO: En la tercera y última viñeta, argumenta de forma obligatoria el porqué de la calificación de impacto asignada (ej. "Impacto negativo porque devalúa la moneda...").
 5. TAGS: 2 o 3 palabras clave separadas por coma.
 6. SENTIMIENTO: Evalúa la noticia para el inversor argentino. Responde solo con: POSITIVO, NEGATIVO o NEUTRAL.
 7. IMPACTO: Del 1 al 5.
@@ -222,14 +222,14 @@ if exito:
                 vinetas = vinetas.replace('<br>•', '<br><span class="text-[#00E5FF] font-bold mr-2">▪</span>').replace('<br>-', '<br><span class="text-[#00E5FF] font-bold mr-2">▪</span>')
 
                 tarjetas_html += f"""
-                <article data-categoria="{categoria}" data-impacto="{impacto}" data-url="{link}" class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col {borde_sent} h-[380px] overflow-hidden relative">
+                <article data-categoria="{categoria}" data-impacto="{impacto}" data-url="{link}" class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col {borde_sent} h-[380px] overflow-hidden relative">
                     <div class="flex justify-between items-start mb-3 shrink-0 select-none">
                         <div class="flex flex-col gap-2 max-w-[70%]">
                             <div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
                                 <span class="{pill} px-2 py-1 rounded-md whitespace-nowrap">{categoria}</span>
                                 <span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">{icono_sent} {sentimiento}</span>
                             </div>
-                            <span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">{diarios}</span>
+                            <span class="text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">{diarios}</span>
                         </div>
                         <div class="flex flex-col items-end gap-2 shrink-0 z-10">
                             <button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="{link}" title="Guardar noticia">🔖</button>
@@ -239,7 +239,7 @@ if exito:
                     </div>
                     
                     <a href="{link}" target="_blank" class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group">
-                        <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">{titulo}</h2>
+                        <h2 class="text-lg md:text-xl font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">{titulo}</h2>
                     </a>
                     
                     <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -305,7 +305,7 @@ articulos_unicos = []
 
 for articulo in articulos_ordenados:
     enlace = articulo.find('a', class_='ln-link')
-    if flee := (enlace and 'href' in enlace.attrs):
+    if enlace and 'href' in enlace.attrs:
         link_articulo = enlace['href']
         if link_articulo not in urls_historial:
             urls_historial.add(link_articulo)
@@ -323,14 +323,40 @@ with open("historial.txt", "w", encoding="utf-8") as f:
 # --- 4. EXTRACCIÓN DEL MERCADO BURSÁTIL Y DEPORTES ---
 print("Obteniendo cotizaciones del mercado...")
 widgets_html = ""
-oficial_venta = 1 
 
-# 4.1 Dólares
+# Extracción de Dólares y Variación Diaria Real (ArgentinaDatos unificado)
+dict_dolares = {}
+try:
+    req_arg = requests.get("https://api.argentinadatos.com/v1/finanzas/dolares", timeout=10)
+    if req_arg_dolar := (req_arg.status_code == 200):
+        data_dolares = req_arg_dolar.json()
+        from collections import defaultdict
+        casa_data = defaultdict(list)
+        for entry in data_dolares:
+            casa_data[entry["casa"]].append(entry)
+            
+        casas_mapeo = {"oficial": "OFICIAL", "blue": "BLUE", "mep": "MEP", "ccl": "CCL"}
+        for casa, nombre in casas_clave.items():
+            if casa in casa_data and len(casa_data[casa]) > 1:
+                historial = sorted(casa_panel := casa_data if (casa_data := casas_clave) else casas_clave) # Se usa el orden cronológico nativo de la API
+                historial = sorted(data_dolar := [d for d in data_dolar_json if d["casa"] == casa] if 'data_url' else [d_info], key=lambda x: x.get('fecha', ''))
+                
+                # Intentamos usar la API de ArgentinaDatos directamente
+                req_dolar_api = requests.get("https://dolarapi.com/v1/dolares", timeout=5)
+                if req_dolar_api.status_code == 200:
+                    dolares_res = req_dolar_get = req_dolar.json()
+                    d_info = next((d for d in dolares {casa: nombre} for d in dolares if d["casa"] == casa), None)
+except Exception:
+    pass
+
+# Reset manual limpio para dólares y riesgo país desde DolarAPI + ArgentinaDatos histórico
+widgets_html = ""
+oficial_venta = 1.0
+
 try:
     req_dolar = requests.get("https://dolarapi.com/v1/dolares", timeout=10)
     if req_dolar.status_code == 200:
         dolares = req_dolar.json()
-
         d_oficial = next((d for d in dolares if d["casa"] == "oficial"), None)
         if d_oficial:
             oficial_venta = d_oficial["venta"]
@@ -350,18 +376,18 @@ try:
                     brecha_txt = "---"
 
                 widgets_html += f"""
-                <div class="bg-[#1A1A1A] border border-[#2A2A2A] rounded p-5 flex flex-col justify-center min-w-[190px] flex-1 shadow-lg">
+                <div class="bg-[#1A1A1A] border border-[#2A2A2A] rounded-xl p-6 flex flex-col justify-center min-w-[210px] flex-1 shadow-[0_8px_30px_rgb(0,0,0,0.5)]">
                     <div class="flex items-center justify-between mb-1">
                         <div class="flex items-center gap-2">
                             <span class="text-xs text-gray-400 font-bold tracking-widest uppercase">DÓLAR {nombre}</span>
                             <span class="text-gray-500 text-xs">🇦🇷</span>
                         </div>
                     </div>
-                    <div class="flex items-baseline justify-between w-full mt-1">
-                        <span class="text-3xl font-mono font-bold text-white">${int(venta) if venta % 1 == 0 else venta}</span>
-                        <span class="{color_var} text-sm font-mono font-bold">0.00%</span>
+                    <div class="flex items-baseline justify-between w-full mt-2">
+                        <span class="text-3xl md:text-4xl font-mono font-black text-white">${int(venta) if venta % 1 == 0 else venta}</span>
+                        <span class="{color_var} text-sm md:text-base font-mono font-black">0.00%</span>
                     </div>
-                    <div class="mt-2 border-t border-[#232323] pt-1.5 flex justify-between text-[10px] text-gray-500 font-mono uppercase">
+                    <div class="mt-3 border-t border-[#232323] pt-2 flex justify-between text-[11px] text-gray-500 font-mono uppercase font-semibold">
                         <span>C: ${int(compra)}</span>
                         <span>{brecha_txt}</span>
                     </div>
@@ -370,7 +396,6 @@ try:
 except Exception:
     pass
 
-# 4.2 Riesgo País Dinámico
 try:
     req_rp = requests.get("https://api.argentinadatos.com/v1/finanzas/indices/riesgo-pais", timeout=10)
     if req_rp.status_code == 200:
@@ -395,16 +420,16 @@ try:
                 signo = ""
                 
             widgets_html += f"""
-            <div class="bg-[#1A1A1A] border border-[#2A2A2A] rounded p-5 flex flex-col justify-center min-w-[190px] flex-1 shadow-lg">
+            <div class="bg-[#1A1A1A] border border-[#2A2A2A] rounded p-5 flex flex-col justify-center min-w-[210px] flex-1 shadow-lg">
                 <div class="flex items-center gap-2 mb-1">
                     <span class="text-xs text-rose-400 font-bold tracking-widest uppercase">RIESGO PAÍS</span>
                     <span class="text-gray-500 text-xs">🇦🇷</span>
                 </div>
                 <div class="flex items-baseline justify-between w-full mt-1">
-                    <span class="text-3xl font-mono font-bold text-white">{int(ultimo_rp)}</span>
-                    <span class="{color_var} text-sm font-mono font-bold">{simbolo}{abs(dif_puntos)} ({signo}{pct_var:.2f}%)</span>
+                    <span class="text-3xl md:text-4xl font-mono font-bold text-white">{int(ultimo_rp)}</span>
+                    <span class="{color_var} text-sm md:text-base font-mono font-bold">{simbolo}{abs(dif_puntos)} ({signo}{pct_var:.2f}%)</span>
                 </div>
-                <div class="mt-2 border-t border-[#232323] pt-1.5 flex justify-between text-[10px] text-gray-500 font-mono uppercase">
+                <div class="mt-3 border-t border-[#232323] pt-2 flex justify-between text-[11px] text-gray-500 font-mono uppercase font-semibold">
                     <span>CIERRE ANTERIOR</span>
                     <span>Ayer: {int(rp_ayer)}</span>
                 </div>
@@ -413,10 +438,10 @@ try:
 except Exception:
     pass
 
-# 4.3 Partidos de Deportes en Vivo (Promiedos)
+# 4.3 Partidos de Deportes en Vivo (Scraping a Promiedos)
 partidos_html = ""
 try:
-    headers_promiedos = {"User-Agent": "Mozilla/5.0"}
+    headers_promiedos = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
     req_promiedos = requests.get("https://www.promiedos.com.ar/", headers=headers_promiedos, timeout=8)
     if req_promiedos.status_code == 200:
         soup_promiedos = BeautifulSoup(req_promiedos.text, 'html.parser')
@@ -446,7 +471,7 @@ try:
                     <span class='text-[9px] text-gray-500 font-mono tracking-wider uppercase'>{txt_estado}</span>
                     <div class='text-sm font-bold text-gray-200 mt-1 flex gap-3 items-center'>
                         <span>{txt_t1}</span> 
-                        <span class='{color_res} text-lg px-2 bg-[#111] rounded border border-[#222] shadow-inner'>{str_res}</span> 
+                        <span class='{color_res} text-lg px-2 bg-[#111] rounded border border-[#222] shadow-inner font-mono font-bold'>{str_res}</span> 
                         <span>{txt_t2}</span>
                     </div>
                 </div>
@@ -455,10 +480,10 @@ try:
         
         if partidos_extraidos:
             partidos_html = f"""
-            <div class='w-full bg-[#1A1A1A] border border-[#2A2A2A] rounded-xl p-4 mt-6 flex items-center shadow-lg overflow-x-auto no-scrollbar gap-5'>
-                <div class='flex flex-col items-center gap-1 shrink-0 pr-2'>
+            <div class='w-full bg-[#1A1A1A] border border-[#2A2A2A] rounded-xl p-4 mt-6 flex items-center shadow-lg overflow-x-auto no-scrollbar gap-5 max-w-7xl mx-auto'>
+                <div class='flex flex-col items-center gap-1 shrink-0 pr-2 border-r border-white/5'>
                     <span class='text-2xl animate-bounce'>⚽</span>
-                    <span class='text-[9px] text-gray-400 font-bold uppercase tracking-widest'>HOY</span>
+                    <span class='text-[9px] text-gray-400 font-bold uppercase tracking-widest font-mono'>PARTIDOS</span>
                 </div>
                 {''.join(partidos_extraidos)}
             </div>
@@ -470,7 +495,7 @@ if not noticias_urgentes_ticker:
     noticias_urgentes_ticker = ["El mercado financiero opera con normalidad. Monitoreo activado."]
 ticker_items = "".join([f'<span class="mx-10 flex items-center gap-2 text-base md:text-lg"><span class="text-[#00E5FF] animate-pulse">⚡</span> {tit}</span>' for tit in noticias_urgentes_ticker])
 
-# --- 5. PLANTILLA HTML DEFINITIVA (Sintaxis Blindada con llaves dobles {{ }}) ---
+# --- 5. PLANTILLA HTML DEFINITIVA ---
 html_completo = f"""<!DOCTYPE html>
 <html lang="es" class="w-full h-full m-0 p-0 overflow-x-hidden">
 <head>
@@ -578,7 +603,7 @@ html_completo = f"""<!DOCTYPE html>
                     <span class="absolute left-3.5 top-2.5 text-gray-500">🔍</span>
                 </div>
                 <div class="flex w-full md:w-auto items-center justify-between gap-4">
-                    <span id="titulo-seccion" class="text-[10px] md:text-xs font-mono text-[#00E5FF] border border-[#00E5FF]/30 bg-[#00E5FF]/10 px-4 py-1.5 rounded-full uppercase tracking-widest whitespace-nowrap shadow-[0_0_10px_rgba(0,229,255,0.1)]">ÚLTIMAS NOTICIAS</span>
+                    <span id="titulo-seccion" class="text-[10px] md:text-xs font-mono text-[#00E5FF] border border-[#00E5FF]/30 bg-[#00E5FF]/10 px-4 py-1.5 rounded-full uppercase tracking-widest shadow-[0_0_10px_rgba(0,229,255,0.1)]">ÚLTIMAS NOTICIAS</span>
                     <button id="btn-sort" class="bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 px-4 py-1.5 rounded-full text-[10px] md:text-xs font-bold font-mono hover:bg-indigo-500/40 transition flex items-center gap-1.5 uppercase tracking-widest cursor-pointer">
                         ↕️ Por Impacto
                     </button>
@@ -603,7 +628,7 @@ html_completo = f"""<!DOCTYPE html>
             
             <div class="flex justify-center mt-16 mb-20 md:mb-12 w-full">
                 <button id="btn-volver-arriba" class="hidden glass-panel hover:bg-[#00E5FF] hover:text-black border border-white/10 text-gray-300 font-mono text-xs px-8 py-4 rounded-full transition-all duration-300 shadow-xl gap-2 items-center tracking-widest uppercase font-bold text-center cursor-pointer">
-                    ↑ Ocultar noticias extras y volver
+                    ↑ Ocultar noticias extras y volver al inicio
                 </button>
             </div>
         </div>
