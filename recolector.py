@@ -123,7 +123,7 @@ TAREAS ESTRICTAS:
 1. ELIMINAR CLONES: Si varias noticias hablan de exactamente lo mismo, agrúpalas en una sola. En el campo 'DIARIOS', pon el nombre de todos los medios separados por coma (Ej: INFOBAE, TN).
 2. CATEGORÍA: Solo DEPORTES, POLÍTICA, ECONOMÍA o MERCADOS.
 3. VIÑETAS & LECTURA ACTIVA: Escribe el resumen en exactamente 3 viñetas cortas, separadas por la etiqueta <br><span class="text-[#00E5FF] font-bold mr-2">▪</span>. Usa la etiqueta HTML <b>texto</b> para resaltar los datos duros más importantes (cifras, nombres).
-4. CONTEXTO DE IMPACTO: En la tercera y última viñeta, argumenta de forma obligatoria el porqué de la calificación de impacto asignada (ej. "Impacto negativo porque devalúa la moneda...").
+4. CONTEXTO DE IMPACTO: En la tercera y última viñeta, argumenta de forma obligatoria el porqué de la calificación de impacto asignada (ej. "Impacto negativo porque afecta la inflación local...").
 5. TAGS: 2 o 3 palabras clave separadas por coma.
 6. SENTIMIENTO: Evalúa la noticia para el inversor argentino. Responde solo con: POSITIVO, NEGATIVO o NEUTRAL.
 7. IMPACTO: Del 1 al 5.
@@ -165,6 +165,7 @@ if exito:
             if len(partes) >= 8:
                 diarios = partes[0].strip().upper()
                 
+                # ESCUDO ANTI-FANTASMAS
                 if diarios == "DIARIOS" or "DIARIOS|" in linea or "DIARIO" in diarios:
                     continue
                     
@@ -216,13 +217,14 @@ if exito:
 
                 tags_html = "".join([f'<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#{t.strip().upper()}</span>' for t in tags_raw.split(",") if t.strip()])
 
+                # Limpieza de viñetas para evitar doble guion (- ▪)
                 vinetas = vinetas.replace('- <span', '<span').replace('- ▪', '▪').replace('• <span', '<span')
                 if not vinetas.startswith('<span'):
                     vinetas = '<span class="text-[#00E5FF] font-bold mr-2">▪</span>' + vinetas
                 vinetas = vinetas.replace('<br>•', '<br><span class="text-[#00E5FF] font-bold mr-2">▪</span>').replace('<br>-', '<br><span class="text-[#00E5FF] font-bold mr-2">▪</span>')
 
                 tarjetas_html += f"""
-                <article data-categoria="{categoria}" data-impacto="{impacto}" data-url="{link}" class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col {borde_sent} h-[380px] overflow-hidden relative">
+                <article data-categoria="{categoria}" data-impacto="{impacto}" data-url="{link}" class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col {borde_sent} h-[380px] overflow-hidden group relative">
                     <div class="flex justify-between items-start mb-3 shrink-0 select-none">
                         <div class="flex flex-col gap-2 max-w-[70%]">
                             <div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
@@ -239,7 +241,7 @@ if exito:
                     </div>
                     
                     <a href="{link}" target="_blank" class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group">
-                        <h2 class="text-lg md:text-xl font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">{titulo}</h2>
+                        <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">{titulo}</h2>
                     </a>
                     
                     <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -324,42 +326,24 @@ with open("historial.txt", "w", encoding="utf-8") as f:
 print("Obteniendo cotizaciones del mercado...")
 widgets_html = ""
 
-# Extracción de Dólares y Variación Diaria Real (ArgentinaDatos unificado)
-dict_dolares = {}
-try:
-    req_arg = requests.get("https://api.argentinadatos.com/v1/finanzas/dolares", timeout=10)
-    if req_arg_dolar := (req_arg.status_code == 200):
-        data_dolares = req_arg_dolar.json()
-        from collections import defaultdict
-        casa_data = defaultdict(list)
-        for entry in data_dolares:
-            casa_data[entry["casa"]].append(entry)
-            
-        casas_mapeo = {"oficial": "OFICIAL", "blue": "BLUE", "mep": "MEP", "ccl": "CCL"}
-        for casa, nombre in casas_clave.items():
-            if casa in casa_data and len(casa_data[casa]) > 1:
-                historial = sorted(casa_panel := casa_data if (casa_data := casas_clave) else casas_clave) # Se usa el orden cronológico nativo de la API
-                historial = sorted(data_dolar := [d for d in data_dolar_json if d["casa"] == casa] if 'data_url' else [d_info], key=lambda x: x.get('fecha', ''))
-                
-                # Intentamos usar la API de ArgentinaDatos directamente
-                req_dolar_api = requests.get("https://dolarapi.com/v1/dolares", timeout=5)
-                if req_dolar_api.status_code == 200:
-                    dolares_res = req_dolar_get = req_dolar.json()
-                    d_info = next((d for d in dolares {casa: nombre} for d in dolares if d["casa"] == casa), None)
-except Exception:
-    pass
-
-# Reset manual limpio para dólares y riesgo país desde DolarAPI + ArgentinaDatos histórico
-widgets_html = ""
+# 4.1 Dólares (Cálculo real de variación y tipografía grande)
 oficial_venta = 1.0
+oficial_ayer = 1.0
 
 try:
     req_dolar = requests.get("https://dolarapi.com/v1/dolares", timeout=10)
+    req_hist = requests.get("https://api.argentinadatos.com/v1/finanzas/dolares/oficial", timeout=10)
+    
     if req_dolar.status_code == 200:
         dolares = req_dolar.json()
         d_oficial = next((d for d in dolares if d["casa"] == "oficial"), None)
         if d_oficial:
             oficial_venta = d_oficial["venta"]
+            
+        if req_hist.status_code == 200:
+            hist_data = req_hist.json()
+            if len(hist_data) > 1:
+                oficial_ayer = hist_data[-2]["venta"]
 
         casas_clave = {"oficial": "OFICIAL", "blue": "BLUE", "bolsa": "MEP", "contadoconliqui": "CCL"}
         for casa, nombre in casas_clave.items():
@@ -368,12 +352,29 @@ try:
                 venta = d_info["venta"]
                 compra = d_info.get("compra", venta)
                 
-                color_var = "text-[#00E5FF]"
-                if casa != "oficial":
-                    brecha = ((venta / oficial_venta) - 1) * 100
-                    brecha_txt = f"Brecha {brecha:.1f}%"
+                # Cálculo real de variación porcentual respecto a ayer
+                if casa == "oficial" and oficial_ayer > 0:
+                    var_pct = ((venta / oficial_ayer) - 1) * 100
+                elif casa != "oficial":
+                    hist_casa = requests.get(f"https://api.argentinadatos.com/v1/finanzas/dolares/{casa}", timeout=5)
+                    if hist_casa.status_code == 200 and len(h_data := hist_casa.json()) > 1:
+                        var_pct = ((venta / h_data[-2]["venta"]) - 1) * 100
+                    else:
+                        var_pct = 0.00
                 else:
-                    brecha_txt = "---"
+                    var_pct = 0.00
+
+                if var_pct > 0:
+                    color_var = "text-rose-500 font-black"
+                    simbolo = "▲"
+                elif var_pct < 0:
+                    color_var = "text-[#00E5FF] font-black"
+                    simbolo = "▼"
+                else:
+                    color_var = "text-gray-500 font-semibold"
+                    simbolo = ""
+
+                brecha_txt = f"Brecha {((venta / oficial_venta) - 1) * 100:.1f}%" if casa != "oficial" else "Oficial Base"
 
                 widgets_html += f"""
                 <div class="bg-[#1A1A1A] border border-[#2A2A2A] rounded-xl p-6 flex flex-col justify-center min-w-[210px] flex-1 shadow-[0_8px_30px_rgb(0,0,0,0.5)]">
@@ -384,8 +385,8 @@ try:
                         </div>
                     </div>
                     <div class="flex items-baseline justify-between w-full mt-2">
-                        <span class="text-3xl md:text-4xl font-mono font-black text-white">${int(venta) if venta % 1 == 0 else venta}</span>
-                        <span class="{color_var} text-sm md:text-base font-mono font-black">0.00%</span>
+                        <span class="text-3xl md:text-5xl font-mono font-black text-white">${int(venta) if venta % 1 == 0 else venta}</span>
+                        <span class="{color_var} text-sm md:text-base font-mono flex items-center gap-0.5">{simbolo} {abs(var_pct):.2f}%</span>
                     </div>
                     <div class="mt-3 border-t border-[#232323] pt-2 flex justify-between text-[11px] text-gray-500 font-mono uppercase font-semibold">
                         <span>C: ${int(compra)}</span>
@@ -396,6 +397,7 @@ try:
 except Exception:
     pass
 
+# 4.2 Riesgo País Dinámico
 try:
     req_rp = requests.get("https://api.argentinadatos.com/v1/finanzas/indices/riesgo-pais", timeout=10)
     if req_rp.status_code == 200:
@@ -407,27 +409,27 @@ try:
             pct_var = (dif_puntos / rp_ayer) * 100 if rp_ayer else 0
             
             if dif_puntos < 0:
-                color_var = "text-[#00E5FF]"
+                color_var = "text-[#00E5FF] font-black"
                 simbolo = "▼"
                 signo = ""
             elif dif_puntos > 0:
-                color_var = "text-rose-500"
+                color_var = "text-rose-500 font-black"
                 simbolo = "▲"
                 signo = "+"
             else:
-                color_var = "text-gray-500"
+                color_var = "text-gray-500 font-semibold"
                 simbolo = ""
                 signo = ""
                 
             widgets_html += f"""
-            <div class="bg-[#1A1A1A] border border-[#2A2A2A] rounded p-5 flex flex-col justify-center min-w-[210px] flex-1 shadow-lg">
+            <div class="bg-[#1A1A1A] border border-[#2A2A2A] rounded-xl p-6 flex flex-col justify-center min-w-[210px] flex-1 shadow-[0_8px_30px_rgb(0,0,0,0.5)]">
                 <div class="flex items-center gap-2 mb-1">
                     <span class="text-xs text-rose-400 font-bold tracking-widest uppercase">RIESGO PAÍS</span>
                     <span class="text-gray-500 text-xs">🇦🇷</span>
                 </div>
-                <div class="flex items-baseline justify-between w-full mt-1">
-                    <span class="text-3xl md:text-4xl font-mono font-bold text-white">{int(ultimo_rp)}</span>
-                    <span class="{color_var} text-sm md:text-base font-mono font-bold">{simbolo}{abs(dif_puntos)} ({signo}{pct_var:.2f}%)</span>
+                <div class="flex items-baseline justify-between w-full mt-2">
+                    <span class="text-3xl md:text-5xl font-mono font-black text-white">{int(ultimo_rp)}</span>
+                    <span class="{color_var} text-sm md:text-base font-mono flex items-center gap-0.5">{simbolo}{abs(dif_puntos)} ({signo}{pct_var:.2f}%)</span>
                 </div>
                 <div class="mt-3 border-t border-[#232323] pt-2 flex justify-between text-[11px] text-gray-500 font-mono uppercase font-semibold">
                     <span>CIERRE ANTERIOR</span>
@@ -467,12 +469,12 @@ try:
             color_res = "text-[#00E5FF]" if "'" in txt_estado or "PT" in txt_estado or "ST" in txt_estado or "Pen" in txt_estado else "text-white"
             
             partidos_extraidos.append(f"""
-                <div class='flex flex-col text-center border-l border-[#2A2A2A] pl-5 min-w-max'>
+                <div class='flex flex-col text-center border-l border-[#2A2A2A] pl-5 pr-2 min-w-max'>
                     <span class='text-[9px] text-gray-500 font-mono tracking-wider uppercase'>{txt_estado}</span>
-                    <div class='text-sm font-bold text-gray-200 mt-1 flex gap-3 items-center'>
-                        <span>{txt_t1}</span> 
-                        <span class='{color_res} text-lg px-2 bg-[#111] rounded border border-[#222] shadow-inner font-mono font-bold'>{str_res}</span> 
-                        <span>{txt_t2}</span>
+                    <div class='text-sm font-bold text-gray-200 mt-1 flex gap-3 items-center justify-center'>
+                        <span class="truncate max-w-[80px] text-right">{txt_t1}</span> 
+                        <span class='{color_res} text-base px-2 bg-[#111] rounded border border-[#222] shadow-inner font-mono font-bold'>{str_res}</span> 
+                        <span class="truncate max-w-[80px] text-left">{txt_t2}</span>
                     </div>
                 </div>
             """)
@@ -481,9 +483,9 @@ try:
         if partidos_extraidos:
             partidos_html = f"""
             <div class='w-full bg-[#1A1A1A] border border-[#2A2A2A] rounded-xl p-4 mt-6 flex items-center shadow-lg overflow-x-auto no-scrollbar gap-5 max-w-7xl mx-auto'>
-                <div class='flex flex-col items-center gap-1 shrink-0 pr-2 border-r border-white/5'>
-                    <span class='text-2xl animate-bounce'>⚽</span>
-                    <span class='text-[9px] text-gray-400 font-bold uppercase tracking-widest font-mono'>PARTIDOS</span>
+                <div class='flex flex-col items-center gap-1 shrink-0 pr-4 border-r border-white/5'>
+                    <span class='text-2xl'>⚽</span>
+                    <span class='text-[8px] text-gray-400 font-bold uppercase tracking-widest font-mono'>EN VIVO</span>
                 </div>
                 {''.join(partidos_extraidos)}
             </div>
@@ -495,7 +497,7 @@ if not noticias_urgentes_ticker:
     noticias_urgentes_ticker = ["El mercado financiero opera con normalidad. Monitoreo activado."]
 ticker_items = "".join([f'<span class="mx-10 flex items-center gap-2 text-base md:text-lg"><span class="text-[#00E5FF] animate-pulse">⚡</span> {tit}</span>' for tit in noticias_urgentes_ticker])
 
-# --- 5. PLANTILLA HTML DEFINITIVA ---
+# --- 5. PLANTILLA HTML DEFINITIVA (Sintaxis Blindada) ---
 html_completo = f"""<!DOCTYPE html>
 <html lang="es" class="w-full h-full m-0 p-0 overflow-x-hidden">
 <head>
@@ -527,10 +529,6 @@ html_completo = f"""<!DOCTYPE html>
 
     <div id="progressBar" class="fixed top-0 left-0 h-1 bg-[#00E5FF] z-[100] transition-all duration-150 shadow-[0_0_10px_#00E5FF]" style="width: 0%;"></div>
 
-    <a href="https://www.linkedin.com/in/brian-yapura-061522156/" target="_blank" class="fixed bottom-24 md:bottom-6 right-6 bg-[#00E5FF] text-[#050505] p-3.5 rounded-full shadow-[0_0_15px_rgba(0,229,255,0.4)] hover:scale-110 transition-all z-50 flex items-center justify-center group cursor-pointer" title="Conectar en LinkedIn">
-        <span class="font-black text-2xl leading-none font-mono">in</span>
-    </a>
-
     <aside class="fixed w-64 h-screen glass-panel flex flex-col z-40 hidden md:flex shrink-0 border-r">
         <div class="p-6 border-b border-white/5 bg-[#0f172a]/50">
             <h1 class="text-2xl font-black text-white tracking-tight uppercase">RADAR <span class="text-[#00E5FF]">FINANCIERO</span></h1>
@@ -561,6 +559,13 @@ html_completo = f"""<!DOCTYPE html>
                 </button>
             </div>
         </div>
+
+        <div class="p-6 border-t border-white/5 bg-[#0f172a]/50 flex flex-col gap-2">
+            <a href="https://www.linkedin.com/in/brian-yapura-061522156/" target="_blank" class="w-full bg-[#1A1A1A] hover:bg-[#2A2A2A] border border-white/10 rounded-xl p-3 flex justify-center items-center gap-3 transition shadow-lg cursor-pointer">
+                <span class="text-white font-semibold text-xs tracking-wide">Conocé mi perfil en LinkedIn</span>
+            </a>
+            <p class="text-[8px] text-gray-500 font-mono text-center tracking-wider mt-1">Monitor desarrollado de forma profesional</p>
+        </div>
     </aside>
 
     <nav class="md:hidden fixed bottom-0 left-0 w-full glass-panel z-50 flex justify-around items-center p-3 pb-safe border-t shadow-[0_-10px_40px_rgba(0,0,0,0.5)]">
@@ -570,7 +575,7 @@ html_completo = f"""<!DOCTYPE html>
         </button>
         <button id="m-btn-guardadas" class="nav-btn-mobile flex flex-col items-center gap-1 text-gray-500 relative">
             <span class="text-xl">🔖</span>
-            <span id="m-cont-guardadas" class="absolute -top-1 -right-2 bg-rose-500 text-white text-[8px] font-bold px-1.5 rounded-full border border-black font-mono">0</span>
+            <span id="m-cont-guardadas" class="absolute -top-1 -right-2 bg-[#00E5FF] text-black text-[8px] font-bold px-1.5 rounded-full border border-black font-mono">0</span>
             <span class="text-[9px] font-bold tracking-wider">SAVED</span>
         </button>
         <button id="m-btn-leidas" class="nav-btn-mobile flex flex-col items-center gap-1 text-gray-500 relative">
@@ -603,7 +608,7 @@ html_completo = f"""<!DOCTYPE html>
                     <span class="absolute left-3.5 top-2.5 text-gray-500">🔍</span>
                 </div>
                 <div class="flex w-full md:w-auto items-center justify-between gap-4">
-                    <span id="titulo-seccion" class="text-[10px] md:text-xs font-mono text-[#00E5FF] border border-[#00E5FF]/30 bg-[#00E5FF]/10 px-4 py-1.5 rounded-full uppercase tracking-widest shadow-[0_0_10px_rgba(0,229,255,0.1)]">ÚLTIMAS NOTICIAS</span>
+                    <span id="titulo-seccion" class="text-[10px] md:text-xs font-mono text-[#00E5FF] border border-[#00E5FF]/30 bg-[#00E5FF]/10 px-4 py-1.5 rounded-full uppercase tracking-widest whitespace-nowrap shadow-[0_0_15px_rgba(0,229,255,0.15)]">ÚLTIMAS NOTICIAS</span>
                     <button id="btn-sort" class="bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 px-4 py-1.5 rounded-full text-[10px] md:text-xs font-bold font-mono hover:bg-indigo-500/40 transition flex items-center gap-1.5 uppercase tracking-widest cursor-pointer">
                         ↕️ Por Impacto
                     </button>
@@ -628,7 +633,7 @@ html_completo = f"""<!DOCTYPE html>
             
             <div class="flex justify-center mt-16 mb-20 md:mb-12 w-full">
                 <button id="btn-volver-arriba" class="hidden glass-panel hover:bg-[#00E5FF] hover:text-black border border-white/10 text-gray-300 font-mono text-xs px-8 py-4 rounded-full transition-all duration-300 shadow-xl gap-2 items-center tracking-widest uppercase font-bold text-center cursor-pointer">
-                    ↑ Ocultar noticias extras y volver al inicio
+                    ↑ Ocultar extras y volver al inicio
                 </button>
             </div>
         </div>
