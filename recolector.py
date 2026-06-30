@@ -437,10 +437,12 @@ try:
 except Exception:
     pass
 
-# 4.3 Partidos de Deportes (Reemplazado por API de ESPN: Indestructible y sin bloqueos)
+# 4.3 Partidos del Mundial 2026 (API ESPN en Español y Filtrada)
 partidos_html = ""
 try:
-    url_espn = f"https://site.api.espn.com/apis/site/v2/sports/soccer/all/scoreboard?v={timestamp_actual}"
+    # Usamos fifa.world para filtrar solo la Copa del Mundo. 
+    # lang=es y region=ar traducen los nombres de los países al español.
+    url_espn = f"https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?lang=es&region=ar&v={timestamp_actual}"
     req_espn = requests.get(url_espn, timeout=10)
     
     if req_espn.status_code == 200:
@@ -448,27 +450,53 @@ try:
         eventos = data_espn.get('events', [])
         partidos_extraidos = []
         
-        for evento in eventos[:10]: # Filtramos los 10 partidos más importantes
+        for evento in eventos[:10]: # Trae hasta 10 partidos del Mundial
             competicion = evento['competitions'][0]
-            estado = evento['status']['type']['shortDetail'] # Ej: "FT", "HT", "85'"
             
+            # 1. Nombres en español
             t1 = competicion['competitors'][0]
             t2 = competicion['competitors'][1]
-            
-            # ESPN invierte el orden (Local/Visitante), extraemos nombres y puntajes
-            nombre_t1 = t1['team'].get('shortDisplayName', t1['team'].get('name', 'Equipo 1'))
-            nombre_t2 = t2['team'].get('shortDisplayName', t2['team'].get('name', 'Equipo 2'))
+            nombre_t1 = t1['team'].get('shortDisplayName', t1['team'].get('name', 'Eq 1'))
+            nombre_t2 = t2['team'].get('shortDisplayName', t2['team'].get('name', 'Eq 2'))
             res1 = t1.get('score', '-')
             res2 = t2.get('score', '-')
             
-            # Detectar si está en vivo por el estado (Ej: "EN JUEGO", minutos, etc)
-            txt_estado_upper = evento['status']['type']['state'].upper()
-            is_vivo = txt_estado_upper == "IN" or "'" in estado or "PT" in estado or "ST" in estado
-            color_res = "text-[#00E5FF] animate-pulse" if is_vivo else "text-white"
+            # 2. Lógica de Estado (Programado, En Vivo, Terminado)
+            estado_api = evento['status']['type']['state']
+            is_vivo = False
+            color_res = "text-white"
+            
+            if estado_api == 'pre':
+                # Partido programado: Convertir fecha UTC a hora Argentina (restando 3 horas)
+                try:
+                    dt_utc = datetime.strptime(evento['date'], "%Y-%m-%dT%H:%MZ")
+                    ts_arg = dt_utc.timestamp() - (3 * 3600)
+                    txt_estado = datetime.fromtimestamp(ts_arg, timezone.utc).strftime('%H:%M hs')
+                except:
+                    txt_estado = "HOY"
+            
+            elif estado_api == 'in':
+                # Partido en vivo: Reloj de juego interactivo
+                is_vivo = True
+                color_res = "text-[#00E5FF] animate-pulse"
+                reloj = evento['status'].get('displayClock', '')
+                periodo = evento['status'].get('period', 1)
+                
+                if periodo == 1: txt_periodo = "PT"
+                elif periodo == 2: txt_periodo = "ST"
+                elif periodo == 3: txt_periodo = "TE" # Tiempo Extra
+                elif periodo == 4: txt_periodo = "PEN" # Penales
+                else: txt_periodo = ""
+                
+                txt_estado = f"{txt_periodo} {reloj}" if reloj else "EN VIVO"
+                
+            else:
+                # Partido terminado
+                txt_estado = "FINAL"
             
             partidos_extraidos.append(f"""
-                <div class='flex flex-col text-center border-l border-[#2A2A2A] pl-5 pr-2 min-w-max select-none'>
-                    <span class='text-[9px] text-gray-500 font-mono tracking-wider uppercase'>{estado}</span>
+                <div class='flex flex-col text-center border-l border-[#2A2A2A] pl-5 pr-3 min-w-max select-none'>
+                    <span class='text-[10px] text-gray-400 font-mono tracking-wider uppercase font-bold'>{txt_estado}</span>
                     <div class='text-sm font-bold text-gray-200 mt-1 flex gap-3 items-center justify-center'>
                         <span class="truncate max-w-[90px] text-right font-medium">{nombre_t1}</span> 
                         <span class='{color_res} text-sm px-2.5 py-0.5 bg-[#111] rounded border border-[#222] shadow-inner font-mono font-bold'>{res1} - {res2}</span> 
@@ -479,10 +507,10 @@ try:
         
         if partidos_extraidos:
             partidos_html = f"""
-            <div class='w-full bg-[#1A1A1A] border border-[#2A2A2A] rounded-xl p-4 mt-6 flex items-center shadow-lg overflow-x-auto no-scrollbar gap-5 max-w-7xl mx-auto'>
+            <div class='w-full bg-[#1A1A1A] border border-[#2A2A2A] rounded-xl p-4 mt-6 flex items-center shadow-lg overflow-x-auto no-scrollbar gap-4 max-w-7xl mx-auto'>
                 <div class='flex flex-col items-center gap-1 shrink-0 pr-4 border-r border-white/5 select-none'>
-                    <span class='text-2xl animate-bounce'>⚽</span>
-                    <span class='text-[8px] text-gray-400 font-bold uppercase tracking-widest font-mono'>EN VIVO</span>
+                    <span class='text-2xl animate-bounce'>🏆</span>
+                    <span class='text-[8px] text-[#00E5FF] font-bold uppercase tracking-widest font-mono'>MUNDIAL</span>
                 </div>
                 {''.join(partidos_extraidos)}
             </div>
