@@ -731,33 +731,6 @@
 <span class="text-[10px] font-bold bg-yellow-500/20 text-yellow-500 px-2 py-0.5 rounded border border-yellow-500/30 mt-2 inline-block">🗞️ Cubierto por 3 medios</span>
 </div>
 </article>
-<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-rose-500 h-[380px] overflow-hidden relative" data-categoria="POLICIALES" data-impacto="1" data-url="https://tn.com.ar/policiales/2026/07/09/denuncias-previas-una-carta-y-un-plan-macabro-que-se-sabe-del-asesinato-de-una-mujer-y-el-secuestro-de-su-hija-en-junin/">
-<div class="flex justify-between items-start mb-3 shrink-0 select-none">
-<div class="flex flex-col gap-2 max-w-[70%]">
-<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
-<span class="bg-teal-900/40 text-teal-400 border border-teal-500/30 px-2 py-1 rounded-md whitespace-nowrap">POLICIALES</span>
-<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">🔴 NEGATIVO</span>
-</div>
-<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">TN</span>
-</div>
-<div class="flex flex-col items-end gap-2 shrink-0 z-10">
-<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://tn.com.ar/policiales/2026/07/09/denuncias-previas-una-carta-y-un-plan-macabro-que-se-sabe-del-asesinato-de-una-mujer-y-el-secuestro-de-su-hija-en-junin/" title="Guardar noticia">🔖</button>
-<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-07-09T08:00:00.000Z"></span>
-<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
-</div>
-</div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://tn.com.ar/policiales/2026/07/09/denuncias-previas-una-carta-y-un-plan-macabro-que-se-sabe-del-asesinato-de-una-mujer-y-el-secuestro-de-su-hija-en-junin/" target="_blank">
-<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Denuncias previas, una carta y un plan macabro: qué se sabe del asesinato de una mujer y el secuestro de su hija en Junín</h2>
-</a>
-<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ La investigación sobre el asesinato de una mujer y el secuestro de su hija en <b>Junín</b> revela la existencia de denuncias previas, una carta y un "plan macabro".<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Los detalles emergentes del caso muestran la complejidad y brutalidad del crimen.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto negativo porque se trata de una noticia policial de alta gravedad que, aunque no afecta directamente los mercados, contribuye a un clima de inseguridad y preocupación social, lo que indirectamente puede desalentar la inversión o el turismo en la zona.
-                    </div>
-<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
-<div class="flex flex-wrap gap-1.5">
-<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#POLICIALES</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#JUNÍN</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#CRIMEN</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#INSEGURIDAD</span>
-</div>
-</div>
-</article>
 <article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="POLÍTICA" data-impacto="2" data-url="https://www.lanacion.com.ar/politica/que-paso-con-los-diez-puntos-del-pacto-de-mayo-nid09072026/">
 <div class="flex justify-between items-start mb-3 shrink-0 select-none">
 <div class="flex flex-col gap-2 max-w-[70%]">
