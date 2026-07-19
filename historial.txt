@@ -1,27 +1,54 @@
-<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-emerald-500 h-[380px] overflow-hidden relative" data-categoria="MERCADOS" data-impacto="4" data-url="https://www.ambito.com/real-estate/san-juan-se-prepara-el-boom-minero-viviendas-hoteles-y-parques-logisticos-impulsaran-las-inversiones-n6300792">
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-emerald-500 h-[380px] overflow-hidden relative" data-categoria="ECONOMÍA" data-impacto="4" data-url="https://www.ambito.com/real-estate/san-juan-se-prepara-el-boom-minero-viviendas-hoteles-y-parques-logisticos-impulsaran-las-inversiones-n6300792">
 <div class="flex justify-between items-start mb-3 shrink-0 select-none">
 <div class="flex flex-col gap-2 max-w-[70%]">
 <div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
-<span class="bg-emerald-900/40 text-emerald-400 border border-emerald-500/30 px-2 py-1 rounded-md whitespace-nowrap">MERCADOS</span>
+<span class="bg-blue-900/40 text-blue-400 border border-blue-500/30 px-2 py-1 rounded-md whitespace-nowrap">ECONOMÍA</span>
 <span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">🟢 POSITIVO</span>
 </div>
 <span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">ÁMBITO</span>
 </div>
 <div class="flex flex-col items-end gap-2 shrink-0 z-10">
 <button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.ambito.com/real-estate/san-juan-se-prepara-el-boom-minero-viviendas-hoteles-y-parques-logisticos-impulsaran-las-inversiones-n6300792" title="Guardar noticia">🔖</button>
-<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-07-19T06:22:35.171059+00:00"></span>
+<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-07-19T09:44:19.072730+00:00"></span>
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
 <a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.ambito.com/real-estate/san-juan-se-prepara-el-boom-minero-viviendas-hoteles-y-parques-logisticos-impulsaran-las-inversiones-n6300792" target="_blank">
-<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">San Juan se prepara para un boom de inversiones impulsado por la minería</h2>
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">San Juan se prepara para un boom minero con grandes inversiones en infraestructura</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ La provincia de San Juan se proyecta hacia el futuro con un esperado boom minero que atraerá significativas inversiones.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> El crecimiento minero impulsará el desarrollo de <b>viviendas, hoteles y parques logísticos</b>, diversificando la economía regional.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto positivo, ya que la inversión en minería y desarrollo de infraestructura genera empleo, crecimiento económico y mayor actividad comercial en la región, beneficiando a empresas y mercados locales.
+<span class="text-[#00E5FF] font-bold mr-2">▪</span> La provincia de <b>San Juan</b> se prepara para un inminente "boom minero", lo que se espera impulse significativas inversiones.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Estas inversiones se verán reflejadas en el desarrollo de <b>viviendas, hoteles y parques logísticos</b>, proyectando un futuro de crecimiento para la región de <b>Cuyo</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto POSITIVO porque el impulso de la actividad minera y la inversión en infraestructura en <b>San Juan</b> representan oportunidades de crecimiento económico y generación de empleo, beneficiosas para el inversor local interesado en el desarrollo regional y sectorial.
                     </div>
 <div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
 <div class="flex flex-wrap gap-1.5">
-<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#MINERÍA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#INVERSIONES</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#SAN JUAN</span>
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#MINERÍA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#SAN JUAN</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#INVERSIÓN</span>
+</div>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-rose-500 h-[380px] overflow-hidden relative" data-categoria="POLÍTICA" data-impacto="4" data-url="https://www.infobae.com/america/mundo/2026/07/19/el-jefe-militar-de-iran-amenazo-a-eeuu-con-una-respuesta-contundente-y-devastadora-tras-la-octava-ofensiva-de-washington/">
+<div class="flex justify-between items-start mb-3 shrink-0 select-none">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-indigo-900/40 text-indigo-400 border border-indigo-500/30 px-2 py-1 rounded-md whitespace-nowrap">POLÍTICA</span>
+<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">🔴 NEGATIVO</span>
+</div>
+<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">INFOBAE</span>
+</div>
+<div class="flex flex-col items-end gap-2 shrink-0 z-10">
+<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.infobae.com/america/mundo/2026/07/19/el-jefe-militar-de-iran-amenazo-a-eeuu-con-una-respuesta-contundente-y-devastadora-tras-la-octava-ofensiva-de-washington/" title="Guardar noticia">🔖</button>
+<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-07-19T07:31:33.773Z"></span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
+</div>
+</div>
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/america/mundo/2026/07/19/el-jefe-militar-de-iran-amenazo-a-eeuu-con-una-respuesta-contundente-y-devastadora-tras-la-octava-ofensiva-de-washington/" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Escalada de tensiones en Medio Oriente: Irán amenaza a EE. UU. tras ataques y muertes de soldados</h2>
+</a>
+<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
+<span class="text-[#00E5FF] font-bold mr-2">▪</span> El jefe militar iraní amenazó a <b>Estados Unidos</b> con una respuesta "devastadora" después de la <b>octava ofensiva</b> de Washington en <b>Irán</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Estos eventos se suman a la muerte de <b>dos soldados norteamericanos</b> y la desaparición de uno tras un ataque iraní en <b>Jordania</b>, llevando a <b>EE. UU.</b> a emitir una alerta global para sus ciudadanos en Medio Oriente y repatriar a <b>Dena Karari</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto NEGATIVO porque la escalada de tensiones en una región clave como <b>Medio Oriente</b> puede generar volatilidad en los mercados globales de energía y divisas, afectando indirectamente la percepción de riesgo para inversiones argentinas y la estabilidad económica mundial.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#IRÁN</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#EE. UU.</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#MEDIO ORIENTE</span>
 </div>
 </div>
 </article>
@@ -163,6 +190,33 @@
 <span class="text-[10px] font-bold bg-yellow-500/20 text-yellow-500 px-2 py-0.5 rounded border border-yellow-500/30 mt-2 inline-block">🗞️ Cubierto por 3 medios</span>
 </div>
 </article>
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="DEPORTES" data-impacto="1" data-url="https://tn.com.ar/deportes/futbol/2026/07/18/la-historia-detras-del-cambio-de-botines-de-enzo-fernandez-en-medio-de-la-semifinal-del-mundial-2026-rompio-un-poco-las-reglas/">
+<div class="flex justify-between items-start mb-3 shrink-0 select-none">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-orange-900/40 text-orange-400 border border-orange-500/30 px-2 py-1 rounded-md whitespace-nowrap">DEPORTES</span>
+<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">⚪ NEUTRAL</span>
+</div>
+<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">TN</span>
+</div>
+<div class="flex flex-col items-end gap-2 shrink-0 z-10">
+<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://tn.com.ar/deportes/futbol/2026/07/18/la-historia-detras-del-cambio-de-botines-de-enzo-fernandez-en-medio-de-la-semifinal-del-mundial-2026-rompio-un-poco-las-reglas/" title="Guardar noticia">🔖</button>
+<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-07-19T01:24:32.254Z"></span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
+</div>
+</div>
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://tn.com.ar/deportes/futbol/2026/07/18/la-historia-detras-del-cambio-de-botines-de-enzo-fernandez-en-medio-de-la-semifinal-del-mundial-2026-rompio-un-poco-las-reglas/" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">La historia del cambio de botines de Enzo Fernández en la semifinal del Mundial 2026</h2>
+</a>
+<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
+<span class="text-[#00E5FF] font-bold mr-2">▪</span> Se reveló la historia detrás del inusual cambio de botines de <b>Enzo Fernández</b> durante la semifinal del <b>Mundial 2026</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> El cambio fue descrito como una acción que "rompió un poco las reglas", generando curiosidad entre los aficionados del fútbol.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto NEUTRAL porque esta noticia es de interés puramente deportivo y anecdótico, sin ninguna implicación para el inversor argentino o para el desempeño de los mercados.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ENZO FERNÁNDEZ</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#MUNDIAL 2026</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ANÉCDOTA</span>
+</div>
+</div>
+</article>
 <article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="POLÍTICA" data-impacto="1" data-url="https://www.infobae.com/estados-unidos/2026/07/19/cambiados-al-nacer-dos-hombres-en-ee-uu-descubrieron-que-vivieron-38-anos-con-la-familia-equivocada/">
 <div class="flex justify-between items-start mb-3 shrink-0 select-none">
 <div class="flex flex-col gap-2 max-w-[70%]">
@@ -179,14 +233,14 @@
 </div>
 </div>
 <a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/estados-unidos/2026/07/19/cambiados-al-nacer-dos-hombres-en-ee-uu-descubrieron-que-vivieron-38-anos-con-la-familia-equivocada/" target="_blank">
-<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Descubrimiento impactante en EE. UU.: dos hombres vivieron 38 años con la familia equivocada</h2>
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Noticias de interés humano en EE. UU.: casos de identidad y supervivencia</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ Dos hombres en <b>Estados Unidos</b> descubrieron haber sido <b>cambiados al nacer</b>, viviendo <b>38 años</b> con la familia equivocada.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> La noticia revela una compleja historia de identidad y lazos familiares.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto neutral, ya que se trata de una noticia de interés humano y social, sin ninguna implicación económica, política o de mercado para el inversor argentino.
+<span class="text-[#00E5FF] font-bold mr-2">▪</span> Dos hombres en <b>Estados Unidos</b> descubrieron que fueron cambiados al nacer, viviendo <b>38 años</b> con la familia equivocada.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> En otra noticia, un bebé de <b>un año</b> sobrevivió milagrosamente tras caer <b>cinco pisos</b> por una ventana en el <b>Bronx</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto NEUTRAL porque estas noticias son de interés humano y local, sin ninguna relevancia directa para los mercados o la economía argentina, y por lo tanto, no tienen impacto para el inversor.
                     </div>
 <div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
 <div class="flex flex-wrap gap-1.5">
-<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ESTADOS UNIDOS</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#HISTORIA HUMANA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#FAMILIA</span>
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#EE. UU.</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#SOCIEDAD</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#CURIOSIDADES</span>
 </div>
 </div>
 </article>
@@ -234,14 +288,14 @@
 </div>
 </div>
 <a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/estados-unidos/2026/07/19/los-influencers-andrew-y-tristan-tate-fueron-arrestados-en-miami-por-cargos-de-violacion/" target="_blank">
-<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Los influencers Andrew y Tristan Tate arrestados en Miami por graves cargos</h2>
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Los influencers Andrew y Tristan Tate arrestados en Miami por violación y trata de personas</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ Los reconocidos influencers <b>Andrew y Tristan Tate</b> fueron arrestados en <b>Miami</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Los cargos que enfrentan incluyen <b>violación y trata de personas</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto neutral, ya que, si bien es una noticia de crónica policial y celebridades, no tiene implicaciones económicas, políticas o de mercado para el inversor argentino.
+<span class="text-[#00E5FF] font-bold mr-2">▪</span> Los conocidos influencers <b>Andrew y Tristan Tate</b> fueron arrestados en <b>Miami</b> por autoridades estadounidenses.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Los cargos presentados contra ellos incluyen <b>violación</b> y <b>trata de personas</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto NEUTRAL porque este evento, aunque de relevancia mediática y legal a nivel internacional, no tiene implicaciones directas para el inversor argentino o para la estabilidad de los mercados financieros.
                     </div>
 <div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
 <div class="flex flex-wrap gap-1.5">
-<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#INFLUENCERS</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ARRESTO</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#MIAMI</span>
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#INFLUENCERS</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ARRESTO</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#DELITOS</span>
 </div>
 </div>
 </article>
@@ -328,6 +382,34 @@
 <span class="text-[10px] font-bold bg-yellow-500/20 text-yellow-500 px-2 py-0.5 rounded border border-yellow-500/30 mt-2 inline-block">🗞️ Cubierto por 2 medios</span>
 </div>
 </article>
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="DEPORTES" data-impacto="1" data-url="https://www.ambito.com/deportes/epico-inglaterra-vencio-francia-un-partidazo-diez-goles-y-se-quedo-el-tercer-puesto-del-mundial-2026-n6301112">
+<div class="flex justify-between items-start mb-3 shrink-0 select-none">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-orange-900/40 text-orange-400 border border-orange-500/30 px-2 py-1 rounded-md whitespace-nowrap">DEPORTES</span>
+<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">⚪ NEUTRAL</span>
+</div>
+<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">ÁMBITO, TN</span>
+</div>
+<div class="flex flex-col items-end gap-2 shrink-0 z-10">
+<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.ambito.com/deportes/epico-inglaterra-vencio-francia-un-partidazo-diez-goles-y-se-quedo-el-tercer-puesto-del-mundial-2026-n6301112" title="Guardar noticia">🔖</button>
+<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-07-18T20:42:00-03:00"></span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
+</div>
+</div>
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.ambito.com/deportes/epico-inglaterra-vencio-francia-un-partidazo-diez-goles-y-se-quedo-el-tercer-puesto-del-mundial-2026-n6301112" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Inglaterra derrota a Francia 6-4 y se queda con el tercer puesto del Mundial 2026</h2>
+</a>
+<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
+<span class="text-[#00E5FF] font-bold mr-2">▪</span> <b>Inglaterra</b> se adjudicó el <b>tercer puesto</b> del Mundial 2026 tras vencer a <b>Francia</b> en un electrizante partido disputado en <b>Miami</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> El marcador final fue de <b>6-4</b>, sumando un total de <b>diez goles</b>, convirtiéndose en uno de los encuentros más anotadores del torneo.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto NEUTRAL porque el resultado del partido por el tercer puesto no tiene un impacto significativo para el inversor argentino, siendo un evento puramente deportivo sin ramificaciones económicas o políticas relevantes.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#MUNDIAL 2026</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#INGLATERRA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#FRANCIA</span>
+</div>
+<span class="text-[10px] font-bold bg-yellow-500/20 text-yellow-500 px-2 py-0.5 rounded border border-yellow-500/30 mt-2 inline-block">🗞️ Cubierto por 2 medios</span>
+</div>
+</article>
 <article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="DEPORTES" data-impacto="2" data-url="https://www.lanacion.com.ar/deportes/futbol/historico-banderazo-en-times-square-los-argentinos-armaron-una-fiesta-que-desbordo-las-calles-de-nid18072026/">
 <div class="flex justify-between items-start mb-3 shrink-0 select-none">
 <div class="flex flex-col gap-2 max-w-[70%]">
@@ -372,10 +454,10 @@
 </div>
 </div>
 <a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.lanacion.com.ar/deportes/rugby/los-pumas-no-pueden-con-inglaterra-interrogantes-retroceso-en-el-juego-y-un-fallo-erroneo-que-los-nid18072026/" target="_blank">
-<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Los Pumas no pueden con La Rosa: retroceso en el juego y un fallo erróneo que los privó del empate</h2>
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Los Pumas caen ante La Rosa: retroceso en el juego y un fallo arbitral polémico</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span><b>Los Pumas</b> sufrieron una derrota ante <b>Inglaterra ("La Rosa")</b>, mostrando un retroceso en su juego.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span>La derrota fue atribuida en parte a un "fallo erróneo" que les impidió lograr el empate.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span>Impacto NEUTRAL. Es una noticia de interés deportivo relacionada con un evento de rugby, sin consecuencias económicas o políticas para el inversor argentino.
+<span class="text-[#00E5FF] font-bold mr-2">▪</span> Los <b>Pumas</b> sufrieron una derrota ante <b>La Rosa (Inglaterra)</b>, mostrando un retroceso en su juego durante el encuentro.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Un fallo arbitral erróneo es señalado como un factor crucial que privó al equipo argentino de la posibilidad de empate.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto NEUTRAL porque esta noticia es de interés exclusivamente deportivo, sin ninguna repercusión económica o política que afecte al inversor argentino o la estabilidad de los mercados.
                     </div>
 <div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
 <div class="flex flex-wrap gap-1.5">
@@ -453,14 +535,14 @@
 </div>
 </div>
 <a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://tn.com.ar/internacional/2026/07/18/trump-amenazo-a-canada-con-nuevos-aranceles-por-el-humo-de-los-incendios-que-preocupa-a-los-organizadores-del-mundial/" target="_blank">
-<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Donald Trump amenaza a Canadá con aranceles por el humo de incendios que afecta al Mundial</h2>
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Donald Trump amenaza a Canadá con nuevos aranceles por el humo de incendios que afectan al Mundial</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ <b>Donald Trump</b> ha amenazado a <b>Canadá</b> con la imposición de <b>nuevos aranceles</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> La razón aducida son los <b>incendios</b> y el humo resultante, que preocupa a los organizadores del Mundial.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto negativo, ya que las tensiones comerciales y la amenaza de aranceles entre potencias económicas pueden generar incertidumbre global, afectar cadenas de suministro y mercados, lo cual es relevante para el inversor argentino.
+<span class="text-[#00E5FF] font-bold mr-2">▪</span> <b>Donald Trump</b> ha amenazado a <b>Canadá</b> con la imposición de nuevos aranceles debido al humo de los incendios forestales.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Esta situación es de particular preocupación para los organizadores del <b>Mundial 2026</b>, que se realizará en parte en América del Norte.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto NEGATIVO porque la imposición de aranceles entre <b>EE. UU.</b> y <b>Canadá</b> podría escalar tensiones comerciales, afectando la estabilidad económica regional y potencialmente impactando la cadena de suministro global, aunque el impacto directo para el inversor argentino es indirecto.
                     </div>
 <div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
 <div class="flex flex-wrap gap-1.5">
-<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#TRUMP</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ARANCELES</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#CANADÁ</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#MUNDIAL</span>
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#TRUMP</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#CANADÁ</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ARANCELES</span>
 </div>
 </div>
 </article>
@@ -572,14 +654,14 @@
 </div>
 </div>
 </article>
-<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="DEPORTES" data-impacto="1" data-url="https://www.iprofesional.com/actualidad/460283-del-lusail-al-met-life-similitudes-y-diferencias-de-la-seleccion-y-las-finales-22-y-26">
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="DEPORTES" data-impacto="2" data-url="https://www.iprofesional.com/actualidad/460283-del-lusail-al-met-life-similitudes-y-diferencias-de-la-seleccion-y-las-finales-22-y-26">
 <div class="flex justify-between items-start mb-3 shrink-0 select-none">
 <div class="flex flex-col gap-2 max-w-[70%]">
 <div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
 <span class="bg-orange-900/40 text-orange-400 border border-orange-500/30 px-2 py-1 rounded-md whitespace-nowrap">DEPORTES</span>
 <span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">⚪ NEUTRAL</span>
 </div>
-<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">IPROFESIONAL</span>
+<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">IPROFESIONAL, ÁMBITO, LA NACION, INFOBAE, TN</span>
 </div>
 <div class="flex flex-col items-end gap-2 shrink-0 z-10">
 <button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.iprofesional.com/actualidad/460283-del-lusail-al-met-life-similitudes-y-diferencias-de-la-seleccion-y-las-finales-22-y-26" title="Guardar noticia">🔖</button>
@@ -588,22 +670,23 @@
 </div>
 </div>
 <a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.iprofesional.com/actualidad/460283-del-lusail-al-met-life-similitudes-y-diferencias-de-la-seleccion-y-las-finales-22-y-26" target="_blank">
-<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Del Lusail al Met Life, similitudes y diferencias de la Selección Argentina en las dos finales del mundo</h2>
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Gran Final del Mundial 2026: Argentina vs. España, análisis, previa y ambiente global</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span>La <b>Selección Argentina</b> se prepara para defender su título en la final del <b>Mundial 2026</b> contra <b>España</b>, comparando el escenario actual con la victoria en <b>Qatar 2022</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span>El análisis detalla qué aspectos se mantuvieron y cuáles cambiaron en el equipo y el contexto entre ambas finales.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span>Impacto NEUTRAL. Esta noticia es de interés puramente deportivo y de análisis futbolístico, sin un impacto directo en la economía o los mercados para el inversor argentino.
+<span class="text-[#00E5FF] font-bold mr-2">▪</span> La Selección Argentina se prepara para la final del Mundial 2026 contra <b>España</b>, con el DT <b>Scaloni</b> evaluando cambios tácticos y la posible vuelta de jugadores clave como <b>Rodrigo De Paul</b> y <b>Gonzalo Montiel</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> La fiebre mundialista desborda con un masivo banderazo argentino en <b>Times Square, Nueva York</b>, donde miles de hinchas se congregaron, y se destaca la expectativa por los récords que <b>Lionel Messi</b> podría romper y el millonario premio para el campeón.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto NEUTRAL porque, aunque el evento genera un gran fervor social y deportivo, su relevancia directa para el inversor argentino es limitada, salvo por el posible movimiento de consumo a corto plazo que no representa un cambio estructural en los mercados.
                     </div>
 <div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
 <div class="flex flex-wrap gap-1.5">
-<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#SELECCIÓN ARGENTINA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#MUNDIAL 2026</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#COMPARATIVA</span>
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#MUNDIAL 2026</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ARGENTINA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ESPAÑA</span>
 </div>
+<span class="text-[10px] font-bold bg-yellow-500/20 text-yellow-500 px-2 py-0.5 rounded border border-yellow-500/30 mt-2 inline-block">🗞️ Cubierto por 5 medios</span>
 </div>
 </article>
-<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-emerald-500 h-[380px] overflow-hidden relative" data-categoria="ECONOMÍA" data-impacto="3" data-url="https://www.infobae.com/estados-unidos/2026/07/18/que-aprendio-google-del-primer-mundial-con-inteligencia-artificial/">
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-emerald-500 h-[380px] overflow-hidden relative" data-categoria="MERCADOS" data-impacto="3" data-url="https://www.infobae.com/estados-unidos/2026/07/18/que-aprendio-google-del-primer-mundial-con-inteligencia-artificial/">
 <div class="flex justify-between items-start mb-3 shrink-0 select-none">
 <div class="flex flex-col gap-2 max-w-[70%]">
 <div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
-<span class="bg-blue-900/40 text-blue-400 border border-blue-500/30 px-2 py-1 rounded-md whitespace-nowrap">ECONOMÍA</span>
+<span class="bg-emerald-900/40 text-emerald-400 border border-emerald-500/30 px-2 py-1 rounded-md whitespace-nowrap">MERCADOS</span>
 <span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">🟢 POSITIVO</span>
 </div>
 <span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">INFOBAE</span>
@@ -615,14 +698,14 @@
 </div>
 </div>
 <a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/estados-unidos/2026/07/18/que-aprendio-google-del-primer-mundial-con-inteligencia-artificial/" target="_blank">
-<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Qué aprendió Google del primer Mundial con inteligencia artificial</h2>
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Google analiza aprendizajes del primer Mundial con inteligencia artificial</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span><b>Google</b> analizó las lecciones aprendidas del primer Mundial en el que la <b>Inteligencia Artificial (IA)</b> tuvo un rol protagónico, desde la cobertura hasta el análisis de datos.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span>La experiencia busca mejorar la aplicación de la IA en grandes eventos y la interacción de los usuarios con la tecnología.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span>Impacto POSITIVO. El avance y la integración de la IA por parte de grandes tecnológicas como Google pueden impulsar la innovación y el crecimiento tecnológico a nivel global, lo que indirectamente beneficia el ecosistema de tecnología para el inversor argentino.
+<span class="text-[#00E5FF] font-bold mr-2">▪</span> <b>Google</b> ha realizado un análisis sobre los aprendizajes obtenidos del <b>primer Mundial</b> en el que se integró la <b>inteligencia artificial</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Este evento marca un hito en la interacción entre el deporte y las tecnologías avanzadas, ofreciendo nuevas perspectivas sobre el uso de la <b>IA</b> en grandes eventos y posibles innovaciones futuras.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto POSITIVO porque el desarrollo y la aplicación de la inteligencia artificial en eventos de magnitud global sugieren avances tecnológicos que pueden generar nuevas oportunidades de negocio e inversión a largo plazo en el sector tecnológico, beneficiando a inversores en ese ámbito.
                     </div>
 <div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
 <div class="flex flex-wrap gap-1.5">
-<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#GOOGLE</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#INTELIGENCIA ARTIFICIAL</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#MUNDIAL 2026</span>
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#GOOGLE</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#INTELIGENCIA ARTIFICIAL</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#INNOVACIÓN</span>
 </div>
 </div>
 </article>
@@ -653,14 +736,14 @@
 </div>
 </div>
 </article>
-<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="POLÍTICA" data-impacto="2" data-url="https://www.iprofesional.com/economia/460282-el-aire-que-puede-ganar-milei-si-la-seleccion-argentina-se-consagra-en-el-mundial-2026">
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="POLÍTICA" data-impacto="3" data-url="https://www.iprofesional.com/economia/460282-el-aire-que-puede-ganar-milei-si-la-seleccion-argentina-se-consagra-en-el-mundial-2026">
 <div class="flex justify-between items-start mb-3 shrink-0 select-none">
 <div class="flex flex-col gap-2 max-w-[70%]">
 <div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
 <span class="bg-indigo-900/40 text-indigo-400 border border-indigo-500/30 px-2 py-1 rounded-md whitespace-nowrap">POLÍTICA</span>
 <span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">⚪ NEUTRAL</span>
 </div>
-<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">IPROFESIONAL</span>
+<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">IPROFESIONAL, ÁMBITO</span>
 </div>
 <div class="flex flex-col items-end gap-2 shrink-0 z-10">
 <button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.iprofesional.com/economia/460282-el-aire-que-puede-ganar-milei-si-la-seleccion-argentina-se-consagra-en-el-mundial-2026" title="Guardar noticia">🔖</button>
@@ -669,15 +752,16 @@
 </div>
 </div>
 <a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.iprofesional.com/economia/460282-el-aire-que-puede-ganar-milei-si-la-seleccion-argentina-se-consagra-en-el-mundial-2026" target="_blank">
-<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">El aire que puede ganar Milei si la Selección argentina se consagra en el Mundial 2026</h2>
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">El impacto político del Mundial para el gobierno de Milei y sus apuestas económicas</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span>Analistas políticos sugieren que una victoria de la <b>Selección argentina</b> en el <b>Mundial 2026</b> podría darle un "aire" político al presidente <b>Milei</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span>Sin embargo, advierten que la euforia deportiva es efímera y que el complejo contexto económico desafía cualquier festejo sostenido o mejora duradera en la imagen de gestión.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span>Impacto NEUTRAL. Aunque el triunfo deportivo podría generar un breve repunte en el ánimo social, su efecto en la economía real o en las políticas de gobierno es limitado y transitorio, no alterando el panorama fundamental para el inversor argentino.
+<span class="text-[#00E5FF] font-bold mr-2">▪</span> Se analiza el "aire" político que el presidente <b>Milei</b> podría ganar en caso de que la <b>Selección Argentina</b> se consagre campeona del Mundial 2026.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Sin embargo, analistas advierten que el contexto económico desafía cualquier intento de festejo sostenido, y <b>Milei</b> ya se prepara para disputar su "final" económica post-Mundial apostando a un sector clave.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto NEUTRAL porque, si bien un triunfo deportivo podría generar un breve "veranito" político, los desafíos económicos subyacentes son significativos y el éxito del gobierno dependerá más de políticas estructurales que del resultado de un evento deportivo, por lo que no altera la perspectiva de inversión a largo plazo.
                     </div>
 <div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
 <div class="flex flex-wrap gap-1.5">
-<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#MILEI</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#POLÍTICA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#MUNDIAL 2026</span>
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#MILEI</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#POLÍTICA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ECONOMÍA</span>
 </div>
+<span class="text-[10px] font-bold bg-yellow-500/20 text-yellow-500 px-2 py-0.5 rounded border border-yellow-500/30 mt-2 inline-block">🗞️ Cubierto por 2 medios</span>
 </div>
 </article>
 <article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="POLÍTICA" data-impacto="1" data-url="https://www.lanacion.com.ar/politica/milei-esperara-la-final-en-la-tranquilidad-de-olivos-el-mameluco-de-ypf-y-la-decision-pospartido-nid18072026/">
@@ -733,6 +817,33 @@
 <span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#MARÍA BECERRA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#HIMNO</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#MUNDIAL 2026</span>
 </div>
 <span class="text-[10px] font-bold bg-yellow-500/20 text-yellow-500 px-2 py-0.5 rounded border border-yellow-500/30 mt-2 inline-block">🗞️ Cubierto por 2 medios</span>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="POLÍTICA" data-impacto="1" data-url="https://www.lanacion.com.ar/opinion/inesperada-vuelta-de-tuerca-para-una-epica-silenciada-nid18072026/">
+<div class="flex justify-between items-start mb-3 shrink-0 select-none">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-indigo-900/40 text-indigo-400 border border-indigo-500/30 px-2 py-1 rounded-md whitespace-nowrap">POLÍTICA</span>
+<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">⚪ NEUTRAL</span>
+</div>
+<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">LA NACION</span>
+</div>
+<div class="flex flex-col items-end gap-2 shrink-0 z-10">
+<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.lanacion.com.ar/opinion/inesperada-vuelta-de-tuerca-para-una-epica-silenciada-nid18072026/" title="Guardar noticia">🔖</button>
+<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-07-18T19:00:00Z"></span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
+</div>
+</div>
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.lanacion.com.ar/opinion/inesperada-vuelta-de-tuerca-para-una-epica-silenciada-nid18072026/" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Opinión: Inesperada vuelta de tuerca para una épica silenciada</h2>
+</a>
+<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
+<span class="text-[#00E5FF] font-bold mr-2">▪</span> Un artículo de opinión aborda una "épica silenciada" que toma un giro inesperado, invitando a la reflexión sobre temas contemporáneos.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> La nota, firmada por <b>Jorge Fernández Díaz</b>, profundiza en interpretaciones sobre eventos o narrativas sociales y políticas.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto NEUTRAL porque al ser un artículo de opinión general, sin datos económicos o políticos concretos, su relevancia para las decisiones de un inversor argentino es nula.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#OPINIÓN</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ANÁLISIS</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#SOCIEDAD</span>
+</div>
 </div>
 </article>
 <article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="POLÍTICA" data-impacto="1" data-url="https://www.lanacion.com.ar/espectaculos/teatro/del-tablero-al-codigo-qr-el-final-de-uno-de-los-iconos-del-teatro-porteno-nid18072026/">
@@ -1390,14 +1501,14 @@
 </div>
 </div>
 </article>
-<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-emerald-500 h-[380px] overflow-hidden relative" data-categoria="MERCADOS" data-impacto="3" data-url="https://www.iprofesional.com/realestate/460148-la-rentabilidad-que-deja-alquilar-un-departamento-toco-un-record-en-casi-25-anos">
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="ECONOMÍA" data-impacto="3" data-url="https://www.iprofesional.com/realestate/460148-la-rentabilidad-que-deja-alquilar-un-departamento-toco-un-record-en-casi-25-anos">
 <div class="flex justify-between items-start mb-3 shrink-0 select-none">
 <div class="flex flex-col gap-2 max-w-[70%]">
 <div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
-<span class="bg-emerald-900/40 text-emerald-400 border border-emerald-500/30 px-2 py-1 rounded-md whitespace-nowrap">MERCADOS</span>
-<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">🟢 POSITIVO</span>
+<span class="bg-blue-900/40 text-blue-400 border border-blue-500/30 px-2 py-1 rounded-md whitespace-nowrap">ECONOMÍA</span>
+<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">⚪ NEUTRAL</span>
 </div>
-<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">IPROFESIONAL, ÁMBITO</span>
+<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">IPROFESIONAL</span>
 </div>
 <div class="flex flex-col items-end gap-2 shrink-0 z-10">
 <button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.iprofesional.com/realestate/460148-la-rentabilidad-que-deja-alquilar-un-departamento-toco-un-record-en-casi-25-anos" title="Guardar noticia">🔖</button>
@@ -1406,16 +1517,15 @@
 </div>
 </div>
 <a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.iprofesional.com/realestate/460148-la-rentabilidad-que-deja-alquilar-un-departamento-toco-un-record-en-casi-25-anos" target="_blank">
-<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">La rentabilidad de alquileres toca récord en 25 años y la construcción se concentra en el norte de Buenos Aires</h2>
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Tendencias económicas en Argentina: rentabilidad récord de alquileres y desafíos del dólar</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ La rentabilidad por alquiler de departamentos alcanzó un <b>récord en casi 25 años</b>, manteniendo precios atractivos para inversores.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> La construcción se ha desplazado hacia el norte de <b>Buenos Aires</b>, con el sur cayendo a un mínimo histórico del <b>1,6%</b> de las obras.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto positivo porque el incremento de la rentabilidad de alquileres es un indicador favorable para los inversores en Real Estate, aunque la concentración de la construcción en una zona específica sugiere una segmentación del mercado que puede requerir análisis más detallado.
+<span class="text-[#00E5FF] font-bold mr-2">▪</span> La rentabilidad que deja alquilar un departamento en Argentina tocó un nivel <b>récord</b> en casi <b>25 años</b>, indicando un repunte en el sector inmobiliario.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Se advierte sobre una posible <b>millonaria fuga récord de dólares</b> en los días siguientes a la final del Mundial, lo que podría generar presión cambiaria, mientras que quienes guardaron dólares bajo el colchón por <b>10 años</b> perdieron casi el <b>30%</b> de poder de compra.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto NEUTRAL, con elementos POSITIVOS y NEGATIVOS. La alta rentabilidad de los alquileres es positiva para inversores inmobiliarios, pero la advertencia de fuga de dólares y la pérdida del poder adquisitivo del dólar ahorrado generan incertidumbre y pueden afectar la estabilidad económica general, balanceándose mutuamente.
                     </div>
 <div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
 <div class="flex flex-wrap gap-1.5">
-<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#REAL ESTATE</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ALQUILERES</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#CONSTRUCCIÓN</span>
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#REAL ESTATE</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#DÓLAR</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#RENTABILIDAD</span>
 </div>
-<span class="text-[10px] font-bold bg-yellow-500/20 text-yellow-500 px-2 py-0.5 rounded border border-yellow-500/30 mt-2 inline-block">🗞️ Cubierto por 2 medios</span>
 </div>
 </article>
 <article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-rose-500 h-[380px] overflow-hidden relative" data-categoria="ECONOMÍA" data-impacto="4" data-url="https://www.ambito.com/finanzas/las-bolsas-del-mundo-caen-fuerza-arrastradas-las-tecnologicas-y-el-petroleo-supera-los-us85-n6300567">
