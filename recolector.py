@@ -432,10 +432,13 @@ try:
             """
 except Exception:
     pass
-    
+
+partidos_html = ""
+
 if not noticias_urgentes_ticker:
     noticias_urgentes_ticker = ["El mercado financiero opera con normalidad. Monitoreo activado."]
 ticker_items = "".join([f'<span class="mx-10 flex items-center gap-2 text-base md:text-lg"><span class="text-[#00E5FF] animate-pulse">⚡</span> {tit}</span>' for tit in noticias_urgentes_ticker])
+
 # --- 5. PLANTILLA HTML DEFINITIVA (Sintaxis Blindada) ---
 html_completo = f"""<!DOCTYPE html>
 <html lang="es" class="w-full h-full m-0 p-0 overflow-x-hidden">
@@ -536,7 +539,6 @@ html_completo = f"""<!DOCTYPE html>
                 <div class="flex flex-wrap gap-4 justify-between items-center w-full">
                     {widgets_html}
                 </div>
-                {partidos_html}
             </div>
         </header>
 
