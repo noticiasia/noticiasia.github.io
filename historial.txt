@@ -25,12 +25,66 @@
 </div>
 </div>
 </article>
-<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="ECONOMÍA" data-impacto="2" data-url="https://www.ambito.com/opiniones/las-empresas-no-cierran-golpe-primero-se-vacian-n6313565">
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="POLÍTICA" data-impacto="1" data-url="https://www.lanacion.com.ar/politica/el-nuevo-juez-del-caso-insaurralde-valido-los-videos-en-los-que-jesica-cirio-aparece-rodeada-de-nid22082026/">
+<div class="flex justify-between items-start mb-3 shrink-0 select-none">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-indigo-900/40 text-indigo-400 border border-indigo-500/30 px-2 py-1 rounded-md whitespace-nowrap">POLÍTICA</span>
+<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">⚪ NEUTRAL</span>
+</div>
+<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">LA NACION</span>
+</div>
+<div class="flex flex-col items-end gap-2 shrink-0 z-10">
+<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.lanacion.com.ar/politica/el-nuevo-juez-del-caso-insaurralde-valido-los-videos-en-los-que-jesica-cirio-aparece-rodeada-de-nid22082026/" title="Guardar noticia">🔖</button>
+<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-08-22T04:00:00Z"></span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
+</div>
+</div>
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.lanacion.com.ar/politica/el-nuevo-juez-del-caso-insaurralde-valido-los-videos-en-los-que-jesica-cirio-aparece-rodeada-de-nid22082026/" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Nuevo juez del caso Insaurralde validó videos de Jésica Cirio con dólares como prueba</h2>
+</a>
+<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ El nuevo juez del caso <b>Insaurralde</b>, <b>Rodríguez Ponte</b>, validó los videos en los que <b>Jésica Cirio</b> aparece rodeada de dólares, rechazando la pretensión de excluirlos como prueba.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Esta decisión es clave para el avance de la investigación sobre enriquecimiento ilícito y lavado de dinero que involucra al exintendente de Lomas de Zamora.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto NEUTRAL. Si bien es una noticia relevante en el ámbito judicial y político local, el impacto directo en los mercados o las decisiones de inversión para un inversor argentino es nulo.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#CASO INSAURRALDE</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#JUSTICIA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#CORRUPCIÓN</span>
+</div>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="POLÍTICA" data-impacto="1" data-url="https://www.lanacion.com.ar/politica/tucuman-denuncian-a-lisandro-catalan-y-a-un-diputado-libertario-por-falsificar-su-domicilio-con-nid22082026/">
+<div class="flex justify-between items-start mb-3 shrink-0 select-none">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-indigo-900/40 text-indigo-400 border border-indigo-500/30 px-2 py-1 rounded-md whitespace-nowrap">POLÍTICA</span>
+<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">⚪ NEUTRAL</span>
+</div>
+<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">LA NACION</span>
+</div>
+<div class="flex flex-col items-end gap-2 shrink-0 z-10">
+<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.lanacion.com.ar/politica/tucuman-denuncian-a-lisandro-catalan-y-a-un-diputado-libertario-por-falsificar-su-domicilio-con-nid22082026/" title="Guardar noticia">🔖</button>
+<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-08-22T04:00:00Z"></span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
+</div>
+</div>
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.lanacion.com.ar/politica/tucuman-denuncian-a-lisandro-catalan-y-a-un-diputado-libertario-por-falsificar-su-domicilio-con-nid22082026/" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Denuncian a Lisandro Catalán y a un diputado por falsificar su domicilio con fines electorales en Tucumán</h2>
+</a>
+<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ En <b>Tucumán</b>, <b>Lisandro Catalán</b> y un diputado fueron denunciados por falsificar su domicilio con fines electorales, generando una "guerra de aliados".<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Este incidente resalta irregularidades en el proceso electoral y tensiones políticas locales.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto NEUTRAL. Aunque es una noticia de relevancia política local que expone posibles fraudes, su impacto directo en los mercados o la economía argentina es nulo para un inversor.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#POLÍTICA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ELECCIONES</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#TUCUMÁN</span>
+</div>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-rose-500 h-[380px] overflow-hidden relative" data-categoria="ECONOMÍA" data-impacto="4" data-url="https://www.ambito.com/opiniones/las-empresas-no-cierran-golpe-primero-se-vacian-n6313565">
 <div class="flex justify-between items-start mb-3 shrink-0 select-none">
 <div class="flex flex-col gap-2 max-w-[70%]">
 <div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
 <span class="bg-blue-900/40 text-blue-400 border border-blue-500/30 px-2 py-1 rounded-md whitespace-nowrap">ECONOMÍA</span>
-<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">⚪ NEUTRAL</span>
+<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">🔴 NEGATIVO</span>
 </div>
 <span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">ÁMBITO</span>
 </div>
@@ -41,14 +95,68 @@
 </div>
 </div>
 <a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.ambito.com/opiniones/las-empresas-no-cierran-golpe-primero-se-vacian-n6313565" target="_blank">
-<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Análisis sobre el vaciamiento gradual de empresas antes de su cierre</h2>
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Opinión: Las empresas no cierran de golpe, primero se vacían</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ Una opinión describe cómo las empresas se <b>vacían antes de cerrar</b>, señalando un proceso gradual de declive.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> El autor, <b>Juan Pablo Chiesa</b>, aborda la dinámica de las crisis empresariales y sus fases previas al colapso total.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto NEUTRAL. Esta noticia es un análisis de coyuntura empresarial que, si bien describe un fenómeno relevante, no presenta datos duros o eventos que generen un impacto directo y medible en el mercado argentino para el inversor. Su valor es más bien educativo y de comprensión del entorno económico.
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ Un artículo de opinión analiza el proceso de deterioro empresarial, señalando que las compañías suelen experimentar un vaciamiento gradual antes de cerrar definitivamente.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Este fenómeno implica la reducción de activos, personal y actividad, reflejando dificultades estructurales o coyunturales del mercado.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto NEGATIVO. Esta perspectiva sugiere un debilitamiento del tejido productivo y laboral argentino, lo que se traduce en menor actividad económica, desempleo y menor confianza empresarial, afectando negativamente la inversión y el crecimiento.
                     </div>
 <div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
 <div class="flex flex-wrap gap-1.5">
-<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#EMPRESAS</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ECONOMÍA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#OPINIÓN</span>
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#EMPRESAS</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#CRISIS</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ECONOMÍA</span>
+</div>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="POLÍTICA" data-impacto="3" data-url="https://www.ambito.com/politica/semana-doble-sesion-el-congreso-el-oficialismo-busca-avanzar-las-leyes-javier-milei-y-contener-aliados-n6313403">
+<div class="flex justify-between items-start mb-3 shrink-0 select-none">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-indigo-900/40 text-indigo-400 border border-indigo-500/30 px-2 py-1 rounded-md whitespace-nowrap">POLÍTICA</span>
+<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">⚪ POSÍTIVO</span>
+</div>
+<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">ÁMBITO</span>
+</div>
+<div class="flex flex-col items-end gap-2 shrink-0 z-10">
+<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.ambito.com/politica/semana-doble-sesion-el-congreso-el-oficialismo-busca-avanzar-las-leyes-javier-milei-y-contener-aliados-n6313403" title="Guardar noticia">🔖</button>
+<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-08-22T00:00:00-03:00"></span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
+</div>
+</div>
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.ambito.com/politica/semana-doble-sesion-el-congreso-el-oficialismo-busca-avanzar-las-leyes-javier-milei-y-contener-aliados-n6313403" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">El oficialismo busca avanzar con las leyes de Milei en el Congreso tras el traspié de LLA</h2>
+</a>
+<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ Luego de un "traspié", el oficialismo de <b>La Libertad Avanza (LLA)</b> impulsa una semana de doble sesión en el Congreso para avanzar con las leyes propuestas por el presidente <b>Milei</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> La estrategia busca consolidar el apoyo de sus aliados para la aprobación de reformas clave en medio de negociaciones políticas intensas.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto POSITIVO. El avance de las leyes del gobierno, si son percibidas como pro-mercado y de ajuste, puede generar confianza y estabilidad en el marco regulatorio, lo cual es positivo para los inversores que buscan previsibilidad y reformas estructurales.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#LEYES MILEI</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#CONGRESO</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#POLÍTICA ARGENTINA</span>
+</div>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-rose-500 h-[380px] overflow-hidden relative" data-categoria="ECONOMÍA" data-impacto="5" data-url="https://www.ambito.com/economia/dos-gobiernos-un-mismo-problema-milei-se-perdieron-241020-empleos-asalariados-privados-camino-al-nivel-la-crisis-macri-n6313518">
+<div class="flex justify-between items-start mb-3 shrink-0 select-none">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-blue-900/40 text-blue-400 border border-blue-500/30 px-2 py-1 rounded-md whitespace-nowrap">ECONOMÍA</span>
+<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">🔴 NEGATIVO</span>
+</div>
+<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">ÁMBITO</span>
+</div>
+<div class="flex flex-col items-end gap-2 shrink-0 z-10">
+<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.ambito.com/economia/dos-gobiernos-un-mismo-problema-milei-se-perdieron-241020-empleos-asalariados-privados-camino-al-nivel-la-crisis-macri-n6313518" title="Guardar noticia">🔖</button>
+<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-08-22T00:00:00-03:00"></span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
+</div>
+</div>
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.ambito.com/economia/dos-gobiernos-un-mismo-problema-milei-se-perdieron-241020-empleos-asalariados-privados-camino-al-nivel-la-crisis-macri-n6313518" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Con Milei se perdieron 241.020 empleos asalariados, camino a niveles de crisis de Macri</h2>
+</a>
+<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ Bajo la gestión de <b>Milei</b>, se perdieron <b>241.020 empleos asalariados privados</b>, acercándose a los niveles de la crisis durante el gobierno de <b>Macri</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Este dato refleja una contracción significativa del mercado laboral formal y la continuidad de un problema estructural en Argentina.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto NEGATIVO. La pérdida masiva de empleos asalariados es un indicador crítico de recesión económica, reduce el consumo, aumenta la pobreza y genera desconfianza, impactando negativamente en la inversión y el crecimiento futuro del país.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#EMPLEO</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#CRISIS ECONÓMICA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#MERCADO LABORAL</span>
 </div>
 </div>
 </article>
@@ -95,14 +203,14 @@
 </div>
 </div>
 <a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.ambito.com/economia/s-enclave-que-las-inversiones-del-rigi-todavia-no-derraman-y-que-falta-que-suceda-n6310680" target="_blank">
-<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Las inversiones del RIGI aún no derraman: análisis de 44 proyectos por u$s199.000 millones</h2>
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Economías de enclave: inversiones del RIGI no derraman aún, ¿qué falta?</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ Un informe revela que las inversiones del <b>RIGI</b>, que suman <b>44 proyectos</b> por casi <b>u$s199.000 millones</b>, todavía no generan el derrame esperado.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> El análisis busca comprender qué falta para que estas <b>"economías de enclave"</b> impulsen la economía local.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto NEGATIVO. La falta de "derrame" de inversiones tan significativas bajo el <b>RIGI</b> es una señal preocupante para la efectividad de la política económica y el crecimiento general, lo que genera dudas sobre el futuro de la inversión y el empleo, afectando negativamente la confianza del inversor.
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ Unos <b>44 proyectos</b> por casi <b>u$s199.000 millones</b> bajo el <b>RIGI (Régimen de Incentivo para Grandes Inversiones)</b> aún no están "derramando" sus beneficios en la economía.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> El informe analiza las razones por las cuales estas inversiones de enclave no están generando un impacto más amplio y qué se necesita para lograrlo.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto NEGATIVO. A pesar de las grandes cifras de inversión proyectadas, la falta de derrame efectivo del RIGI significa que el esperado impulso al empleo y al desarrollo local no se está materializando, lo que limita el crecimiento económico y la capacidad del país para atraer inversiones sostenibles y de mayor impacto.
                     </div>
 <div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
 <div class="flex flex-wrap gap-1.5">
-<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#RIGI</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#INVERSIONES</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ECONOMÍA</span>
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#RIGI</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#INVERSIONES</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#DESARROLLO ECONÓMICO</span>
 </div>
 </div>
 </article>
@@ -161,30 +269,84 @@
 </div>
 </div>
 </article>
-<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-emerald-500 h-[380px] overflow-hidden relative" data-categoria="NEUTRAL" data-impacto="1" data-url="https://tn.com.ar/sociedad/2026/08/21/la-nueva-vida-de-florencia-pago-sus-deudas-un-odontologo-le-arreglara-la-dentadura-y-un-oftalmologo-le-tratara-la-vista/">
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="ECONOMÍA" data-impacto="1" data-url="https://www.infobae.com/estados-unidos/2026/08/22/nueva-york-exime-del-impuesto-al-seguro-social-pero-por-que-la-formula-federal-del-irs-puede-gravar-hasta-el-85-del-beneficio/">
 <div class="flex justify-between items-start mb-3 shrink-0 select-none">
 <div class="flex flex-col gap-2 max-w-[70%]">
 <div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
-<span class="bg-teal-900/40 text-teal-400 border border-teal-500/30 px-2 py-1 rounded-md whitespace-nowrap">NEUTRAL</span>
-<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">🟢 POSITIVO</span>
+<span class="bg-blue-900/40 text-blue-400 border border-blue-500/30 px-2 py-1 rounded-md whitespace-nowrap">ECONOMÍA</span>
+<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">⚪ NEUTRAL</span>
 </div>
-<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">TN</span>
+<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">INFOBAE</span>
 </div>
 <div class="flex flex-col items-end gap-2 shrink-0 z-10">
-<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://tn.com.ar/sociedad/2026/08/21/la-nueva-vida-de-florencia-pago-sus-deudas-un-odontologo-le-arreglara-la-dentadura-y-un-oftalmologo-le-tratara-la-vista/" title="Guardar noticia">🔖</button>
-<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-08-21T23:33:51.699Z"></span>
+<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.infobae.com/estados-unidos/2026/08/22/nueva-york-exime-del-impuesto-al-seguro-social-pero-por-que-la-formula-federal-del-irs-puede-gravar-hasta-el-85-del-beneficio/" title="Guardar noticia">🔖</button>
+<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-08-22T00:16:00Z"></span>
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://tn.com.ar/sociedad/2026/08/21/la-nueva-vida-de-florencia-pago-sus-deudas-un-odontologo-le-arreglara-la-dentadura-y-un-oftalmologo-le-tratara-la-vista/" target="_blank">
-<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">La nueva vida de Florencia: superación personal y apoyo para pagar deudas y tratar su salud</h2>
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/estados-unidos/2026/08/22/nueva-york-exime-del-impuesto-al-seguro-social-pero-por-que-la-formula-federal-del-irs-puede-gravar-hasta-el-85-del-beneficio/" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Nueva York exime del impuesto al Seguro Social, pero la fórmula federal del IRS puede gravar hasta el 85% del beneficio</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ <b>Florencia</b> logra pagar sus deudas, y recibirá atención odontológica y oftalmológica.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> La noticia relata la historia de superación personal de una mujer que transforma su vida.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto POSITIVO. Esta es una noticia de interés humano y superación personal, que si bien es emocionalmente positiva, no tiene ninguna repercusión económica ni de mercado directa para el inversor argentino.
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ El estado de <b>Nueva York</b> exime del impuesto al Seguro Social, sin embargo, la fórmula federal del <b>IRS</b> puede gravar hasta el <b>85%</b> de este beneficio.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Esta dualidad genera complejidad fiscal para los beneficiarios y pone de manifiesto la diferencia entre regulaciones estatales y federales en <b>Estados Unidos</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto NEUTRAL. Es una noticia relevante para ciudadanos y jubilados en EE.UU., pero no tiene implicaciones directas para el inversor argentino, ya que se refiere a políticas fiscales de otro país.
                     </div>
 <div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
 <div class="flex flex-wrap gap-1.5">
-<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#HISTORIA DE VIDA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#SOLIDARIDAD</span>
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#IMPUESTOS</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#SEGURO SOCIAL</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ESTADOS UNIDOS</span>
+</div>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="POLÍTICA" data-impacto="1" data-url="https://www.infobae.com/estados-unidos/2026/08/22/un-jurado-ordeno-a-the-new-york-times-pagar-mas-de-usd-9-millones-a-un-exjugador-de-baloncesto-universitario-por-difamacion/">
+<div class="flex justify-between items-start mb-3 shrink-0 select-none">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-indigo-900/40 text-indigo-400 border border-indigo-500/30 px-2 py-1 rounded-md whitespace-nowrap">POLÍTICA</span>
+<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">⚪ NEUTRAL</span>
+</div>
+<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">INFOBAE</span>
+</div>
+<div class="flex flex-col items-end gap-2 shrink-0 z-10">
+<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.infobae.com/estados-unidos/2026/08/22/un-jurado-ordeno-a-the-new-york-times-pagar-mas-de-usd-9-millones-a-un-exjugador-de-baloncesto-universitario-por-difamacion/" title="Guardar noticia">🔖</button>
+<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-08-22T00:05:38.597Z"></span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
+</div>
+</div>
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/estados-unidos/2026/08/22/un-jurado-ordeno-a-the-new-york-times-pagar-mas-de-usd-9-millones-a-un-exjugador-de-baloncesto-universitario-por-difamacion/" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Jurado ordena a The New York Times pagar más de USD 9 millones por difamación</h2>
+</a>
+<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ Un jurado en <b>Estados Unidos</b> ordenó a <b>The New York Times</b> pagar más de <b>USD 9 millones</b> a un exjugador de baloncesto universitario por difamación.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Este fallo subraya la responsabilidad legal de los medios de comunicación en la información que publican y el impacto en la reputación de las personas.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto NEUTRAL. Aunque significativo para el medio implicado, este evento tiene un impacto directo nulo para el inversor argentino, al ser un litigio específico en otro país.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#THE NEW YORK TIMES</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#DIFAMACIÓN</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#JUSTICIA</span>
+</div>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="POLÍTICA" data-impacto="1" data-url="https://www.lanacion.com.ar/politica/ara-san-juan-la-condena-a-un-oficial-naval-se-baso-en-que-autorizo-la-navegacion-a-pesar-de-conocer-nid21082026/">
+<div class="flex justify-between items-start mb-3 shrink-0 select-none">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-indigo-900/40 text-indigo-400 border border-indigo-500/30 px-2 py-1 rounded-md whitespace-nowrap">POLÍTICA</span>
+<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">⚪ NEUTRAL</span>
+</div>
+<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">LA NACION</span>
+</div>
+<div class="flex flex-col items-end gap-2 shrink-0 z-10">
+<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.lanacion.com.ar/politica/ara-san-juan-la-condena-a-un-oficial-naval-se-baso-en-que-autorizo-la-navegacion-a-pesar-de-conocer-nid21082026/" title="Guardar noticia">🔖</button>
+<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-08-21T23:39:34.971Z"></span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
+</div>
+</div>
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.lanacion.com.ar/politica/ara-san-juan-la-condena-a-un-oficial-naval-se-baso-en-que-autorizo-la-navegacion-a-pesar-de-conocer-nid21082026/" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Condena a oficial naval del ARA San Juan por autorizar navegación con fallas</h2>
+</a>
+<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ Un oficial naval fue condenado por autorizar la navegación del submarino <b>ARA San Juan</b>, a pesar de conocer las fallas técnicas.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Esta sentencia marca un hito en la búsqueda de responsabilidades por la tragedia del submarino y sus <b>44 tripulantes</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto NEUTRAL. Si bien es un evento de gran relevancia judicial y social en Argentina, no tiene un impacto directo en los mercados financieros o la economía para un inversor.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ARA SAN JUAN</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#JUSTICIA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#DEFENSA</span>
 </div>
 </div>
 </article>
@@ -243,11 +405,11 @@
 <span class="text-[10px] font-bold bg-yellow-500/20 text-yellow-500 px-2 py-0.5 rounded border border-yellow-500/30 mt-2 inline-block">🗞️ Cubierto por 3 medios</span>
 </div>
 </article>
-<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="NEUTRAL" data-impacto="1" data-url="https://tn.com.ar/sociedad/2026/08/21/un-estudio-de-adn-confirmo-que-no-hubo-error-en-el-caso-de-la-pareja-que-esperaba-una-nena-y-recibio-un-varon/">
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="POLÍTICA" data-impacto="1" data-url="https://tn.com.ar/sociedad/2026/08/21/un-estudio-de-adn-confirmo-que-no-hubo-error-en-el-caso-de-la-pareja-que-esperaba-una-nena-y-recibio-un-varon/">
 <div class="flex justify-between items-start mb-3 shrink-0 select-none">
 <div class="flex flex-col gap-2 max-w-[70%]">
 <div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
-<span class="bg-teal-900/40 text-teal-400 border border-teal-500/30 px-2 py-1 rounded-md whitespace-nowrap">NEUTRAL</span>
+<span class="bg-indigo-900/40 text-indigo-400 border border-indigo-500/30 px-2 py-1 rounded-md whitespace-nowrap">POLÍTICA</span>
 <span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">⚪ NEUTRAL</span>
 </div>
 <span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">TN</span>
@@ -259,14 +421,14 @@
 </div>
 </div>
 <a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://tn.com.ar/sociedad/2026/08/21/un-estudio-de-adn-confirmo-que-no-hubo-error-en-el-caso-de-la-pareja-que-esperaba-una-nena-y-recibio-un-varon/" target="_blank">
-<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Estudio de ADN confirma que la confusión de un bebé fue por ecografías, no por error hospitalario</h2>
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Estudio de ADN confirma que no hubo error en el caso del bebé recibido por equivocación</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ Un estudio de <b>ADN</b> confirmó que no hubo error hospitalario en el caso de la pareja que esperaba una nena y recibió un varón.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> La confusión sobre el sexo del bebé se habría originado en las <b>ecografías</b> previas al nacimiento.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto NEUTRAL. Esta noticia es de interés social y humanitario, resolviendo una incertidumbre para una familia. Sin embargo, no tiene ninguna implicación económica o impacto directo en los mercados para el inversor argentino.
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ Un estudio de <b>ADN</b> confirmó que no hubo error en el caso de la pareja que esperaba una niña y recibió un varón, sugiriendo que la confusión pudo surgir de las ecografías.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Este desenlace cierra un caso de intriga familiar y hospitalaria que captó la atención pública.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto NEUTRAL. Es una noticia de interés social y humano sin ninguna repercusión económica, política o de mercado para un inversor argentino.
                     </div>
 <div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
 <div class="flex flex-wrap gap-1.5">
-<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ADN</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#BEBÉ</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#HOSPITAL</span>
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ADN</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#SOCIEDAD</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#CONFUSIÓN</span>
 </div>
 </div>
 </article>
@@ -297,33 +459,6 @@
 </div>
 </div>
 </article>
-<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="NEUTRAL" data-impacto="1" data-url="https://www.infobae.com/estados-unidos/2026/08/21/una-mandibula-humana-aparecio-en-el-lago-mead-donde-el-retroceso-del-agua-ya-habia-expuesto-un-asesinato-sin-resolver/">
-<div class="flex justify-between items-start mb-3 shrink-0 select-none">
-<div class="flex flex-col gap-2 max-w-[70%]">
-<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
-<span class="bg-teal-900/40 text-teal-400 border border-teal-500/30 px-2 py-1 rounded-md whitespace-nowrap">NEUTRAL</span>
-<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">⚪ NEUTRAL</span>
-</div>
-<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">INFOBAE</span>
-</div>
-<div class="flex flex-col items-end gap-2 shrink-0 z-10">
-<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.infobae.com/estados-unidos/2026/08/21/una-mandibula-humana-aparecio-en-el-lago-mead-donde-el-retroceso-del-agua-ya-habia-expuesto-un-asesinato-sin-resolver/" title="Guardar noticia">🔖</button>
-<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-08-21T22:27:45.526Z"></span>
-<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
-</div>
-</div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/estados-unidos/2026/08/21/una-mandibula-humana-aparecio-en-el-lago-mead-donde-el-retroceso-del-agua-ya-habia-expuesto-un-asesinato-sin-resolver/" target="_blank">
-<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Mandíbula humana aparece en el lago Mead, sumándose a un asesinato sin resolver</h2>
-</a>
-<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ Una <b>mandíbula humana</b> fue hallada en el <b>lago Mead</b>, un sitio donde el retroceso del agua ya reveló un <b>asesinato sin resolver</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Este descubrimiento refuerza el misterio en torno a los restos humanos encontrados en la zona.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto NEUTRAL. Es una noticia de interés local y criminalística en <b>Estados Unidos</b>, sin relevancia ni impacto directo para el inversor argentino o para los mercados globales.
-                    </div>
-<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
-<div class="flex flex-wrap gap-1.5">
-<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#CRIMEN</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#LAGO MEAD</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#MISTERIO</span>
-</div>
-</div>
-</article>
 <article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-rose-500 h-[380px] overflow-hidden relative" data-categoria="MERCADOS" data-impacto="5" data-url="https://www.ambito.com/finanzas/los-bonos-dolares-suben-wall-street-y-el-riesgo-pais-busca-descomprimir-la-fuerte-alza-semanal-n6313274">
 <div class="flex justify-between items-start mb-3 shrink-0 select-none">
 <div class="flex flex-col gap-2 max-w-[70%]">
@@ -340,23 +475,23 @@
 </div>
 </div>
 <a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.ambito.com/finanzas/los-bonos-dolares-suben-wall-street-y-el-riesgo-pais-busca-descomprimir-la-fuerte-alza-semanal-n6313274" target="_blank">
-<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Mercado en modo electoral: S&amp;P Merval borra ganancias y riesgo país quiebra los 500 puntos</h2>
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Incertidumbre hacia 2027: el S&amp;P Merval borró 3 meses de ganancias y el riesgo país quebró los 500 puntos</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ El mercado entró en <b>"modo electoral"</b>, lo que provocó que el <b>S&amp;P Merval</b> borrara <b>tres meses de ganancias</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> El <b>riesgo país</b> superó la barrera de los <b>500 puntos</b>, señal de creciente incertidumbre hacia <b>2027</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto NEGATIVO. La volatilidad del <b>S&amp;P Merval</b> y el aumento del <b>riesgo país</b> son indicadores directos de la desconfianza del inversor ante la incertidumbre política y económica preelectoral, lo que se traduce en pérdidas para quienes tienen posiciones en renta variable local y mayores costos de financiamiento para el país.
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ El mercado argentino entró en "modo electoral" hacia <b>2027</b>, con el <b>S&amp;P Merval</b> borrando <b>3 meses de ganancias</b> y el <b>riesgo país</b> superando los <b>500 puntos</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Esta tendencia refleja la creciente incertidumbre de los inversores ante el panorama político y económico a mediano plazo.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto NEGATIVO. La caída del S&amp;P Merval y el aumento del riesgo país son indicadores directos de la desconfianza de los inversores, resultando en pérdidas de capital y mayores costos de financiamiento para el país, lo que perjudica las perspectivas económicas.
                     </div>
 <div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
 <div class="flex flex-wrap gap-1.5">
-<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#S&amp;P MERVAL</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#RIESGO PAÍS</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ELECCIONES</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#MERCADO</span>
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#S&amp;P MERVAL</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#RIESGO PAÍS</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#INVERSIÓN</span>
 </div>
 </div>
 </article>
-<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-rose-500 h-[380px] overflow-hidden relative" data-categoria="ECONOMÍA" data-impacto="4" data-url="https://tn.com.ar/economia/2026/08/21/la-estrategia-que-profundiza-el-gobierno-para-controlar-el-dolar-mientras-se-acerca-el-ano-electoral/">
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="ECONOMÍA" data-impacto="3" data-url="https://tn.com.ar/economia/2026/08/21/la-estrategia-que-profundiza-el-gobierno-para-controlar-el-dolar-mientras-se-acerca-el-ano-electoral/">
 <div class="flex justify-between items-start mb-3 shrink-0 select-none">
 <div class="flex flex-col gap-2 max-w-[70%]">
 <div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
 <span class="bg-blue-900/40 text-blue-400 border border-blue-500/30 px-2 py-1 rounded-md whitespace-nowrap">ECONOMÍA</span>
-<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">🔴 NEGATIVO</span>
+<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">⚪ NEUTRAL</span>
 </div>
 <span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">TN</span>
 </div>
@@ -367,18 +502,18 @@
 </div>
 </div>
 <a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://tn.com.ar/economia/2026/08/21/la-estrategia-que-profundiza-el-gobierno-para-controlar-el-dolar-mientras-se-acerca-el-ano-electoral/" target="_blank">
-<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Gobierno profundiza estrategia para controlar el dólar ante el año electoral</h2>
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">El Gobierno profundiza su estrategia para controlar el dólar ante el año electoral</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ El <b>Gobierno</b> profundiza su estrategia para controlar el valor del <b>dólar</b> a medida que se acerca el <b>año electoral</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Esta medida busca mantener la estabilidad cambiaria en un período de creciente incertidumbre política y económica.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto NEGATIVO. Las intervenciones gubernamentales en el mercado cambiario, especialmente en un contexto preelectoral, suelen generar distorsiones, dudas sobre la sostenibilidad de la política económica y aumentan la probabilidad de una devaluación futura, lo que es negativo para la planificación del inversor.
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ El Gobierno está implementando una estrategia más profunda para controlar el valor del <b>dólar</b> a medida que se acerca el año electoral.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Esta política busca mantener la estabilidad cambiaria y evitar fluctuaciones que puedan impactar negativamente en el clima preelectoral.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto NEUTRAL. Si bien el control del dólar es crucial para la economía argentina, la efectividad y sostenibilidad de estas estrategias preelectorales son inciertas. Puede generar una calma artificial a corto plazo, pero no resuelve los problemas estructurales subyacentes, lo que lleva a un impacto neutral hasta ver resultados a largo plazo.
                     </div>
 <div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
 <div class="flex flex-wrap gap-1.5">
-<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#DÓLAR</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#GOBIERNO</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ELECCIONES</span>
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#DÓLAR</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ELECCIONES</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#POLÍTICA ECONÓMICA</span>
 </div>
 </div>
 </article>
-<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="MERCADOS" data-impacto="3" data-url="https://www.infobae.com/estados-unidos/2026/08/21/wall-street-cerro-al-alza-pero-no-logro-compensar-las-perdidas-acumuladas-durante-una-semana-marcada-por-la-volatilidad/">
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="MERCADOS" data-impacto="2" data-url="https://www.infobae.com/estados-unidos/2026/08/21/wall-street-cerro-al-alza-pero-no-logro-compensar-las-perdidas-acumuladas-durante-una-semana-marcada-por-la-volatilidad/">
 <div class="flex justify-between items-start mb-3 shrink-0 select-none">
 <div class="flex flex-col gap-2 max-w-[70%]">
 <div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
@@ -394,14 +529,41 @@
 </div>
 </div>
 <a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/estados-unidos/2026/08/21/wall-street-cerro-al-alza-pero-no-logro-compensar-las-perdidas-acumuladas-durante-una-semana-marcada-por-la-volatilidad/" target="_blank">
-<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Wall Street cierra al alza pero no compensa pérdidas semanales por volatilidad</h2>
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Wall Street cerró al alza, pero no compensó pérdidas semanales por volatilidad</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ <b>Wall Street</b> cerró la jornada con subas, aunque no logró compensar las pérdidas acumuladas durante una <b>semana volátil</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> El mercado bursátil estadounidense mostró una jornada de recuperación parcial en medio de la incertidumbre.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto NEUTRAL. La volatilidad de <b>Wall Street</b> es un factor constante, y aunque su tendencia impacta globalmente, un cierre al alza que no compensa las pérdidas semanales indica un mercado mixto y sin una dirección clara, manteniendo un sentimiento neutral para el inversor argentino que debe evaluar su exposición a mercados externos.
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ <b>Wall Street</b> cerró al alza en la última jornada, pero no logró compensar las pérdidas acumuladas durante una semana marcada por la <b>volatilidad</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Este cierre mixto refleja la incertidumbre persistente en los mercados globales, pese a recuperaciones puntuales.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto NEUTRAL. Si bien Wall Street es un referente global, un cierre semanal volátil pero con una recuperación final es una situación habitual de mercado. No implica un cambio fundamental para las decisiones de inversión de un inversor argentino, salvo que opere activamente en esos mercados.
                     </div>
 <div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
 <div class="flex flex-wrap gap-1.5">
-<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#WALL STREET</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#MERCADO BURSÁTIL</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#VOLATILIDAD</span>
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#WALL STREET</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#MERCADO FINANCIERO</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#VOLATILIDAD</span>
+</div>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-emerald-500 h-[380px] overflow-hidden relative" data-categoria="MERCADOS" data-impacto="2" data-url="https://www.infobae.com/estados-unidos/2026/08/21/las-ventas-de-viviendas-en-miami-dade-alcanzan-el-mayor-nivel-desde-2024-tras-11-meses-de-subas-consecutivas/">
+<div class="flex justify-between items-start mb-3 shrink-0 select-none">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-emerald-900/40 text-emerald-400 border border-emerald-500/30 px-2 py-1 rounded-md whitespace-nowrap">MERCADOS</span>
+<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">🟢 POSITIVO</span>
+</div>
+<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">INFOBAE</span>
+</div>
+<div class="flex flex-col items-end gap-2 shrink-0 z-10">
+<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.infobae.com/estados-unidos/2026/08/21/las-ventas-de-viviendas-en-miami-dade-alcanzan-el-mayor-nivel-desde-2024-tras-11-meses-de-subas-consecutivas/" title="Guardar noticia">🔖</button>
+<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-08-21T21:46:31.044Z"></span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
+</div>
+</div>
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/estados-unidos/2026/08/21/las-ventas-de-viviendas-en-miami-dade-alcanzan-el-mayor-nivel-desde-2024-tras-11-meses-de-subas-consecutivas/" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Las ventas de viviendas en Miami-Dade alcanzan el mayor nivel desde 2024 tras 11 meses de subas consecutivas</h2>
+</a>
+<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ Las ventas de viviendas en <b>Miami-Dade</b> han alcanzado el nivel más alto desde <b>2024</b>, tras <b>11 meses consecutivos de aumentos</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Este crecimiento sostenido en el sector inmobiliario de Miami indica una fuerte demanda y un mercado robusto.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto POSITIVO. Aunque es un mercado externo, un sector inmobiliario fuerte en Miami-Dade puede ser visto como un destino atractivo para inversores argentinos que buscan diversificar capital fuera del país, generando oportunidades de inversión inmobiliaria.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#BIENES RAÍCES</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#MIAMI</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#INVERSIÓN</span>
 </div>
 </div>
 </article>
@@ -421,23 +583,105 @@
 </div>
 </div>
 <a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.lanacion.com.ar/economia/la-mora-bancaria-dejo-de-crecer-a-nivel-general-pero-sigue-avanzando-en-algunas-lineas-nid21082026/" target="_blank">
-<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">La mora bancaria general se estancó en junio, pero préstamos personales tocan récord del 16,4%</h2>
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">La mora bancaria se estabiliza a nivel general, pero la morosidad en préstamos personales alcanza un récord de 16,4%</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ La <b>mora bancaria</b> de las familias se mantuvo en <b>12,8%</b>, cortando una racha de <b>19 meses</b> en alza en junio.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Sin embargo, la morosidad en <b>préstamos personales</b> alcanzó un nuevo récord del <b>16,4%</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto NEGATIVO. A pesar de una leve estabilización general, el récord en morosidad de préstamos personales indica un deterioro significativo en la capacidad de pago de los hogares, lo que genera preocupación sobre la solvencia del sector bancario y el consumo futuro, impactando negativamente la percepción del inversor sobre la salud económica.
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ La mora bancaria general <b>dejó de crecer en junio</b> y la de las familias se mantuvo en <b>12,8%</b>, cortando <b>19 meses de alza</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Sin embargo, la morosidad en <b>préstamos personales</b> tocó un nuevo <b>récord del 16,4%</b>, aunque hubo una baja en tarjetas de crédito.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto NEGATIVO. A pesar de una leve estabilización general, el aumento récord en la morosidad de préstamos personales indica una dificultad creciente de las familias para cumplir con sus obligaciones, lo que refleja un deterioro del poder adquisitivo y puede afectar la cartera de los bancos y la confianza en el sistema financiero a largo plazo.
                     </div>
 <div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
 <div class="flex flex-wrap gap-1.5">
-<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#MORA BANCARIA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#DEUDA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#PRÉSTAMOS</span>
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#MORA BANCARIA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#PRÉSTAMOS</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ECONOMÍA ARGENTINA</span>
 </div>
 <span class="text-[10px] font-bold bg-yellow-500/20 text-yellow-500 px-2 py-0.5 rounded border border-yellow-500/30 mt-2 inline-block">🗞️ Cubierto por 3 medios</span>
 </div>
 </article>
-<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="ECONOMÍA" data-impacto="3" data-url="https://www.infobae.com/estados-unidos/2026/08/21/internet-ya-no-se-escribe-solo-la-inteligencia-artificial-esta-detras-de-1-de-cada-3-textos-nuevos/">
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="POLÍTICA" data-impacto="1" data-url="https://www.infobae.com/america/ciencia-america/2026/08/21/la-sorprendente-historia-oculta-bajo-la-nieve-hallan-10000-anos-de-ocupacion-humana-en-los-pirineos/">
 <div class="flex justify-between items-start mb-3 shrink-0 select-none">
 <div class="flex flex-col gap-2 max-w-[70%]">
 <div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
-<span class="bg-blue-900/40 text-blue-400 border border-blue-500/30 px-2 py-1 rounded-md whitespace-nowrap">ECONOMÍA</span>
+<span class="bg-indigo-900/40 text-indigo-400 border border-indigo-500/30 px-2 py-1 rounded-md whitespace-nowrap">POLÍTICA</span>
+<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">⚪ NEUTRAL</span>
+</div>
+<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">INFOBAE</span>
+</div>
+<div class="flex flex-col items-end gap-2 shrink-0 z-10">
+<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.infobae.com/america/ciencia-america/2026/08/21/la-sorprendente-historia-oculta-bajo-la-nieve-hallan-10000-anos-de-ocupacion-humana-en-los-pirineos/" title="Guardar noticia">🔖</button>
+<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-08-21T21:15:55.197Z"></span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
+</div>
+</div>
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/america/ciencia-america/2026/08/21/la-sorprendente-historia-oculta-bajo-la-nieve-hallan-10000-anos-de-ocupacion-humana-en-los-pirineos/" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Hallan 10.000 años de ocupación humana bajo la nieve en los Pirineos</h2>
+</a>
+<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ Un sorprendente hallazgo en los <b>Pirineos</b> reveló <b>10.000 años de ocupación humana</b> bajo la nieve, desvelando una historia oculta de antiguas civilizaciones.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Este descubrimiento arqueológico ofrece nuevas perspectivas sobre la presencia humana temprana en la región.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto NEUTRAL. Es una noticia de gran interés científico y cultural, pero sin ninguna implicación directa para los mercados financieros o la economía de un inversor argentino.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ARQUEOLOGÍA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#PIRINEOS</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#HISTORIA</span>
+</div>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="DEPORTES" data-impacto="1" data-url="https://tn.com.ar/deportes/futbol/2026/08/21/sancionaron-a-lionel-messi-por-un-polemico-episodio-con-un-rival-durante-el-empate-de-inter-miami-ante-philadelphia-union/">
+<div class="flex justify-between items-start mb-3 shrink-0 select-none">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-orange-900/40 text-orange-400 border border-orange-500/30 px-2 py-1 rounded-md whitespace-nowrap">DEPORTES</span>
+<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">⚪ NEUTRAL</span>
+</div>
+<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">TN, LA NACION</span>
+</div>
+<div class="flex flex-col items-end gap-2 shrink-0 z-10">
+<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://tn.com.ar/deportes/futbol/2026/08/21/sancionaron-a-lionel-messi-por-un-polemico-episodio-con-un-rival-durante-el-empate-de-inter-miami-ante-philadelphia-union/" title="Guardar noticia">🔖</button>
+<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-08-21T21:13:01.753Z"></span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
+</div>
+</div>
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://tn.com.ar/deportes/futbol/2026/08/21/sancionaron-a-lionel-messi-por-un-polemico-episodio-con-un-rival-durante-el-empate-de-inter-miami-ante-philadelphia-union/" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Messi sancionado por FIFA: el impacto y las reacciones tras un polémico episodio</h2>
+</a>
+<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ <b>Lionel Messi</b> fue sancionado por un polémico episodio con un rival durante el empate de <b>Inter Miami</b> ante <b>Philadelphia Union</b>, mientras la <b>FIFA</b> también impuso un "castigo severo" a la <b>Selección Argentina</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Medios internacionales reaccionaron a la sanción, y opiniones críticas señalaron el "papelón" del final y la falta de sanción a la FIFA misma.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto NEUTRAL. A pesar de la relevancia deportiva y mediática, las sanciones a deportistas o equipos no tienen un impacto directo ni significativo en los mercados financieros o la economía para un inversor argentino.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#MESSI</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#FIFA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#SELECCIÓN ARGENTINA</span>
+</div>
+<span class="text-[10px] font-bold bg-yellow-500/20 text-yellow-500 px-2 py-0.5 rounded border border-yellow-500/30 mt-2 inline-block">🗞️ Cubierto por 2 medios</span>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="POLÍTICA" data-impacto="1" data-url="https://www.lanacion.com.ar/opinion/javi-massita-y-cerimedo-un-solo-corazon-nid21082026/">
+<div class="flex justify-between items-start mb-3 shrink-0 select-none">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-indigo-900/40 text-indigo-400 border border-indigo-500/30 px-2 py-1 rounded-md whitespace-nowrap">POLÍTICA</span>
+<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">⚪ NEUTRAL</span>
+</div>
+<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">LA NACION</span>
+</div>
+<div class="flex flex-col items-end gap-2 shrink-0 z-10">
+<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.lanacion.com.ar/opinion/javi-massita-y-cerimedo-un-solo-corazon-nid21082026/" title="Guardar noticia">🔖</button>
+<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-08-21T20:55:31.581Z"></span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
+</div>
+</div>
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.lanacion.com.ar/opinion/javi-massita-y-cerimedo-un-solo-corazon-nid21082026/" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Opinión: Javi, Massita y Cerimedo, un solo corazón</h2>
+</a>
+<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ Artículo de opinión que vincula a figuras políticas como <b>Javier Milei ("Javi")</b>, <b>Sergio Massa ("Massita")</b> y <b>Fernando Cerimedo</b>, sugiriendo una unidad de intereses o agendas detrás de escena.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Estos análisis buscan desentrañar las complejas relaciones y alianzas dentro del espectro político argentino.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto NEUTRAL. Al ser una columna de opinión, su impacto directo en los mercados es nulo, aunque ofrece una visión sobre la dinámica política que, indirectamente, podría influir en el sentimiento general si las percepciones se volvieran más concretas en acciones políticas.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#POLÍTICA ARGENTINA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#OPINIÓN</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ALIANZAS</span>
+</div>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="MERCADOS" data-impacto="2" data-url="https://www.infobae.com/estados-unidos/2026/08/21/internet-ya-no-se-escribe-solo-la-inteligencia-artificial-esta-detras-de-1-de-cada-3-textos-nuevos/">
+<div class="flex justify-between items-start mb-3 shrink-0 select-none">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-emerald-900/40 text-emerald-400 border border-emerald-500/30 px-2 py-1 rounded-md whitespace-nowrap">MERCADOS</span>
 <span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">⚪ NEUTRAL</span>
 </div>
 <span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">INFOBAE</span>
@@ -449,10 +693,10 @@
 </div>
 </div>
 <a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/estados-unidos/2026/08/21/internet-ya-no-se-escribe-solo-la-inteligencia-artificial-esta-detras-de-1-de-cada-3-textos-nuevos/" target="_blank">
-<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">La Inteligencia Artificial genera 1 de cada 3 textos nuevos en internet</h2>
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">La inteligencia artificial está detrás de 1 de cada 3 textos nuevos en internet</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ La <b>inteligencia artificial</b> es responsable de la creación de <b>uno de cada tres</b> textos nuevos que se publican en internet.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Este dato subraya el creciente impacto de la <b>IA</b> en la generación de contenidos digitales.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto NEUTRAL. Si bien es una tendencia tecnológica disruptiva con enormes implicaciones, la noticia en sí es un dato estadístico que no genera un impacto directo positivo o negativo inmediato en la cartera de un inversor argentino, más allá de la observación de una macro-tendencia en el sector tecnológico.
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ La <b>inteligencia artificial (IA)</b> es responsable de la creación de <b>1 de cada 3 textos nuevos en internet</b>, marcando un hito en la producción de contenido digital.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Este dato subraya el creciente impacto de la IA en la generación de información y en diversas industrias, desde medios hasta marketing.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto NEUTRAL. Si bien la proliferación de IA en la creación de contenido es una megatendencia que genera oportunidades y riesgos en el sector tecnológico, su impacto directo para el inversor argentino es amplio y difuso, generando tanto nuevas vías de inversión como desafíos éticos y laborales a evaluar. Por ahora, es una tendencia a monitorear.
                     </div>
 <div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
 <div class="flex flex-wrap gap-1.5">
@@ -476,23 +720,23 @@
 </div>
 </div>
 <a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.iprofesional.com/impuestos/462822-se-acordo-un-nuevo-aumento-de-sueldo-para-empleadas-domesticas-de-agosto-a-diciembre-2026" target="_blank">
-<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Acuerdo de nuevo aumento salarial para empleadas domésticas de agosto a diciembre 2026</h2>
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Acordado nuevo aumento de sueldo para empleadas domésticas de agosto a diciembre 2026</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ Se ha acordado un nuevo <b>aumento de sueldo</b> para las <b>empleadas domésticas</b>, que regirá de <b>agosto a diciembre de 2026</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Este ajuste salarial impactará en los presupuestos familiares y el costo de los servicios de empleo doméstico.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto NEUTRAL. Aunque es una noticia económica relevante para un sector específico de la fuerza laboral, se inscribe dentro de los ajustes salariales periódicos frente a la inflación y no presenta un impacto macroeconómico positivo o negativo extraordinario para el inversor argentino.
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ Se acordó un nuevo aumento de sueldo para las <b>empleadas domésticas</b>, que regirá de <b>agosto a diciembre de 2026</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Este ajuste salarial busca compensar la inflación y mejorar el poder adquisitivo de este sector laboral.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto NEUTRAL. Si bien es positivo para el sector de empleadas domésticas y tiene un impacto en los presupuestos familiares, el efecto general en la economía es limitado. Puede influir ligeramente en el consumo, pero no mueve los principales indicadores de mercado para un inversor.
                     </div>
 <div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
 <div class="flex flex-wrap gap-1.5">
-<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#SALARIOS</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#EMPLEADAS DOMÉSTICAS</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#INFLACIÓN</span>
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#EMPLEO DOMÉSTICO</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#SALARIOS</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#AUMENTO</span>
 </div>
 </div>
 </article>
-<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-emerald-500 h-[380px] overflow-hidden relative" data-categoria="DEPORTES" data-impacto="1" data-url="https://tn.com.ar/deportes/formula-1/2026/08/21/el-jefe-de-alpine-celebro-el-rendimiento-de-pierre-gasly-y-le-hizo-un-guino-a-franco-colapinto-un-buen-augurio/">
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="DEPORTES" data-impacto="1" data-url="https://tn.com.ar/deportes/formula-1/2026/08/21/el-jefe-de-alpine-celebro-el-rendimiento-de-pierre-gasly-y-le-hizo-un-guino-a-franco-colapinto-un-buen-augurio/">
 <div class="flex justify-between items-start mb-3 shrink-0 select-none">
 <div class="flex flex-col gap-2 max-w-[70%]">
 <div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
 <span class="bg-orange-900/40 text-orange-400 border border-orange-500/30 px-2 py-1 rounded-md whitespace-nowrap">DEPORTES</span>
-<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">🟢 POSITIVO</span>
+<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">⚪ NEUTRAL</span>
 </div>
 <span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">TN</span>
 </div>
@@ -503,23 +747,50 @@
 </div>
 </div>
 <a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://tn.com.ar/deportes/formula-1/2026/08/21/el-jefe-de-alpine-celebro-el-rendimiento-de-pierre-gasly-y-le-hizo-un-guino-a-franco-colapinto-un-buen-augurio/" target="_blank">
-<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Jefe de Alpine elogia a Gasly y le guiña un ojo a Franco Colapinto</h2>
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">El jefe de Alpine celebra a Gasly y guiña a Franco Colapinto como “un buen augurio”</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ El jefe de la escudería <b>Alpine</b> celebró el buen rendimiento de <b>Pierre Gasly</b> en la <b>Fórmula 1</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Le hizo un <b>"buen augurio"</b> al piloto argentino <b>Franco Colapinto</b>, sugiriendo un futuro prometedor.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto POSITIVO. Esta noticia, aunque específica del ámbito deportivo, genera optimismo para los seguidores de <b>Franco Colapinto</b> y el automovilismo argentino, sin tener una incidencia directa en los mercados financieros.
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ El jefe del equipo <b>Alpine</b> de <b>Fórmula 1</b> celebró el rendimiento de <b>Pierre Gasly</b> y lanzó un guiño a <b>Franco Colapinto</b>, calificándolo como "un buen augurio".<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Esto sugiere un posible futuro prometedor para el piloto argentino en el ámbito de la máxima categoría del automovilismo.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto NEUTRAL. Si bien es una noticia relevante para los aficionados al deporte motor y para el futuro de un talento argentino, no tiene un impacto directo en los mercados financieros o la economía para un inversor argentino.
                     </div>
 <div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
 <div class="flex flex-wrap gap-1.5">
-<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#FÓRMULA 1</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#COLAPINTO</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#DEPORTES</span>
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#FÓRMULA 1</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#COLAPINTO</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ALPINE</span>
 </div>
 </div>
 </article>
-<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="MERCADOS" data-impacto="3" data-url="https://www.iprofesional.com/finanzas/462603-por-que-los-grandes-fondos-de-inversion-aceleran-sus-compras-de-oro">
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="POLÍTICA" data-impacto="1" data-url="https://tn.com.ar/politica/2026/08/21/se-conocio-una-foto-de-fernando-cerimedo-durante-la-audiencia-por-el-presunto-femicidio-de-nadia-beller-en-bolivia/">
+<div class="flex justify-between items-start mb-3 shrink-0 select-none">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-indigo-900/40 text-indigo-400 border border-indigo-500/30 px-2 py-1 rounded-md whitespace-nowrap">POLÍTICA</span>
+<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">⚪ NEUTRAL</span>
+</div>
+<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">TN</span>
+</div>
+<div class="flex flex-col items-end gap-2 shrink-0 z-10">
+<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://tn.com.ar/politica/2026/08/21/se-conocio-una-foto-de-fernando-cerimedo-durante-la-audiencia-por-el-presunto-femicidio-de-nadia-beller-en-bolivia/" title="Guardar noticia">🔖</button>
+<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-08-21T20:31:12.379Z"></span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
+</div>
+</div>
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://tn.com.ar/politica/2026/08/21/se-conocio-una-foto-de-fernando-cerimedo-durante-la-audiencia-por-el-presunto-femicidio-de-nadia-beller-en-bolivia/" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Prisión preventiva para Fernando Cerimedo en Bolivia por intento de femicidio</h2>
+</a>
+<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ La justicia de <b>Bolivia</b> dictó <b>prisión preventiva por 180 días</b> para <b>Fernando Cerimedo</b> en la causa por presunto intento de femicidio contra <b>Nadia Beller</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> El vicepresidente de Bolivia aseguró que "hay pruebas del contacto con los sicarios", implicando a Cerimedo en la orden del ataque.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto NEUTRAL. A pesar de la relevancia política de Cerimedo en Argentina, este caso judicial en Bolivia no tiene un impacto directo en los mercados o la economía argentina, siendo un suceso de índole criminal y personal.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#FERNANDO CERIMEDO</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#JUSTICIA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#BOLIVIA</span>
+</div>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-emerald-500 h-[380px] overflow-hidden relative" data-categoria="MERCADOS" data-impacto="3" data-url="https://www.iprofesional.com/finanzas/462603-por-que-los-grandes-fondos-de-inversion-aceleran-sus-compras-de-oro">
 <div class="flex justify-between items-start mb-3 shrink-0 select-none">
 <div class="flex flex-col gap-2 max-w-[70%]">
 <div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
 <span class="bg-emerald-900/40 text-emerald-400 border border-emerald-500/30 px-2 py-1 rounded-md whitespace-nowrap">MERCADOS</span>
-<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">⚪ NEUTRAL</span>
+<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">🟢 POSITIVO</span>
 </div>
 <span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">IPROFESIONAL</span>
 </div>
@@ -530,10 +801,10 @@
 </div>
 </div>
 <a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.iprofesional.com/finanzas/462603-por-que-los-grandes-fondos-de-inversion-aceleran-sus-compras-de-oro" target="_blank">
-<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Grandes fondos aceleran compras de oro impulsados por señales de la Fed y el dólar</h2>
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Grandes fondos aceleran compras de oro: señales que explican el giro y expectativas</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ Los grandes fondos de inversión han acelerado sus compras de <b>oro</b>, registrando la mayor entrada semanal desde <b>enero de 2026</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Este giro se explica por señales de la <b>Fed</b> y la evolución del <b>dólar</b>, en un contexto de búsqueda de activos refugio.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto NEUTRAL. Aunque el oro es un activo refugio importante en momentos de incertidumbre global, para el inversor argentino es una señal de tendencias macroeconómicas internacionales más que un catalizador directo de acciones o bonos locales, y su rentabilidad depende de la estrategia de diversificación individual.
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ Los grandes fondos de inversión aceleraron sus compras de <b>oro</b>, registrando la <b>mayor entrada semanal desde enero de 2026</b> en fondos vinculados al metal.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Factores como las políticas de la <b>Fed</b> y la evolución del <b>dólar</b> explican este movimiento hacia un activo de refugio.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto POSITIVO. El aumento de la demanda de oro por parte de grandes fondos sugiere una búsqueda de refugio ante la incertidumbre económica global, lo que puede elevar el precio del oro y beneficiar a los inversores argentinos que tienen o consideran este activo en sus carteras como cobertura.
                     </div>
 <div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
 <div class="flex flex-wrap gap-1.5">
@@ -557,14 +828,14 @@
 </div>
 </div>
 <a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/estados-unidos/2026/08/21/james-harden-renueva-por-tres-anos-con-los-cleveland-cavaliers-de-cuanto-es-la-cifra-millonaria-del-acuerdo/" target="_blank">
-<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">James Harden renueva por tres años con los Cleveland Cavaliers por cifra millonaria</h2>
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">James Harden renueva por tres años con los Cleveland Cavaliers por una cifra millonaria</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ El basquetbolista <b>James Harden</b> renovó su contrato por <b>tres años</b> con los <b>Cleveland Cavaliers</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> El acuerdo implica una <b>cifra millonaria</b>, aunque no especificada en el título.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto NEUTRAL. Esta es una noticia deportiva específica de la <b>NBA</b> (Estados Unidos) y carece de cualquier impacto o relevancia para el mercado o el inversor argentino.
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ <b>James Harden</b> renovó su contrato por <b>tres años</b> con los <b>Cleveland Cavaliers</b> de la <b>NBA</b> por una cifra millonaria.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Este acuerdo asegura la continuidad de uno de los jugadores más destacados de la liga en su equipo.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto NEUTRAL. Si bien es una noticia relevante en el mundo del baloncesto profesional, no tiene ninguna implicación directa para los mercados financieros o la economía para un inversor argentino.
                     </div>
 <div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
 <div class="flex flex-wrap gap-1.5">
-<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#NBA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#BALONCESTO</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#DEPORTES</span>
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#JAMES HARDEN</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#NBA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#CLEVELAND CAVALIERS</span>
 </div>
 </div>
 </article>
@@ -620,6 +891,34 @@
 <div class="flex flex-wrap gap-1.5">
 <span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#AFA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#JUSTICIA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#CORRUPCIÓN</span>
 </div>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="POLÍTICA" data-impacto="1" data-url="https://www.iprofesional.com/politica/462821-el-argentino-rafael-grossi-sigue-en-carrera-para-ocupar-el-cargo-mas-alto-en-la-onu">
+<div class="flex justify-between items-start mb-3 shrink-0 select-none">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-indigo-900/40 text-indigo-400 border border-indigo-500/30 px-2 py-1 rounded-md whitespace-nowrap">POLÍTICA</span>
+<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">⚪ NEUTRAL</span>
+</div>
+<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">IPROFESIONAL, TN</span>
+</div>
+<div class="flex flex-col items-end gap-2 shrink-0 z-10">
+<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.iprofesional.com/politica/462821-el-argentino-rafael-grossi-sigue-en-carrera-para-ocupar-el-cargo-mas-alto-en-la-onu" title="Guardar noticia">🔖</button>
+<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-08-21T17:20:00-03:00"></span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
+</div>
+</div>
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.iprofesional.com/politica/462821-el-argentino-rafael-grossi-sigue-en-carrera-para-ocupar-el-cargo-mas-alto-en-la-onu" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">El argentino Rafael Grossi, entre los tres candidatos finales para liderar la Secretaría General de la ONU</h2>
+</a>
+<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ El argentino <b>Rafael Grossi</b> ha sido preseleccionado como uno de los <b>tres candidatos finales</b> para ocupar el cargo más alto en la <b>Organización de las Naciones Unidas (ONU)</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Grossi, actual director general del Organismo Internacional de Energía Atómica (OIEA), se posiciona como una figura clave en la diplomacia internacional.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto NEUTRAL. Si bien es una noticia positiva para la diplomacia argentina, su impacto directo en los mercados o la economía local es mínimo, siendo un reconocimiento más bien político y de prestigio internacional.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#RAFAEL GROSSI</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ONU</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#CANDIDATURA</span>
+</div>
+<span class="text-[10px] font-bold bg-yellow-500/20 text-yellow-500 px-2 py-0.5 rounded border border-yellow-500/30 mt-2 inline-block">🗞️ Cubierto por 2 medios</span>
 </div>
 </article>
 <article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="POLÍTICA" data-impacto="2" data-url="https://tn.com.ar/politica/2026/08/21/la-justicia-rechazo-un-planteo-de-jesica-cirio-y-ratifico-la-validez-de-los-dolares-en-la-mansion-de-insaurralde/">
@@ -731,6 +1030,33 @@
 </div>
 </div>
 </article>
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="ECONOMÍA" data-impacto="1" data-url="https://www.infobae.com/estados-unidos/2026/08/21/mas-de-2-millones-de-personas-afrontan-cambios-en-el-snap-en-que-estados-aplican-las-nuevas-restricciones/">
+<div class="flex justify-between items-start mb-3 shrink-0 select-none">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-blue-900/40 text-blue-400 border border-blue-500/30 px-2 py-1 rounded-md whitespace-nowrap">ECONOMÍA</span>
+<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">⚪ NEUTRAL</span>
+</div>
+<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">INFOBAE</span>
+</div>
+<div class="flex flex-col items-end gap-2 shrink-0 z-10">
+<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.infobae.com/estados-unidos/2026/08/21/mas-de-2-millones-de-personas-afrontan-cambios-en-el-snap-en-que-estados-aplican-las-nuevas-restricciones/" title="Guardar noticia">🔖</button>
+<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-08-21T19:49:02.048Z"></span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
+</div>
+</div>
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/estados-unidos/2026/08/21/mas-de-2-millones-de-personas-afrontan-cambios-en-el-snap-en-que-estados-aplican-las-nuevas-restricciones/" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Más de 2 millones de personas afrontan cambios en el SNAP con nuevas restricciones</h2>
+</a>
+<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ Más de <b>2 millones de personas</b> en <b>Estados Unidos</b> enfrentan cambios en el programa de asistencia alimentaria <b>SNAP (Supplemental Nutrition Assistance Program)</b> debido a nuevas restricciones.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Estos ajustes en los beneficios sociales afectarán directamente el poder adquisitivo de una parte de la población en diversos estados.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto NEUTRAL. Si bien es una noticia de relevancia social y económica en EE.UU., no tiene un impacto directo para el inversor argentino, al tratarse de políticas internas de otro país.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#SNAP</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#BENEFICIOS SOCIALES</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ESTADOS UNIDOS</span>
+</div>
+</div>
+</article>
 <article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="POLÍTICA" data-impacto="3" data-url="https://tn.com.ar/politica/2026/08/21/la-cgt-le-reclamo-al-gobierno-una-reunion-presencial-para-discutir-el-aumento-del-salario-minimo/">
 <div class="flex justify-between items-start mb-3 shrink-0 select-none">
 <div class="flex flex-col gap-2 max-w-[70%]">
@@ -785,7 +1111,7 @@
 </div>
 </div>
 </article>
-<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="POLÍTICA" data-impacto="2" data-url="https://tn.com.ar/politica/2026/08/21/el-fiscal-pidio-que-elias-piccirillo-vaya-a-juicio-oral-por-la-causa-en-la-que-esta-acusado-de-plantarle-armas-y-drogas-a-hauque/">
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="POLÍTICA" data-impacto="1" data-url="https://tn.com.ar/politica/2026/08/21/el-fiscal-pidio-que-elias-piccirillo-vaya-a-juicio-oral-por-la-causa-en-la-que-esta-acusado-de-plantarle-armas-y-drogas-a-hauque/">
 <div class="flex justify-between items-start mb-3 shrink-0 select-none">
 <div class="flex flex-col gap-2 max-w-[70%]">
 <div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
@@ -801,14 +1127,14 @@
 </div>
 </div>
 <a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://tn.com.ar/politica/2026/08/21/el-fiscal-pidio-que-elias-piccirillo-vaya-a-juicio-oral-por-la-causa-en-la-que-esta-acusado-de-plantarle-armas-y-drogas-a-hauque/" target="_blank">
-<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">El fiscal pidió que Elías Piccirillo vaya a juicio oral por la causa en la que está acusado de haberle plantado armas y drogas al financista Francisco Hauque</h2>
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Fiscal pide juicio oral para Elías Piccirillo por presuntamente plantar armas y drogas</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ El fiscal solicitó que **Elías Piccirillo** sea elevado a juicio oral por la causa en la que se le acusa de haber "plantado" armas y drogas al financista **Francisco Hauque**.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Este desarrollo judicial marca un avance en una investigación de alto perfil.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto neutral porque se trata de un proceso judicial específico, cuyo desenlace aún es incierto y no tiene implicaciones directas para el mercado financiero o la economía en general en el corto plazo.
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ El fiscal solicitó que <b>Elías Piccirillo</b> vaya a juicio oral por la acusación de haberle "plantado" armas y drogas al financista <b>Francisco Hauque</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Este caso de índole judicial implica a una figura pública en un delito grave, lo que podría tener repercusiones en el ámbito de las finanzas y el entorno político asociado.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto NEUTRAL. Si bien es un caso judicial relevante con figuras públicas, su impacto directo en los mercados o la economía argentina para un inversor es limitado, a menos que se vincule a una red más amplia de ilícitos que afecte la estabilidad financiera.
                     </div>
 <div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
 <div class="flex flex-wrap gap-1.5">
-<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ELÍAS PICCIRILLO</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#JUSTICIA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#INVESTIGACIÓN JUDICIAL</span>
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ELÍAS PICCIRILLO</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#JUSTICIA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#INVESTIGACIÓN</span>
 </div>
 </div>
 </article>
@@ -895,7 +1221,7 @@
 <span class="text-[10px] font-bold bg-yellow-500/20 text-yellow-500 px-2 py-0.5 rounded border border-yellow-500/30 mt-2 inline-block">🗞️ Cubierto por 2 medios</span>
 </div>
 </article>
-<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="POLÍTICA" data-impacto="3" data-url="https://www.lanacion.com.ar/politica/bullrich-volvio-a-diferenciarse-de-la-linea-de-milei-sabemos-que-algunos-sectores-estan-pasando-un-nid21082026/">
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="POLÍTICA" data-impacto="2" data-url="https://www.lanacion.com.ar/politica/bullrich-volvio-a-diferenciarse-de-la-linea-de-milei-sabemos-que-algunos-sectores-estan-pasando-un-nid21082026/">
 <div class="flex justify-between items-start mb-3 shrink-0 select-none">
 <div class="flex flex-col gap-2 max-w-[70%]">
 <div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
@@ -911,14 +1237,14 @@
 </div>
 </div>
 <a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.lanacion.com.ar/politica/bullrich-volvio-a-diferenciarse-de-la-linea-de-milei-sabemos-que-algunos-sectores-estan-pasando-un-nid21082026/" target="_blank">
-<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Bullrich se diferencia de Milei, pide “más velocidad” y rechaza “métodos camporistas”</h2>
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Patricia Bullrich se diferencia de Milei: pide “más velocidad” a los resultados económicos y rechaza “métodos camporistas”</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ <b>Patricia Bullrich</b> volvió a diferenciarse de la línea del presidente <b>Milei</b>, pidiendo <b>"más velocidad"</b> en los resultados económicos.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> También rechazó lo que denominó <b>"métodos camporistas"</b>, marcando distancia en el estilo político.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto NEUTRAL. Las declaraciones de <b>Bullrich</b> indican tensiones internas en la coalición gobernante y posibles diferencias en la dirección política y económica. Esto puede generar incertidumbre, pero al ser una dinámica interna y sin una acción política o económica concreta, el impacto para el inversor se mantiene en neutral, a la espera de definiciones más claras.
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ <b>Patricia Bullrich</b>, bajo el ala del "Mileísmo crítico", se diferenció del presidente <b>Milei</b>, pidiendo "más velocidad" en los resultados económicos y rechazando "métodos camporistas".<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Estas declaraciones evidencian tensiones y matices dentro de la coalición gobernante y entre sus aliados.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto NEUTRAL. Aunque estas diferencias internas pueden generar ruido político, no hay un impacto directo discernible en los mercados o la economía. Sin embargo, si la inestabilidad política se agravara, podría volverse negativa al introducir incertidumbre.
                     </div>
 <div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
 <div class="flex flex-wrap gap-1.5">
-<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#BULLRICH</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#MILEI</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#POLÍTICA</span>
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#BULLRICH</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#MILEI</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#POLÍTICA ARGENTINA</span>
 </div>
 </div>
 </article>
@@ -1165,7 +1491,7 @@
 </div>
 </div>
 </article>
-<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-rose-500 h-[380px] overflow-hidden relative" data-categoria="ECONOMÍA" data-impacto="4" data-url="https://www.iprofesional.com/finanzas/462747-el-dolar-quedo-muy-barato-y-su-valor-real-es-el-mas-bajo-en-10-anos">
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-rose-500 h-[380px] overflow-hidden relative" data-categoria="ECONOMÍA" data-impacto="5" data-url="https://www.iprofesional.com/finanzas/462747-el-dolar-quedo-muy-barato-y-su-valor-real-es-el-mas-bajo-en-10-anos">
 <div class="flex justify-between items-start mb-3 shrink-0 select-none">
 <div class="flex flex-col gap-2 max-w-[70%]">
 <div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
@@ -1181,14 +1507,14 @@
 </div>
 </div>
 <a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.iprofesional.com/finanzas/462747-el-dolar-quedo-muy-barato-y-su-valor-real-es-el-mas-bajo-en-10-anos" target="_blank">
-<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">El dólar "barato": su valor real es el más bajo en los últimos 10 años</h2>
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">El dólar queda cada vez más "barato" y su valor real es el más bajo en 10 años</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ El valor real del <b>dólar</b> se encuentra en su nivel más bajo en <b>diez años</b>, considerándose cada vez más "barato".<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Esta situación, analizada por <b>Mariano Jaimovich</b> en <b>iProfesional</b>, sugiere un posible <b>tipo de cambio atrasado</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto NEGATIVO porque un dólar real bajo genera distorsiones económicas, afecta la competitividad de las exportaciones, incentiva las importaciones y alimenta expectativas de una futura corrección cambiaria, generando incertidumbre para el inversor.
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ El <b>dólar</b> en Argentina se considera "barato", registrando su valor real más bajo en los últimos <b>10 años</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Esta situación genera un tipo de cambio atrasado, afectando la competitividad de las exportaciones y el equilibrio de la balanza comercial.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto NEGATIVO. Un dólar "barato" o atrasado desincentiva las exportaciones, favorece las importaciones y erosiona la rentabilidad de las industrias orientadas al exterior, lo que puede derivar en una menor entrada de divisas y presiones devaluatorias futuras, perjudicando la estabilidad macroeconómica.
                     </div>
 <div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
 <div class="flex flex-wrap gap-1.5">
-<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#DÓLAR</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#TIPO DE CAMBIO</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ECONOMÍA</span>
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#DÓLAR</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#TIPO DE CAMBIO</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ECONOMÍA ARGENTINA</span>
 </div>
 </div>
 </article>
@@ -1873,6 +2199,33 @@
 </div>
 </div>
 </article>
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-rose-500 h-[380px] overflow-hidden relative" data-categoria="ECONOMÍA" data-impacto="4" data-url="https://www.lanacion.com.ar/sociedad/cortes-de-hasta-mas-de-30-horas-y-generadores-las-24-horas-el-problema-que-lleva-mas-de-dos-meses-nid21082026/">
+<div class="flex justify-between items-start mb-3 shrink-0 select-none">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-blue-900/40 text-blue-400 border border-blue-500/30 px-2 py-1 rounded-md whitespace-nowrap">ECONOMÍA</span>
+<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">🔴 NEGATIVO</span>
+</div>
+<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">LA NACION</span>
+</div>
+<div class="flex flex-col items-end gap-2 shrink-0 z-10">
+<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.lanacion.com.ar/sociedad/cortes-de-hasta-mas-de-30-horas-y-generadores-las-24-horas-el-problema-que-lleva-mas-de-dos-meses-nid21082026/" title="Guardar noticia">🔖</button>
+<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-08-21T12:00:10.009Z"></span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
+</div>
+</div>
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.lanacion.com.ar/sociedad/cortes-de-hasta-mas-de-30-horas-y-generadores-las-24-horas-el-problema-que-lleva-mas-de-dos-meses-nid21082026/" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Dos meses con cortes de luz: barrios dependen de generadores en la calle</h2>
+</a>
+<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ Varios barrios argentinos llevan <b>dos meses</b> con cortes de luz, dependiendo de generadores instalados en plena calle para subsistir.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Esta situación precaria afecta gravemente la calidad de vida de los residentes y la operatividad de comercios y servicios.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto NEGATIVO. La falta de infraestructura energética confiable frena la actividad económica, reduce la productividad y genera un clima de desconfianza que ahuyenta la inversión, además de representar un costo social y económico significativo para las empresas y hogares afectados.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#CORTES DE LUZ</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#INFRAESTRUCTURA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#SERVICIOS PÚBLICOS</span>
+</div>
+</div>
+</article>
 <article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="POLÍTICA" data-impacto="2" data-url="https://www.ambito.com/mundo/la-onu-vuelve-medir-los-apoyos-suceder-antonio-guterres-que-chaces-tiene-el-argentino-rafael-grossi-n6313228">
 <div class="flex justify-between items-start mb-3 shrink-0 select-none">
 <div class="flex flex-col gap-2 max-w-[70%]">
@@ -2146,11 +2499,11 @@
 <span class="text-[10px] font-bold bg-yellow-500/20 text-yellow-500 px-2 py-0.5 rounded border border-yellow-500/30 mt-2 inline-block">🗞️ Cubierto por 2 medios</span>
 </div>
 </article>
-<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-emerald-500 h-[380px] overflow-hidden relative" data-categoria="ECONOMÍA" data-impacto="2" data-url="https://www.iprofesional.com/realestate/462721-como-es-la-casa-modular-compacta-que-se-construye-en-90-dias-y-cuesta-desde-us6000-dolares">
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-emerald-500 h-[380px] overflow-hidden relative" data-categoria="MERCADOS" data-impacto="3" data-url="https://www.iprofesional.com/realestate/462721-como-es-la-casa-modular-compacta-que-se-construye-en-90-dias-y-cuesta-desde-us6000-dolares">
 <div class="flex justify-between items-start mb-3 shrink-0 select-none">
 <div class="flex flex-col gap-2 max-w-[70%]">
 <div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
-<span class="bg-blue-900/40 text-blue-400 border border-blue-500/30 px-2 py-1 rounded-md whitespace-nowrap">ECONOMÍA</span>
+<span class="bg-emerald-900/40 text-emerald-400 border border-emerald-500/30 px-2 py-1 rounded-md whitespace-nowrap">MERCADOS</span>
 <span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">🟢 POSITIVO</span>
 </div>
 <span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">IPROFESIONAL</span>
@@ -2162,14 +2515,14 @@
 </div>
 </div>
 <a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.iprofesional.com/realestate/462721-como-es-la-casa-modular-compacta-que-se-construye-en-90-dias-y-cuesta-desde-us6000-dolares" target="_blank">
-<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Presentan casas modulares instalables en 90 días desde u$s6.000</h2>
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Cómo es la casa modular lista para instalar que se construye en 90 días y cuesta desde u$s6.000</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ Se presenta un nuevo modelo de <b>casa modular</b> que puede construirse en solo <b>90 días</b> y tiene un costo inicial de <b>u$s6.000</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Este tipo de construcción busca ofrecer soluciones de vivienda compactas y accesibles en el mercado de <b>Real Estate</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto POSITIVO. La aparición de soluciones de vivienda más rápidas y accesibles, como las casas modulares a bajo costo, puede dinamizar el sector de la construcción y el mercado inmobiliario de nicho, lo que representa una oportunidad para inversores en desarrollos o proveedores de materiales.
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ Se presenta una novedosa casa modular lista para instalar, que se construye en tan solo <b>90 días</b> y tiene un costo inicial desde <b>u$s6.000</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Esta opción representa una alternativa económica y rápida en el mercado inmobiliario y de construcción, especialmente atractiva para presupuestos ajustados.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto POSITIVO. Ofrece una solución habitacional accesible y rápida, lo que puede estimular el sector de la construcción modular y brindar oportunidades de inversión en este nicho, además de mejorar el acceso a la vivienda para una parte de la población.
                     </div>
 <div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
 <div class="flex flex-wrap gap-1.5">
-<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#VIVIENDA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#CONSTRUCCIÓN</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#INNOVACIÓN</span>
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#REAL ESTATE</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#CONSTRUCCIÓN</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#CASAS MODULARES</span>
 </div>
 </div>
 </article>
@@ -2359,358 +2712,6 @@
 <div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
 <div class="flex flex-wrap gap-1.5">
 <span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#TELECOM</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#METROTEL</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#TELECOMUNICACIONES</span>
-</div>
-</div>
-</article>
-<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="ECONOMÍA" data-impacto="3" data-url="https://www.iproup.com/finanzas/70601-mercado-pago-y-el-nacion-anticipan-la-competencia-entre-bancos-y-billeteras">
-<div class="flex justify-between items-start mb-3 shrink-0 select-none">
-<div class="flex flex-col gap-2 max-w-[70%]">
-<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
-<span class="bg-blue-900/40 text-blue-400 border border-blue-500/30 px-2 py-1 rounded-md whitespace-nowrap">ECONOMÍA</span>
-<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">⚪ NEUTRAL</span>
-</div>
-<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">IPROFESIONAL</span>
-</div>
-<div class="flex flex-col items-end gap-2 shrink-0 z-10">
-<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.iproup.com/finanzas/70601-mercado-pago-y-el-nacion-anticipan-la-competencia-entre-bancos-y-billeteras" title="Guardar noticia">🔖</button>
-<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-08-21T06:07:00-03:00"></span>
-<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
-</div>
-</div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.iproup.com/finanzas/70601-mercado-pago-y-el-nacion-anticipan-la-competencia-entre-bancos-y-billeteras" target="_blank">
-<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">La competencia entre Mercado Pago y el Banco Nación anticipa el futuro de bancos y billeteras</h2>
-</a>
-<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ Se intensifica la competencia entre <b>Mercado Pago</b> y el <b>Banco Nación</b>, anticipando una nueva era en el sector financiero.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Este conflicto entre billeteras virtuales y la banca tradicional muestra el futuro de la <b>competencia digital</b> en finanzas.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto NEUTRAL. La competencia en el sector financiero puede ser positiva para los usuarios, impulsando la innovación y mejores servicios, pero genera incertidumbre sobre la evolución de los modelos de negocio bancarios y fintech, lo que mantiene una posición neutral para el inversor argentino.
-                    </div>
-<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
-<div class="flex flex-wrap gap-1.5">
-<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#MERCADO PAGO</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#BANCO NACIÓN</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#FINTECH</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#BANCOS</span>
-</div>
-</div>
-</article>
-<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-rose-500 h-[380px] overflow-hidden relative" data-categoria="POLÍTICA" data-impacto="4" data-url="https://tn.com.ar/politica/2026/08/21/la-casa-rosada-espera-mayor-tension-con-algunos-gobernadores-dialoguistas-y-busca-evitar-un-impacto-en-el-congreso/">
-<div class="flex justify-between items-start mb-3 shrink-0 select-none">
-<div class="flex flex-col gap-2 max-w-[70%]">
-<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
-<span class="bg-indigo-900/40 text-indigo-400 border border-indigo-500/30 px-2 py-1 rounded-md whitespace-nowrap">POLÍTICA</span>
-<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">🔴 NEGATIVO</span>
-</div>
-<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">TN</span>
-</div>
-<div class="flex flex-col items-end gap-2 shrink-0 z-10">
-<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://tn.com.ar/politica/2026/08/21/la-casa-rosada-espera-mayor-tension-con-algunos-gobernadores-dialoguistas-y-busca-evitar-un-impacto-en-el-congreso/" title="Guardar noticia">🔖</button>
-<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-08-21T09:00:00.000Z"></span>
-<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
-</div>
-</div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://tn.com.ar/politica/2026/08/21/la-casa-rosada-espera-mayor-tension-con-algunos-gobernadores-dialoguistas-y-busca-evitar-un-impacto-en-el-congreso/" target="_blank">
-<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Casa Rosada espera mayor tensión con gobernadores dialoguistas y busca evitar impacto en Congreso</h2>
-</a>
-<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span> La <b>Casa Rosada</b> anticipa un aumento de la tensión con algunos gobernadores considerados "dialoguistas".<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> El gobierno busca evitar que esta tensión afecte la agenda legislativa en el <b>Congreso</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto negativo porque la creciente tensión política entre el gobierno central y las provincias puede dificultar la gobernabilidad, el avance de reformas y generar un clima de incertidumbre que desalienta la inversión.
-                    </div>
-<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
-<div class="flex flex-wrap gap-1.5">
-<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#GOBIERNO</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#GOBERNADORES</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#CONGRESO</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#TENSIÓN POLÍTICA</span>
-</div>
-</div>
-</article>
-<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-emerald-500 h-[380px] overflow-hidden relative" data-categoria="ECONOMÍA" data-impacto="4" data-url="https://tn.com.ar/economia/2026/08/21/con-presion-alcista-sobre-el-dolar-el-banco-central-suma-herramientas-para-contener-la-cotizacion/">
-<div class="flex justify-between items-start mb-3 shrink-0 select-none">
-<div class="flex flex-col gap-2 max-w-[70%]">
-<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
-<span class="bg-blue-900/40 text-blue-400 border border-blue-500/30 px-2 py-1 rounded-md whitespace-nowrap">ECONOMÍA</span>
-<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">🟢 POSITIVO</span>
-</div>
-<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">TN</span>
-</div>
-<div class="flex flex-col items-end gap-2 shrink-0 z-10">
-<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://tn.com.ar/economia/2026/08/21/con-presion-alcista-sobre-el-dolar-el-banco-central-suma-herramientas-para-contener-la-cotizacion/" title="Guardar noticia">🔖</button>
-<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-08-21T08:52:00.000Z"></span>
-<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
-</div>
-</div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://tn.com.ar/economia/2026/08/21/con-presion-alcista-sobre-el-dolar-el-banco-central-suma-herramientas-para-contener-la-cotizacion/" target="_blank">
-<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">El Banco Central suma herramientas para contener la cotización del dólar en año electoral</h2>
-</a>
-<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span> El <b>Banco Central</b> implementa nuevas herramientas para contener la cotización del dólar ante la presión alcista y el desafío electoral.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Se realizaron canjes de bonos vinculados a la devaluación con el <b>Tesoro</b> para brindar cobertura cambiaria hasta fines de <b>septiembre</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto positivo porque las medidas del BCRA buscan estabilizar el tipo de cambio y reducir la incertidumbre, lo que puede generar mayor previsibilidad para el inversor en un contexto electoral.
-                    </div>
-<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
-<div class="flex flex-wrap gap-1.5">
-<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#BANCO CENTRAL</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#DÓLAR</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#MERCADO CAMBIARIO</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#INFLACIÓN</span>
-</div>
-</div>
-</article>
-<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-emerald-500 h-[380px] overflow-hidden relative" data-categoria="MERCADOS" data-impacto="3" data-url="https://www.iprofesional.com/finanzas/462724-el-bitcoin-toco-los-73000-dolares-y-expertos-anticipan-hasta-que-precio-puede-llegar/">
-<div class="flex justify-between items-start mb-3 shrink-0 select-none">
-<div class="flex flex-col gap-2 max-w-[70%]">
-<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
-<span class="bg-emerald-900/40 text-emerald-400 border border-emerald-500/30 px-2 py-1 rounded-md whitespace-nowrap">MERCADOS</span>
-<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">🟢 POSITIVO</span>
-</div>
-<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">IPROFESIONAL</span>
-</div>
-<div class="flex flex-col items-end gap-2 shrink-0 z-10">
-<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.iprofesional.com/finanzas/462724-el-bitcoin-toco-los-73000-dolares-y-expertos-anticipan-hasta-que-precio-puede-llegar/" title="Guardar noticia">🔖</button>
-<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-08-21T08:28:37.669342+00:00"></span>
-<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
-</div>
-</div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.iprofesional.com/finanzas/462724-el-bitcoin-toco-los-73000-dolares-y-expertos-anticipan-hasta-que-precio-puede-llegar/" target="_blank">
-<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Bitcoin pega un salto a u$s73.000 impulsado por noticias positivas de EE. UU.</h2>
-</a>
-<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ El <b>Bitcoin</b> experimentó un salto significativo, tocando los <b>u$s73.000</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Este aumento se atribuye a un "combo de noticias positivas" provenientes de <b>Estados Unidos</b>, que impulsaron el mercado de criptomonedas.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto positivo porque el alza del <b>Bitcoin</b> y otras criptomonedas, impulsada por factores externos, puede generar oportunidades de inversión para aquellos inversores argentinos expuestos a activos digitales, aunque también conlleva la volatilidad inherente a este mercado.
-                    </div>
-<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
-<div class="flex flex-wrap gap-1.5">
-<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#BITCOIN</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#CRIPTOMONEDAS</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#INVERSIÓN</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#MERCADO CRIPTO</span>
-</div>
-</div>
-</article>
-<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="ECONOMÍA" data-impacto="2" data-url="https://www.iprofesional.com/actualidad/462718-fallo-de-la-corte-suprema-obliga-a-redondear-los-vueltos-a-favor-del-consumidor/">
-<div class="flex justify-between items-start mb-3 shrink-0 select-none">
-<div class="flex flex-col gap-2 max-w-[70%]">
-<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
-<span class="bg-blue-900/40 text-blue-400 border border-blue-500/30 px-2 py-1 rounded-md whitespace-nowrap">ECONOMÍA</span>
-<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">⚪ NEUTRAL</span>
-</div>
-<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">IPROFESIONAL</span>
-</div>
-<div class="flex flex-col items-end gap-2 shrink-0 z-10">
-<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.iprofesional.com/actualidad/462718-fallo-de-la-corte-suprema-obliga-a-redondear-los-vueltos-a-favor-del-consumidor/" title="Guardar noticia">🔖</button>
-<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-08-21T08:28:37.669250+00:00"></span>
-<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
-</div>
-</div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.iprofesional.com/actualidad/462718-fallo-de-la-corte-suprema-obliga-a-redondear-los-vueltos-a-favor-del-consumidor/" target="_blank">
-<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Fallo de la Corte Suprema obliga a redondear vueltos a favor del consumidor</h2>
-</a>
-<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ La <b>Corte Suprema</b> dictó un fallo que establece la obligación de redondear los vueltos a favor del consumidor.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Esta medida busca proteger los derechos de los consumidores y garantizar la transparencia en las transacciones.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto neutral a ligeramente positivo porque el fallo refuerza la protección al consumidor y la transparencia en pequeños montos, lo que es beneficioso para los ciudadanos, pero su impacto económico global en las empresas y el mercado es marginal.
-                    </div>
-<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
-<div class="flex flex-wrap gap-1.5">
-<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#CORTE SUPREMA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#CONSUMIDOR</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#VUELTOS</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#JUSTICIA</span>
-</div>
-</div>
-</article>
-<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="POLÍTICA" data-impacto="3" data-url="https://tn.com.ar/politica/2026/08/21/el-super-rigi-avanza-en-el-senado-pero-los-bloques-dialoguistas-condicionan-su-apoyo-a-nuevos-cambios/">
-<div class="flex justify-between items-start mb-3 shrink-0 select-none">
-<div class="flex flex-col gap-2 max-w-[70%]">
-<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
-<span class="bg-indigo-900/40 text-indigo-400 border border-indigo-500/30 px-2 py-1 rounded-md whitespace-nowrap">POLÍTICA</span>
-<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">⚪ NEUTRAL</span>
-</div>
-<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">TN</span>
-</div>
-<div class="flex flex-col items-end gap-2 shrink-0 z-10">
-<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://tn.com.ar/politica/2026/08/21/el-super-rigi-avanza-en-el-senado-pero-los-bloques-dialoguistas-condicionan-su-apoyo-a-nuevos-cambios/" title="Guardar noticia">🔖</button>
-<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-08-21T08:00:00.000Z"></span>
-<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
-</div>
-</div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://tn.com.ar/politica/2026/08/21/el-super-rigi-avanza-en-el-senado-pero-los-bloques-dialoguistas-condicionan-su-apoyo-a-nuevos-cambios/" target="_blank">
-<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">El super-RIGI avanza en el Senado, pero los bloques dialoguistas condicionan su apoyo</h2>
-</a>
-<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span> El proyecto de ley <b>Super-RIGI</b> continúa su avance en el <b>Senado</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Bloques dialoguistas condicionan su apoyo a la introducción de <b>nuevos cambios</b> en la normativa.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto neutral porque el avance del proyecto, aunque condicionado, sugiere un posible acuerdo legislativo futuro que podría atraer inversiones, pero las incertidumbres sobre los cambios mantienen la cautela.
-                    </div>
-<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
-<div class="flex flex-wrap gap-1.5">
-<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#RIGI</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#SENADO</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#LEGISLACIÓN</span>
-</div>
-</div>
-</article>
-<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="POLÍTICA" data-impacto="2" data-url="https://www.infobae.com/america/mundo/2026/08/21/rusia-lanzo-un-nuevo-ataque-con-drones-contra-odesa-destruyo-un-puesto-fronterizo-entre-ucrania-y-moldavia/">
-<div class="flex justify-between items-start mb-3 shrink-0 select-none">
-<div class="flex flex-col gap-2 max-w-[70%]">
-<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
-<span class="bg-indigo-900/40 text-indigo-400 border border-indigo-500/30 px-2 py-1 rounded-md whitespace-nowrap">POLÍTICA</span>
-<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">⚪ NEUTRAL</span>
-</div>
-<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">INFOBAE</span>
-</div>
-<div class="flex flex-col items-end gap-2 shrink-0 z-10">
-<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.infobae.com/america/mundo/2026/08/21/rusia-lanzo-un-nuevo-ataque-con-drones-contra-odesa-destruyo-un-puesto-fronterizo-entre-ucrania-y-moldavia/" title="Guardar noticia">🔖</button>
-<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-08-21T06:53:46.722Z"></span>
-<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
-</div>
-</div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/america/mundo/2026/08/21/rusia-lanzo-un-nuevo-ataque-con-drones-contra-odesa-destruyo-un-puesto-fronterizo-entre-ucrania-y-moldavia/" target="_blank">
-<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Rusia lanzó un nuevo ataque con drones contra Odesa y destruyó puesto fronterizo con Moldavia</h2>
-</a>
-<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span> <b>Rusia</b> ejecutó un nuevo ataque con drones sobre la ciudad de <b>Odesa</b>, Ucrania.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> El ataque resultó en la destrucción de un puesto fronterizo entre <b>Ucrania</b> y <b>Moldavia</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto neutral porque, aunque es un conflicto internacional importante, sus efectos directos en el inversor argentino son limitados, salvo por el impacto indirecto en los precios globales de materias primas o energía, que en este caso no se especifica.
-                    </div>
-<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
-<div class="flex flex-wrap gap-1.5">
-<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#RUSIA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#UCRANIA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#CONFLICTO</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ODESA</span>
-</div>
-</div>
-</article>
-<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="POLÍTICA" data-impacto="1" data-url="https://www.infobae.com/politica/2026/08/21/el-gobierno-sumo-la-ludopatia-y-el-consumo-de-sustancias-como-problematicas-prioritarias-de-salud-publica/">
-<div class="flex justify-between items-start mb-3 shrink-0 select-none">
-<div class="flex flex-col gap-2 max-w-[70%]">
-<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
-<span class="bg-indigo-900/40 text-indigo-400 border border-indigo-500/30 px-2 py-1 rounded-md whitespace-nowrap">POLÍTICA</span>
-<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">⚪ NEUTRAL</span>
-</div>
-<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">INFOBAE</span>
-</div>
-<div class="flex flex-col items-end gap-2 shrink-0 z-10">
-<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.infobae.com/politica/2026/08/21/el-gobierno-sumo-la-ludopatia-y-el-consumo-de-sustancias-como-problematicas-prioritarias-de-salud-publica/" title="Guardar noticia">🔖</button>
-<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-08-21T06:49:29.832Z"></span>
-<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
-</div>
-</div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/politica/2026/08/21/el-gobierno-sumo-la-ludopatia-y-el-consumo-de-sustancias-como-problematicas-prioritarias-de-salud-publica/" target="_blank">
-<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Gobierno suma ludopatía y consumo de sustancias como problemáticas prioritarias de salud pública</h2>
-</a>
-<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span> El <b>Gobierno</b> incorporó la <b>ludopatía</b> y el <b>consumo de sustancias</b> como problemáticas prioritarias de salud pública.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Esta medida busca abordar integralmente estos desafíos sociales.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto neutral porque es una medida de política de salud pública que no tiene un impacto directo en los mercados financieros o la economía, más allá de la asignación presupuestaria.
-                    </div>
-<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
-<div class="flex flex-wrap gap-1.5">
-<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#SALUD PÚBLICA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#LUDOPATÍA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#POLÍTICAS DE GOBIERNO</span>
-</div>
-</div>
-</article>
-<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="POLÍTICA" data-impacto="2" data-url="https://www.infobae.com/america/mundo/2026/08/21/el-consejo-de-seguridad-de-la-onu-vuelve-a-votar-para-medir-el-respaldo-a-los-candidatos-que-buscan-suceder-a-guterres-en-2027/">
-<div class="flex justify-between items-start mb-3 shrink-0 select-none">
-<div class="flex flex-col gap-2 max-w-[70%]">
-<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
-<span class="bg-indigo-900/40 text-indigo-400 border border-indigo-500/30 px-2 py-1 rounded-md whitespace-nowrap">POLÍTICA</span>
-<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">⚪ NEUTRAL</span>
-</div>
-<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">INFOBAE</span>
-</div>
-<div class="flex flex-col items-end gap-2 shrink-0 z-10">
-<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.infobae.com/america/mundo/2026/08/21/el-consejo-de-seguridad-de-la-onu-vuelve-a-votar-para-medir-el-respaldo-a-los-candidatos-que-buscan-suceder-a-guterres-en-2027/" title="Guardar noticia">🔖</button>
-<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-08-21T05:42:14.051Z"></span>
-<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
-</div>
-</div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/america/mundo/2026/08/21/el-consejo-de-seguridad-de-la-onu-vuelve-a-votar-para-medir-el-respaldo-a-los-candidatos-que-buscan-suceder-a-guterres-en-2027/" target="_blank">
-<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Consejo de Seguridad de la ONU vota para medir respaldo a candidatos para suceder a Guterres en 2027</h2>
-</a>
-<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ El <b>Consejo de Seguridad de la ONU</b> realiza una nueva votación para evaluar el respaldo a los candidatos que buscan suceder a <b>António Guterres</b> en <b>2027</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Este proceso es clave para la elección del próximo <b>Secretario General</b> de las <b>Naciones Unidas</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto neutral para el inversor argentino, ya que se trata de un proceso político internacional de alta relevancia global, pero sin un efecto directo e inmediato en la economía o los mercados financieros de Argentina.
-                    </div>
-<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
-<div class="flex flex-wrap gap-1.5">
-<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ONU</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#GUTERRES</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#SEGURIDAD</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#POLÍTICA INTERNACIONAL</span>
-</div>
-</div>
-</article>
-<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-rose-500 h-[380px] overflow-hidden relative" data-categoria="POLÍTICA" data-impacto="4" data-url="https://www.lanacion.com.ar/politica/javier-milei-y-sus-medidas-en-vivo-el-aumento-de-la-morosidad-bancaria-y-las-primeras-alianzas-de-nid21082026/">
-<div class="flex justify-between items-start mb-3 shrink-0 select-none">
-<div class="flex flex-col gap-2 max-w-[70%]">
-<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
-<span class="bg-indigo-900/40 text-indigo-400 border border-indigo-500/30 px-2 py-1 rounded-md whitespace-nowrap">POLÍTICA</span>
-<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">🔴 NEGATIVO</span>
-</div>
-<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">LA NACION</span>
-</div>
-<div class="flex flex-col items-end gap-2 shrink-0 z-10">
-<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.lanacion.com.ar/politica/javier-milei-y-sus-medidas-en-vivo-el-aumento-de-la-morosidad-bancaria-y-las-primeras-alianzas-de-nid21082026/" title="Guardar noticia">🔖</button>
-<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-08-21T05:30:00Z"></span>
-<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
-</div>
-</div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.lanacion.com.ar/politica/javier-milei-y-sus-medidas-en-vivo-el-aumento-de-la-morosidad-bancaria-y-las-primeras-alianzas-de-nid21082026/" target="_blank">
-<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Medidas de Milei: morosidad bancaria y alianzas políticas</h2>
-</a>
-<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ El presidente **Milei** implementa nuevas medidas en su gestión.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Se registra un aumento en la **morosidad bancaria** y se discuten las primeras **alianzas políticas**.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto negativo porque el aumento de la morosidad bancaria puede indicar un deterioro en la capacidad de pago de los agentes económicos, afectando la estabilidad financiera y la confianza del inversor.
-                    </div>
-<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
-<div class="flex flex-wrap gap-1.5">
-<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#MILEI</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#MEDIDAS</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#MOROSIDAD</span>
-</div>
-</div>
-</article>
-<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="ECONOMÍA" data-impacto="1" data-url="https://tn.com.ar/sociedad/2026/08/21/incendio-en-palermo-se-prendio-fuego-el-estacionamiento-de-un-edificio-de-9-pisos-y-un-policia-fue-asistido-por-inhalar-humo/">
-<div class="flex justify-between items-start mb-3 shrink-0 select-none">
-<div class="flex flex-col gap-2 max-w-[70%]">
-<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
-<span class="bg-blue-900/40 text-blue-400 border border-blue-500/30 px-2 py-1 rounded-md whitespace-nowrap">ECONOMÍA</span>
-<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">⚪ NEUTRAL</span>
-</div>
-<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">TN</span>
-</div>
-<div class="flex flex-col items-end gap-2 shrink-0 z-10">
-<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://tn.com.ar/sociedad/2026/08/21/incendio-en-palermo-se-prendio-fuego-el-estacionamiento-de-un-edificio-de-9-pisos-y-un-policia-fue-asistido-por-inhalar-humo/" title="Guardar noticia">🔖</button>
-<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-08-21T03:26:04.331Z"></span>
-<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
-</div>
-</div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://tn.com.ar/sociedad/2026/08/21/incendio-en-palermo-se-prendio-fuego-el-estacionamiento-de-un-edificio-de-9-pisos-y-un-policia-fue-asistido-por-inhalar-humo/" target="_blank">
-<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Incendio en un estacionamiento de edificio en Palermo</h2>
-</a>
-<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ Se registró un incendio en el estacionamiento de un edificio de <b>9 pisos</b> en el barrio de <b>Palermo</b>, <b>Buenos Aires</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Un agente de policía fue asistido por inhalación de humo durante las tareas de contención del fuego.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto neutral porque es un incidente local sin implicaciones significativas para la economía, la política nacional o los mercados financieros de Argentina.
-                    </div>
-<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
-<div class="flex flex-wrap gap-1.5">
-<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#INCENDIO</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#PALERMO</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#SEGURIDAD</span>
-</div>
-</div>
-</article>
-<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="POLÍTICA" data-impacto="3" data-url="https://www.ambito.com/politica/reaparecio-el-javier-milei-autentico-ratificoel-modelo-y-descalifico-las-criticas-n6313190">
-<div class="flex justify-between items-start mb-3 shrink-0 select-none">
-<div class="flex flex-col gap-2 max-w-[70%]">
-<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
-<span class="bg-indigo-900/40 text-indigo-400 border border-indigo-500/30 px-2 py-1 rounded-md whitespace-nowrap">POLÍTICA</span>
-<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">⚪ NEUTRAL</span>
-</div>
-<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">ÁMBITO, IPROFESIONAL</span>
-</div>
-<div class="flex flex-col items-end gap-2 shrink-0 z-10">
-<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.ambito.com/politica/reaparecio-el-javier-milei-autentico-ratificoel-modelo-y-descalifico-las-criticas-n6313190" title="Guardar noticia">🔖</button>
-<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-08-21T00:00:00-03:00"></span>
-<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
-</div>
-</div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.ambito.com/politica/reaparecio-el-javier-milei-autentico-ratificoel-modelo-y-descalifico-las-criticas-n6313190" target="_blank">
-<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Milei ratifica su modelo económico, critica a la industria y envía mensajes a la interna de LLA en el Council of the Americas</h2>
-</a>
-<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ El presidente <b>Javier Milei</b> reapareció con un discurso "auténtico" en el <b>Council of the Americas</b>, ratificando su modelo y descalificando críticas.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Se mostró "más duro que nunca" con los referentes de la industria, acusándolos de sabotear su gestión y se diferenció de <b>Mauricio Macri</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto neutral, con matices políticos, porque la reiteración de su postura económica y las críticas a la industria y a la interna de su propio espacio pueden generar incertidumbre en sectores económicos específicos, aunque refuerza la previsibilidad de su dirección política para otros.
-                    </div>
-<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
-<div class="flex flex-wrap gap-1.5">
-<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#MILEI</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#POLÍTICA ECONÓMICA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#COUNCIL OF AMERICAS</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#LLA</span>
-</div>
-<span class="text-[10px] font-bold bg-yellow-500/20 text-yellow-500 px-2 py-0.5 rounded border border-yellow-500/30 mt-2 inline-block">🗞️ Cubierto por 2 medios</span>
-</div>
-</article>
-<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-rose-500 h-[380px] overflow-hidden relative" data-categoria="MERCADOS" data-impacto="4" data-url="https://www.ambito.com/lo-que-se-dice-las-mesas-cada-vez-mas-inversores-frenan-los-planes-2027-una-senal-o-un-reflejo-n6313163">
-<div class="flex justify-between items-start mb-3 shrink-0 select-none">
-<div class="flex flex-col gap-2 max-w-[70%]">
-<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
-<span class="bg-emerald-900/40 text-emerald-400 border border-emerald-500/30 px-2 py-1 rounded-md whitespace-nowrap">MERCADOS</span>
-<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">🔴 NEGATIVO</span>
-</div>
-<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">ÁMBITO</span>
-</div>
-<div class="flex flex-col items-end gap-2 shrink-0 z-10">
-<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.ambito.com/lo-que-se-dice-las-mesas-cada-vez-mas-inversores-frenan-los-planes-2027-una-senal-o-un-reflejo-n6313163" title="Guardar noticia">🔖</button>
-<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-08-21T00:00:00-03:00"></span>
-<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
-</div>
-</div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.ambito.com/lo-que-se-dice-las-mesas-cada-vez-mas-inversores-frenan-los-planes-2027-una-senal-o-un-reflejo-n6313163" target="_blank">
-<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Inversores frenan planes de inversión en Argentina hasta 2027</h2>
-</a>
-<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ Cada vez más inversores están retrasando sus planes de inversión en Argentina, esperando hasta el año <b>2027</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Esta cautela podría indicar una falta de visibilidad o confianza a corto y mediano plazo en el panorama económico y político del país.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto negativo porque el freno en los planes de inversión es una señal de incertidumbre sobre la dirección económica y política a mediano plazo, lo que puede limitar el crecimiento, la generación de empleo y la entrada de capitales extranjeros en el país.
-                    </div>
-<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
-<div class="flex flex-wrap gap-1.5">
-<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#INVERSIÓN</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#CAUTELA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#MERCADO ARGENTINO</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#CONFIANZA INVERSORA</span>
 </div>
 </div>
 </article>
