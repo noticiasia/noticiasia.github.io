@@ -1,3 +1,57 @@
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="POLÍTICA" data-impacto="1" data-url="https://tn.com.ar/internacional/2026/10/26/un-tornado-en-chile-destruyo-un-colegio-y-provoco-danos-en-una-zona-residencial-decretaron-la-emergencia-por-un-nuevo-alud/">
+<div class="flex justify-between items-start mb-3 shrink-0 select-none">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-indigo-900/40 text-indigo-400 border border-indigo-500/30 px-2 py-1 rounded-md whitespace-nowrap">POLÍTICA</span>
+<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">⚪ NEUTRAL</span>
+</div>
+<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">TN</span>
+</div>
+<div class="flex flex-col items-end gap-2 shrink-0 z-10">
+<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://tn.com.ar/internacional/2026/10/26/un-tornado-en-chile-destruyo-un-colegio-y-provoco-danos-en-una-zona-residencial-decretaron-la-emergencia-por-un-nuevo-alud/" title="Guardar noticia">🔖</button>
+<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-10-27T00:48:00.711Z"></span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
+</div>
+</div>
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://tn.com.ar/internacional/2026/10/26/un-tornado-en-chile-destruyo-un-colegio-y-provoco-danos-en-una-zona-residencial-decretaron-la-emergencia-por-un-nuevo-alud/" rel="noopener noreferrer" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Tornado y alud en Chile causan destrucción en colegio y zonas residenciales</h2>
+</a>
+<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ Un tornado en <b>Chile</b> destruyó un colegio y causó daños significativos en una zona residencial.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Las autoridades decretaron la emergencia ante la amenaza de un nuevo alud en la región afectada.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto <b>NEUTRAL</b> ya que, a pesar de la gravedad del desastre natural en un país vecino, no tiene implicaciones directas para los mercados financieros o inversiones en <b>Argentina</b>.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#TORNADO</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#CHILE</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#DESASTRE NATURAL</span>
+</div>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-rose-500 h-[380px] overflow-hidden relative" data-categoria="MERCADOS" data-impacto="4" data-url="https://www.iprofesional.com/finanzas/467534-el-bcra-corto-racha-de-compras-y-el-tesoro-vendio-100-millones-dolares-para-contener-el-dolar">
+<div class="flex justify-between items-start mb-3 shrink-0 select-none">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-emerald-900/40 text-emerald-400 border border-emerald-500/30 px-2 py-1 rounded-md whitespace-nowrap">MERCADOS</span>
+<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">🔴 NEGATIVO</span>
+</div>
+<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">IPROFESIONAL</span>
+</div>
+<div class="flex flex-col items-end gap-2 shrink-0 z-10">
+<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.iprofesional.com/finanzas/467534-el-bcra-corto-racha-de-compras-y-el-tesoro-vendio-100-millones-dolares-para-contener-el-dolar" title="Guardar noticia">🔖</button>
+<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-10-26T20:45:00-03:00"></span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
+</div>
+</div>
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.iprofesional.com/finanzas/467534-el-bcra-corto-racha-de-compras-y-el-tesoro-vendio-100-millones-dolares-para-contener-el-dolar" rel="noopener noreferrer" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">BCRA corta racha de compras y el Tesoro vende US$100 millones para contener el dólar</h2>
+</a>
+<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ El <b>Banco Central (BCRA)</b> interrumpió una racha de compras de divisas en el mercado.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> El <b>Tesoro</b> vendió <b>US$100 millones</b> con el objetivo de contener la escalada del dólar.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto <b>NEGATIVO</b> porque la intervención del Tesoro y el cese de compras del BCRA indican una presión cambiaria creciente, lo que genera incertidumbre sobre la estabilidad del dólar y las reservas, afectando negativamente el panorama para el inversor argentino.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#BCRA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#DÓLAR</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#MERCADO CAMBIARIO</span>
+</div>
+</div>
+</article>
 <article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="POLÍTICA" data-impacto="2" data-url="https://www.infobae.com/politica/2026/10/26/el-gobierno-de-kicillof-ratifico-que-si-se-sostienen-las-paso-no-habra-desdoblamiento-en-buenos-aires/">
 <div class="flex justify-between items-start mb-3 shrink-0 select-none">
 <div class="flex flex-col gap-2 max-w-[70%]">
@@ -13,12 +67,12 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/politica/2026/10/26/el-gobierno-de-kicillof-ratifico-que-si-se-sostienen-las-paso-no-habra-desdoblamiento-en-buenos-aires/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/politica/2026/10/26/el-gobierno-de-kicillof-ratifico-que-si-se-sostienen-las-paso-no-habra-desdoblamiento-en-buenos-aires/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">El gobierno de Kicillof ratifica que no habrá desdoblamiento de elecciones en Buenos Aires si se mantienen las PASO</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ El gobierno de <b>Kicillof</b> ratificó que no habrá desdoblamiento electoral en la provincia de Buenos Aires.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Esta decisión está condicionada a que se mantengan las <b>PASO</b> (Primarias Abiertas Simultáneas y Obligatorias).<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto neutral para el inversor argentino, ya que si bien es una noticia política local, no genera una volatilidad significativa ni cambios estructurales que afecten directamente las decisiones de inversión en el corto plazo.
-                    </div>
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ El gobierno de <b>Kicillof</b> ratificó que no habrá desdoblamiento electoral en la provincia de Buenos Aires.<br><span class="text-[#00E5FF] font-bold mr-2">▪</span> Esta decisión está condicionada a que se mantengan las <b>PASO</b> (Primarias Abiertas Simultáneas y Obligatorias).<br><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto neutral para el inversor argentino, ya que si bien es una noticia política local, no genera una volatilidad significativa ni cambios estructurales que afecten directamente las decisiones de inversión en el corto plazo.
+                    </br></br></div>
 <div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
 <div class="flex flex-wrap gap-1.5">
 <span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#KICILLOF</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#PASO</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#BUENOS AIRES</span>
@@ -40,12 +94,12 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.ambito.com/deportes/entrega-del-balon-oro-minuto-minuto-ya-se-revelo-el-top-30-al-11-n6338038" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.ambito.com/deportes/entrega-del-balon-oro-minuto-minuto-ya-se-revelo-el-top-30-al-11-n6338038" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Harry Kane gana el Balón de Oro 2026; Lionel Messi ausente en la ceremonia</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ El futbolista <b>Harry Kane</b> se alzó con el premio al Mejor Jugador del Mundo, el <b>Balón de Oro 2026</b>, por primera vez en su carrera.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> La ceremonia de entrega, celebrada en Londres, contó con la destacada ausencia de <b>Lionel Messi</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto neutral para el inversor argentino, ya que se trata de una noticia deportiva de alto perfil que no tiene implicaciones directas en los mercados financieros o la economía local.
-                    </div>
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ El futbolista <b>Harry Kane</b> se alzó con el premio al Mejor Jugador del Mundo, el <b>Balón de Oro 2026</b>, por primera vez en su carrera.<br><span class="text-[#00E5FF] font-bold mr-2">▪</span> La ceremonia de entrega, celebrada en Londres, contó con la destacada ausencia de <b>Lionel Messi</b>.<br><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto neutral para el inversor argentino, ya que se trata de una noticia deportiva de alto perfil que no tiene implicaciones directas en los mercados financieros o la economía local.
+                    </br></br></div>
 <div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
 <div class="flex flex-wrap gap-1.5">
 <span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#FÚTBOL</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#BALÓN DE ORO</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#HARRY KANE</span>
@@ -53,7 +107,35 @@
 <span class="text-[10px] font-bold bg-yellow-500/20 text-yellow-500 px-2 py-0.5 rounded border border-yellow-500/30 mt-2 inline-block">🗞️ Cubierto por 3 medios</span>
 </div>
 </article>
-<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-rose-500 h-[380px] overflow-hidden relative" data-categoria="ECONOMÍA" data-impacto="3" data-url="https://www.ambito.com/economia/la-confianza-el-gobierno-se-mantuvo-casi-estancada-octubre-fines-2025-se-hundio-mas-20-n6338153">
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="DEPORTES" data-impacto="1" data-url="https://tn.com.ar/deportes/futbol/2026/10/26/la-lista-de-todos-los-ganadores-de-la-ceremonia-del-balon-de-oro-2026/">
+<div class="flex justify-between items-start mb-3 shrink-0 select-none">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-orange-900/40 text-orange-400 border border-orange-500/30 px-2 py-1 rounded-md whitespace-nowrap">DEPORTES</span>
+<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">⚪ NEUTRAL</span>
+</div>
+<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">TN, LA NACION</span>
+</div>
+<div class="flex flex-col items-end gap-2 shrink-0 z-10">
+<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://tn.com.ar/deportes/futbol/2026/10/26/la-lista-de-todos-los-ganadores-de-la-ceremonia-del-balon-de-oro-2026/" title="Guardar noticia">🔖</button>
+<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-10-26T23:05:26.109Z"></span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
+</div>
+</div>
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://tn.com.ar/deportes/futbol/2026/10/26/la-lista-de-todos-los-ganadores-de-la-ceremonia-del-balon-de-oro-2026/" rel="noopener noreferrer" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Harry Kane gana el Balón de Oro 2026, consolidándose como el mejor jugador del mundo</h2>
+</a>
+<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ <b>Harry Kane</b> fue galardonado con el <b>Balón de Oro 2026</b>, poniendo fin a lo que muchos consideraban una "maldición" en su carrera.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> La gala de premiación reconoció a los mejores jugadores, donde <b>Lionel Messi</b> se ubicó en un quinto lugar y <b>Yamal</b> sorprendió con su inesperada posición.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto <b>NEUTRAL</b> ya que, aunque es una noticia destacada en el ámbito deportivo, no tiene implicaciones directas para el inversor argentino ni para los mercados económicos o políticos.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#BALÓN DE ORO</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#HARRY KANE</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#FÚTBOL</span>
+</div>
+<span class="text-[10px] font-bold bg-yellow-500/20 text-yellow-500 px-2 py-0.5 rounded border border-yellow-500/30 mt-2 inline-block">🗞️ Cubierto por 2 medios</span>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-rose-500 h-[380px] overflow-hidden relative" data-categoria="ECONOMÍA" data-impacto="4" data-url="https://www.ambito.com/economia/la-confianza-el-gobierno-se-mantuvo-casi-estancada-octubre-fines-2025-se-hundio-mas-20-n6338153">
 <div class="flex justify-between items-start mb-3 shrink-0 select-none">
 <div class="flex flex-col gap-2 max-w-[70%]">
 <div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
@@ -68,26 +150,53 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.ambito.com/economia/la-confianza-el-gobierno-se-mantuvo-casi-estancada-octubre-fines-2025-se-hundio-mas-20-n6338153" target="_blank">
-<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">La confianza en el Gobierno de Argentina se estanca en octubre tras caer 20% desde 2025</h2>
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.ambito.com/economia/la-confianza-el-gobierno-se-mantuvo-casi-estancada-octubre-fines-2025-se-hundio-mas-20-n6338153" rel="noopener noreferrer" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Confianza en el Gobierno estancada en octubre, con una caída de más del 20% desde fines de 2025</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ La confianza en el Gobierno, según el ICG de la <b>Universidad Di Tella</b>, se mantuvo casi estancada en octubre.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Desde fines de <b>2025</b>, la confianza en el Gobierno se hundió más de <b>20%</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto negativo para el inversor argentino, ya que una baja o estancamiento en la confianza en el Gobierno puede reflejar preocupaciones sobre la estabilidad política y económica, influyendo negativamente en las decisiones de inversión y la percepción de riesgo.
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ El Índice de Confianza en el Gobierno (ICG) de la Universidad Di Tella mostró un estancamiento en <b>octubre</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Desde finales de <b>2025</b>, la confianza en el Gobierno ha caído en más de un <b>20%</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto <b>NEGATIVO</b> porque la caída y estancamiento de la confianza en el gobierno puede desalentar la inversión local y extranjera, indicando una percepción de inestabilidad política y económica que es desfavorable para el inversor argentino.
                     </div>
 <div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
 <div class="flex flex-wrap gap-1.5">
-<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#CONFIANZA GOBIERNO</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#DI TELLA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ECONOMÍA ARGENTINA</span>
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#CONFIANZA GOBIERNO</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ECONOMÍA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#DI TELLA</span>
 </div>
 </div>
 </article>
-<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-rose-500 h-[380px] overflow-hidden relative" data-categoria="MERCADOS" data-impacto="5" data-url="https://www.ambito.com/mundo/flavio-bolsonaro-cambia-estrategia-desistio-la-anulacion-las-elecciones-y-pedira-la-destitucion-lula-n6338167">
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-emerald-500 h-[380px] overflow-hidden relative" data-categoria="POLÍTICA" data-impacto="3" data-url="https://www.ambito.com/ambito-nacional/javier-milei-viaja-catamarca-visita-proyectos-mineros-y-encuentro-la-militancia-n6338107">
 <div class="flex justify-between items-start mb-3 shrink-0 select-none">
 <div class="flex flex-col gap-2 max-w-[70%]">
 <div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
-<span class="bg-emerald-900/40 text-emerald-400 border border-emerald-500/30 px-2 py-1 rounded-md whitespace-nowrap">MERCADOS</span>
+<span class="bg-indigo-900/40 text-indigo-400 border border-indigo-500/30 px-2 py-1 rounded-md whitespace-nowrap">POLÍTICA</span>
+<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">🟢 POSITIVO</span>
+</div>
+<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">ÁMBITO</span>
+</div>
+<div class="flex flex-col items-end gap-2 shrink-0 z-10">
+<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.ambito.com/ambito-nacional/javier-milei-viaja-catamarca-visita-proyectos-mineros-y-encuentro-la-militancia-n6338107" title="Guardar noticia">🔖</button>
+<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-10-26T19:49:36-03:00"></span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
+</div>
+</div>
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.ambito.com/ambito-nacional/javier-milei-viaja-catamarca-visita-proyectos-mineros-y-encuentro-la-militancia-n6338107" rel="noopener noreferrer" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Milei viaja a Catamarca para visitar proyectos mineros y reunirse con militantes</h2>
+</a>
+<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ El presidente <b>Milei</b>, acompañado por parte de su gabinete, viajó a <b>Catamarca</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> La agenda incluye la visita a <b>proyectos mineros</b> y un encuentro con la militancia local.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto <b>POSITIVO</b> porque el apoyo presidencial a proyectos mineros en <b>Catamarca</b> podría señalar un impulso a la inversión y desarrollo del sector, lo cual es favorable para el inversor argentino interesado en recursos naturales y la economía regional.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#MILEI</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#CATAMARCA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#MINERÍA</span>
+</div>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-rose-500 h-[380px] overflow-hidden relative" data-categoria="POLÍTICA" data-impacto="4" data-url="https://www.ambito.com/mundo/flavio-bolsonaro-cambia-estrategia-desistio-la-anulacion-las-elecciones-y-pedira-la-destitucion-lula-n6338167">
+<div class="flex justify-between items-start mb-3 shrink-0 select-none">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-indigo-900/40 text-indigo-400 border border-indigo-500/30 px-2 py-1 rounded-md whitespace-nowrap">POLÍTICA</span>
 <span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">🔴 NEGATIVO</span>
 </div>
-<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">ÁMBITO, IPROFESIONAL, INFOBAE, LA NACION, TN</span>
+<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">ÁMBITO, IPROFESIONAL, LA NACION, TN, INFOBAE</span>
 </div>
 <div class="flex flex-col items-end gap-2 shrink-0 z-10">
 <button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.ambito.com/mundo/flavio-bolsonaro-cambia-estrategia-desistio-la-anulacion-las-elecciones-y-pedira-la-destitucion-lula-n6338167" title="Guardar noticia">🔖</button>
@@ -95,15 +204,15 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.ambito.com/mundo/flavio-bolsonaro-cambia-estrategia-desistio-la-anulacion-las-elecciones-y-pedira-la-destitucion-lula-n6338167" target="_blank">
-<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">La victoria de Lula en Brasil sacude los mercados, tensa la relación con Argentina y genera reacciones políticas</h2>
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.ambito.com/mundo/flavio-bolsonaro-cambia-estrategia-desistio-la-anulacion-las-elecciones-y-pedira-la-destitucion-lula-n6338167" rel="noopener noreferrer" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Repercusiones de la victoria de Lula en Brasil: tensión política y reconocimiento del partido de Flavio Bolsonaro</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ La victoria de <b>Lula da Silva</b> en Brasil generó un fuerte impacto en los mercados, con la Bolsa de San Pablo derrumbándose <b>13%</b> y el real debilitándose <b>11%</b>, afectando a banqueros y al empresariado brasileño.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> En Argentina, el triunfo de Lula impacta en el plan cambiario de <b>Caputo</b>, aumenta la presión sobre el <b>dólar mayorista (+10$)</b>, el <b>dólar blue ($1.575)</b> y el riesgo país, mientras que el <b>BCRA</b> cortó su racha de compras.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto negativo para el inversor argentino, ya que la devaluación del real y la tensión política (con <b>Javier Milei</b> acusando a Lula de fraude y <b>Flávio Bolsonaro</b> buscando su destitución) generan incertidumbre económica y volatilidad en los mercados locales y la relación comercial con nuestro principal socio.
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ La victoria de <b>Lula da Silva</b> en Brasil genera tensiones políticas, con el partido de <b>Flávio Bolsonaro</b> reconociendo el triunfo pero pidiendo aclaraciones sobre el proceso electoral.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> <b>Milei</b> mantiene silencio sobre el resultado, generando presiones internas para reconocer a Lula y recomponer la relación bilateral, mientras <b>Trump</b> califica la elección de "amañada" pero se distancia de Bolsonaro.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto <b>NEGATIVO</b> porque la falta de reconocimiento oficial por parte del gobierno argentino y la tensión política podrían obstaculizar futuras negociaciones y la estabilidad de una relación comercial clave para Argentina.
                     </div>
 <div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
 <div class="flex flex-wrap gap-1.5">
-<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ELECCIONES BRASIL</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#LULA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#MERCADOS ARGENTINA</span>
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ELECCIONES BRASIL</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#LULA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#MILEI</span>
 </div>
 <span class="text-[10px] font-bold bg-yellow-500/20 text-yellow-500 px-2 py-0.5 rounded border border-yellow-500/30 mt-2 inline-block">🗞️ Cubierto por 5 medios</span>
 </div>
@@ -123,17 +232,71 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://tn.com.ar/policiales/2026/10/26/se-conocio-el-resultado-de-la-autopsia-a-tatiana-la-joven-de-27-anos-que-fue-encontrada-muerta-en-un-departamento-de-retiro/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://tn.com.ar/policiales/2026/10/26/se-conocio-el-resultado-de-la-autopsia-a-tatiana-la-joven-de-27-anos-que-fue-encontrada-muerta-en-un-departamento-de-retiro/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Femicidio en Retiro: la autopsia de Tatiana revela la causa de muerte</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ Se dieron a conocer los resultados de la autopsia de <b>Tatiana</b>, la joven de <b>27 años</b> encontrada muerta en un departamento de Retiro.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> La investigación determinó que la causa de muerte fue por ahorcamiento, confirmando un femicidio.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto neutral para el inversor argentino, ya que es una noticia de interés social y policial sin implicaciones directas en el ámbito económico o financiero.
-                    </div>
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ Se dieron a conocer los resultados de la autopsia de <b>Tatiana</b>, la joven de <b>27 años</b> encontrada muerta en un departamento de Retiro.<br><span class="text-[#00E5FF] font-bold mr-2">▪</span> La investigación determinó que la causa de muerte fue por ahorcamiento, confirmando un femicidio.<br><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto neutral para el inversor argentino, ya que es una noticia de interés social y policial sin implicaciones directas en el ámbito económico o financiero.
+                    </br></br></div>
 <div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
 <div class="flex flex-wrap gap-1.5">
 <span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#FEMICIDIO</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#RETIRO</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#AUTOPSIA</span>
 </div>
 <span class="text-[10px] font-bold bg-yellow-500/20 text-yellow-500 px-2 py-0.5 rounded border border-yellow-500/30 mt-2 inline-block">🗞️ Cubierto por 2 medios</span>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-rose-500 h-[380px] overflow-hidden relative" data-categoria="POLÍTICA" data-impacto="3" data-url="https://www.ambito.com/politica/nuevos-cuestionamientos-la-privatizacion-aysa-e-incertidumbre-el-futuro-las-obras-n6338149">
+<div class="flex justify-between items-start mb-3 shrink-0 select-none">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-indigo-900/40 text-indigo-400 border border-indigo-500/30 px-2 py-1 rounded-md whitespace-nowrap">POLÍTICA</span>
+<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">🔴 NEGATIVO</span>
+</div>
+<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">ÁMBITO</span>
+</div>
+<div class="flex flex-col items-end gap-2 shrink-0 z-10">
+<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.ambito.com/politica/nuevos-cuestionamientos-la-privatizacion-aysa-e-incertidumbre-el-futuro-las-obras-n6338149" title="Guardar noticia">🔖</button>
+<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-10-26T18:54:00-03:00"></span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
+</div>
+</div>
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.ambito.com/politica/nuevos-cuestionamientos-la-privatizacion-aysa-e-incertidumbre-el-futuro-las-obras-n6338149" rel="noopener noreferrer" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Cuestionamientos a la privatización de AySA y preocupación por el futuro de las obras</h2>
+</a>
+<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ En audiencia pública, surgieron nuevos cuestionamientos en torno a la privatización de <b>AySA</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> La incertidumbre prevalece sobre el futuro de las obras públicas relacionadas con la empresa.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto <b>NEGATIVO</b> porque la incertidumbre sobre la privatización de una empresa de servicios públicos clave como <b>AySA</b> y el futuro de sus obras puede generar desconfianza en el mercado de infraestructura y afectar la estabilidad económica a largo plazo.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#AYSA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#PRIVATIZACIÓN</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#OBRAS PÚBLICAS</span>
+</div>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-rose-500 h-[380px] overflow-hidden relative" data-categoria="ECONOMÍA" data-impacto="3" data-url="https://www.lanacion.com.ar/economia/viajaron-menos-argentinos-el-rojo-por-turismo-fue-de-us918-millones-en-el-tercer-trimestre-del-ano-nid26102026/">
+<div class="flex justify-between items-start mb-3 shrink-0 select-none">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-blue-900/40 text-blue-400 border border-blue-500/30 px-2 py-1 rounded-md whitespace-nowrap">ECONOMÍA</span>
+<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">🔴 NEGATIVO</span>
+</div>
+<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">LA NACION</span>
+</div>
+<div class="flex flex-col items-end gap-2 shrink-0 z-10">
+<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.lanacion.com.ar/economia/viajaron-menos-argentinos-el-rojo-por-turismo-fue-de-us918-millones-en-el-tercer-trimestre-del-ano-nid26102026/" title="Guardar noticia">🔖</button>
+<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-10-26T21:32:30.774Z"></span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
+</div>
+</div>
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.lanacion.com.ar/economia/viajaron-menos-argentinos-el-rojo-por-turismo-fue-de-us918-millones-en-el-tercer-trimestre-del-ano-nid26102026/" rel="noopener noreferrer" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Déficit de US$918 millones en turismo en el tercer trimestre, con menos argentinos viajando</h2>
+</a>
+<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ El sector turístico registró un <b>déficit de US$918 millones</b> en el tercer trimestre del año.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> La cifra refleja una disminución en el número de argentinos que viajaron al exterior.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto <b>NEGATIVO</b> porque el elevado déficit por turismo implica una salida importante de divisas del país, afectando negativamente las reservas del Banco Central y la estabilidad cambiaria para el inversor argentino.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#TURISMO</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#DÉFICIT</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#DIVISAS</span>
+</div>
 </div>
 </article>
 <article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="POLÍTICA" data-impacto="2" data-url="https://www.lanacion.com.ar/politica/detras-del-fallo-libra-lo-que-dijo-la-justicia-y-lo-que-obvio-para-sobreseer-a-javier-milei-nid26102026/">
@@ -151,12 +314,12 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.lanacion.com.ar/politica/detras-del-fallo-libra-lo-que-dijo-la-justicia-y-lo-que-obvio-para-sobreseer-a-javier-milei-nid26102026/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.lanacion.com.ar/politica/detras-del-fallo-libra-lo-que-dijo-la-justicia-y-lo-que-obvio-para-sobreseer-a-javier-milei-nid26102026/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">La Justicia sobresee a Javier Milei en el caso $LIBRA, con revelaciones y misterios irresueltos</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ La Justicia sobreseyó a <b>Javier Milei</b> en el caso relacionado con <b>$LIBRA</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> El fallo presenta revelaciones, pero también deja misterios irresueltos sobre el caso.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto neutral para el inversor argentino, ya que si bien involucra al presidente, se trata de una resolución judicial sobre un tema específico que, en este caso, no genera una alteración significativa en la estabilidad política o económica general.
-                    </div>
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ La Justicia sobreseyó a <b>Javier Milei</b> en el caso relacionado con <b>$LIBRA</b>.<br><span class="text-[#00E5FF] font-bold mr-2">▪</span> El fallo presenta revelaciones, pero también deja misterios irresueltos sobre el caso.<br><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto neutral para el inversor argentino, ya que si bien involucra al presidente, se trata de una resolución judicial sobre un tema específico que, en este caso, no genera una alteración significativa en la estabilidad política o económica general.
+                    </br></br></div>
 <div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
 <div class="flex flex-wrap gap-1.5">
 <span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#MILEI</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#JUSTICIA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#$LIBRA</span>
@@ -178,12 +341,12 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://tn.com.ar/sociedad/2026/10/26/el-dolor-de-la-mama-del-bebe-de-12-dias-que-murio-tras-caerle-una-palta-en-la-cabeza-no-se-puede-estar-bien-con-una-perdida-asi/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://tn.com.ar/sociedad/2026/10/26/el-dolor-de-la-mama-del-bebe-de-12-dias-que-murio-tras-caerle-una-palta-en-la-cabeza-no-se-puede-estar-bien-con-una-perdida-asi/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Indignación por la muerte de un bebé de 12 días tras caerle una palta en la cabeza</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ La madre de un bebé de <b>12 días</b> que falleció tras caerle una palta en la cabeza expresó su indignación.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Acusó que podaron el árbol "a escondidas" después del trágico suceso.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto neutral para el inversor argentino, ya que se trata de una noticia de índole social y trágica que no tiene influencia directa en los mercados financieros o la economía del país.
-                    </div>
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ La madre de un bebé de <b>12 días</b> que falleció tras caerle una palta en la cabeza expresó su indignación.<br><span class="text-[#00E5FF] font-bold mr-2">▪</span> Acusó que podaron el árbol "a escondidas" después del trágico suceso.<br><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto neutral para el inversor argentino, ya que se trata de una noticia de índole social y trágica que no tiene influencia directa en los mercados financieros o la economía del país.
+                    </br></br></div>
 <div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
 <div class="flex flex-wrap gap-1.5">
 <span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#TRAGEDIA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#BEBÉ</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ACCIDENTE</span>
@@ -205,15 +368,69 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.lanacion.com.ar/sociedad/alfredito-el-elefante-marino-que-nacio-y-crece-en-la-playa-marplatense-con-custodia-del-municipio-nid26102026/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.lanacion.com.ar/sociedad/alfredito-el-elefante-marino-que-nacio-y-crece-en-la-playa-marplatense-con-custodia-del-municipio-nid26102026/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Alfredito, el elefante marino, nace y crece con fuerte operativo de protección en Mar del Plata</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ Un elefante marino, apodado <b>"Alfredito"</b>, nació y está creciendo en una playa de <b>Mar del Plata</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Se implementó un fuerte operativo de protección para resguardar al animal y su entorno.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto neutral para el inversor argentino, ya que se trata de una noticia de interés local y ambiental que no posee relevancia directa para los mercados financieros o la economía.
-                    </div>
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ Un elefante marino, apodado <b>"Alfredito"</b>, nació y está creciendo en una playa de <b>Mar del Plata</b>.<br><span class="text-[#00E5FF] font-bold mr-2">▪</span> Se implementó un fuerte operativo de protección para resguardar al animal y su entorno.<br><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto neutral para el inversor argentino, ya que se trata de una noticia de interés local y ambiental que no posee relevancia directa para los mercados financieros o la economía.
+                    </br></br></div>
 <div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
 <div class="flex flex-wrap gap-1.5">
 <span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#MAR DEL PLATA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ELEFANTE MARINO</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#CONSERVACIÓN</span>
+</div>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="POLÍTICA" data-impacto="2" data-url="https://www.infobae.com/venezuela/2026/10/26/rubio-revelo-que-estados-unidos-insto-a-delcy-rodriguez-a-permitir-el-regreso-de-maria-corina-machado-a-venezuela/">
+<div class="flex justify-between items-start mb-3 shrink-0 select-none">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-indigo-900/40 text-indigo-400 border border-indigo-500/30 px-2 py-1 rounded-md whitespace-nowrap">POLÍTICA</span>
+<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">⚪ NEUTRAL</span>
+</div>
+<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">INFOBAE</span>
+</div>
+<div class="flex flex-col items-end gap-2 shrink-0 z-10">
+<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.infobae.com/venezuela/2026/10/26/rubio-revelo-que-estados-unidos-insto-a-delcy-rodriguez-a-permitir-el-regreso-de-maria-corina-machado-a-venezuela/" title="Guardar noticia">🔖</button>
+<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-10-26T20:54:13.668Z"></span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
+</div>
+</div>
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/venezuela/2026/10/26/rubio-revelo-que-estados-unidos-insto-a-delcy-rodriguez-a-permitir-el-regreso-de-maria-corina-machado-a-venezuela/" rel="noopener noreferrer" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Estados Unidos presiona a Venezuela por el regreso de María Corina Machado</h2>
+</a>
+<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ El senador <b>Marco Rubio</b> reveló que <b>Estados Unidos</b> instó a <b>Delcy Rodríguez</b> a permitir el regreso de <b>María Corina Machado</b> a Venezuela.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Esta presión busca asegurar la participación de la líder opositora en el proceso político venezolano.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto <b>NEUTRAL</b> porque si bien la situación política en Venezuela tiene relevancia regional, este evento específico de presión diplomática no genera un impacto directo y significativo en los mercados o las inversiones argentinas.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#VENEZUELA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#EEUU</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#POLÍTICA</span>
+</div>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="POLÍTICA" data-impacto="1" data-url="https://www.iprofesional.com/legales/467513-ariel-vallejo-declaro-ante-justicia-le-negaron-libertad-por-riesgo-de-fuga">
+<div class="flex justify-between items-start mb-3 shrink-0 select-none">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-indigo-900/40 text-indigo-400 border border-indigo-500/30 px-2 py-1 rounded-md whitespace-nowrap">POLÍTICA</span>
+<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">⚪ NEUTRAL</span>
+</div>
+<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">IPROFESIONAL</span>
+</div>
+<div class="flex flex-col items-end gap-2 shrink-0 z-10">
+<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.iprofesional.com/legales/467513-ariel-vallejo-declaro-ante-justicia-le-negaron-libertad-por-riesgo-de-fuga" title="Guardar noticia">🔖</button>
+<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-10-26T17:10:00-03:00"></span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
+</div>
+</div>
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.iprofesional.com/legales/467513-ariel-vallejo-declaro-ante-justicia-le-negaron-libertad-por-riesgo-de-fuga" rel="noopener noreferrer" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Negada la libertad a Ariel Vallejo por riesgo de fuga tras declarar ante la Justicia</h2>
+</a>
+<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ <b>Ariel Vallejo</b> compareció ante la Justicia, donde se le negó la solicitud de libertad.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> La decisión judicial se fundamentó en la existencia de un considerable <b>riesgo de fuga</b> por parte del imputado.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto <b>NEUTRAL</b> porque, aunque es una noticia judicial relevante a nivel local, no tiene implicaciones directas para el inversor argentino en términos de movimientos de mercado o políticas económicas macro.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#JUSTICIA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#RIESGO FUGA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ARGENTINA</span>
 </div>
 </div>
 </article>
@@ -232,15 +449,42 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://tn.com.ar/deportes/futbol/2026/10/26/la-emotiva-historia-del-jugador-de-ferro-que-fue-a-la-basilica-de-lujan-a-pedir-por-el-ascenso-soy-una-persona-de-fe/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://tn.com.ar/deportes/futbol/2026/10/26/la-emotiva-historia-del-jugador-de-ferro-que-fue-a-la-basilica-de-lujan-a-pedir-por-el-ascenso-soy-una-persona-de-fe/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">El 10 de Ferro visita la Basílica de Luján para pedir por el ascenso a Primera División</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ El jugador número <b>10</b> de <b>Ferro Carril Oeste</b> realizó una peregrinación a la Basílica de Luján.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Su objetivo fue pedir por el ascenso del equipo a la <b>Primera División</b> del fútbol argentino.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto neutral para el inversor argentino, ya que es una noticia de interés deportivo local que no tiene implicaciones directas en la economía o los mercados financieros.
-                    </div>
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ El jugador número <b>10</b> de <b>Ferro Carril Oeste</b> realizó una peregrinación a la Basílica de Luján.<br><span class="text-[#00E5FF] font-bold mr-2">▪</span> Su objetivo fue pedir por el ascenso del equipo a la <b>Primera División</b> del fútbol argentino.<br><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto neutral para el inversor argentino, ya que es una noticia de interés deportivo local que no tiene implicaciones directas en la economía o los mercados financieros.
+                    </br></br></div>
 <div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
 <div class="flex flex-wrap gap-1.5">
 <span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#FÚTBOL</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#FERRO</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#LUJÁN</span>
+</div>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="POLÍTICA" data-impacto="1" data-url="https://www.infobae.com/estados-unidos/2026/10/26/un-adolescente-de-15-anos-sera-juzgado-como-adulto-por-el-tiroteo-que-dejo-12-heridos-tras-un-partido-universitario-en-florida/">
+<div class="flex justify-between items-start mb-3 shrink-0 select-none">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-indigo-900/40 text-indigo-400 border border-indigo-500/30 px-2 py-1 rounded-md whitespace-nowrap">POLÍTICA</span>
+<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">⚪ NEUTRAL</span>
+</div>
+<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">INFOBAE</span>
+</div>
+<div class="flex flex-col items-end gap-2 shrink-0 z-10">
+<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.infobae.com/estados-unidos/2026/10/26/un-adolescente-de-15-anos-sera-juzgado-como-adulto-por-el-tiroteo-que-dejo-12-heridos-tras-un-partido-universitario-en-florida/" title="Guardar noticia">🔖</button>
+<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-10-26T20:03:56.117Z"></span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
+</div>
+</div>
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/estados-unidos/2026/10/26/un-adolescente-de-15-anos-sera-juzgado-como-adulto-por-el-tiroteo-que-dejo-12-heridos-tras-un-partido-universitario-en-florida/" rel="noopener noreferrer" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Adolescente de 15 años será juzgado como adulto por tiroteo con 12 heridos en Florida</h2>
+</a>
+<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ Un adolescente de <b>15 años</b> en <b>Florida</b> será juzgado como adulto por un tiroteo que dejó <b>12 heridos</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> El incidente ocurrió tras un partido universitario, generando preocupación por la violencia juvenil.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto <b>NEUTRAL</b> porque es una noticia judicial y de seguridad pública local en <b>Estados Unidos</b> que no tiene implicaciones directas para el inversor argentino ni para los mercados económicos.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#TIROTEO</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#FLORIDA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#JUSTICIA</span>
 </div>
 </div>
 </article>
@@ -259,15 +503,15 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/estados-unidos/2026/10/26/california-lleva-14-propuestas-a-la-boleta-que-deciden-los-votantes-el-3-de-noviembre/" target="_blank">
-<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">California votará 14 propuestas en las elecciones del 3 de noviembre</h2>
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/estados-unidos/2026/10/26/california-lleva-14-propuestas-a-la-boleta-que-deciden-los-votantes-el-3-de-noviembre/" rel="noopener noreferrer" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Votantes de California decidirán sobre 14 propuestas en las boletas del 3 de noviembre</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ Los votantes de <b>California</b> decidirán sobre <b>14 propuestas</b> en la boleta electoral el próximo <b>3 de noviembre</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Estas propuestas abarcan diversos temas de política estatal y social.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto neutral para el inversor argentino, ya que son asuntos de política interna de un estado de Estados Unidos que no tienen una repercusión directa en los mercados o la economía de Argentina.
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ Los votantes de <b>California</b> se enfrentarán a <b>14 propuestas</b> distintas en las boletas electorales del <b>3 de noviembre</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Estas propuestas abarcan diversos temas que definirán aspectos importantes para el estado.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto <b>NEUTRAL</b> porque, aunque son relevantes para la política interna de <b>Estados Unidos</b>, no tienen implicaciones directas ni indirectas significativas para los mercados o inversiones argentinas.
                     </div>
 <div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
 <div class="flex flex-wrap gap-1.5">
-<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ELECCIONES EEUU</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#CALIFORNIA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#PROPUESTAS</span>
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#CALIFORNIA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ELECCIONES</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#PROPUESTAS</span>
 </div>
 </div>
 </article>
@@ -286,12 +530,12 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/estados-unidos/2026/10/26/un-juez-federal-declara-ilegal-el-despido-de-la-exfiscal-maurene-comey-y-ordena-restituirla-en-el-cargo/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/estados-unidos/2026/10/26/un-juez-federal-declara-ilegal-el-despido-de-la-exfiscal-maurene-comey-y-ordena-restituirla-en-el-cargo/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Juez federal declara ilegal el despido de la exfiscal Maurene Comey y ordena restitución</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ Un juez federal de <b>Estados Unidos</b> declaró ilegal el despido de la exfiscal <b>Maurene Comey</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Se ordenó la restitución de Comey en su cargo, revirtiendo la decisión previa.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto neutral para el inversor argentino, ya que es una noticia del ámbito judicial y político interno de Estados Unidos sin consecuencias directas para la economía o los mercados de Argentina.
-                    </div>
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ Un juez federal de <b>Estados Unidos</b> declaró ilegal el despido de la exfiscal <b>Maurene Comey</b>.<br><span class="text-[#00E5FF] font-bold mr-2">▪</span> Se ordenó la restitución de Comey en su cargo, revirtiendo la decisión previa.<br><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto neutral para el inversor argentino, ya que es una noticia del ámbito judicial y político interno de Estados Unidos sin consecuencias directas para la economía o los mercados de Argentina.
+                    </br></br></div>
 <div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
 <div class="flex flex-wrap gap-1.5">
 <span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#JUSTICIA EEUU</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#MAURENE COMEY</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#DESPIDO</span>
@@ -313,15 +557,42 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.iprofesional.com/finanzas/467357-3-carteras-de-inversion-con-riesgo-bajo-y-alto-del-guru-de-la-city/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.iprofesional.com/finanzas/467357-3-carteras-de-inversion-con-riesgo-bajo-y-alto-del-guru-de-la-city/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Recomendaciones de tres carteras de bonos para invertir rumbo a las elecciones</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ Se presentan tres tipos de carteras de bonos, categorizadas por riesgo: <b>bajo, medio y alto</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Estas recomendaciones buscan guiar a los inversores de cara a las próximas elecciones.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto positivo porque ofrece información útil y estrategias de inversión diversificadas, ayudando al inversor argentino a tomar decisiones informadas en un contexto electoral volátil.
-                    </div>
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ Se presentan tres tipos de carteras de bonos, categorizadas por riesgo: <b>bajo, medio y alto</b>.<br><span class="text-[#00E5FF] font-bold mr-2">▪</span> Estas recomendaciones buscan guiar a los inversores de cara a las próximas elecciones.<br><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto positivo porque ofrece información útil y estrategias de inversión diversificadas, ayudando al inversor argentino a tomar decisiones informadas en un contexto electoral volátil.
+                    </br></br></div>
 <div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
 <div class="flex flex-wrap gap-1.5">
 <span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#BONOS</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#INVERSIÓN</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ELECCIONES</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#RIESGO</span>
+</div>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="POLÍTICA" data-impacto="1" data-url="https://www.infobae.com/estados-unidos/2026/10/26/las-inundaciones-golpearon-el-sur-de-colorado-rutas-destruidas-y-cientos-de-personas-afectadas/">
+<div class="flex justify-between items-start mb-3 shrink-0 select-none">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-indigo-900/40 text-indigo-400 border border-indigo-500/30 px-2 py-1 rounded-md whitespace-nowrap">POLÍTICA</span>
+<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">⚪ NEUTRAL</span>
+</div>
+<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">INFOBAE</span>
+</div>
+<div class="flex flex-col items-end gap-2 shrink-0 z-10">
+<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.infobae.com/estados-unidos/2026/10/26/las-inundaciones-golpearon-el-sur-de-colorado-rutas-destruidas-y-cientos-de-personas-afectadas/" title="Guardar noticia">🔖</button>
+<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-10-26T17:48:37.618Z"></span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
+</div>
+</div>
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/estados-unidos/2026/10/26/las-inundaciones-golpearon-el-sur-de-colorado-rutas-destruidas-y-cientos-de-personas-afectadas/" rel="noopener noreferrer" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Inundaciones severas azotan el sur de Colorado, causando destrucción y afectación a cientos</h2>
+</a>
+<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ El sur de <b>Colorado</b> fue impactado por severas inundaciones que resultaron en <b>rutas destruidas</b> y cientos de personas afectadas.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Las autoridades locales están evaluando los daños y coordinando las labores de asistencia y reconstrucción.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto <b>NEUTRAL</b> ya que, a pesar de la magnitud de la catástrofe local en <b>Estados Unidos</b>, no presenta un impacto directo o indirecto relevante para los mercados o inversiones argentinas.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#INUNDACIONES</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#COLORADO</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#DESASTRE NATURAL</span>
 </div>
 </div>
 </article>
@@ -340,15 +611,124 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://tn.com.ar/sociedad/2026/10/26/conmocion-en-quilmes-murio-un-bebe-de-12-dias-luego-de-que-se-le-cayera-una-palta-en-la-cabeza/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://tn.com.ar/sociedad/2026/10/26/conmocion-en-quilmes-murio-un-bebe-de-12-dias-luego-de-que-se-le-cayera-una-palta-en-la-cabeza/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Conmoción en Quilmes: fallece bebé de 12 días por caída de palta</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ Un bebé de tan solo <b>12 días</b> falleció en <b>Quilmes</b> tras caerle una palta en la cabeza, generando gran conmoción.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> El trágico incidente ha conmovido a la comunidad local y se encuentra bajo investigación.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto neutro porque es una noticia de crónica roja local, de profunda tristeza, pero sin ninguna implicación económica o de mercado para el inversor argentino.
-                    </div>
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ Un bebé de tan solo <b>12 días</b> falleció en <b>Quilmes</b> tras caerle una palta en la cabeza, generando gran conmoción.<br><span class="text-[#00E5FF] font-bold mr-2">▪</span> El trágico incidente ha conmovido a la comunidad local y se encuentra bajo investigación.<br><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto neutro porque es una noticia de crónica roja local, de profunda tristeza, pero sin ninguna implicación económica o de mercado para el inversor argentino.
+                    </br></br></div>
 <div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
 <div class="flex flex-wrap gap-1.5">
 <span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#BEBÉ</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#QUILMES</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#TRAGEDIA</span>
+</div>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="DEPORTES" data-impacto="1" data-url="https://www.infobae.com/deportes/2026/10/26/lewis-hamilton-revelo-detalles-de-su-relacion-con-kim-kardashian-frente-a-los-fanaticos-de-la-f1-el-especial-regalo-para-sus-hijos/">
+<div class="flex justify-between items-start mb-3 shrink-0 select-none">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-orange-900/40 text-orange-400 border border-orange-500/30 px-2 py-1 rounded-md whitespace-nowrap">DEPORTES</span>
+<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">⚪ NEUTRAL</span>
+</div>
+<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">INFOBAE</span>
+</div>
+<div class="flex flex-col items-end gap-2 shrink-0 z-10">
+<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.infobae.com/deportes/2026/10/26/lewis-hamilton-revelo-detalles-de-su-relacion-con-kim-kardashian-frente-a-los-fanaticos-de-la-f1-el-especial-regalo-para-sus-hijos/" title="Guardar noticia">🔖</button>
+<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-10-26T17:41:15.731Z"></span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
+</div>
+</div>
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/deportes/2026/10/26/lewis-hamilton-revelo-detalles-de-su-relacion-con-kim-kardashian-frente-a-los-fanaticos-de-la-f1-el-especial-regalo-para-sus-hijos/" rel="noopener noreferrer" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Lewis Hamilton revela detalles de su relación con Kim Kardashian y un regalo para sus hijos</h2>
+</a>
+<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ <b>Lewis Hamilton</b> compartió con los fanáticos de la <b>F1</b> detalles sobre su relación con <b>Kim Kardashian</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> El piloto también mencionó un <b>regalo especial</b> que preparó para los hijos de Kardashian.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto <b>NEUTRAL</b> dado que esta es una noticia del ámbito del espectáculo y deporte que no tiene ninguna relevancia para el inversor argentino ni para la economía o los mercados.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#LEWIS HAMILTON</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#KIM KARDASHIAN</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#F1</span>
+</div>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-rose-500 h-[380px] overflow-hidden relative" data-categoria="ECONOMÍA" data-impacto="5" data-url="https://www.iprofesional.com/finanzas/467497-vacaciones-brasil-2027-como-influye-devaluacion-real-gastos-argentinos">
+<div class="flex justify-between items-start mb-3 shrink-0 select-none">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-blue-900/40 text-blue-400 border border-blue-500/30 px-2 py-1 rounded-md whitespace-nowrap">ECONOMÍA</span>
+<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">🔴 NEGATIVO</span>
+</div>
+<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">IPROFESIONAL, ÁMBITO</span>
+</div>
+<div class="flex flex-col items-end gap-2 shrink-0 z-10">
+<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.iprofesional.com/finanzas/467497-vacaciones-brasil-2027-como-influye-devaluacion-real-gastos-argentinos" title="Guardar noticia">🔖</button>
+<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-10-26T14:35:00-03:00"></span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
+</div>
+</div>
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.iprofesional.com/finanzas/467497-vacaciones-brasil-2027-como-influye-devaluacion-real-gastos-argentinos" rel="noopener noreferrer" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Efecto Lula: la caída del real impacta la economía argentina, disparando el dólar y el riesgo país</h2>
+</a>
+<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ La devaluación del real tras la victoria de <b>Lula</b> en Brasil impulsa la cotización del <b>dólar mayorista</b> más de <b>$10</b> y el <b>blue</b> a <b>$1.575</b>, afectando el poder adquisitivo.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> El <b>riesgo país</b> se dispara casi <b>7%</b>, superando los <b>760 puntos</b>, y se teme un impacto negativo en la <b>industria automotriz argentina</b> y el turismo para el verano <b>2027</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto <b>NEGATIVO</b> porque la depreciación del real y la incertidumbre política generan una mayor presión cambiaria en Argentina, afectan la competitividad industrial y el mercado turístico, y complican la renovación de deuda por <b>$11 billones</b>.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#DEVALUACIÓN REAL</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#DÓLAR</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#RIESGO PAÍS</span>
+</div>
+<span class="text-[10px] font-bold bg-yellow-500/20 text-yellow-500 px-2 py-0.5 rounded border border-yellow-500/30 mt-2 inline-block">🗞️ Cubierto por 2 medios</span>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="DEPORTES" data-impacto="1" data-url="https://www.infobae.com/estados-unidos/2026/10/26/nunca-tuve-un-trabajo-de-verdad-la-leyenda-de-la-nba-shaquille-oneal-hablo-sobre-su-trayectoria-fuera-del-deporte/">
+<div class="flex justify-between items-start mb-3 shrink-0 select-none">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-orange-900/40 text-orange-400 border border-orange-500/30 px-2 py-1 rounded-md whitespace-nowrap">DEPORTES</span>
+<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">⚪ NEUTRAL</span>
+</div>
+<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">INFOBAE</span>
+</div>
+<div class="flex flex-col items-end gap-2 shrink-0 z-10">
+<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.infobae.com/estados-unidos/2026/10/26/nunca-tuve-un-trabajo-de-verdad-la-leyenda-de-la-nba-shaquille-oneal-hablo-sobre-su-trayectoria-fuera-del-deporte/" title="Guardar noticia">🔖</button>
+<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-10-26T16:58:48.83Z"></span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
+</div>
+</div>
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/estados-unidos/2026/10/26/nunca-tuve-un-trabajo-de-verdad-la-leyenda-de-la-nba-shaquille-oneal-hablo-sobre-su-trayectoria-fuera-del-deporte/" rel="noopener noreferrer" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Shaquille O’Neal reflexiona sobre su trayectoria y vida fuera del deporte</h2>
+</a>
+<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ La leyenda de la <b>NBA</b>, <b>Shaquille O’Neal</b>, compartió sus reflexiones sobre su vida y carrera fuera del deporte.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> El exjugador hizo la curiosa declaración de "nunca haber tenido un trabajo de verdad".<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto <b>NEUTRAL</b> ya que esta es una noticia de interés personal y deportivo sin ninguna relevancia para el inversor argentino ni para los mercados económicos.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#SHAQUILLE O’NEAL</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#NBA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#TRAYECTORIA</span>
+</div>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="POLÍTICA" data-impacto="2" data-url="https://tn.com.ar/politica/2026/10/26/javier-milei-celebro-la-visita-del-papa-leon-xiv-a-la-argentina-alegria-enorme/">
+<div class="flex justify-between items-start mb-3 shrink-0 select-none">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-indigo-900/40 text-indigo-400 border border-indigo-500/30 px-2 py-1 rounded-md whitespace-nowrap">POLÍTICA</span>
+<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">⚪ NEUTRAL</span>
+</div>
+<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">TN</span>
+</div>
+<div class="flex flex-col items-end gap-2 shrink-0 z-10">
+<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://tn.com.ar/politica/2026/10/26/javier-milei-celebro-la-visita-del-papa-leon-xiv-a-la-argentina-alegria-enorme/" title="Guardar noticia">🔖</button>
+<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-10-26T16:46:52.864Z"></span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
+</div>
+</div>
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://tn.com.ar/politica/2026/10/26/javier-milei-celebro-la-visita-del-papa-leon-xiv-a-la-argentina-alegria-enorme/" rel="noopener noreferrer" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">El Papa León XIV confirma su visita a Argentina, celebrada por Javier Milei</h2>
+</a>
+<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ El <b>Papa León XIV</b> confirmó su viaje a la Argentina, expresando su alegría por regresar al continente donde vivió importantes momentos.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> El presidente <b>Javier Milei</b> celebró el anuncio, manifestando su "alegría enorme" ante la visita papal.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto <b>NEUTRAL</b> porque, si bien es un evento de gran relevancia social y cultural para el país, no se esperan consecuencias directas significativas para el mercado financiero o la economía del inversor argentino a corto plazo.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#PAPA LEÓN XIV</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ARGENTINA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#MILEI</span>
 </div>
 </div>
 </article>
@@ -367,12 +747,12 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/estados-unidos/2026/10/26/una-terraza-colapso-durante-una-fiesta-universitaria-en-virginia-y-dejo-al-menos-28-heridos/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/estados-unidos/2026/10/26/una-terraza-colapso-durante-una-fiesta-universitaria-en-virginia-y-dejo-al-menos-28-heridos/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Colapso de terraza en fiesta universitaria de Virginia deja 28 heridos</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ Una terraza colapsó durante una fiesta universitaria en <b>Virginia</b>, resultando en al menos <b>28 heridos</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> El incidente ocurrió en un evento concurrido, y los equipos de emergencia respondieron rápidamente a la escena.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto neutral para el inversor argentino, ya que se trata de un suceso lamentable en Estados Unidos sin repercusiones directas en los mercados o la economía de Argentina.
-                    </div>
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ Una terraza colapsó durante una fiesta universitaria en <b>Virginia</b>, resultando en al menos <b>28 heridos</b>.<br><span class="text-[#00E5FF] font-bold mr-2">▪</span> El incidente ocurrió en un evento concurrido, y los equipos de emergencia respondieron rápidamente a la escena.<br><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto neutral para el inversor argentino, ya que se trata de un suceso lamentable en Estados Unidos sin repercusiones directas en los mercados o la economía de Argentina.
+                    </br></br></div>
 <div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
 <div class="flex flex-wrap gap-1.5">
 <span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ACCIDENTE</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#VIRGINIA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#HERIDOS</span>
@@ -394,12 +774,12 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://tn.com.ar/policiales/2026/10/26/video-las-camaras-permitieron-reconstruir-que-hizo-el-presunto-doble-femicida-antes-y-despues-del-crimen-en-retiro/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://tn.com.ar/policiales/2026/10/26/video-las-camaras-permitieron-reconstruir-que-hizo-el-presunto-doble-femicida-antes-y-despues-del-crimen-en-retiro/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Detienen a <b>Iván Tabella</b>, presunto doble femicida vinculado a crímenes en Córdoba y Retiro</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ Fue detenido <b>Iván Tabella</b>, sospechoso de dos femicidios, uno en <b>Córdoba</b> y otro en <b>Retiro</b>, cuya reconstrucción se logró con cámaras de seguridad.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Las autoridades lo investigan por la muerte de una joven en Córdoba y otro crimen en Retiro, identificando al presunto responsable.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto neutro porque, si bien es una noticia trágica y de gran impacto social, no tiene una relación directa con los mercados financieros o la economía que afecte las decisiones de un inversor argentino.
-                    </div>
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ Fue detenido <b>Iván Tabella</b>, sospechoso de dos femicidios, uno en <b>Córdoba</b> y otro en <b>Retiro</b>, cuya reconstrucción se logró con cámaras de seguridad.<br><span class="text-[#00E5FF] font-bold mr-2">▪</span> Las autoridades lo investigan por la muerte de una joven en Córdoba y otro crimen en Retiro, identificando al presunto responsable.<br><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto neutro porque, si bien es una noticia trágica y de gran impacto social, no tiene una relación directa con los mercados financieros o la economía que afecte las decisiones de un inversor argentino.
+                    </br></br></div>
 <div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
 <div class="flex flex-wrap gap-1.5">
 <span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#FEMICIDIO</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#RETIRO</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#CÓRDOBA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#SEGURIDAD</span>
@@ -422,12 +802,12 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.ambito.com/politica/mientras-patricia-bullrich-se-sigue-desmarcando-javier-milei-se-muestra-otra-senadora-que-suena-como-vice-n6337962" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.ambito.com/politica/mientras-patricia-bullrich-se-sigue-desmarcando-javier-milei-se-muestra-otra-senadora-que-suena-como-vice-n6337962" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Milei se muestra con potencial vicepresidenta en medio de la interna libertaria</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ <b>Javier Milei</b> se mostró con una senadora que podría ser su vice, mientras <b>Patricia Bullrich</b> se desmarca de la interna libertaria.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> La movida sugiere redefiniciones en el espacio político de cara a futuras alianzas y estrategias.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto neutro porque la noticia se centra en movimientos políticos internos que, si bien son relevantes para el panorama político, no presentan un impacto directo o inmediato en las decisiones de inversión o las condiciones de mercado para el inversor argentino.
-                    </div>
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ <b>Javier Milei</b> se mostró con una senadora que podría ser su vice, mientras <b>Patricia Bullrich</b> se desmarca de la interna libertaria.<br><span class="text-[#00E5FF] font-bold mr-2">▪</span> La movida sugiere redefiniciones en el espacio político de cara a futuras alianzas y estrategias.<br><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto neutro porque la noticia se centra en movimientos políticos internos que, si bien son relevantes para el panorama político, no presentan un impacto directo o inmediato en las decisiones de inversión o las condiciones de mercado para el inversor argentino.
+                    </br></br></div>
 <div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
 <div class="flex flex-wrap gap-1.5">
 <span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#MILEI</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#VICE</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#INTERNA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#BULLRICH</span>
@@ -449,12 +829,12 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://tn.com.ar/internacional/2026/10/26/el-papa-leon-xiv-confirmo-que-viene-a-la-argentina-me-llena-de-alegria-regresar-al-continente/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://tn.com.ar/internacional/2026/10/26/el-papa-leon-xiv-confirmo-que-viene-a-la-argentina-me-llena-de-alegria-regresar-al-continente/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">El papa León XIV confirma su visita a Argentina en noviembre, generando expectativas y cambios en feriados</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ El <b>papa León XIV</b> confirmó su viaje a Argentina entre el <b>8 y 11 de noviembre</b>, visitando <b>Buenos Aires, Luján y Córdoba</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> La noticia fue celebrada por <b>Javier Milei</b> y el Vaticano, ratificando su regreso al continente tras ser operado de cáncer.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto neutro porque, si bien es un evento de gran relevancia social y política, no se espera un efecto directo o significativo en los mercados o la economía del inversor argentino, más allá de eventuales movimientos en el turismo local.
-                    </div>
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ El <b>papa León XIV</b> confirmó su viaje a Argentina entre el <b>8 y 11 de noviembre</b>, visitando <b>Buenos Aires, Luján y Córdoba</b>.<br><span class="text-[#00E5FF] font-bold mr-2">▪</span> La noticia fue celebrada por <b>Javier Milei</b> y el Vaticano, ratificando su regreso al continente tras ser operado de cáncer.<br><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto neutro porque, si bien es un evento de gran relevancia social y política, no se espera un efecto directo o significativo en los mercados o la economía del inversor argentino, más allá de eventuales movimientos en el turismo local.
+                    </br></br></div>
 <div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
 <div class="flex flex-wrap gap-1.5">
 <span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#PAPA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#LEÓN XIV</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#FERIADOS</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#MILEI</span>
@@ -477,7 +857,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.ambito.com/mundo/el-papa-leon-xiv-confirmo-su-viaje-la-argentina-me-llena-alegria-n6337970" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.ambito.com/mundo/el-papa-leon-xiv-confirmo-su-viaje-la-argentina-me-llena-alegria-n6337970" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">El papa León XIV confirma su viaje a la Argentina</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -505,7 +885,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.lanacion.com.ar/deportes/futbol/balon-de-oro-2026-en-vivo-nid26102026/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.lanacion.com.ar/deportes/futbol/balon-de-oro-2026-en-vivo-nid26102026/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Lautaro Martínez en el puesto 22° del Balón de Oro 2026, con expectativas por Messi</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -532,7 +912,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/deportes/2026/10/26/el-ranking-de-los-deportistas-mejores-pagados-en-la-historia-que-lugar-ocupa-lionel-messi-y-las-nuevas-estrellas-que-se-sumaron/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/deportes/2026/10/26/el-ranking-de-los-deportistas-mejores-pagados-en-la-historia-que-lugar-ocupa-lionel-messi-y-las-nuevas-estrellas-que-se-sumaron/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Lionel Messi en el ranking histórico de deportistas mejor pagados</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -559,7 +939,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/estados-unidos/2026/10/26/un-conductor-alcoholizado-embistio-a-un-grupo-de-30-ciclistas-en-un-paseo-de-halloween-dejo-dos-muertos-y-arrastro-mas-de-un-kilometro-a-una-victima/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/estados-unidos/2026/10/26/un-conductor-alcoholizado-embistio-a-un-grupo-de-30-ciclistas-en-un-paseo-de-halloween-dejo-dos-muertos-y-arrastro-mas-de-un-kilometro-a-una-victima/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Conductor alcoholizado embiste a 30 ciclistas en Halloween, dejando dos muertos</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -586,7 +966,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/estados-unidos/2026/10/26/el-ss-united-states-sera-hundido-frente-a-florida-en-noviembre-para-convertirse-en-el-arrecife-artificial-mas-grande-del-mundo/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/estados-unidos/2026/10/26/el-ss-united-states-sera-hundido-frente-a-florida-en-noviembre-para-convertirse-en-el-arrecife-artificial-mas-grande-del-mundo/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">El SS United States, más rápido que el Titanic, será hundido para crear el arrecife artificial más grande del mundo</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -613,7 +993,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/estados-unidos/2026/10/26/mas-de-23600-objetos-fueron-retirados-de-los-geiseres-de-yellowstone-en-un-ano-record-de-basura-desde-patitos-de-goma-hasta-airpods/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/estados-unidos/2026/10/26/mas-de-23600-objetos-fueron-retirados-de-los-geiseres-de-yellowstone-en-un-ano-record-de-basura-desde-patitos-de-goma-hasta-airpods/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Retiran más de 23.600 objetos de los géiseres de Yellowstone en un año récord de basura</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -640,7 +1020,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.lanacion.com.ar/politica/la-red-de-casas-de-cambio-y-los-vinculos-de-ariel-vallejo-con-el-dolar-blue-nid26102026/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.lanacion.com.ar/politica/la-red-de-casas-de-cambio-y-los-vinculos-de-ariel-vallejo-con-el-dolar-blue-nid26102026/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Investigan los vínculos de Ariel Vallejo con el mercado del dólar blue y casas de cambio</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -667,7 +1047,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/economia/2026/10/26/la-bolsa-de-san-pablo-suspendio-sus-operaciones-tras-una-drastica-caida-de-las-acciones-lideres/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/economia/2026/10/26/la-bolsa-de-san-pablo-suspendio-sus-operaciones-tras-una-drastica-caida-de-las-acciones-lideres/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Victoria de Lula en Brasil provoca fuerte impacto negativo en mercados y tensión política con Argentina</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -695,7 +1075,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/estados-unidos/2026/10/26/hackearon-a-anthropic-en-12-horas-accedieron-a-sueldos-reuniones-y-chats-internos-de-la-empresa-creadora-de-claude/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/estados-unidos/2026/10/26/hackearon-a-anthropic-en-12-horas-accedieron-a-sueldos-reuniones-y-chats-internos-de-la-empresa-creadora-de-claude/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Anthropic, creadora de Claude, sufre hackeo y compromete datos internos</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -722,7 +1102,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/estados-unidos/2026/10/26/el-departamento-de-justicia-de-eeuu-solicito-que-los-condados-de-california-identifiquen-a-los-presuntos-votantes-no-ciudadanos/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/estados-unidos/2026/10/26/el-departamento-de-justicia-de-eeuu-solicito-que-los-condados-de-california-identifiquen-a-los-presuntos-votantes-no-ciudadanos/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">El Departamento de Justicia de EEUU solicita identificación de presuntos votantes no ciudadanos en California</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -749,7 +1129,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/deportes/2026/10/26/la-espeluznante-lesion-de-una-figura-de-la-nba-intento-una-volcada-pero-un-rival-lo-bloqueo-y-sufrio-un-dura-caida/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/deportes/2026/10/26/la-espeluznante-lesion-de-una-figura-de-la-nba-intento-una-volcada-pero-un-rival-lo-bloqueo-y-sufrio-un-dura-caida/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Espeluznante lesión de figura de la NBA durante un intento de volcada</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -776,7 +1156,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.iprofesional.com/economia/466954-como-el-super-nino-y-las-inundaciones-pueden-complicar-e-plan-caputo" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.iprofesional.com/economia/466954-como-el-super-nino-y-las-inundaciones-pueden-complicar-e-plan-caputo" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">El fenómeno del Súper Niño impacta en el Litoral y amenaza la economía argentina con alza de alimentos</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -804,7 +1184,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://tn.com.ar/policiales/2026/10/25/la-familia-de-la-docente-desaparecida-realizo-una-nueva-marcha-en-corrientes-no-vamos-a-permitir-que-se-cierre-el-caso/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://tn.com.ar/policiales/2026/10/25/la-familia-de-la-docente-desaparecida-realizo-una-nueva-marcha-en-corrientes-no-vamos-a-permitir-que-se-cierre-el-caso/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Nueva marcha de la familia de docente desaparecida en Corrientes</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -831,7 +1211,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.lanacion.com.ar/politica/sorpresa-y-replanteo-milei-perdio-al-socio-que-esperaba-pero-sostendra-su-antagonismo-con-lula-da-nid25102026/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.lanacion.com.ar/politica/sorpresa-y-replanteo-milei-perdio-al-socio-que-esperaba-pero-sostendra-su-antagonismo-con-lula-da-nid25102026/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Reacciones en Argentina tras la victoria de Lula: el peronismo celebra y se analiza el impacto para el gobierno de Milei</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -859,7 +1239,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.lanacion.com.ar/deportes/futbol/las-posiciones-del-torneo-clausura-y-una-tabla-anual-al-rojo-vivo-como-estan-boca-y-river-a-dos-nid25102026/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.lanacion.com.ar/deportes/futbol/las-posiciones-del-torneo-clausura-y-una-tabla-anual-al-rojo-vivo-como-estan-boca-y-river-a-dos-nid25102026/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Análisis de las posiciones de Boca y River en el Torneo Clausura y la Tabla Anual</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -886,7 +1266,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/america/america-latina/2026/10/26/lula-da-silva-gano-un-historico-balotaje-a-flavio-bolsonaro-y-asumira-un-cuarto-mandato-en-brasil/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/america/america-latina/2026/10/26/lula-da-silva-gano-un-historico-balotaje-a-flavio-bolsonaro-y-asumira-un-cuarto-mandato-en-brasil/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Lula da Silva gana el balotaje presidencial en Brasil, mientras Flávio Bolsonaro denuncia fraude</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -914,7 +1294,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/estados-unidos/2026/10/25/hollywood-beach-quedo-bajo-el-agua-por-las-mareas-altas-calles-inundadas-y-comercios-afectados-en-florida/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/estados-unidos/2026/10/25/hollywood-beach-quedo-bajo-el-agua-por-las-mareas-altas-calles-inundadas-y-comercios-afectados-en-florida/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Hollywood Beach, Florida, afectada por inundaciones debido a mareas altas</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -941,7 +1321,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.ambito.com/opiniones/cumplidas-tres-cuartas-partes-del-mandato-el-modelo-milei-profundiza-el-dano-n6337735" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.ambito.com/opiniones/cumplidas-tres-cuartas-partes-del-mandato-el-modelo-milei-profundiza-el-dano-n6337735" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Opinión: El modelo de Milei profundiza el daño a la economía argentina</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -968,7 +1348,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/estados-unidos/2026/10/25/nueva-jersey-propone-prohibir-algunos-chicles-y-productos-cotidianos-si-mantienen-microplasticos-en-sus-formulas/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/estados-unidos/2026/10/25/nueva-jersey-propone-prohibir-algunos-chicles-y-productos-cotidianos-si-mantienen-microplasticos-en-sus-formulas/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Nueva Jersey propone prohibir chicles y productos con microplásticos</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -995,7 +1375,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://tn.com.ar/politica/2026/10/25/patricia-bullrich-volvio-a-diferenciarse-de-milei-y-cuestiono-sus-ataques-a-la-prensa-cruzo-un-limite/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://tn.com.ar/politica/2026/10/25/patricia-bullrich-volvio-a-diferenciarse-de-milei-y-cuestiono-sus-ataques-a-la-prensa-cruzo-un-limite/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Patricia Bullrich y dirigentes políticos condenan ataques de Javier Milei a la prensa</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -1023,7 +1403,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://tn.com.ar/deportes/formula-1/2026/10/25/franco-colapinto-afronta-el-gp-de-estados-unidos-desde-el-fondo-de-la-grilla-largara-21/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://tn.com.ar/deportes/formula-1/2026/10/25/franco-colapinto-afronta-el-gp-de-estados-unidos-desde-el-fondo-de-la-grilla-largara-21/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Kimi Antonelli gana el GP de Estados Unidos; Franco Colapinto abandona tras un incidente</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -1051,7 +1431,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.iprofesional.com/negocios/467215-emprendedoras-usan-trajes-antiguos-para-crear-ropa-de-diseno" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.iprofesional.com/negocios/467215-emprendedoras-usan-trajes-antiguos-para-crear-ropa-de-diseno" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Emprendimiento DACAL crea ropa de diseño con moda circular a partir de trajes antiguos</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -1078,7 +1458,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.lanacion.com.ar/deportes/futbol/river-vs-racing-en-vivo-nid25102026/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.lanacion.com.ar/deportes/futbol/river-vs-racing-en-vivo-nid25102026/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">River Plate recibe a Racing en un clásico clave por la clasificación a la Libertadores</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -1105,7 +1485,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://tn.com.ar/policiales/2026/10/25/policias-dispararon-contra-un-auto-con-seis-jovenes-en-arrecifes-dos-mujeres-resultaron-heridas/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://tn.com.ar/policiales/2026/10/25/policias-dispararon-contra-un-auto-con-seis-jovenes-en-arrecifes-dos-mujeres-resultaron-heridas/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Dos mujeres heridas tras disparos policiales a un auto con seis jóvenes en Arrecifes</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -1132,7 +1512,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/america/the-new-york-times/2026/10/25/los-latinos-son-ahora-los-votantes-indecisos-mas-importantes-de-estados-unidos/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/america/the-new-york-times/2026/10/25/los-latinos-son-ahora-los-votantes-indecisos-mas-importantes-de-estados-unidos/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Latinos se posicionan como los votantes indecisos clave en Estados Unidos</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -1159,7 +1539,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/estados-unidos/2026/10/25/acusan-a-un-hombre-de-matar-a-la-mujer-que-lo-crio-y-de-usar-su-identidad-para-acceder-a-su-dinero-y-propiedades/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/estados-unidos/2026/10/25/acusan-a-un-hombre-de-matar-a-la-mujer-que-lo-crio-y-de-usar-su-identidad-para-acceder-a-su-dinero-y-propiedades/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Acusan a hombre de homicidio y uso de identidad para acceder a bienes en EE.UU.</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -1186,7 +1566,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.lanacion.com.ar/politica/senado-la-oposicion-dialoguista-se-planta-y-se-niega-a-votar-al-frente-de-una-comision-clave-a-la-nid25102026/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.lanacion.com.ar/politica/senado-la-oposicion-dialoguista-se-planta-y-se-niega-a-votar-al-frente-de-una-comision-clave-a-la-nid25102026/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Rebelión en el Senado: la oposición se niega a votar a candidata de Karina Milei para comisión clave</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -1213,7 +1593,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.iprofesional.com/negocios/467398-mercado-libre-con-nuevo-deposito-en-el-interior-llegaran-5-vuelos-semanales-con-pedidos" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.iprofesional.com/negocios/467398-mercado-libre-con-nuevo-deposito-en-el-interior-llegaran-5-vuelos-semanales-con-pedidos" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Mercado Libre abre nuevo depósito en el interior con 5 vuelos semanales</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -1240,7 +1620,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/estados-unidos/2026/10/25/como-seguir-la-maraton-de-nueva-york-2026-en-tiempo-real-la-app-para-localizar-corredores-y-donde-ver-la-carrera/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/estados-unidos/2026/10/25/como-seguir-la-maraton-de-nueva-york-2026-en-tiempo-real-la-app-para-localizar-corredores-y-donde-ver-la-carrera/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Guía para seguir la Maratón de Nueva York 2026 en tiempo real</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -1267,7 +1647,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.lanacion.com.ar/seguridad/parque-chacabuco-fueron-a-buscar-armas-por-una-denuncia-de-violencia-de-genero-y-encontraron-52-nid25102026/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.lanacion.com.ar/seguridad/parque-chacabuco-fueron-a-buscar-armas-por-una-denuncia-de-violencia-de-genero-y-encontraron-52-nid25102026/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Hallan 52 plantas de marihuana durante allanamiento por violencia de género en Parque Chacabuco</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -1294,7 +1674,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.ambito.com/economia/exportaciones-record-argentina-supero-los-us100000-millones-y-alcanzo-un-superavit-comercial-historico-n6337688" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.ambito.com/economia/exportaciones-record-argentina-supero-los-us100000-millones-y-alcanzo-un-superavit-comercial-historico-n6337688" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Argentina alcanza exportaciones récord de u$s100.000 millones y superávit comercial histórico</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -1321,7 +1701,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.lanacion.com.ar/deportes/futbol/independiente/independiente-vs-boca-por-el-torneo-clausura-en-vivo-nid25102026/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.lanacion.com.ar/deportes/futbol/independiente/independiente-vs-boca-por-el-torneo-clausura-en-vivo-nid25102026/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Boca vence a Independiente y recupera el liderazgo de la Tabla Anual</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -1349,7 +1729,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://tn.com.ar/internacional/2026/10/25/el-regreso-de-maria-corina-machado-sacude-a-venezuela-la-pulseada-con-delcy-rodriguez-y-el-rol-de-donald-trump/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://tn.com.ar/internacional/2026/10/25/el-regreso-de-maria-corina-machado-sacude-a-venezuela-la-pulseada-con-delcy-rodriguez-y-el-rol-de-donald-trump/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">El regreso de María Corina Machado sacude la política venezolana</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -1376,7 +1756,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/venezuela/2026/10/25/en-vivo-maria-corina-machado-regreso-a-venezuela-tras-casi-un-ano/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/venezuela/2026/10/25/en-vivo-maria-corina-machado-regreso-a-venezuela-tras-casi-un-ano/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">María Corina Machado lidera una multitudinaria caravana hacia Caracas</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -1403,7 +1783,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/estados-unidos/2026/10/25/tres-anos-de-inversion-record-en-ia-las-empresas-fuera-del-sector-tecnologico-todavia-no-ganaron-un-dolar/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/estados-unidos/2026/10/25/tres-anos-de-inversion-record-en-ia-las-empresas-fuera-del-sector-tecnologico-todavia-no-ganaron-un-dolar/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Inversión récord en IA durante tres años, pero empresas no tecnológicas no obtienen ganancias</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -1430,7 +1810,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/estados-unidos/2026/10/25/los-alquileres-mas-baratos-del-condado-de-los-angeles-estan-en-edificios-viejos-que-podrian-ser-demolidos-cuales-son-las-zonas-en-riesgo/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/estados-unidos/2026/10/25/los-alquileres-mas-baratos-del-condado-de-los-angeles-estan-en-edificios-viejos-que-podrian-ser-demolidos-cuales-son-las-zonas-en-riesgo/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Alquileres baratos en Los Ángeles, California, en riesgo de demolición</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -1457,7 +1837,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.ambito.com/mundo/reino-unido-alerta-los-1000-dias-la-guerra-rusia-mientras-recrudece-el-conflicto-malvinas-n6337678" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.ambito.com/mundo/reino-unido-alerta-los-1000-dias-la-guerra-rusia-mientras-recrudece-el-conflicto-malvinas-n6337678" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Reino Unido advierte: "1.000 días para prepararse para la guerra" y evalúa plan de acción</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -1484,7 +1864,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.lanacion.com.ar/politica/la-ucr-y-el-frente-renovador-condenaron-los-ataques-de-milei-a-periodistas-paso-todos-los-limites-nid25102026/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.lanacion.com.ar/politica/la-ucr-y-el-frente-renovador-condenaron-los-ataques-de-milei-a-periodistas-paso-todos-los-limites-nid25102026/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Dirigentes políticos, incluida Patricia Bullrich, condenan los ataques de Milei a periodistas</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -1512,7 +1892,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://tn.com.ar/politica/2026/10/25/el-gobierno-cambia-de-estrategia-y-buscara-revertir-en-diputados-los-cambios-que-introdujo-el-senado-a-la-reforma-del-bcra/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://tn.com.ar/politica/2026/10/25/el-gobierno-cambia-de-estrategia-y-buscara-revertir-en-diputados-los-cambios-que-introdujo-el-senado-a-la-reforma-del-bcra/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">El Gobierno cambia de estrategia y buscará revertir en Diputados los cambios que introdujo el Senado a la reforma del BCRA</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -1539,7 +1919,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.ambito.com/economia/presion-tributaria-las-pymes-argentinas-enfrentan-al-menos-62-obligaciones-impuestos-retenciones-y-tramites-fiscales-n6337677" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.ambito.com/economia/presion-tributaria-las-pymes-argentinas-enfrentan-al-menos-62-obligaciones-impuestos-retenciones-y-tramites-fiscales-n6337677" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Presión tributaria: las pymes argentinas enfrentan al menos 62 obligaciones entre impuestos, retenciones y trámites fiscales</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -1566,7 +1946,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.ambito.com/mundo/balotaje-brasil-2026-que-hora-se-conoceran-los-resultados-las-elecciones-presidenciales-lula-da-silva-y-flavio-bolsonaro-n6337674" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.ambito.com/mundo/balotaje-brasil-2026-que-hora-se-conoceran-los-resultados-las-elecciones-presidenciales-lula-da-silva-y-flavio-bolsonaro-n6337674" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Balotaje en Brasil: cerraron los comicios, se aguardan resultados y el mercado analiza programas económicos y ajustes fiscales</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -1594,7 +1974,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/estados-unidos/2026/10/25/la-venta-de-golosinas-de-halloween-cayo-en-estados-unidos-por-los-elevados-precios-del-chocolate/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/estados-unidos/2026/10/25/la-venta-de-golosinas-de-halloween-cayo-en-estados-unidos-por-los-elevados-precios-del-chocolate/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Caída en ventas de golosinas de Halloween en EE.UU. por altos precios del chocolate</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -1621,7 +2001,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://tn.com.ar/politica/2026/10/25/en-medio-de-las-negociaciones-con-lla-el-pro-rechazo-discutir-la-suspension-de-las-paso-a-las-apuradas/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://tn.com.ar/politica/2026/10/25/en-medio-de-las-negociaciones-con-lla-el-pro-rechazo-discutir-la-suspension-de-las-paso-a-las-apuradas/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">El PRO rechazó discutir la suspensión de las PASO “a las apuradas” en medio de negociaciones con LLA</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -1648,7 +2028,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/estados-unidos/2026/10/25/malik-beasley-negocia-un-acuerdo-de-culpabilidad-el-ex-nba-podria-admitir-su-rol-en-un-esquema-de-apuestas-ilegales/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/estados-unidos/2026/10/25/malik-beasley-negocia-un-acuerdo-de-culpabilidad-el-ex-nba-podria-admitir-su-rol-en-un-esquema-de-apuestas-ilegales/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Ex NBA Malik Beasley negocia acuerdo de culpabilidad por esquema de apuestas ilegales</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -1675,7 +2055,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://tn.com.ar/internacional/2026/10/25/maria-corina-machado-regreso-a-venezuela-despues-de-casi-diez-meses-en-el-exilio/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://tn.com.ar/internacional/2026/10/25/maria-corina-machado-regreso-a-venezuela-despues-de-casi-diez-meses-en-el-exilio/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">La líder opositora María Corina Machado regresó a Venezuela tras casi diez meses en el exilio</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -1703,7 +2083,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/estados-unidos/2026/10/25/los-vendedores-de-viviendas-en-estados-unidos-rebajan-precios-y-ofrecen-incentivos-para-cerrar-operaciones/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/estados-unidos/2026/10/25/los-vendedores-de-viviendas-en-estados-unidos-rebajan-precios-y-ofrecen-incentivos-para-cerrar-operaciones/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Vendedores de viviendas en Estados Unidos rebajan precios y ofrecen incentivos</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -1730,7 +2110,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.iprofesional.com/impuestos/467411-las-pymes-tienen-que-pagar-al-menos-34-tributos-a-nacion-provincias-y-municipios" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.iprofesional.com/impuestos/467411-las-pymes-tienen-que-pagar-al-menos-34-tributos-a-nacion-provincias-y-municipios" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">PYMES argentinas enfrentan al menos 34 tributos entre Nación, Provincias y Municipios</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -1757,7 +2137,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.iprofesional.com/comex/467403-las-exportaciones-agroindustriales-siguen-marcando-records-los-numeros-de-septiembre" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.iprofesional.com/comex/467403-las-exportaciones-agroindustriales-siguen-marcando-records-los-numeros-de-septiembre" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Exportaciones agroindustriales argentinas marcan récords en septiembre</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -1784,7 +2164,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://tn.com.ar/policiales/2026/10/25/una-mujer-fue-encontrada-muerta-en-un-departamento-de-retiro-tras-haber-tenido-una-cita/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://tn.com.ar/policiales/2026/10/25/una-mujer-fue-encontrada-muerta-en-un-departamento-de-retiro-tras-haber-tenido-una-cita/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Joven de 27 años hallada muerta en Retiro tras una cita</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -1811,7 +2191,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/estados-unidos/2026/10/25/al-menos-12-heridos-entre-ellos-seis-menores-tras-un-tiroteo-cerca-de-florida-am-university-en-tallahassee/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/estados-unidos/2026/10/25/al-menos-12-heridos-entre-ellos-seis-menores-tras-un-tiroteo-cerca-de-florida-am-university-en-tallahassee/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Tiroteo con 12 heridos, incluyendo 6 menores, cerca de Florida A&amp;M University</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -1838,7 +2218,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.ambito.com/mundo/donald-trump-amenaza-atacar-iran-este-domingo-puede-que-tenga-que-rematarlo-n6337636" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.ambito.com/mundo/donald-trump-amenaza-atacar-iran-este-domingo-puede-que-tenga-que-rematarlo-n6337636" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Donald Trump amenaza con atacar Irán: "Puede que tenga que rematarlo"</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -1865,7 +2245,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/estados-unidos/2026/10/25/por-que-los-turistas-estan-cambiando-sus-marcas-favoritas-con-el-avance-de-la-ia/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/estados-unidos/2026/10/25/por-que-los-turistas-estan-cambiando-sus-marcas-favoritas-con-el-avance-de-la-ia/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">La IA modifica las preferencias de marca de los turistas</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -1892,7 +2272,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/estados-unidos/2026/10/25/acuerdo-historico-obliga-a-la-arquidiocesis-de-nueva-york-a-indemnizar-con-mas-de-usd-800-millones-a-1300-victimas-de-abuso-sexual/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/estados-unidos/2026/10/25/acuerdo-historico-obliga-a-la-arquidiocesis-de-nueva-york-a-indemnizar-con-mas-de-usd-800-millones-a-1300-victimas-de-abuso-sexual/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Arquidiócesis de Nueva York pagará USD 800 millones a 1.300 víctimas de abuso</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -1919,7 +2299,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.iprofesional.com/negocios/467039-franquicia-de-lavanderia-cuanto-cuesta-un-local-con-ia-sin-empleados" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.iprofesional.com/negocios/467039-franquicia-de-lavanderia-cuanto-cuesta-un-local-con-ia-sin-empleados" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">La primera lavandería con IA y sin empleados abre en Palermo: una nueva tendencia en negocios</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -1946,7 +2326,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://tn.com.ar/internacional/2026/10/25/historico-balotaje-brasil-decide-entre-lula-o-flavio-bolsonaro-en-unas-elecciones-de-enorme-impacto-regional/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://tn.com.ar/internacional/2026/10/25/historico-balotaje-brasil-decide-entre-lula-o-flavio-bolsonaro-en-unas-elecciones-de-enorme-impacto-regional/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Elecciones en Brasil: Lula Da Silva y Bolsonaro en un balotaje de alta tensión y polarización</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -1974,7 +2354,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://tn.com.ar/economia/2026/10/25/el-petroleo-se-consolida-como-el-principal-producto-de-exportacion-de-la-argentina-los-planes-para-escalar-en-el-ranking-mundial/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://tn.com.ar/economia/2026/10/25/el-petroleo-se-consolida-como-el-principal-producto-de-exportacion-de-la-argentina-los-planes-para-escalar-en-el-ranking-mundial/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">El petróleo se consolida como principal exportación de Argentina y busca escalar en el ranking mundial</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -2001,7 +2381,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.lanacion.com.ar/politica/hogueras-en-nombre-de-la-libertad-nid25102026/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.lanacion.com.ar/politica/hogueras-en-nombre-de-la-libertad-nid25102026/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Milei y $LIBRA. Hogueras en nombre de la libertad</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -2028,7 +2408,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.lanacion.com.ar/opinion/no-todos-los-argentinos-son-como-milei-nid25102026/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.lanacion.com.ar/opinion/no-todos-los-argentinos-son-como-milei-nid25102026/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">AnálisisEscenario. No todos los argentinos son como Milei</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -2055,7 +2435,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.ambito.com/politica/las-dudas-milei-agitan-el-tablero-2027-la-tercera-via-bullrich-y-los-calculos-del-peronismo-n6337509" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.ambito.com/politica/las-dudas-milei-agitan-el-tablero-2027-la-tercera-via-bullrich-y-los-calculos-del-peronismo-n6337509" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Dudas sobre Milei agitan el panorama político de cara a 2027</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -2082,7 +2462,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.ambito.com/economia/eduardo-crespo-especialista-desarrollo-economico-el-gobierno-va-tener-que-buscar-un-reset-del-programa-n6337539" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.ambito.com/economia/eduardo-crespo-especialista-desarrollo-economico-el-gobierno-va-tener-que-buscar-un-reset-del-programa-n6337539" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Especialista económico advierte sobre la necesidad de un "reset del programa" del Gobierno</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -2109,7 +2489,7 @@
 <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
 </div>
 </div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.lanacion.com.ar/politica/la-visita-del-papa-la-iglesia-espera-la-ultima-avanzada-y-el-gobierno-adjudico-un-contrato-nid25102026/" target="_blank">
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.lanacion.com.ar/politica/la-visita-del-papa-la-iglesia-espera-la-ultima-avanzada-y-el-gobierno-adjudico-un-contrato-nid25102026/" rel="noopener noreferrer" target="_blank">
 <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">La visita del Papa. La Iglesia espera la "última avanzada" y el Gobierno adjudicó un contrato millonario para los actos masivos</h2>
 </a>
 <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -2118,142 +2498,6 @@
 <div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
 <div class="flex flex-wrap gap-1.5">
 <span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#VISITA PAPA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#GASTO PÚBLICO</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#POLÍTICA</span>
-</div>
-</div>
-</article>
-<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-rose-500 h-[380px] overflow-hidden relative" data-categoria="POLÍTICA" data-impacto="4" data-url="https://www.ambito.com/politica/sergio-massa-apoyo-lula-da-silva-antes-del-balotaje-brasil-manana-y-siempre-del-lado-lula-la-vida-n6337599">
-<div class="flex justify-between items-start mb-3 shrink-0 select-none">
-<div class="flex flex-col gap-2 max-w-[70%]">
-<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
-<span class="bg-indigo-900/40 text-indigo-400 border border-indigo-500/30 px-2 py-1 rounded-md whitespace-nowrap">POLÍTICA</span>
-<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">🔴 NEGATIVO</span>
-</div>
-<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">ÁMBITO, LA NACION</span>
-</div>
-<div class="flex flex-col items-end gap-2 shrink-0 z-10">
-<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.ambito.com/politica/sergio-massa-apoyo-lula-da-silva-antes-del-balotaje-brasil-manana-y-siempre-del-lado-lula-la-vida-n6337599" title="Guardar noticia">🔖</button>
-<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-10-24T22:56:00-03:00"></span>
-<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
-</div>
-</div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.ambito.com/politica/sergio-massa-apoyo-lula-da-silva-antes-del-balotaje-brasil-manana-y-siempre-del-lado-lula-la-vida-n6337599" target="_blank">
-<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Preocupación en el gobierno de Lula por posible no reconocimiento de triunfo por parte de Milei</h2>
-</a>
-<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ El gobierno de <b>Lula</b> en Brasil teme que el presidente <b>Milei</b> de Argentina no reconozca un eventual triunfo del <b>PT</b> en el balotaje.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> <b>Sergio Massa</b> expresó su apoyo explícito a <b>Lula da Silva</b>, alineándose en el contexto de la próxima elección.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto negativo porque la tensión entre los gobiernos de Argentina y un posible futuro Brasil (si gana Lula y Milei no reconoce el resultado) podría generar inestabilidad en la relación bilateral y afectar el comercio regional, impactando negativamente la confianza del inversor argentino en la estabilidad política de la región.
-                    </div>
-<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
-<div class="flex flex-wrap gap-1.5">
-<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#BRASIL</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ARGENTINA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#RELACIONES BILATERALES</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#MILEI</span>
-</div>
-<span class="text-[10px] font-bold bg-yellow-500/20 text-yellow-500 px-2 py-0.5 rounded border border-yellow-500/30 mt-2 inline-block">🗞️ Cubierto por 2 medios</span>
-</div>
-</article>
-<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-rose-500 h-[380px] overflow-hidden relative" data-categoria="POLÍTICA" data-impacto="2" data-url="https://www.ambito.com/mundo/el-reino-unido-pidio-apoyo-chile-malvinas-una-llamada-andy-burnham-y-jose-antonio-kast-n6337592">
-<div class="flex justify-between items-start mb-3 shrink-0 select-none">
-<div class="flex flex-col gap-2 max-w-[70%]">
-<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
-<span class="bg-indigo-900/40 text-indigo-400 border border-indigo-500/30 px-2 py-1 rounded-md whitespace-nowrap">POLÍTICA</span>
-<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">🔴 NEGATIVO</span>
-</div>
-<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">ÁMBITO</span>
-</div>
-<div class="flex flex-col items-end gap-2 shrink-0 z-10">
-<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.ambito.com/mundo/el-reino-unido-pidio-apoyo-chile-malvinas-una-llamada-andy-burnham-y-jose-antonio-kast-n6337592" title="Guardar noticia">🔖</button>
-<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-10-24T22:09:00-03:00"></span>
-<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
-</div>
-</div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.ambito.com/mundo/el-reino-unido-pidio-apoyo-chile-malvinas-una-llamada-andy-burnham-y-jose-antonio-kast-n6337592" target="_blank">
-<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Reino Unido solicita apoyo de Chile por Malvinas en un contexto de debate legislativo argentino</h2>
-</a>
-<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span>El <b>Reino Unido</b> solicitó formalmente el apoyo de <b>Chile</b> en la cuestión de <b>Malvinas</b> a través de una llamada entre <b>Burnham</b> y <b>Kast</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span>Este acercamiento ocurre mientras en <b>Argentina</b> se debate la ley de "Defensa de la Soberanía Nacional" sobre las islas, que "tambalea en Diputados".<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span>La movida británica y el debate local reflejan la persistente tensión geopolítica en torno a la soberanía de <b>Malvinas</b>. Impacto NEGATIVO (2) porque la intensificación de las disputas por <b>Malvinas</b> y la búsqueda de alianzas externas, especialmente en un país vecino, genera ruido diplomático. Aunque no impacta directamente los mercados, representa un factor de inestabilidad geopolítica regional que puede influir en la percepción de riesgo país a largo plazo.
-                    </div>
-<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
-<div class="flex flex-wrap gap-1.5">
-<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#MALVINAS</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#REINO UNIDO</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#CHILE</span>
-</div>
-</div>
-</article>
-<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="DEPORTES" data-impacto="1" data-url="https://www.lanacion.com.ar/deportes/automovilismo/franco-colapinto-largara-21-en-el-gran-premio-de-estados-unidos-de-formula-1-cuanto-puede-remontar-nid24102026/">
-<div class="flex justify-between items-start mb-3 shrink-0 select-none">
-<div class="flex flex-col gap-2 max-w-[70%]">
-<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
-<span class="bg-orange-900/40 text-orange-400 border border-orange-500/30 px-2 py-1 rounded-md whitespace-nowrap">DEPORTES</span>
-<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">⚪ NEUTRAL</span>
-</div>
-<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">LA NACION</span>
-</div>
-<div class="flex flex-col items-end gap-2 shrink-0 z-10">
-<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.lanacion.com.ar/deportes/automovilismo/franco-colapinto-largara-21-en-el-gran-premio-de-estados-unidos-de-formula-1-cuanto-puede-remontar-nid24102026/" title="Guardar noticia">🔖</button>
-<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-10-25T00:52:12.772Z"></span>
-<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
-</div>
-</div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.lanacion.com.ar/deportes/automovilismo/franco-colapinto-largara-21-en-el-gran-premio-de-estados-unidos-de-formula-1-cuanto-puede-remontar-nid24102026/" target="_blank">
-<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Cuánto puede avanzar Colapinto desde el puesto 21 de largada en el Gran Premio de Estados Unidos de Fórmula 1</h2>
-</a>
-<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ El piloto <b>Franco Colapinto</b> largará desde el puesto <b>21</b> en el <b>Gran Premio de Estados Unidos de Fórmula 1</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Se evalúa su potencial para remontar posiciones y conseguir puntos en la carrera.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto NEUTRAL para el inversor, ya que es una noticia puramente deportiva que no tiene ninguna implicancia económica o de mercado directo para <b>Argentina</b>.
-                    </div>
-<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
-<div class="flex flex-wrap gap-1.5">
-<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#FÓRMULA 1</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#COLAPINTO</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#AUTOMOVILISMO</span>
-</div>
-</div>
-</article>
-<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="POLÍTICA" data-impacto="1" data-url="https://tn.com.ar/policiales/2026/10/24/fue-extorsionado-y-por-eso-se-recluyo-la-version-del-abogado-del-bioquimico-acusado-de-secuestrar-a-su-familia-en-esquel/">
-<div class="flex justify-between items-start mb-3 shrink-0 select-none">
-<div class="flex flex-col gap-2 max-w-[70%]">
-<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
-<span class="bg-indigo-900/40 text-indigo-400 border border-indigo-500/30 px-2 py-1 rounded-md whitespace-nowrap">POLÍTICA</span>
-<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">⚪ NEUTRAL</span>
-</div>
-<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">TN</span>
-</div>
-<div class="flex flex-col items-end gap-2 shrink-0 z-10">
-<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://tn.com.ar/policiales/2026/10/24/fue-extorsionado-y-por-eso-se-recluyo-la-version-del-abogado-del-bioquimico-acusado-de-secuestrar-a-su-familia-en-esquel/" title="Guardar noticia">🔖</button>
-<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-10-25T00:41:32.637Z"></span>
-<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
-</div>
-</div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://tn.com.ar/policiales/2026/10/24/fue-extorsionado-y-por-eso-se-recluyo-la-version-del-abogado-del-bioquimico-acusado-de-secuestrar-a-su-familia-en-esquel/" target="_blank">
-<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Abogado de bioquímico de Esquel acusado de secuestro alega extorsión</h2>
-</a>
-<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ El abogado del bioquímico acusado de secuestrar a su familia en <b>Esquel</b> afirmó que su cliente "fue extorsionado y por eso se recluyó".<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Esta declaración busca ofrecer una nueva perspectiva sobre el caso policial de alto perfil.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto neutral porque se trata de un caso policial local que, si bien es de interés público, no tiene implicaciones directas en la economía o los mercados financieros de Argentina, ni en la política a nivel nacional.
-                    </div>
-<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
-<div class="flex flex-wrap gap-1.5">
-<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ESQUEL</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#POLICIAL</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#SECUESTRO</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#LEGAL</span>
-</div>
-</div>
-</article>
-<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="POLÍTICA" data-impacto="3" data-url="https://tn.com.ar/politica/2026/10/24/tras-las-tensiones-por-la-ley-de-discapacidad-el-gobierno-busca-un-acuerdo-con-las-universidades-para-el-presupuesto-2027/">
-<div class="flex justify-between items-start mb-3 shrink-0 select-none">
-<div class="flex flex-col gap-2 max-w-[70%]">
-<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
-<span class="bg-indigo-900/40 text-indigo-400 border border-indigo-500/30 px-2 py-1 rounded-md whitespace-nowrap">POLÍTICA</span>
-<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">⚪ NEUTRAL</span>
-</div>
-<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">TN</span>
-</div>
-<div class="flex flex-col items-end gap-2 shrink-0 z-10">
-<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://tn.com.ar/politica/2026/10/24/tras-las-tensiones-por-la-ley-de-discapacidad-el-gobierno-busca-un-acuerdo-con-las-universidades-para-el-presupuesto-2027/" title="Guardar noticia">🔖</button>
-<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-10-25T00:34:12.584Z"></span>
-<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
-</div>
-</div>
-<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://tn.com.ar/politica/2026/10/24/tras-las-tensiones-por-la-ley-de-discapacidad-el-gobierno-busca-un-acuerdo-con-las-universidades-para-el-presupuesto-2027/" target="_blank">
-<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Gobierno busca acuerdo con universidades por Presupuesto 2027 tras tensiones por Ley de Discapacidad</h2>
-</a>
-<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
-<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ El <b>Gobierno</b>, tras tensiones por la <b>Ley de Discapacidad</b>, busca un acuerdo con las universidades para el <b>Presupuesto 2027</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Se evalúa aumentar partidas o negociar cambios en las contribuciones patronales, con el <b>equilibrio fiscal</b> como límite fijado por <b>Milei</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Impacto neutral porque, aunque la búsqueda de consenso es positiva, la existencia de tensiones y diferencias internas sobre concesiones sugiere que el proceso será complejo y su resultado incierto, manteniendo un equilibrio entre los riesgos de conflicto y las oportunidades de acuerdo para el inversor argentino.
-                    </div>
-<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
-<div class="flex flex-wrap gap-1.5">
-<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#PRESUPUESTO 2027</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#UNIVERSIDADES</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#LEY DE DISCAPACIDAD</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#POLÍTICA</span>
 </div>
 </div>
 </article>
