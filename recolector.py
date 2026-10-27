@@ -1,15 +1,78 @@
 import json
+import html
+import logging
 import os
 import random
 import time
+from html.parser import HTMLParser
+from urllib.parse import urlsplit
 from datetime import datetime, timezone
 import requests
 from bs4 import BeautifulSoup
 from google import genai
 
+logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
+logger = logging.getLogger(__name__)
+
 # --- 1. CONFIGURACIÓN DE LA IA ---
 API_KEY = os.environ.get("LLAVESECRETABRAI")
+if not API_KEY:
+    raise RuntimeError("Falta configurar el secreto LLAVESECRETABRAI")
 client = genai.Client(api_key=API_KEY)
+
+
+class ResumenSeguro(HTMLParser):
+    """Conserva solo negritas, spans estilizados y saltos de línea."""
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.partes = []
+        self.pila = []
+
+    def handle_starttag(self, tag, attrs):
+        if tag in ("b", "strong"):
+            self.partes.append("<b>")
+            self.pila.append("b")
+        elif tag == "br":
+            self.partes.append("<br>")
+        elif tag == "span":
+            self.partes.append('<span class="text-[#00E5FF] font-bold mr-2">')
+            self.pila.append("span")
+
+    def handle_endtag(self, tag):
+        esperado = "b" if tag in ("b", "strong") else tag
+        if esperado in ("b", "span") and esperado in self.pila:
+            indice = len(self.pila) - 1 - self.pila[::-1].index(esperado)
+            self.pila.pop(indice)
+            self.partes.append(f"</{esperado}>")
+
+    def handle_data(self, data):
+        self.partes.append(html.escape(data, quote=True))
+
+    def resultado(self):
+        while self.pila:
+            self.partes.append(f"</{self.pila.pop()}>")
+        return "".join(self.partes)
+
+
+def limpiar_resumen(texto):
+    parser = ResumenSeguro()
+    parser.feed(texto)
+    parser.close()
+    return parser.resultado()
+
+
+def url_segura(url):
+    if not isinstance(url, str) or any(c in url for c in '"\'<>\r\n'):
+        return False
+    try:
+        parsed = urlsplit(url)
+        host = (parsed.hostname or "").lower().rstrip(".")
+        if parsed.username is not None or parsed.password is not None or parsed.port not in (None, 443):
+            return False
+        permitidos = ("ambito.com", "infobae.com", "tn.com.ar", "iprofesional.com", "lanacion.com.ar")
+        return parsed.scheme == "https" and any(host == d or host.endswith("." + d) for d in permitidos)
+    except ValueError:
+        return False
 
 # --- 2. EL RECOLECTOR MULTI-FUENTE ---
 fuentes = [
@@ -64,7 +127,7 @@ for fuente in fuentes:
                         if contador >= 12: 
                             break
     except Exception:
-        pass
+        logger.exception("Falló una operación de red o procesamiento")
 
 random.shuffle(noticias_extraidas)
 noticias_finales = noticias_extraidas[:40] 
@@ -92,7 +155,7 @@ def extraer_fecha_exacta(sopa):
                         if isinstance(item, dict) and 'datePublished' in item:
                             return item['datePublished']
         except Exception:
-            pass
+            logger.exception("No se pudo interpretar un bloque JSON-LD de fecha")
     return None
 
 for noticia in noticias_finales:
@@ -108,7 +171,7 @@ for noticia in noticias_finales:
             if fecha_encontrada:
                 tiempos_reales[link_nota] = fecha_encontrada
     except Exception:
-        pass
+        logger.exception("Falló una operación de red o procesamiento")
 
 texto_para_ia = ""
 for i, noticia in enumerate(noticias_finales):
@@ -144,6 +207,7 @@ for intento in range(max_intentos):
         exito = True
         break
     except Exception:
+        logger.exception("Falló el intento %s de generación de resumen", intento + 1)
         time.sleep(10)
 
 if not exito:
@@ -152,7 +216,7 @@ if not exito:
         respuesta_ia_texto = respuesta_ia.text
         exito = True
     except Exception:
-        pass
+        logger.exception("Falló una operación de red o procesamiento")
 
 tarjetas_html = ""
 noticias_urgentes_ticker = []
@@ -175,6 +239,25 @@ if exito:
                 sentimiento = partes[5].strip().upper()
                 impacto = partes[6].strip()
                 link = partes[7].strip()
+                enlaces_permitidos = {n["link"] for n in noticias_finales}
+                if link not in enlaces_permitidos or not url_segura(link):
+                    logger.warning("Se descartó una noticia con enlace no autorizado: %r", link)
+                    continue
+
+                if categoria not in {"DEPORTES", "POLÍTICA", "ECONOMÍA", "MERCADOS"}:
+                    logger.warning("Se descartó categoría no permitida: %r", categoria)
+                    continue
+                if sentimiento not in {"POSITIVO", "NEGATIVO", "NEUTRAL"} or impacto not in {"1", "2", "3", "4", "5"}:
+                    logger.warning("Se descartó una noticia con sentimiento o impacto inválido")
+                    continue
+                diarios = html.escape(diarios[:160], quote=True)
+                categoria = html.escape(categoria, quote=True)
+                titulo = html.escape(titulo[:300], quote=True)
+                tags_raw = html.escape(tags_raw[:120], quote=True)
+                sentimiento = html.escape(sentimiento, quote=True)
+                impacto = html.escape(impacto, quote=True)
+                link_html = html.escape(link, quote=True)
+                vinetas = limpiar_resumen(vinetas[:3000])
 
                 timestamp_iso = tiempos_reales.get(link, datetime.now(timezone.utc).isoformat())
                 try:
@@ -185,7 +268,7 @@ if exito:
                     if diferencia_horas > 48:
                         continue 
                 except Exception:
-                    pass
+                    logger.warning("Fecha no válida para %s: %r", link, timestamp_iso)
 
                 if impacto in ["5", "4"]:
                     noticias_urgentes_ticker.append(titulo)
@@ -222,7 +305,7 @@ if exito:
                 vinetas = vinetas.replace('<br>•', '<br><span class="text-[#00E5FF] font-bold mr-2">▪</span>').replace('<br>-', '<br><span class="text-[#00E5FF] font-bold mr-2">▪</span>')
 
                 tarjetas_html += f"""
-                <article data-categoria="{categoria}" data-impacto="{impacto}" data-url="{link}" class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col {borde_sent} h-[380px] overflow-hidden relative">
+                <article data-categoria="{categoria}" data-impacto="{impacto}" data-url="{link_html}" class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col {borde_sent} h-[380px] overflow-hidden relative">
                     <div class="flex justify-between items-start mb-3 shrink-0 select-none">
                         <div class="flex flex-col gap-2 max-w-[70%]">
                             <div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
@@ -232,13 +315,13 @@ if exito:
                             <span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">{diarios}</span>
                         </div>
                         <div class="flex flex-col items-end gap-2 shrink-0 z-10">
-                            <button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="{link}" title="Guardar noticia">🔖</button>
-                            <span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="{timestamp_iso}"></span>
+                            <button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="{link_html}" title="Guardar noticia">🔖</button>
+                            <span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="{html.escape(timestamp_iso, quote=True)}"></span>
                             <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
                         </div>
                     </div>
                     
-                    <a href="{link}" target="_blank" class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group">
+                    <a href="{link_html}" target="_blank" rel="noopener noreferrer" class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group">
                         <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">{titulo}</h2>
                     </a>
                     
@@ -262,7 +345,19 @@ if os.path.exists("historial.txt"):
         contenido_previo = f.read()
 
     sopa_vieja = BeautifulSoup(contenido_previo, 'html.parser')
+    for tarjeta in sopa_vieja.find_all(['script', 'style', 'iframe', 'object', 'embed', 'svg', 'math', 'form', 'base', 'meta', 'link']):
+        tarjeta.decompose()
     for tarjeta in sopa_vieja.find_all('article'):
+        for nodo in tarjeta.find_all(True):
+            for atributo in list(nodo.attrs):
+                if atributo.lower().startswith('on') or atributo.lower() in ('style', 'srcdoc'):
+                    del nodo.attrs[atributo]
+        for enlace in tarjeta.find_all('a'):
+            destino = enlace.get('href', '')
+            if not url_segura(destino):
+                enlace.unwrap()
+            else:
+                enlace['rel'] = 'noopener noreferrer'
         tag_tiempo = tarjeta.find('span', class_='tiempo-noticia')
         if tag_tiempo and tag_tiempo.has_attr('data-timestamp'):
             try:
@@ -271,7 +366,7 @@ if os.path.exists("historial.txt"):
                     tarjeta.decompose()
                     continue
             except Exception:
-                pass
+                logger.warning("Fecha histórica no válida; se conserva la tarjeta")
         
         categoria_tarjeta = tarjeta.get('data-categoria', '').upper()
         if categoria_tarjeta not in ["DEPORTES", "POLÍTICA", "ECONOMÍA", "MERCADOS"]:
@@ -295,7 +390,7 @@ def obtener_fecha_segura(articulo):
                 dt = dt.replace(tzinfo=timezone.utc)
             return dt
         except Exception:
-            pass
+            logger.warning("Fecha histórica no válida al ordenar")
     return datetime.min.replace(tzinfo=timezone.utc)
 
 articulos_ordenados = sorted(todos_los_articulos, key=obtener_fecha_segura, reverse=True)
@@ -347,7 +442,8 @@ try:
             rh = requests.get(f"https://api.argentinadatos.com/v1/finanzas/dolares/{c}", timeout=5)
             if rh.status_code == 200 and len(rh.json()) > 1:
                 hist_venta[c] = rh.json()[-2]["venta"] # -2 es el cierre del día hábil anterior
-        except: pass
+        except Exception:
+            logger.exception("No se pudo obtener cotización histórica para %s", c)
 
     casas_clave = {"oficial": "OFICIAL", "blue": "BLUE", "bolsa": "MEP", "contadoconliqui": "CCL"}
     for casa, nombre in casas_clave.items():
@@ -387,7 +483,7 @@ try:
             </div>
             """
 except Exception:
-    pass
+    logger.exception("Falló la consulta de datos externos")
 
 # 4.2 Riesgo País Dinámico
 try:
@@ -431,7 +527,7 @@ try:
             </div>
             """
 except Exception:
-    pass
+    logger.exception("Falló la consulta de datos externos")
 
 partidos_html = ""
 
